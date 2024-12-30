@@ -1,0 +1,103 @@
+# Loads default set of integrations. Do not remove.
+default_config:
+http:
+  use_x_forwarded_for: true
+  trusted_proxies:
+    - 192.168.1.254
+    - 172.30.33.0/24
+    - 173.245.48.0/20
+    - 103.21.244.0/22
+    - 103.22.200.0/22
+    - 103.31.4.0/22
+    - 141.101.64.0/18
+    - 108.162.192.0/18
+    - 190.93.240.0/20
+    - 188.114.96.0/20
+    - 197.234.240.0/22
+    - 198.41.128.0/17
+    - 162.158.0.0/15
+    - 104.16.0.0/13
+    - 104.24.0.0/14
+    - 172.64.0.0/13
+    - 131.0.72.0/22
+    - 127.0.0.1
+    - ::1
+
+frontend:
+  themes: !include_dir_merge_named themes
+wake_on_lan:
+google_assistant:
+  project_id: almayo-biome
+  service_account: !include google_service_account.json
+  report_state: true
+  exposed_domains:
+    - switch
+    - light
+    - script
+    - scene
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+theme: !include themes/jumper/jumper-theme.yaml
+rest_command:
+  set_sound_mode:
+    url: http://hifijumper.local/interact/trigger/mode
+    method: POST
+    headers:
+      accept: 'application/json'
+    payload: '{ "data": "{{ mode }}" }'
+    content_type: 'application/json; charset=utf-8'
+    verify_ssl: false
+
+media_player:
+  - platform: universal
+    name: Alive TV
+    children:
+      - media_player.hammlet_cast
+      - media_player.hammlet_oled_tv
+    device_class: tv
+    unique_id: alive_tv
+    commands:
+      - turn_on:
+        action: media_player.turn_on
+        target:
+          entity_id: media_player.hammlet_oled_tv
+      - turn_off:
+        action: media_player.turn_off
+        target:
+          entity_id: media_player.hammlet_oled_tv
+      - select_source:
+        action: media_player.select_source
+        target:
+          entity_id: media_player.hammlet_oled_tv
+        data:
+          source: '{{ source }}'
+
+o365:
+  accounts:
+    - account_name: jeff_hamm # Do not use email address or spaces
+      client_id: 'a03a022d-925c-4639-a637-3dd06d44bbf8'
+      client_secret: '6Dj8Q~csv3t5SsGH9nylxk3VYBqxMmSJRq6V1bG7'
+      alt_auth_method: False
+      enable_update: True
+      # email_sensor:
+      #   - name: inbox
+      #     max_items: 2
+      #     is_unread: True
+      #     download_attachments: False
+      # query_sensors:
+      #   - name: "Example"
+      #     folder: "Inbox/Test_Inbox" #Default is Inbox
+      #     from: "mail@example.com"
+      #     subject_contains: "Example subject"
+      #     has_attachment: True
+      #     max_items: 2
+      #     is_unread: True
+      # status_sensors: # Cannot be used for personal accounts
+      #   - name: "User Teams Status"
+      # chat_sensors: # Cannot be used for personal accounts
+      #   - name: "User Chat"
+      todo_sensors:
+        enabled: True
+        enable_update: True # set this to true if you want to be able to create new todos

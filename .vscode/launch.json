@@ -6,7 +6,7 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/bin/Debug/net9.0/Hammlet_NetDaemon.dll",
+            "program": "${workspaceFolder}/bin/Debug/net9.0/Hammlet.NetDaemon.dll",
             "args": [],
             "cwd": "${workspaceFolder}",
             "env": {

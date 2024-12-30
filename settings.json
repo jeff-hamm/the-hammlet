@@ -1,0 +1,13 @@
+{
+    "terminal.integrated.profiles.windows": {
+        "My PowerShell": {
+            "path": "pwsh.exe",
+            "args": [
+                "-noexit",
+                "-file",
+                "${workspaceFolder}/Config.ps1"
+            ]
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "My PowerShell"
+}

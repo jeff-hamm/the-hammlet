@@ -1,5 +1,6 @@
 using System.Reflection;
 using Hammlet.NetDaemon;
+using Hammlet.NetDaemon.Models;
 using Microsoft.Extensions.Hosting;
 using NetDaemon.Extensions.Logging;
 using NetDaemon.Extensions.Scheduler;
