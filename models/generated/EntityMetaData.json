@@ -15,8 +15,13 @@
         },
         {
           "id": "light.color_bulbs",
-          "friendlyName": "Color Bulbs",
+          "friendlyName": "Color",
           "cSharpName": "ColorBulbs"
+        },
+        {
+          "id": "light.default_light",
+          "friendlyName": "default_light",
+          "cSharpName": "DefaultLight"
         },
         {
           "id": "light.demoled1_esp8266_demo_led_1",
@@ -27,11 +32,6 @@
           "id": "light.hammlet_bathroom",
           "friendlyName": "Bathroom",
           "cSharpName": "HammletBathroom"
-        },
-        {
-          "id": "light.hammlet_bathroom_3",
-          "friendlyName": "Hammlet Bathroom",
-          "cSharpName": "HammletBathroom3"
         },
         {
           "id": "light.hammlet_extra",
@@ -49,14 +49,54 @@
           "cSharpName": "HammletPantryOld"
         },
         {
+          "id": "light.hammlet_wled_music_spamheart_vein_2",
+          "friendlyName": "Spamheart Vein 2 Spamheart Vein 2",
+          "cSharpName": "HammletWledMusicSpamheartVein2"
+        },
+        {
+          "id": "light.kitchen",
+          "friendlyName": "Kitchen",
+          "cSharpName": "Kitchen"
+        },
+        {
           "id": "light.kitchen_ceiling",
           "friendlyName": "Kitchen",
           "cSharpName": "KitchenCeiling"
         },
         {
-          "id": "light.kitchen_light",
+          "id": "light.kitchen_group",
           "friendlyName": "Kitchen",
-          "cSharpName": "KitchenLight"
+          "cSharpName": "KitchenGroup"
+        },
+        {
+          "id": "light.kitchen_light2",
+          "friendlyName": "Kitchen",
+          "cSharpName": "KitchenLight2"
+        },
+        {
+          "id": "light.kitchen_switch",
+          "friendlyName": "Kitchen Switch",
+          "cSharpName": "KitchenSwitch"
+        },
+        {
+          "id": "light.laser_lamp",
+          "friendlyName": "Laser Lamp",
+          "cSharpName": "LaserLamp"
+        },
+        {
+          "id": "light.liminal",
+          "friendlyName": "Liminal",
+          "cSharpName": "Liminal"
+        },
+        {
+          "id": "light.liminal_ceiling",
+          "friendlyName": "Liminal Ceiling",
+          "cSharpName": "LiminalCeiling"
+        },
+        {
+          "id": "light.liminal_switch",
+          "friendlyName": "Liminal Switch",
+          "cSharpName": "LiminalSwitch"
         },
         {
           "id": "light.living",
@@ -75,13 +115,8 @@
         },
         {
           "id": "light.office_dimmer",
-          "friendlyName": "Office Dimmer",
+          "friendlyName": "Liminal Dimmer",
           "cSharpName": "OfficeDimmer"
-        },
-        {
-          "id": "light.office_switch",
-          "friendlyName": "Office Switch",
-          "cSharpName": "OfficeSwitch"
         },
         {
           "id": "light.plant_lamp",
@@ -89,14 +124,24 @@
           "cSharpName": "PlantLamp"
         },
         {
+          "id": "light.ref_group",
+          "friendlyName": "ref_group",
+          "cSharpName": "RefGroup"
+        },
+        {
           "id": "light.smart_wi_fi_lamp_dimmer",
           "friendlyName": null,
           "cSharpName": "SmartWiFiLampDimmer"
         },
         {
-          "id": "light.smart_wi_fi_lamp_dimmer_light",
+          "id": "light.smart_wi_fi_lamp_dimmer_2",
           "friendlyName": "Smart Wi-Fi Lamp Dimmer",
-          "cSharpName": "SmartWiFiLampDimmerLight"
+          "cSharpName": "SmartWiFiLampDimmer2"
+        },
+        {
+          "id": "light.spamheart",
+          "friendlyName": "Spamheart",
+          "cSharpName": "Spamheart"
         },
         {
           "id": "light.spamheart_2_spamheart_2",
@@ -105,13 +150,8 @@
         },
         {
           "id": "light.spamheart_4_spamheart_vein",
-          "friendlyName": "Spamheart Vein Spamheart Vein",
+          "friendlyName": "Spamheart",
           "cSharpName": "Spamheart4SpamheartVein"
-        },
-        {
-          "id": "light.stripper_light",
-          "friendlyName": "Stripper Light",
-          "cSharpName": "StripperLight"
         },
         {
           "id": "light.succulent_lamp",
@@ -124,9 +164,9 @@
           "cSharpName": "TentacleLamp"
         },
         {
-          "id": "light.tentacle_lamp_2",
-          "friendlyName": "Tentacle Lamp 2",
-          "cSharpName": "TentacleLamp2"
+          "id": "light.tentacle_lightener",
+          "friendlyName": "tentacle_lightener",
+          "cSharpName": "TentacleLightener"
         },
         {
           "id": "light.yeelight_colorb_0x1b32258a",
@@ -136,21 +176,6 @@
       ],
       "attributes": [
         {
-          "jsonName": "supported_color_modes",
-          "cSharpName": "SupportedColorModes",
-          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.String]"
-        },
-        {
-          "jsonName": "supported_features",
-          "cSharpName": "SupportedFeatures",
-          "clrType": "System.Double"
-        },
-        {
-          "jsonName": "color_mode",
-          "cSharpName": "ColorMode",
-          "clrType": "System.String"
-        },
-        {
           "jsonName": "min_color_temp_kelvin",
           "cSharpName": "MinColorTempKelvin",
           "clrType": "System.Double"
@@ -159,6 +184,21 @@
           "jsonName": "max_color_temp_kelvin",
           "cSharpName": "MaxColorTempKelvin",
           "clrType": "System.Double"
+        },
+        {
+          "jsonName": "color_temp_kelvin",
+          "cSharpName": "ColorTempKelvin",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "color",
+          "cSharpName": "Color",
+          "clrType": "System.Object"
+        },
+        {
+          "jsonName": "restored",
+          "cSharpName": "Restored",
+          "clrType": "System.Boolean"
         },
         {
           "jsonName": "min_mireds",
@@ -171,13 +211,28 @@
           "clrType": "System.Double"
         },
         {
-          "jsonName": "brightness",
-          "cSharpName": "Brightness",
-          "clrType": "System.Double"
+          "jsonName": "effect_list",
+          "cSharpName": "EffectList",
+          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.String]"
         },
         {
-          "jsonName": "color_temp_kelvin",
-          "cSharpName": "ColorTempKelvin",
+          "jsonName": "supported_color_modes",
+          "cSharpName": "SupportedColorModes",
+          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.String]"
+        },
+        {
+          "jsonName": "effect",
+          "cSharpName": "Effect",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "color_mode",
+          "cSharpName": "ColorMode",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "brightness",
+          "cSharpName": "Brightness",
           "clrType": "System.Double"
         },
         {
@@ -201,29 +256,14 @@
           "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.Double]"
         },
         {
-          "jsonName": "entity_id",
-          "cSharpName": "EntityId",
-          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.String]"
-        },
-        {
-          "jsonName": "effect_list",
-          "cSharpName": "EffectList",
-          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.String]"
-        },
-        {
-          "jsonName": "color",
-          "cSharpName": "Color",
-          "clrType": "System.Object"
-        },
-        {
-          "jsonName": "effect",
-          "cSharpName": "Effect",
-          "clrType": "System.String"
-        },
-        {
           "jsonName": "rgbw_color",
           "cSharpName": "RgbwColor",
           "clrType": null
+        },
+        {
+          "jsonName": "entity_id",
+          "cSharpName": "EntityId",
+          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.String]"
         },
         {
           "jsonName": "icon",
@@ -236,9 +276,24 @@
           "clrType": "System.String"
         },
         {
-          "jsonName": "restored",
-          "cSharpName": "Restored",
+          "jsonName": "supported_features",
+          "cSharpName": "SupportedFeatures",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "raw_state",
+          "cSharpName": "RawState",
           "clrType": "System.Boolean"
+        },
+        {
+          "jsonName": "off_with_transition",
+          "cSharpName": "OffWithTransition",
+          "clrType": "System.Boolean"
+        },
+        {
+          "jsonName": "off_brightness",
+          "cSharpName": "OffBrightness",
+          "clrType": null
         }
       ]
     },
@@ -266,11 +321,6 @@
           "cSharpName": "HammletOledTv"
         },
         {
-          "id": "media_player.lg_webos_tv_ea88",
-          "friendlyName": "LG webOS TV EA88",
-          "cSharpName": "LgWebosTvEa88"
-        },
-        {
           "id": "media_player.spotify_scarlet_checkers",
           "friendlyName": "Spotify Scarlet Checkers",
           "cSharpName": "SpotifyScarletCheckers"
@@ -283,131 +333,6 @@
       ],
       "attributes": [
         {
-          "jsonName": "app_id",
-          "cSharpName": "AppId",
-          "clrType": "System.String"
-        },
-        {
-          "jsonName": "app_name",
-          "cSharpName": "AppName",
-          "clrType": "System.String"
-        },
-        {
-          "jsonName": "device_class",
-          "cSharpName": "DeviceClass",
-          "clrType": "System.String"
-        },
-        {
-          "jsonName": "entity_picture_local",
-          "cSharpName": "EntityPictureLocal",
-          "clrType": "System.String"
-        },
-        {
-          "jsonName": "entity_picture",
-          "cSharpName": "EntityPicture",
-          "clrType": "System.String"
-        },
-        {
-          "jsonName": "icon",
-          "cSharpName": "Icon",
-          "clrType": "System.String"
-        },
-        {
-          "jsonName": "friendly_name",
-          "cSharpName": "FriendlyName",
-          "clrType": "System.String"
-        },
-        {
-          "jsonName": "supported_features",
-          "cSharpName": "SupportedFeatures",
-          "clrType": "System.Double"
-        },
-        {
-          "jsonName": "volume_level",
-          "cSharpName": "VolumeLevel",
-          "clrType": "System.Double"
-        },
-        {
-          "jsonName": "is_volume_muted",
-          "cSharpName": "IsVolumeMuted",
-          "clrType": "System.Boolean"
-        },
-        {
-          "jsonName": "media_content_id",
-          "cSharpName": "MediaContentId",
-          "clrType": "System.String"
-        },
-        {
-          "jsonName": "media_content_type",
-          "cSharpName": "MediaContentType",
-          "clrType": "System.String"
-        },
-        {
-          "jsonName": "media_duration",
-          "cSharpName": "MediaDuration",
-          "clrType": "System.Double"
-        },
-        {
-          "jsonName": "media_position",
-          "cSharpName": "MediaPosition",
-          "clrType": "System.Double"
-        },
-        {
-          "jsonName": "media_position_updated_at",
-          "cSharpName": "MediaPositionUpdatedAt",
-          "clrType": "System.String"
-        },
-        {
-          "jsonName": "media_title",
-          "cSharpName": "MediaTitle",
-          "clrType": "System.String"
-        },
-        {
-          "jsonName": "media_album_name",
-          "cSharpName": "MediaAlbumName",
-          "clrType": "System.String"
-        },
-        {
-          "jsonName": "media_image_url",
-          "cSharpName": "MediaImageUrl",
-          "clrType": "System.String"
-        },
-        {
-          "jsonName": "media_artist",
-          "cSharpName": "MediaArtist",
-          "clrType": "System.String"
-        },
-        {
-          "jsonName": "sound_mode_list",
-          "cSharpName": "SoundModeList",
-          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.String]"
-        },
-        {
-          "jsonName": "media_track",
-          "cSharpName": "MediaTrack",
-          "clrType": "System.Object"
-        },
-        {
-          "jsonName": "shuffle",
-          "cSharpName": "Shuffle",
-          "clrType": "System.Boolean"
-        },
-        {
-          "jsonName": "repeat",
-          "cSharpName": "Repeat",
-          "clrType": "System.String"
-        },
-        {
-          "jsonName": "source_list",
-          "cSharpName": "SourceList",
-          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.String]"
-        },
-        {
-          "jsonName": "source",
-          "cSharpName": "Source",
-          "clrType": "System.String"
-        },
-        {
           "jsonName": "adb_response",
           "cSharpName": "AdbResponse",
           "clrType": "System.Object"
@@ -416,11 +341,6 @@
           "jsonName": "hdmi_input",
           "cSharpName": "HdmiInput",
           "clrType": "System.Object"
-        },
-        {
-          "jsonName": "sound_mode",
-          "cSharpName": "SoundMode",
-          "clrType": "System.String"
         },
         {
           "jsonName": "sound_mode_raw",
@@ -486,6 +406,121 @@
           "jsonName": "sound_output",
           "cSharpName": "SoundOutput",
           "clrType": "System.String"
+        },
+        {
+          "jsonName": "source_list",
+          "cSharpName": "SourceList",
+          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.String]"
+        },
+        {
+          "jsonName": "device_class",
+          "cSharpName": "DeviceClass",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "entity_picture",
+          "cSharpName": "EntityPicture",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "friendly_name",
+          "cSharpName": "FriendlyName",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "supported_features",
+          "cSharpName": "SupportedFeatures",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "icon",
+          "cSharpName": "Icon",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "volume_level",
+          "cSharpName": "VolumeLevel",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "is_volume_muted",
+          "cSharpName": "IsVolumeMuted",
+          "clrType": "System.Boolean"
+        },
+        {
+          "jsonName": "media_content_id",
+          "cSharpName": "MediaContentId",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "media_content_type",
+          "cSharpName": "MediaContentType",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "media_duration",
+          "cSharpName": "MediaDuration",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "media_position",
+          "cSharpName": "MediaPosition",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "media_position_updated_at",
+          "cSharpName": "MediaPositionUpdatedAt",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "media_title",
+          "cSharpName": "MediaTitle",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "app_id",
+          "cSharpName": "AppId",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "app_name",
+          "cSharpName": "AppName",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "entity_picture_local",
+          "cSharpName": "EntityPictureLocal",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "media_artist",
+          "cSharpName": "MediaArtist",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "media_album_name",
+          "cSharpName": "MediaAlbumName",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "media_track",
+          "cSharpName": "MediaTrack",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "source",
+          "cSharpName": "Source",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "shuffle",
+          "cSharpName": "Shuffle",
+          "clrType": "System.Boolean"
+        },
+        {
+          "jsonName": "repeat",
+          "cSharpName": "Repeat",
+          "clrType": "System.String"
         }
       ]
     },
@@ -541,6 +576,11 @@
           "id": "automation.lights_dimmer",
           "friendlyName": "Lights Dimmer",
           "cSharpName": "LightsDimmer"
+        },
+        {
+          "id": "automation.office_dimmer_magic",
+          "friendlyName": "Office Dimmer Magic",
+          "cSharpName": "OfficeDimmerMagic"
         },
         {
           "id": "automation.pants_emergency_05_return_to_normal_when_emgency_over",
@@ -601,6 +641,11 @@
           "id": "automation.return_to_playlist",
           "friendlyName": "Return to playlist",
           "cSharpName": "ReturnToPlaylist"
+        },
+        {
+          "id": "automation.shelly_dimmer_2_long_press_down_detached_momentary_switch",
+          "friendlyName": "Shelly Dimmer 2 Long Press Down - Detached Momentary Switch",
+          "cSharpName": "ShellyDimmer2LongPressDownDetachedMomentarySwitch"
         },
         {
           "id": "automation.start_emergency_when_mikaela_plays_dance_yrself_clean",
@@ -690,6 +735,16 @@
           "cSharpName": "HammletSoundsystemCloudConnection"
         },
         {
+          "id": "binary_sensor.office_dimmer_channel_1_input",
+          "friendlyName": "Office Dimmer channel 1 input",
+          "cSharpName": "OfficeDimmerChannel1Input"
+        },
+        {
+          "id": "binary_sensor.office_dimmer_channel_2_input",
+          "friendlyName": "Office Dimmer channel 2 input",
+          "cSharpName": "OfficeDimmerChannel2Input"
+        },
+        {
           "id": "binary_sensor.office_dimmer_overheating",
           "friendlyName": "Office Dimmer overheating",
           "cSharpName": "OfficeDimmerOverheating"
@@ -710,13 +765,48 @@
           "cSharpName": "RpiPowerStatus"
         },
         {
+          "id": "binary_sensor.slim_multi_sensor_pir_door_temperature_illumination_low_battery_level",
+          "friendlyName": "Indoor Multi-Sensor Low battery level",
+          "cSharpName": "SlimMultiSensorPirDoorTemperatureIlluminationLowBatteryLevel"
+        },
+        {
+          "id": "binary_sensor.slim_multi_sensor_pir_door_temperature_illumination_motion_detection",
+          "friendlyName": "Indoor Multi-Sensor Motion detection",
+          "cSharpName": "SlimMultiSensorPirDoorTemperatureIlluminationMotionDetection"
+        },
+        {
+          "id": "binary_sensor.slim_multi_sensor_pir_door_temperature_illumination_tampering_product_cover_removed",
+          "friendlyName": "Indoor Multi-Sensor Tampering, product cover removed",
+          "cSharpName": "SlimMultiSensorPirDoorTemperatureIlluminationTamperingProductCoverRemoved"
+        },
+        {
+          "id": "binary_sensor.slim_multi_sensor_pir_door_temperature_illumination_window_door_is_open",
+          "friendlyName": "Indoor Multi-Sensor Window/door is open",
+          "cSharpName": "SlimMultiSensorPirDoorTemperatureIlluminationWindowDoorIsOpen"
+        },
+        {
+          "id": "binary_sensor.slim_multi_sensor_pir_door_temperature_illumination_window_door_is_open_2",
+          "friendlyName": "Indoor Multi-Sensor Window/door is open",
+          "cSharpName": "SlimMultiSensorPirDoorTemperatureIlluminationWindowDoorIsOpen2"
+        },
+        {
+          "id": "binary_sensor.slim_multi_sensor_pir_door_temperature_illumination_window_door_is_open_in_regular_position",
+          "friendlyName": "Indoor Multi-Sensor Window/door is open in regular position",
+          "cSharpName": "SlimMultiSensorPirDoorTemperatureIlluminationWindowDoorIsOpenInRegularPosition"
+        },
+        {
+          "id": "binary_sensor.slim_multi_sensor_pir_door_temperature_illumination_window_door_is_open_in_tilt_position",
+          "friendlyName": "Indoor Multi-Sensor Window/door is open in tilt position",
+          "cSharpName": "SlimMultiSensorPirDoorTemperatureIlluminationWindowDoorIsOpenInTiltPosition"
+        },
+        {
           "id": "binary_sensor.slzb_06m_ethernet",
-          "friendlyName": "SLZB-06M Ethernet",
+          "friendlyName": "Ethernet",
           "cSharpName": "Slzb06mEthernet"
         },
         {
           "id": "binary_sensor.slzb_06m_internet",
-          "friendlyName": "SLZB-06M Internet",
+          "friendlyName": "Internet",
           "cSharpName": "Slzb06mInternet"
         },
         {
@@ -726,8 +816,13 @@
         },
         {
           "id": "binary_sensor.tapo_smart_dimmer_cloud_connection",
-          "friendlyName": "Tentacle Lamp Cloud connection",
+          "friendlyName": "Tapo Smart_Dimmer Cloud connection",
           "cSharpName": "TapoSmartDimmerCloudConnection"
+        },
+        {
+          "id": "binary_sensor.tapo_smart_dimmer_overheated",
+          "friendlyName": "Tapo Smart_Dimmer Overheated",
+          "cSharpName": "TapoSmartDimmerOverheated"
         },
         {
           "id": "binary_sensor.tentacle_lamp_cloud_connection",
@@ -782,9 +877,9 @@
           "cSharpName": "GoogleAssistantSynchronizeDevices"
         },
         {
-          "id": "button.lg_webos_tv_ea88_identify",
-          "friendlyName": "LG webOS TV EA88 Identify",
-          "cSharpName": "LgWebosTvEa88Identify"
+          "id": "button.node_3_ping",
+          "friendlyName": "Indoor Multi-Sensor Ping",
+          "cSharpName": "Node3Ping"
         },
         {
           "id": "button.node_alive_remote_ping",
@@ -797,34 +892,49 @@
           "cSharpName": "OfficeDimmerReboot"
         },
         {
+          "id": "button.slim_multi_sensor_pir_door_temperature_illumination_idle_home_security_cover_status",
+          "friendlyName": "Indoor Multi-Sensor Idle Home Security Cover status",
+          "cSharpName": "SlimMultiSensorPirDoorTemperatureIlluminationIdleHomeSecurityCoverStatus"
+        },
+        {
+          "id": "button.slim_multi_sensor_pir_door_temperature_illumination_idle_home_security_motion_sensor_status",
+          "friendlyName": "Indoor Multi-Sensor Idle Home Security Motion sensor status",
+          "cSharpName": "SlimMultiSensorPirDoorTemperatureIlluminationIdleHomeSecurityMotionSensorStatus"
+        },
+        {
           "id": "button.slzb_06m_core_restart",
-          "friendlyName": "SLZB-06M Core restart",
+          "friendlyName": "Core restart",
           "cSharpName": "Slzb06mCoreRestart"
         },
         {
           "id": "button.slzb_06m_zigbee_restart",
-          "friendlyName": "SLZB-06M Zigbee restart",
+          "friendlyName": "Zigbee restart",
           "cSharpName": "Slzb06mZigbeeRestart"
         },
         {
           "id": "button.smart_rgbtw_bulb_identify",
-          "friendlyName": "Smart RGBTW Bulb Identify",
+          "friendlyName": "Identify",
           "cSharpName": "SmartRgbtwBulbIdentify"
         },
         {
           "id": "button.smart_rgbtw_bulb_identify_2",
-          "friendlyName": "Smart RGBTW Bulb Identify",
+          "friendlyName": "Identify",
           "cSharpName": "SmartRgbtwBulbIdentify2"
         },
         {
           "id": "button.smart_wi_fi_lamp_dimmer_identify",
-          "friendlyName": "Smart Wi-Fi Lamp Dimmer Identify",
+          "friendlyName": "Identify",
           "cSharpName": "SmartWiFiLampDimmerIdentify"
         },
         {
           "id": "button.smart_wi_fi_lamp_dimmer_identify_2",
-          "friendlyName": "Smart Wi-Fi Lamp Dimmer Identify",
+          "friendlyName": "Identify",
           "cSharpName": "SmartWiFiLampDimmerIdentify2"
+        },
+        {
+          "id": "button.smart_wi_fi_lamp_dimmer_identify_3",
+          "friendlyName": "Smart Wi-Fi Lamp Dimmer Identify",
+          "cSharpName": "SmartWiFiLampDimmerIdentify3"
         },
         {
           "id": "button.zigbee2mqtt_bridge_restart",
@@ -1015,6 +1125,16 @@
           "cSharpName": "HammlightsDimmer"
         },
         {
+          "id": "event.office_dimmer_channel_1",
+          "friendlyName": "Office Dimmer channel 1",
+          "cSharpName": "OfficeDimmerChannel1"
+        },
+        {
+          "id": "event.office_dimmer_channel_2",
+          "friendlyName": "Office Dimmer channel 2",
+          "cSharpName": "OfficeDimmerChannel2"
+        },
+        {
           "id": "event.wireless_switch_3241_button",
           "friendlyName": "Wireless Switch 3241 Button",
           "cSharpName": "WirelessSwitch3241Button"
@@ -1114,19 +1234,19 @@
           "cSharpName": "ControllerFlash"
         },
         {
-          "id": "input_boolean.netdaemon_app_model_hello_yaml_app",
-          "friendlyName": "netdaemon_app_model_hello_yaml_app",
-          "cSharpName": "NetdaemonAppModelHelloYamlApp"
+          "id": "input_boolean.netdaemon_hammlet_apps_lights_watch_for_reference_lights",
+          "friendlyName": "netdaemon_hammlet_apps_lights_watch_for_reference_lights",
+          "cSharpName": "NetdaemonHammletAppsLightsWatchForReferenceLights"
         },
         {
-          "id": "input_boolean.netdaemon_hass_model_hello_world_app",
-          "friendlyName": "netdaemon_hass_model_hello_world_app",
-          "cSharpName": "NetdaemonHassModelHelloWorldApp"
+          "id": "input_boolean.netdaemon_hammlet_net_daemon_apps_media_management_turn_on_tv_for_video",
+          "friendlyName": "netdaemon_hammlet_net_daemon_apps_media_management_turn_on_tv_for_video",
+          "cSharpName": "NetdaemonHammletNetDaemonAppsMediaManagementTurnOnTvForVideo"
         },
         {
-          "id": "input_boolean.netdaemon_hass_model_light_on_movement",
-          "friendlyName": "netdaemon_hass_model_light_on_movement",
-          "cSharpName": "NetdaemonHassModelLightOnMovement"
+          "id": "input_boolean.netdaemon_hammlet_net_daemon_apps_media_on_youtube_music_playlist_changed",
+          "friendlyName": "netdaemon_hammlet_net_daemon_apps_media_on_youtube_music_playlist_changed",
+          "cSharpName": "NetdaemonHammletNetDaemonAppsMediaOnYoutubeMusicPlaylistChanged"
         },
         {
           "id": "input_boolean.netdaemon_hass_model_scene_on_button",
@@ -1453,82 +1573,97 @@
         },
         {
           "id": "number.smart_rgbtw_bulb_off_transition_time",
-          "friendlyName": "Smart RGBTW Bulb Off transition time",
+          "friendlyName": "Off transition time",
           "cSharpName": "SmartRgbtwBulbOffTransitionTime"
         },
         {
           "id": "number.smart_rgbtw_bulb_off_transition_time_2",
-          "friendlyName": "Smart RGBTW Bulb Off transition time",
+          "friendlyName": "Off transition time",
           "cSharpName": "SmartRgbtwBulbOffTransitionTime2"
         },
         {
           "id": "number.smart_rgbtw_bulb_on_level",
-          "friendlyName": "Smart RGBTW Bulb On level",
+          "friendlyName": "On level",
           "cSharpName": "SmartRgbtwBulbOnLevel"
         },
         {
           "id": "number.smart_rgbtw_bulb_on_level_2",
-          "friendlyName": "Smart RGBTW Bulb On level",
+          "friendlyName": "On level",
           "cSharpName": "SmartRgbtwBulbOnLevel2"
         },
         {
           "id": "number.smart_rgbtw_bulb_on_off_transition_time",
-          "friendlyName": "Smart RGBTW Bulb On/Off transition time",
+          "friendlyName": "On/Off transition time",
           "cSharpName": "SmartRgbtwBulbOnOffTransitionTime"
         },
         {
           "id": "number.smart_rgbtw_bulb_on_off_transition_time_2",
-          "friendlyName": "Smart RGBTW Bulb On/Off transition time",
+          "friendlyName": "On/Off transition time",
           "cSharpName": "SmartRgbtwBulbOnOffTransitionTime2"
         },
         {
           "id": "number.smart_rgbtw_bulb_on_transition_time",
-          "friendlyName": "Smart RGBTW Bulb On transition time",
+          "friendlyName": "On transition time",
           "cSharpName": "SmartRgbtwBulbOnTransitionTime"
         },
         {
           "id": "number.smart_rgbtw_bulb_on_transition_time_2",
-          "friendlyName": "Smart RGBTW Bulb On transition time",
+          "friendlyName": "On transition time",
           "cSharpName": "SmartRgbtwBulbOnTransitionTime2"
         },
         {
           "id": "number.smart_wi_fi_lamp_dimmer_off_transition_time",
-          "friendlyName": "Smart Wi-Fi Lamp Dimmer Off transition time",
+          "friendlyName": "Off transition time",
           "cSharpName": "SmartWiFiLampDimmerOffTransitionTime"
         },
         {
           "id": "number.smart_wi_fi_lamp_dimmer_off_transition_time_2",
-          "friendlyName": "Smart Wi-Fi Lamp Dimmer Off transition time",
+          "friendlyName": "Off transition time",
           "cSharpName": "SmartWiFiLampDimmerOffTransitionTime2"
         },
         {
+          "id": "number.smart_wi_fi_lamp_dimmer_off_transition_time_3",
+          "friendlyName": "Smart Wi-Fi Lamp Dimmer Off transition time",
+          "cSharpName": "SmartWiFiLampDimmerOffTransitionTime3"
+        },
+        {
           "id": "number.smart_wi_fi_lamp_dimmer_on_level",
-          "friendlyName": "Smart Wi-Fi Lamp Dimmer On level",
+          "friendlyName": "On level",
           "cSharpName": "SmartWiFiLampDimmerOnLevel"
         },
         {
           "id": "number.smart_wi_fi_lamp_dimmer_on_level_2",
-          "friendlyName": "Smart Wi-Fi Lamp Dimmer On level",
+          "friendlyName": "On level",
           "cSharpName": "SmartWiFiLampDimmerOnLevel2"
         },
         {
+          "id": "number.smart_wi_fi_lamp_dimmer_on_level_3",
+          "friendlyName": "Smart Wi-Fi Lamp Dimmer On level",
+          "cSharpName": "SmartWiFiLampDimmerOnLevel3"
+        },
+        {
           "id": "number.smart_wi_fi_lamp_dimmer_on_transition_time",
-          "friendlyName": "Smart Wi-Fi Lamp Dimmer On transition time",
+          "friendlyName": "On transition time",
           "cSharpName": "SmartWiFiLampDimmerOnTransitionTime"
         },
         {
           "id": "number.smart_wi_fi_lamp_dimmer_on_transition_time_2",
-          "friendlyName": "Smart Wi-Fi Lamp Dimmer On transition time",
+          "friendlyName": "On transition time",
           "cSharpName": "SmartWiFiLampDimmerOnTransitionTime2"
         },
         {
+          "id": "number.smart_wi_fi_lamp_dimmer_on_transition_time_3",
+          "friendlyName": "Smart Wi-Fi Lamp Dimmer On transition time",
+          "cSharpName": "SmartWiFiLampDimmerOnTransitionTime3"
+        },
+        {
           "id": "number.tapo_smart_dimmer_smooth_off",
-          "friendlyName": "Tentacle Lamp Smooth off",
+          "friendlyName": "Tapo Smart_Dimmer Smooth off",
           "cSharpName": "TapoSmartDimmerSmoothOff"
         },
         {
           "id": "number.tapo_smart_dimmer_smooth_on",
-          "friendlyName": "Tentacle Lamp Smooth on",
+          "friendlyName": "Tapo Smart_Dimmer Smooth on",
           "cSharpName": "TapoSmartDimmerSmoothOn"
         },
         {
@@ -1592,6 +1727,16 @@
           "jsonName": "unit_of_measurement",
           "cSharpName": "UnitOfMeasurement",
           "clrType": "System.String"
+        },
+        {
+          "jsonName": "restored",
+          "cSharpName": "Restored",
+          "clrType": "System.Boolean"
+        },
+        {
+          "jsonName": "supported_features",
+          "cSharpName": "SupportedFeatures",
+          "clrType": "System.Double"
         }
       ]
     },
@@ -1815,6 +1960,11 @@
           "cSharpName": "ToggleInput"
         },
         {
+          "id": "script.toggle_mute",
+          "friendlyName": "Toggle Mute",
+          "cSharpName": "ToggleMute"
+        },
+        {
           "id": "script.toggle_projector",
           "friendlyName": "Toggle Projector",
           "cSharpName": "ToggleProjector"
@@ -1840,6 +1990,11 @@
           "jsonName": "friendly_name",
           "cSharpName": "FriendlyName",
           "clrType": "System.String"
+        },
+        {
+          "jsonName": "max",
+          "cSharpName": "Max",
+          "clrType": "System.Double"
         }
       ]
     },
@@ -1862,6 +2017,11 @@
           "cSharpName": "BrightOffScene"
         },
         {
+          "id": "select.default_light_color_power_on_behavior",
+          "friendlyName": "default_light Color power on behavior",
+          "cSharpName": "DefaultLightColorPowerOnBehavior"
+        },
+        {
           "id": "select.dinner_time_off_scene",
           "friendlyName": "Dinner Time Off Scene",
           "cSharpName": "DinnerTimeOffScene"
@@ -1882,6 +2042,16 @@
           "cSharpName": "HangoutOffScene"
         },
         {
+          "id": "select.kitchen_switch_power_on_behavior",
+          "friendlyName": "Kitchen Switch Power-on behavior",
+          "cSharpName": "KitchenSwitchPowerOnBehavior"
+        },
+        {
+          "id": "select.liminal_switch_power_on_behavior",
+          "friendlyName": "Liminal Switch Power-on behavior",
+          "cSharpName": "LiminalSwitchPowerOnBehavior"
+        },
+        {
           "id": "select.night_off_scene",
           "friendlyName": "Night Off Scene",
           "cSharpName": "NightOffScene"
@@ -1892,9 +2062,14 @@
           "cSharpName": "NormalButtsOffScene"
         },
         {
-          "id": "select.office_switch_power_on_behavior",
-          "friendlyName": "Office Switch Power-on behavior",
-          "cSharpName": "OfficeSwitchPowerOnBehavior"
+          "id": "select.outdoor_succulent_sensor_temperature_unit",
+          "friendlyName": "Outdoor Succulent Sensor Temperature unit",
+          "cSharpName": "OutdoorSucculentSensorTemperatureUnit"
+        },
+        {
+          "id": "select.outdoor_switch_power_on_behavior",
+          "friendlyName": "Outdoor Switch Power-on behavior",
+          "cSharpName": "OutdoorSwitchPowerOnBehavior"
         },
         {
           "id": "select.pants_emergency_start_off_off_scene",
@@ -1918,27 +2093,32 @@
         },
         {
           "id": "select.smart_rgbtw_bulb_power_on_behavior_on_startup",
-          "friendlyName": "Smart RGBTW Bulb Power-on behavior on startup",
+          "friendlyName": "Power-on behavior on startup",
           "cSharpName": "SmartRgbtwBulbPowerOnBehaviorOnStartup"
         },
         {
           "id": "select.smart_rgbtw_bulb_power_on_behavior_on_startup_2",
-          "friendlyName": "Smart RGBTW Bulb Power-on behavior on startup",
+          "friendlyName": "Power-on behavior on startup",
           "cSharpName": "SmartRgbtwBulbPowerOnBehaviorOnStartup2"
         },
         {
           "id": "select.smart_wi_fi_lamp_dimmer_power_on_behavior_on_startup",
-          "friendlyName": "Smart Wi-Fi Lamp Dimmer Power-on behavior on startup",
+          "friendlyName": "Power-on behavior on startup",
           "cSharpName": "SmartWiFiLampDimmerPowerOnBehaviorOnStartup"
         },
         {
           "id": "select.smart_wi_fi_lamp_dimmer_power_on_behavior_on_startup_2",
-          "friendlyName": "Smart Wi-Fi Lamp Dimmer Power-on behavior on startup",
+          "friendlyName": "Power-on behavior on startup",
           "cSharpName": "SmartWiFiLampDimmerPowerOnBehaviorOnStartup2"
         },
         {
+          "id": "select.smart_wi_fi_lamp_dimmer_power_on_behavior_on_startup_3",
+          "friendlyName": "Smart Wi-Fi Lamp Dimmer Power-on behavior on startup",
+          "cSharpName": "SmartWiFiLampDimmerPowerOnBehaviorOnStartup3"
+        },
+        {
           "id": "select.tapo_smart_dimmer_light_preset",
-          "friendlyName": "Tentacle Lamp Light preset",
+          "friendlyName": "Tapo Smart_Dimmer Light preset",
           "cSharpName": "TapoSmartDimmerLightPreset"
         },
         {
@@ -1997,6 +2177,16 @@
           "jsonName": "icon",
           "cSharpName": "Icon",
           "clrType": "System.String"
+        },
+        {
+          "jsonName": "restored",
+          "cSharpName": "Restored",
+          "clrType": "System.Boolean"
+        },
+        {
+          "jsonName": "supported_features",
+          "cSharpName": "SupportedFeatures",
+          "clrType": "System.Double"
         }
       ]
     },
@@ -2109,6 +2299,16 @@
           "cSharpName": "MikaelaChargerType"
         },
         {
+          "id": "sensor.node_3_last_seen",
+          "friendlyName": "Indoor Multi-Sensor Last seen",
+          "cSharpName": "Node3LastSeen"
+        },
+        {
+          "id": "sensor.node_3_node_status",
+          "friendlyName": "Indoor Multi-Sensor Node status",
+          "cSharpName": "Node3NodeStatus"
+        },
+        {
           "id": "sensor.node_alive_remote_last_seen",
           "friendlyName": "Alive Remote Last seen",
           "cSharpName": "NodeAliveRemoteLastSeen"
@@ -2117,6 +2317,11 @@
           "id": "sensor.node_alive_remote_node_status",
           "friendlyName": "Alive Remote Node status",
           "cSharpName": "NodeAliveRemoteNodeStatus"
+        },
+        {
+          "id": "sensor.outdoor_succulent_sensor_battery_state",
+          "friendlyName": "Outdoor Succulent Sensor Battery state",
+          "cSharpName": "OutdoorSucculentSensorBatteryState"
         },
         {
           "id": "sensor.pixel_8_battery_state",
@@ -2130,17 +2335,17 @@
         },
         {
           "id": "sensor.slzb_06m_connection_mode",
-          "friendlyName": "SLZB-06M Connection mode",
+          "friendlyName": "Connection mode",
           "cSharpName": "Slzb06mConnectionMode"
         },
         {
           "id": "sensor.slzb_06m_firmware_channel",
-          "friendlyName": "SLZB-06M Firmware channel",
+          "friendlyName": "Firmware channel",
           "cSharpName": "Slzb06mFirmwareChannel"
         },
         {
           "id": "sensor.slzb_06m_zigbee_type",
-          "friendlyName": "SLZB-06M Zigbee type",
+          "friendlyName": "Zigbee type",
           "cSharpName": "Slzb06mZigbeeType"
         },
         {
@@ -2220,7 +2425,7 @@
         },
         {
           "id": "sensor.tapo_smart_dimmer_signal_level",
-          "friendlyName": "Tentacle Lamp Signal level",
+          "friendlyName": "Tapo Smart_Dimmer Signal level",
           "cSharpName": "TapoSmartDimmerSignalLevel"
         },
         {
@@ -2322,8 +2527,13 @@
         },
         {
           "jsonName": "Location",
-          "cSharpName": "Location",
+          "cSharpName": "Location_0",
           "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.Double]"
+        },
+        {
+          "jsonName": "location",
+          "cSharpName": "Location_1",
+          "clrType": "System.String"
         },
         {
           "jsonName": "Name",
@@ -2423,12 +2633,12 @@
         {
           "jsonName": "tracks",
           "cSharpName": "Tracks",
-          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.String]"
+          "clrType": "System.Object"
         },
         {
           "jsonName": "search",
           "cSharpName": "Search",
-          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.Object]"
+          "clrType": "System.Object"
         },
         {
           "jsonName": "lyrics",
@@ -2438,7 +2648,37 @@
         {
           "jsonName": "total_tracks",
           "cSharpName": "TotalTracks",
-          "clrType": "System.Double"
+          "clrType": "System.Object"
+        },
+        {
+          "jsonName": "info",
+          "cSharpName": "Info",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "serial",
+          "cSharpName": "Serial",
+          "clrType": null
+        },
+        {
+          "jsonName": "state_message",
+          "cSharpName": "StateMessage",
+          "clrType": null
+        },
+        {
+          "jsonName": "state_reason",
+          "cSharpName": "StateReason",
+          "clrType": null
+        },
+        {
+          "jsonName": "command_set",
+          "cSharpName": "CommandSet",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "uri_supported",
+          "cSharpName": "UriSupported",
+          "clrType": "System.String"
         }
       ]
     },
@@ -2502,18 +2742,48 @@
           "cSharpName": "MikaelaBatteryLevel"
         },
         {
+          "id": "sensor.outdoor_succulent_sensor_battery",
+          "friendlyName": "Outdoor Succulent Sensor Battery",
+          "cSharpName": "OutdoorSucculentSensorBattery"
+        },
+        {
+          "id": "sensor.outdoor_succulent_sensor_soil_moisture",
+          "friendlyName": "Outdoor Succulent Sensor Moisture",
+          "cSharpName": "OutdoorSucculentSensorSoilMoisture"
+        },
+        {
+          "id": "sensor.outdoor_succulent_sensor_temperature",
+          "friendlyName": "Outdoor Succulent Sensor Temperature",
+          "cSharpName": "OutdoorSucculentSensorTemperature"
+        },
+        {
           "id": "sensor.pixel_8_battery_level",
           "friendlyName": "Pixel 8 Battery level",
           "cSharpName": "Pixel8BatteryLevel"
         },
         {
+          "id": "sensor.slim_multi_sensor_pir_door_temperature_illumination_air_temperature",
+          "friendlyName": "Indoor Multi-Sensor Air temperature",
+          "cSharpName": "SlimMultiSensorPirDoorTemperatureIlluminationAirTemperature"
+        },
+        {
+          "id": "sensor.slim_multi_sensor_pir_door_temperature_illumination_battery_level",
+          "friendlyName": "Indoor Multi-Sensor Battery level",
+          "cSharpName": "SlimMultiSensorPirDoorTemperatureIlluminationBatteryLevel"
+        },
+        {
+          "id": "sensor.slim_multi_sensor_pir_door_temperature_illumination_illuminance",
+          "friendlyName": "Indoor Multi-Sensor Illuminance",
+          "cSharpName": "SlimMultiSensorPirDoorTemperatureIlluminationIlluminance"
+        },
+        {
           "id": "sensor.slzb_06m_core_chip_temp",
-          "friendlyName": "SLZB-06M Core chip temp",
+          "friendlyName": "Core chip temp",
           "cSharpName": "Slzb06mCoreChipTemp"
         },
         {
           "id": "sensor.slzb_06m_zigbee_chip_temp",
-          "friendlyName": "SLZB-06M Zigbee chip temp",
+          "friendlyName": "Zigbee chip temp",
           "cSharpName": "Slzb06mZigbeeChipTemp"
         },
         {
@@ -2580,11 +2850,6 @@
           "id": "sensor.wireless_switch_6105_voltage",
           "friendlyName": "Wireless Switch 6105 Voltage",
           "cSharpName": "WirelessSwitch6105Voltage"
-        },
-        {
-          "id": "sensor.zigbee2mqtt_bridge_permit_join_timeout",
-          "friendlyName": "Zigbee2MQTT Bridge Permit join timeout",
-          "cSharpName": "Zigbee2mqttBridgePermitJoinTimeout"
         }
       ],
       "attributes": [
@@ -2646,6 +2911,31 @@
         {
           "jsonName": "supported_features",
           "cSharpName": "SupportedFeatures",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "marker_high_level",
+          "cSharpName": "MarkerHighLevel",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "marker_low_level",
+          "cSharpName": "MarkerLowLevel",
+          "clrType": "System.Double"
+        },
+        {
+          "jsonName": "marker_type",
+          "cSharpName": "MarkerType",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "battery_size",
+          "cSharpName": "BatterySize",
+          "clrType": "System.String"
+        },
+        {
+          "jsonName": "battery_quantity",
+          "cSharpName": "BatteryQuantity",
           "clrType": "System.Double"
         }
       ]
@@ -2766,6 +3056,11 @@
           "cSharpName": "BrightStatefulScene"
         },
         {
+          "id": "switch.default_light_do_not_disturb",
+          "friendlyName": "default_light Do not disturb",
+          "cSharpName": "DefaultLightDoNotDisturb"
+        },
+        {
           "id": "switch.dinner_time_ignore_unavailable",
           "friendlyName": "Dinner Time Ignore Unavailable",
           "cSharpName": "DinnerTimeIgnoreUnavailable"
@@ -2826,9 +3121,14 @@
           "cSharpName": "HangoutStatefulScene"
         },
         {
-          "id": "switch.lg_webos_tv_ea88_mute",
-          "friendlyName": "LG webOS TV EA88 Mute",
-          "cSharpName": "LgWebosTvEa88Mute"
+          "id": "switch.kitchen_switch",
+          "friendlyName": "Kitchen Switch",
+          "cSharpName": "KitchenSwitch"
+        },
+        {
+          "id": "switch.liminal_switch",
+          "friendlyName": "Liminal Switch",
+          "cSharpName": "LiminalSwitch"
         },
         {
           "id": "switch.night_ignore_unavailable",
@@ -2861,9 +3161,9 @@
           "cSharpName": "NormalButtsStatefulScene"
         },
         {
-          "id": "switch.office_switch",
-          "friendlyName": "Office Switch",
-          "cSharpName": "OfficeSwitch"
+          "id": "switch.outdoor_switch",
+          "friendlyName": "Outdoor Switch",
+          "cSharpName": "OutdoorSwitch"
         },
         {
           "id": "switch.pants_emergency_start_off_ignore_unavailable",
@@ -2927,12 +3227,12 @@
         },
         {
           "id": "switch.slzb_06m_disable_leds",
-          "friendlyName": "SLZB-06M Disable LEDs",
+          "friendlyName": "Disable LEDs",
           "cSharpName": "Slzb06mDisableLeds"
         },
         {
           "id": "switch.slzb_06m_led_night_mode",
-          "friendlyName": "SLZB-06M LED night mode",
+          "friendlyName": "LED night mode",
           "cSharpName": "Slzb06mLedNightMode"
         },
         {
@@ -2942,12 +3242,12 @@
         },
         {
           "id": "switch.tapo_smart_dimmer_auto_update_enabled",
-          "friendlyName": "Tentacle Lamp Auto update enabled",
+          "friendlyName": "Tapo Smart_Dimmer Auto update enabled",
           "cSharpName": "TapoSmartDimmerAutoUpdateEnabled"
         },
         {
           "id": "switch.tapo_smart_dimmer_led",
-          "friendlyName": "Tentacle Lamp LED",
+          "friendlyName": "Tapo Smart_Dimmer LED",
           "cSharpName": "TapoSmartDimmerLed"
         },
         {
@@ -3285,6 +3585,11 @@
           "cSharpName": "ShopThoughtsJeffHamm"
         },
         {
+          "id": "todo.smarthamm_jeff_hamm",
+          "friendlyName": "SmartHamm jeff_hamm",
+          "cSharpName": "SmarthammJeffHamm"
+        },
+        {
           "id": "todo.snick_smudge_a_team_shows_jeff_hamm",
           "friendlyName": "Snick \u0026 Smudge A Team Shows jeff_hamm",
           "cSharpName": "SnickSmudgeATeamShowsJeffHamm"
@@ -3385,6 +3690,11 @@
           "jsonName": "restored",
           "cSharpName": "Restored",
           "clrType": "System.Boolean"
+        },
+        {
+          "jsonName": "overdue_todos",
+          "cSharpName": "OverdueTodos",
+          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.Object]"
         }
       ]
     },
@@ -3510,7 +3820,7 @@
         },
         {
           "id": "update.hammlet_music_wled_firmware",
-          "friendlyName": "Firmware",
+          "friendlyName": "Spamheart Vein 2 Firmware",
           "cSharpName": "HammletMusicWledFirmware"
         },
         {
@@ -3549,6 +3859,11 @@
           "cSharpName": "KioskModeUpdate"
         },
         {
+          "id": "update.kitchen_switch",
+          "friendlyName": "Kitchen Switch",
+          "cSharpName": "KitchenSwitch"
+        },
+        {
           "id": "update.layout_card_update",
           "friendlyName": "layout-card update",
           "cSharpName": "LayoutCardUpdate"
@@ -3569,6 +3884,16 @@
           "cSharpName": "LightenerUpdate"
         },
         {
+          "id": "update.liminal_switch",
+          "friendlyName": "Liminal Switch",
+          "cSharpName": "LiminalSwitch"
+        },
+        {
+          "id": "update.local_tuya_update",
+          "friendlyName": "Local Tuya update",
+          "cSharpName": "LocalTuyaUpdate"
+        },
+        {
           "id": "update.lovelace_weather_icons_update",
           "friendlyName": "Lovelace Weather Icons update",
           "cSharpName": "LovelaceWeatherIconsUpdate"
@@ -3577,6 +3902,11 @@
           "id": "update.matter_server_update",
           "friendlyName": "Matter Server Update",
           "cSharpName": "MatterServerUpdate"
+        },
+        {
+          "id": "update.miflora_card_update",
+          "friendlyName": "Miflora Card update",
+          "cSharpName": "MifloraCardUpdate"
         },
         {
           "id": "update.mini_media_player_update",
@@ -3624,9 +3954,9 @@
           "cSharpName": "Office365Update"
         },
         {
-          "id": "update.office_switch",
-          "friendlyName": "Office Switch",
-          "cSharpName": "OfficeSwitch"
+          "id": "update.outdoor_switch",
+          "friendlyName": "Outdoor Switch",
+          "cSharpName": "OutdoorSwitch"
         },
         {
           "id": "update.pirate_weather_update",
@@ -3674,34 +4004,44 @@
           "cSharpName": "SliderEntityRowUpdate"
         },
         {
+          "id": "update.slim_multi_sensor_pir_door_temperature_illumination_firmware",
+          "friendlyName": "Indoor Multi-Sensor Firmware",
+          "cSharpName": "SlimMultiSensorPirDoorTemperatureIlluminationFirmware"
+        },
+        {
           "id": "update.slzb_06m_core_firmware",
-          "friendlyName": "SLZB-06M Core firmware",
+          "friendlyName": "Core firmware",
           "cSharpName": "Slzb06mCoreFirmware"
         },
         {
           "id": "update.slzb_06m_zigbee_firmware",
-          "friendlyName": "SLZB-06M Zigbee firmware",
+          "friendlyName": "Zigbee firmware",
           "cSharpName": "Slzb06mZigbeeFirmware"
         },
         {
           "id": "update.smart_rgbtw_bulb",
-          "friendlyName": "Smart RGBTW Bulb",
+          "friendlyName": null,
           "cSharpName": "SmartRgbtwBulb"
         },
         {
           "id": "update.smart_rgbtw_bulb_2",
-          "friendlyName": "Smart RGBTW Bulb",
+          "friendlyName": null,
           "cSharpName": "SmartRgbtwBulb2"
         },
         {
           "id": "update.smart_wi_fi_lamp_dimmer",
-          "friendlyName": "Smart Wi-Fi Lamp Dimmer",
+          "friendlyName": null,
           "cSharpName": "SmartWiFiLampDimmer"
         },
         {
           "id": "update.smart_wi_fi_lamp_dimmer_2",
-          "friendlyName": "Smart Wi-Fi Lamp Dimmer",
+          "friendlyName": null,
           "cSharpName": "SmartWiFiLampDimmer2"
+        },
+        {
+          "id": "update.smart_wi_fi_lamp_dimmer_3",
+          "friendlyName": "Smart Wi-Fi Lamp Dimmer",
+          "cSharpName": "SmartWiFiLampDimmer3"
         },
         {
           "id": "update.sonoff_lan_update",
@@ -3737,6 +4077,11 @@
           "id": "update.z_wave_js_ui_update",
           "friendlyName": "Z-Wave JS UI Update",
           "cSharpName": "ZWaveJsUiUpdate"
+        },
+        {
+          "id": "update.zha_toolkit_service_for_advanced_zigbee_usage_update",
+          "friendlyName": "\uD83E\uDDF0 ZHA Toolkit - Service for advanced Zigbee Usage update",
+          "cSharpName": "ZhaToolkitServiceForAdvancedZigbeeUsageUpdate"
         },
         {
           "id": "update.zigbee2mqtt_update",

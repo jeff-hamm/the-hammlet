@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Text.Json;
 using Hammlet.NetDaemon.Models;
+using Hammlet.NetDaemon.Models.Framework;
 using HassModel;
 using NetDaemon.HassModel.Entities;
 
@@ -10,11 +11,20 @@ namespace Hammlet.NetDaemon.apps.Media;
 ///     Showcase using the new HassModel API and turn on light on movement
 /// </summary>
 [NetDaemonApp]
-public class PlaylistTrigger
+public class OnYoutubeMusicPlaylistChanged
 {
-    public PlaylistTrigger(IHaContext ha, SelectEntities entities, MediaPlayerEntities mediaPLayers, SensorEntities sensors, ILogger<PlaylistTrigger> logger)
+    public OnYoutubeMusicPlaylistChanged(IHaContext ha, SelectEntities entities, MediaPlayerEntities mediaPLayers, SensorEntities sensors, ILogger<OnYoutubeMusicPlaylistChanged> logger)
     {
-
+        mediaPLayers.HammletOledTv.StateChanges().Subscribe(e =>
+        {
+            if (e.Old?.State == MediaPlayerStates.On || e.New?.State != MediaPlayerStates.On) return;
+            EnsureHammletCast(mediaPLayers, logger);
+        });
+        mediaPLayers.YtubeMusicPlayer.StateChanges().Subscribe(e =>
+        {
+            if (e.Old?.State == MediaPlayerStates.Playing || e.New?.State != MediaPlayerStates.Playing) return;
+            EnsureHammletCast(mediaPLayers, logger);
+        });
         entities.YtubeMusicPlayerPlaylist.StateChanges().Subscribe(e =>
         {
             if (e.New?.State is not {} playListName)
@@ -45,5 +55,12 @@ public class PlaylistTrigger
             }
             mediaPLayers.YtubeMusicPlayer.PlayMedia(val,"playlist");
         });
+    }
+
+    private static void EnsureHammletCast(MediaPlayerEntities mediaPLayers, ILogger<OnYoutubeMusicPlaylistChanged> logger)
+    {
+        if (!mediaPLayers.HammletCast.IsOff()) return;
+        logger.LogDebug("Turning on HammletCast just turned on");
+        mediaPLayers.HammletCast.TurnOn();
     }
 }

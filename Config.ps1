@@ -1,11 +1,76 @@
-function Set-Env($Name, $Value) {
-    Set-Variable -Name $Name -Value $Value -Scope Global -Force
-    si -Path "Env:\$Name" -Value $Value -Force
+class HammeletDaemon {
+    $Name="hammassistant";
+    $ServerName=$this.Name + ".local";
+    $Port=8123;
+    $ConfigPath="\\$($this.ServerName)\config";
+    $NetDaemonVersion="5"
+    $NetDaemonPath=$this.ConfigPath + "\netdaemon" + $this.NetDaemonVersion
+    $DriveRoot=$this.ConfigPath
+    $PersistDrive=$true
+    $NdSlug="c6a2317c_netdaemon" + $this.NetDaemonVersion
+    $NdJson='{"addon": "' + $this.NdSlug + '"}'
+    $SrcPath=$PSScriptRoot
+    $HaDrive
+    $IsConnected
+    MapDrive() {
+        $Root=$this.DriveRoot
+        if(!$this.HaDrive) {
+            $Credential=(Get-SecretCredential -Name $this.DriveRoot -UserName "homeassistant" -Message "Enter the password for the Home Assistant user for $Root")
+            Get-DriveOrCreate -RootPath $Root -Credential $Credential -Persist
+            $this.HaDrive=$Env:HaDrive=$global:HaDrive=$global:CurrentPSDrive
+        }
+    }
+    Connect() {
+        if(!$this.IsConnected) {
+            Import-Module Home-Assistant
+            $Token = Get-SecretString -Name "HaToken" -AsPlainText
+            $ip=(Resolve-DNSName 'hammassistant' | where Ip4Address -ne $null |  select -ExpandProperty IP4Address)
+            Write-Information "Connecting to $($this.ServerName) [$ip]"
+            New-HomeAssistantSession -ip $ip -port $this.Port -token $Token
+            $this.IsConnected=$true
+        }
+    }
+    InvokeService($service) {
+        $this.Connect()
+        Write-Information "Invoking $service"
+        Invoke-HomeAssistantService -service $service -json $this.NdJson
+    }
+    UpdateTool() {
+        dotnet tool update -g NetDaemon.HassModel.CodeGen
+    }
+    EntityUpdate()
+        $GenArgs=@('-fpe')
+        if($Folder) { $GenArgs += "-f $Folder" }
+        if($HaHost) { $GenArgs += "-host $HaHost" }
+        if($Port) { $GenArgs += "-port $Port" }
+        if($Ssl) { $GenArgs += "-ssl" }
+        if($Token) { $GenArgs += "-token $Token" }
+        if($BypassCert) { $GenArgs += "-bypass-cert" }
+        nd-codegen -fpe @GenArgs
+    }
+    Deploy() {
+        $Token=(Get-SecretString -Name "HaToken")
+        # Point to the HA PowerSHell Module
+        $this.InvokeService("HASSIO.ADDON_STOP")
+        ls -File $this.NetDaemonPath | rm -Force -Recurse Verbose
+        pushd $this.SrcPath
+        try {
+            Write-Information "dotnet publish -c Release Hammlet.csproj -o $this.NetDaemonPath -v d"
+            dotnet publish -c Release "Hammlet.csproj" -o $this.NetDaemonPath 2>&1 | Write-Information
+        }
+        finally {
+            popd
+        }
+        $this.InvokeService("HASSIO.ADDON_START")
+    }
 }
-$Env:HaName=$global:HaName="hammassistant"
-$Env:HaServerName=$Global:HaServerName="$Env:HaName.local"
-$Env:HaConfigPath=$Global:HaConfigPath="\\$Env:HaServerName\config"
-$Env:HaToken=$Global:HaToken='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiI0NWIyMTNiZjk1M2M0NDliODMwYzllMWNlOGIyMzgwYyIsImlhdCI6MTczMzcyNDM3NiwiZXhwIjoyMDQ5MDg0Mzc2fQ.yXDNL8lFhO1WN5IeI-p98kPQj55uCUmGy6P7vr9vNvo'
-$Env:HaNetDaemonPath=$Global:HaNetDaemonPath="$Env:HaConfigPath\netdaemon5"
-$Credential = Get-SecretCredential -Name "\\$Env:HaServerName" -Username="$Env:HaName"
-Get-DriveOrCreate -RootPath "\\$HaServerName\config" -Credential $Credential -Persist
+function ReloadHammelet() {
+    $global:Ha=$Null 
+    $global:Ha=New-Object HammeletDaemon
+    $global:Ha.MapDrive()
+    return $global:Ha
+}
+if($global:Ha) {
+    return $global:Ha
+}
+ReloadHammelet

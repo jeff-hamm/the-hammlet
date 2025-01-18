@@ -1,0 +1,4 @@
+Hammlet.Apps.Lights.ReferenceLight:
+  EntityId: light.reference_light
+  TrackedLights:
+  - light.color_bulbs

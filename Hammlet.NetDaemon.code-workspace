@@ -6,7 +6,14 @@
 		},
 		{
 			"name": "Home Assistant",
-			"path": "H:"
+			"path": "\\\\hammassistant.local"
+		},
+		{
+			"name": "Home Assistant2",
+			"path": "G:\\"
+		},
+		{
+			"path": "../../../Documents/PowerShell"
 		}
 	],
 	"settings": {
