@@ -1,8 +1,6 @@
-using System.Collections;
 using System.Text.Json;
+using Hammlet.Extensions;
 using Hammlet.NetDaemon.Models;
-using Hammlet.NetDaemon.Models.Framework;
-using HassModel;
 using NetDaemon.HassModel.Entities;
 
 namespace Hammlet.NetDaemon.apps.Media;

@@ -1,9 +1,7 @@
 ﻿using CompileTimeProxyGenerator;
-using Copycat;
+using Hammlet.Extensions;
 using Hammlet.NetDaemon.Extensions;
 using Hammlet.NetDaemon.Models;
-using Hammlet.NetDaemon.Models.Framework;
-using NetDaemon.HassModel.Entities;
 
 namespace NetDaemon.HassModel.Entities;
 

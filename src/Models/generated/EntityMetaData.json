@@ -14,6 +14,11 @@
           "cSharpName": "BedroomFanLight"
         },
         {
+          "id": "light.bright_lamp_1",
+          "friendlyName": "Bright Lamp 1",
+          "cSharpName": "BrightLamp1"
+        },
+        {
           "id": "light.color_bulbs",
           "friendlyName": "Color",
           "cSharpName": "ColorBulbs"
@@ -39,14 +44,14 @@
           "cSharpName": "HammletPantry"
         },
         {
-          "id": "light.hammlet_pantry_old",
-          "friendlyName": "Hammlet Pantry",
-          "cSharpName": "HammletPantryOld"
-        },
-        {
           "id": "light.hammlet_wled_music_spamheart_vein_2",
           "friendlyName": "Spamheart Vein 2 Spamheart Vein 2",
           "cSharpName": "HammletWledMusicSpamheartVein2"
+        },
+        {
+          "id": "light.hey_nabu_led_ring",
+          "friendlyName": "Hey Nabu LED Ring",
+          "cSharpName": "HeyNabuLedRing"
         },
         {
           "id": "light.kitchen",
@@ -54,19 +59,9 @@
           "cSharpName": "Kitchen"
         },
         {
-          "id": "light.kitchen_ceiling",
-          "friendlyName": "Kitchen",
-          "cSharpName": "KitchenCeiling"
-        },
-        {
           "id": "light.kitchen_group",
           "friendlyName": "Kitchen",
           "cSharpName": "KitchenGroup"
-        },
-        {
-          "id": "light.kitchen_light2",
-          "friendlyName": "Kitchen",
-          "cSharpName": "KitchenLight2"
         },
         {
           "id": "light.kitchen_switch",
@@ -79,11 +74,6 @@
           "cSharpName": "LaserLamp"
         },
         {
-          "id": "light.liminal",
-          "friendlyName": "Liminal",
-          "cSharpName": "Liminal"
-        },
-        {
           "id": "light.liminal_ceiling",
           "friendlyName": "Liminal Ceiling",
           "cSharpName": "LiminalCeiling"
@@ -94,24 +84,24 @@
           "cSharpName": "LiminalDimmer"
         },
         {
-          "id": "light.liminal_switch",
-          "friendlyName": "Liminal Switch",
-          "cSharpName": "LiminalSwitch"
-        },
-        {
           "id": "light.living",
           "friendlyName": "Alive",
           "cSharpName": "Living"
         },
         {
           "id": "light.living_fan",
-          "friendlyName": "Hammlet Living Fan Light",
+          "friendlyName": "Alive Fan Light",
           "cSharpName": "LivingFan"
         },
         {
           "id": "light.living_fan_light_switch",
-          "friendlyName": "Living Fan Light Switch",
+          "friendlyName": "Alive Fan Light Switch",
           "cSharpName": "LivingFanLightSwitch"
+        },
+        {
+          "id": "light.pantry",
+          "friendlyName": "Pantry",
+          "cSharpName": "Pantry"
         },
         {
           "id": "light.plant_lamp",
@@ -119,24 +109,14 @@
           "cSharpName": "PlantLamp"
         },
         {
-          "id": "light.ref_group",
-          "friendlyName": "ref_group",
-          "cSharpName": "RefGroup"
-        },
-        {
           "id": "light.reference_light",
-          "friendlyName": "reference_light",
+          "friendlyName": "Reference Light",
           "cSharpName": "ReferenceLight"
         },
         {
-          "id": "light.smart_wi_fi_lamp_dimmer",
-          "friendlyName": null,
-          "cSharpName": "SmartWiFiLampDimmer"
-        },
-        {
-          "id": "light.smart_wi_fi_lamp_dimmer_2",
-          "friendlyName": "Smart Wi-Fi Lamp Dimmer",
-          "cSharpName": "SmartWiFiLampDimmer2"
+          "id": "light.reference_light_local",
+          "friendlyName": "Reference Light Local",
+          "cSharpName": "ReferenceLightLocal"
         },
         {
           "id": "light.spamheart",
@@ -176,124 +156,238 @@
       ],
       "attributes": [
         {
-          "jsonName": "min_color_temp_kelvin",
-          "cSharpName": "MinColorTempKelvin",
-          "clrType": "System.Double"
-        },
-        {
-          "jsonName": "max_color_temp_kelvin",
-          "cSharpName": "MaxColorTempKelvin",
-          "clrType": "System.Double"
-        },
-        {
-          "jsonName": "color_temp_kelvin",
-          "cSharpName": "ColorTempKelvin",
-          "clrType": "System.Double"
-        },
-        {
-          "jsonName": "color",
-          "cSharpName": "Color",
-          "clrType": "System.Object"
-        },
-        {
-          "jsonName": "restored",
-          "cSharpName": "Restored",
-          "clrType": "System.Boolean"
-        },
-        {
-          "jsonName": "min_mireds",
-          "cSharpName": "MinMireds",
-          "clrType": "System.Double"
-        },
-        {
-          "jsonName": "max_mireds",
-          "cSharpName": "MaxMireds",
-          "clrType": "System.Double"
-        },
-        {
-          "jsonName": "effect_list",
-          "cSharpName": "EffectList",
-          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.String]"
-        },
-        {
           "jsonName": "supported_color_modes",
           "cSharpName": "SupportedColorModes",
-          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.String]"
-        },
-        {
-          "jsonName": "effect",
-          "cSharpName": "Effect",
-          "clrType": "System.String"
+          "clrType": "System.Collections.Generic.IReadOnlyList\u003CHammlet.Models.Enums.ColorMode\u003E",
+          "values": [
+            "Brightness",
+            "ColorTemp",
+            "Hs",
+            "Onoff",
+            "Rgb",
+            "Rgbw",
+            "Xy"
+          ],
+          "name": "System.Collections.Generic.IReadOnlyList\u003CHammlet.Models.Enums.ColorMode\u003E",
+          "toGenerate": false
         },
         {
           "jsonName": "color_mode",
           "cSharpName": "ColorMode",
-          "clrType": "System.String"
-        },
-        {
-          "jsonName": "brightness",
-          "cSharpName": "Brightness",
-          "clrType": "System.Double"
-        },
-        {
-          "jsonName": "color_temp",
-          "cSharpName": "ColorTemp",
-          "clrType": "System.Double"
-        },
-        {
-          "jsonName": "hs_color",
-          "cSharpName": "HsColor",
-          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.Double]"
-        },
-        {
-          "jsonName": "rgb_color",
-          "cSharpName": "RgbColor",
-          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.Double]"
-        },
-        {
-          "jsonName": "xy_color",
-          "cSharpName": "XyColor",
-          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.Double]"
-        },
-        {
-          "jsonName": "rgbw_color",
-          "cSharpName": "RgbwColor",
-          "clrType": null
-        },
-        {
-          "jsonName": "entity_id",
-          "cSharpName": "EntityId",
-          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.String]"
-        },
-        {
-          "jsonName": "icon",
-          "cSharpName": "Icon",
-          "clrType": "System.String"
-        },
-        {
-          "jsonName": "friendly_name",
-          "cSharpName": "FriendlyName",
-          "clrType": "System.String"
+          "clrType": "Hammlet.Models.Enums.ColorMode",
+          "values": null,
+          "name": "Hammlet.Models.Enums.ColorMode",
+          "toGenerate": false
         },
         {
           "jsonName": "supported_features",
           "cSharpName": "SupportedFeatures",
-          "clrType": "System.Double"
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "min_color_temp_kelvin",
+          "cSharpName": "MinColorTempKelvin",
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "max_color_temp_kelvin",
+          "cSharpName": "MaxColorTempKelvin",
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "min_mireds",
+          "cSharpName": "MinMireds",
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "max_mireds",
+          "cSharpName": "MaxMireds",
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "brightness",
+          "cSharpName": "Brightness",
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "color_temp_kelvin",
+          "cSharpName": "ColorTempKelvin",
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "color_temp",
+          "cSharpName": "ColorTemp",
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "hs_color",
+          "cSharpName": "HsColor",
+          "clrType": "IReadOnlyList\u003Cdouble\u003E",
+          "values": null,
+          "name": "IReadOnlyList\u003Cdouble\u003E",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "rgb_color",
+          "cSharpName": "RgbColor",
+          "clrType": "IReadOnlyList\u003Cdouble\u003E",
+          "values": null,
+          "name": "IReadOnlyList\u003Cdouble\u003E",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "xy_color",
+          "cSharpName": "XyColor",
+          "clrType": "IReadOnlyList\u003Cdouble\u003E",
+          "values": null,
+          "name": "IReadOnlyList\u003Cdouble\u003E",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "entity_id",
+          "cSharpName": "EntityId",
+          "clrType": "LightEntityId",
+          "values": [
+            "Light_bedroomFanLight",
+            "Light_hammletBathroom",
+            "Light_hammletPantry",
+            "Light_hammletWledMusicSpamheartVein2",
+            "Light_kitchen",
+            "Light_kitchenSwitch",
+            "Light_laserLamp",
+            "Light_liminalCeiling",
+            "Light_livingFan",
+            "Light_plantLamp",
+            "Light_spamheart4SpamheartVein",
+            "Light_stripperLight",
+            "Light_succulentLamp",
+            "Light_tentacleLamp"
+          ],
+          "name": "LightEntityId",
+          "toGenerate": true
+        },
+        {
+          "jsonName": "effect_list",
+          "cSharpName": "EffectList",
+          "clrType": "LightEffectList",
+          "values": [
+            "AddressableFlicker",
+            "Alarm",
+            "Blink",
+            "Breathe",
+            "CandleFlicker",
+            "ChannelChange",
+            "Christmas",
+            "Colorloop",
+            "ColorWipe",
+            "DateNight",
+            "Disco",
+            "Facebook",
+            "FastRandomLoop",
+            "FinishEffect",
+            "Fireworks",
+            "HappyBirthday",
+            "Home",
+            "LSD",
+            "Movie",
+            "NightMode",
+            "None",
+            "Okay",
+            "Police",
+            "Police2",
+            "Pulse",
+            "RandomLoop",
+            "RandomTwinkle",
+            "RGB",
+            "Romance",
+            "Slowdown",
+            "SlowTemp",
+            "Stop",
+            "StopColorloop",
+            "StopEffect",
+            "Strobecolor",
+            "Strobeepilepsy",
+            "Sunrise",
+            "Sunset",
+            "TeaTime",
+            "Twinkle",
+            "Twitter",
+            "WhatsApp"
+          ],
+          "name": "LightEffectList",
+          "toGenerate": true
+        },
+        {
+          "jsonName": "color",
+          "cSharpName": "Color",
+          "clrType": "System.Object",
+          "values": null,
+          "name": "System.Object",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "icon",
+          "cSharpName": "Icon",
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "friendly_name",
+          "cSharpName": "FriendlyName",
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "effect",
+          "cSharpName": "Effect",
+          "clrType": null,
+          "values": null,
+          "name": null,
+          "toGenerate": false
         },
         {
           "jsonName": "raw_state",
           "cSharpName": "RawState",
-          "clrType": "System.Boolean"
+          "clrType": "bool",
+          "values": null,
+          "name": "bool",
+          "toGenerate": false
         },
         {
-          "jsonName": "off_with_transition",
-          "cSharpName": "OffWithTransition",
-          "clrType": "System.Boolean"
-        },
-        {
-          "jsonName": "off_brightness",
-          "cSharpName": "OffBrightness",
-          "clrType": null
+          "jsonName": "restored",
+          "cSharpName": "Restored",
+          "clrType": "bool",
+          "values": null,
+          "name": "bool",
+          "toGenerate": false
         }
       ]
     },
@@ -321,6 +415,16 @@
           "cSharpName": "HammletOledTv"
         },
         {
+          "id": "media_player.hey_nabu",
+          "friendlyName": "Hey Nabu Media Player",
+          "cSharpName": "HeyNabu"
+        },
+        {
+          "id": "media_player.hifiberry_hifijumper_local",
+          "friendlyName": "hifiberry hifijumper.local",
+          "cSharpName": "HifiberryHifijumperLocal"
+        },
+        {
           "id": "media_player.spotify_scarlet_checkers",
           "friendlyName": "Spotify Scarlet Checkers",
           "cSharpName": "SpotifyScarletCheckers"
@@ -333,194 +437,359 @@
       ],
       "attributes": [
         {
-          "jsonName": "adb_response",
-          "cSharpName": "AdbResponse",
-          "clrType": "System.Object"
-        },
-        {
-          "jsonName": "hdmi_input",
-          "cSharpName": "HdmiInput",
-          "clrType": "System.Object"
-        },
-        {
-          "jsonName": "sound_mode_raw",
-          "cSharpName": "SoundModeRaw",
-          "clrType": "System.String"
-        },
-        {
-          "jsonName": "assumed_state",
-          "cSharpName": "AssumedState",
-          "clrType": "System.Boolean"
-        },
-        {
-          "jsonName": "remote_player_state",
-          "cSharpName": "RemotePlayerState",
-          "clrType": "System.String"
-        },
-        {
-          "jsonName": "likeStatus",
-          "cSharpName": "LikeStatus",
-          "clrType": "System.String"
-        },
-        {
-          "jsonName": "current_playlist_title",
-          "cSharpName": "CurrentPlaylistTitle",
-          "clrType": "System.String"
-        },
-        {
-          "jsonName": "videoId",
-          "cSharpName": "VideoId",
-          "clrType": "System.String"
-        },
-        {
-          "jsonName": "_media_type",
-          "cSharpName": "MediaType",
-          "clrType": "System.String"
-        },
-        {
-          "jsonName": "_media_id",
-          "cSharpName": "MediaId",
-          "clrType": "System.String"
-        },
-        {
-          "jsonName": "current_track",
-          "cSharpName": "CurrentTrack",
-          "clrType": "System.Double"
-        },
-        {
-          "jsonName": "remote_player_id",
-          "cSharpName": "RemotePlayerId",
-          "clrType": "System.String"
-        },
-        {
-          "jsonName": "restored",
-          "cSharpName": "Restored",
-          "clrType": "System.Boolean"
-        },
-        {
-          "jsonName": "active_child",
-          "cSharpName": "ActiveChild",
-          "clrType": "System.String"
-        },
-        {
-          "jsonName": "sound_output",
-          "cSharpName": "SoundOutput",
-          "clrType": "System.String"
-        },
-        {
-          "jsonName": "source_list",
-          "cSharpName": "SourceList",
-          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.String]"
-        },
-        {
-          "jsonName": "device_class",
-          "cSharpName": "DeviceClass",
-          "clrType": "System.String"
-        },
-        {
-          "jsonName": "entity_picture",
-          "cSharpName": "EntityPicture",
-          "clrType": "System.String"
-        },
-        {
-          "jsonName": "friendly_name",
-          "cSharpName": "FriendlyName",
-          "clrType": "System.String"
-        },
-        {
-          "jsonName": "supported_features",
-          "cSharpName": "SupportedFeatures",
-          "clrType": "System.Double"
-        },
-        {
-          "jsonName": "icon",
-          "cSharpName": "Icon",
-          "clrType": "System.String"
-        },
-        {
-          "jsonName": "volume_level",
-          "cSharpName": "VolumeLevel",
-          "clrType": "System.Double"
-        },
-        {
-          "jsonName": "is_volume_muted",
-          "cSharpName": "IsVolumeMuted",
-          "clrType": "System.Boolean"
-        },
-        {
-          "jsonName": "media_content_id",
-          "cSharpName": "MediaContentId",
-          "clrType": "System.String"
-        },
-        {
-          "jsonName": "media_content_type",
-          "cSharpName": "MediaContentType",
-          "clrType": "System.String"
-        },
-        {
-          "jsonName": "media_duration",
-          "cSharpName": "MediaDuration",
-          "clrType": "System.Double"
-        },
-        {
-          "jsonName": "media_position",
-          "cSharpName": "MediaPosition",
-          "clrType": "System.Double"
-        },
-        {
-          "jsonName": "media_position_updated_at",
-          "cSharpName": "MediaPositionUpdatedAt",
-          "clrType": "System.String"
-        },
-        {
-          "jsonName": "media_title",
-          "cSharpName": "MediaTitle",
-          "clrType": "System.String"
-        },
-        {
           "jsonName": "app_id",
           "cSharpName": "AppId",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "app_name",
           "cSharpName": "AppName",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "device_class",
+          "cSharpName": "DeviceClass",
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "entity_picture_local",
           "cSharpName": "EntityPictureLocal",
-          "clrType": "System.String"
+          "clrType": "System.String",
+          "values": null,
+          "name": "System.String",
+          "toGenerate": false
         },
         {
-          "jsonName": "media_artist",
-          "cSharpName": "MediaArtist",
-          "clrType": "System.String"
+          "jsonName": "entity_picture",
+          "cSharpName": "EntityPicture",
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "icon",
+          "cSharpName": "Icon",
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "friendly_name",
+          "cSharpName": "FriendlyName",
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "supported_features",
+          "cSharpName": "SupportedFeatures",
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "volume_level",
+          "cSharpName": "VolumeLevel",
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "is_volume_muted",
+          "cSharpName": "IsVolumeMuted",
+          "clrType": "bool",
+          "values": null,
+          "name": "bool",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "media_content_id",
+          "cSharpName": "MediaContentId",
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "media_content_type",
+          "cSharpName": "MediaContentType",
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "media_duration",
+          "cSharpName": "MediaDuration",
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "media_position",
+          "cSharpName": "MediaPosition",
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "media_position_updated_at",
+          "cSharpName": "MediaPositionUpdatedAt",
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "media_title",
+          "cSharpName": "MediaTitle",
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "media_album_name",
           "cSharpName": "MediaAlbumName",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "media_image_url",
+          "cSharpName": "MediaImageUrl",
+          "clrType": "System.String",
+          "values": null,
+          "name": "System.String",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "media_artist",
+          "cSharpName": "MediaArtist",
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "sound_mode_list",
+          "cSharpName": "SoundModeList",
+          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.String]",
+          "values": null,
+          "name": "System.Collections.Generic.IReadOnlyList\u003CSystem.String\u003E",
+          "toGenerate": false
         },
         {
           "jsonName": "media_track",
           "cSharpName": "MediaTrack",
-          "clrType": "System.Double"
-        },
-        {
-          "jsonName": "source",
-          "cSharpName": "Source",
-          "clrType": "System.String"
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
         },
         {
           "jsonName": "shuffle",
           "cSharpName": "Shuffle",
-          "clrType": "System.Boolean"
+          "clrType": "bool",
+          "values": null,
+          "name": "bool",
+          "toGenerate": false
         },
         {
           "jsonName": "repeat",
           "cSharpName": "Repeat",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "source_list",
+          "cSharpName": "SourceList",
+          "clrType": "MediaPlayerSourceList",
+          "values": [
+            "BathroomEchoDot",
+            "EchoPop",
+            "Everywhere",
+            "FireTVCube",
+            "HomeTheater",
+            "IPhone"
+          ],
+          "name": "MediaPlayerSourceList",
+          "toGenerate": true
+        },
+        {
+          "jsonName": "source",
+          "cSharpName": "Source",
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "adb_response",
+          "cSharpName": "AdbResponse",
+          "clrType": "System.Object",
+          "values": null,
+          "name": "System.Object",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "hdmi_input",
+          "cSharpName": "HdmiInput",
+          "clrType": "System.Object",
+          "values": null,
+          "name": "System.Object",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "sound_mode",
+          "cSharpName": "SoundMode",
+          "clrType": "System.String",
+          "values": null,
+          "name": "System.String",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "sound_mode_raw",
+          "cSharpName": "SoundModeRaw",
+          "clrType": "System.String",
+          "values": null,
+          "name": "System.String",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "active_child",
+          "cSharpName": "ActiveChild",
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "remote_player_state",
+          "cSharpName": "RemotePlayerState",
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "likeStatus",
+          "cSharpName": "LikeStatus",
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "current_playlist_title",
+          "cSharpName": "CurrentPlaylistTitle",
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "videoId",
+          "cSharpName": "VideoId",
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "_media_type",
+          "cSharpName": "MediaType",
+          "clrType": null,
+          "values": null,
+          "name": null,
+          "toGenerate": false
+        },
+        {
+          "jsonName": "_media_id",
+          "cSharpName": "MediaId",
+          "clrType": null,
+          "values": null,
+          "name": null,
+          "toGenerate": false
+        },
+        {
+          "jsonName": "current_track",
+          "cSharpName": "CurrentTrack",
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "remote_player_id",
+          "cSharpName": "RemotePlayerId",
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "assumed_state",
+          "cSharpName": "AssumedState",
+          "clrType": "bool",
+          "values": null,
+          "name": "bool",
+          "toGenerate": false
+        }
+      ]
+    },
+    {
+      "domain": "assist_satellite",
+      "entities": [
+        {
+          "id": "assist_satellite.hey_nabu",
+          "friendlyName": "Assist satellite",
+          "cSharpName": "HeyNabu"
+        }
+      ],
+      "attributes": [
+        {
+          "jsonName": "restored",
+          "cSharpName": "Restored",
+          "clrType": "bool",
+          "values": null,
+          "name": "bool",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "friendly_name",
+          "cSharpName": "FriendlyName",
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "supported_features",
+          "cSharpName": "SupportedFeatures",
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
         }
       ]
     },
@@ -546,6 +815,11 @@
           "id": "automation.changesoundmode",
           "friendlyName": "ChangeSoundMode",
           "cSharpName": "Changesoundmode"
+        },
+        {
+          "id": "automation.double_tap_dimmer",
+          "friendlyName": "Double Tap Dimmer",
+          "cSharpName": "DoubleTapDimmer"
         },
         {
           "id": "automation.lighting_mode_bright",
@@ -643,9 +917,29 @@
           "cSharpName": "ReturnToPlaylist"
         },
         {
+          "id": "automation.set_default_theme_on_start",
+          "friendlyName": "Set default theme on start",
+          "cSharpName": "SetDefaultThemeOnStart"
+        },
+        {
+          "id": "automation.shellies_announce",
+          "friendlyName": "Shellies Announce",
+          "cSharpName": "ShelliesAnnounce"
+        },
+        {
+          "id": "automation.shellies_discovery",
+          "friendlyName": "Shellies Discovery",
+          "cSharpName": "ShelliesDiscovery"
+        },
+        {
           "id": "automation.shelly_dimmer_2_long_press_down_detached_momentary_switch",
           "friendlyName": "Shelly Dimmer 2 Long Press Down - Detached Momentary Switch",
           "cSharpName": "ShellyDimmer2LongPressDownDetachedMomentarySwitch"
+        },
+        {
+          "id": "automation.shelly_dimming",
+          "friendlyName": "Shelly Dimming",
+          "cSharpName": "ShellyDimming"
         },
         {
           "id": "automation.start_emergency_when_mikaela_plays_dance_yrself_clean",
@@ -687,37 +981,66 @@
         {
           "jsonName": "id",
           "cSharpName": "Id",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "last_triggered",
           "cSharpName": "LastTriggered",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "mode",
           "cSharpName": "Mode",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "current",
           "cSharpName": "Current",
-          "clrType": "System.Double"
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
         },
         {
           "jsonName": "friendly_name",
           "cSharpName": "FriendlyName",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "max",
+          "cSharpName": "Max",
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
         },
         {
           "jsonName": "restored",
           "cSharpName": "Restored",
-          "clrType": "System.Boolean"
+          "clrType": "bool",
+          "values": null,
+          "name": "bool",
+          "toGenerate": false
         },
         {
           "jsonName": "supported_features",
           "cSharpName": "SupportedFeatures",
-          "clrType": "System.Double"
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
         }
       ]
     },
@@ -725,9 +1048,9 @@
       "domain": "binary_sensor",
       "entities": [
         {
-          "id": "binary_sensor.alive_remote_remote_control_switch_low_battery_level",
+          "id": "binary_sensor.alive_remote_low_battery_level",
           "friendlyName": "Alive Remote Low battery level",
-          "cSharpName": "AliveRemoteRemoteControlSwitchLowBatteryLevel"
+          "cSharpName": "AliveRemoteLowBatteryLevel"
         },
         {
           "id": "binary_sensor.hammlet_soundsystem_cloud_connection",
@@ -735,24 +1058,19 @@
           "cSharpName": "HammletSoundsystemCloudConnection"
         },
         {
-          "id": "binary_sensor.liminal_dimmer_channel_1_input",
-          "friendlyName": "Liminal Dimmer channel 1 input",
-          "cSharpName": "LiminalDimmerChannel1Input"
+          "id": "binary_sensor.liminal_dimmer_input_0",
+          "friendlyName": "Liminal Dimmer Input 0",
+          "cSharpName": "LiminalDimmerInput0"
         },
         {
-          "id": "binary_sensor.liminal_dimmer_channel_2_input",
-          "friendlyName": "Liminal Dimmer channel 2 input",
-          "cSharpName": "LiminalDimmerChannel2Input"
+          "id": "binary_sensor.liminal_dimmer_input_1",
+          "friendlyName": "Liminal Dimmer Input 1",
+          "cSharpName": "LiminalDimmerInput1"
         },
         {
-          "id": "binary_sensor.liminal_dimmer_overheating",
-          "friendlyName": "Liminal Dimmer overheating",
-          "cSharpName": "LiminalDimmerOverheating"
-        },
-        {
-          "id": "binary_sensor.liminal_dimmer_overpowering",
-          "friendlyName": "Liminal Dimmer overpowering",
-          "cSharpName": "LiminalDimmerOverpowering"
+          "id": "binary_sensor.liminal_dimmer_overtemperature",
+          "friendlyName": "Liminal Dimmer Overtemperature",
+          "cSharpName": "LiminalDimmerOvertemperature"
         },
         {
           "id": "binary_sensor.projector_ping",
@@ -765,69 +1083,24 @@
           "cSharpName": "RpiPowerStatus"
         },
         {
-          "id": "binary_sensor.slim_multi_sensor_pir_door_temperature_illumination_low_battery_level",
-          "friendlyName": "Indoor Multi-Sensor Low battery level",
-          "cSharpName": "SlimMultiSensorPirDoorTemperatureIlluminationLowBatteryLevel"
-        },
-        {
-          "id": "binary_sensor.slim_multi_sensor_pir_door_temperature_illumination_motion_detection",
-          "friendlyName": "Indoor Multi-Sensor Motion detection",
-          "cSharpName": "SlimMultiSensorPirDoorTemperatureIlluminationMotionDetection"
-        },
-        {
-          "id": "binary_sensor.slim_multi_sensor_pir_door_temperature_illumination_tampering_product_cover_removed",
-          "friendlyName": "Indoor Multi-Sensor Tampering, product cover removed",
-          "cSharpName": "SlimMultiSensorPirDoorTemperatureIlluminationTamperingProductCoverRemoved"
-        },
-        {
-          "id": "binary_sensor.slim_multi_sensor_pir_door_temperature_illumination_window_door_is_open",
-          "friendlyName": "Indoor Multi-Sensor Window/door is open",
-          "cSharpName": "SlimMultiSensorPirDoorTemperatureIlluminationWindowDoorIsOpen"
-        },
-        {
-          "id": "binary_sensor.slim_multi_sensor_pir_door_temperature_illumination_window_door_is_open_2",
-          "friendlyName": "Indoor Multi-Sensor Window/door is open",
-          "cSharpName": "SlimMultiSensorPirDoorTemperatureIlluminationWindowDoorIsOpen2"
-        },
-        {
-          "id": "binary_sensor.slim_multi_sensor_pir_door_temperature_illumination_window_door_is_open_in_regular_position",
-          "friendlyName": "Indoor Multi-Sensor Window/door is open in regular position",
-          "cSharpName": "SlimMultiSensorPirDoorTemperatureIlluminationWindowDoorIsOpenInRegularPosition"
-        },
-        {
-          "id": "binary_sensor.slim_multi_sensor_pir_door_temperature_illumination_window_door_is_open_in_tilt_position",
-          "friendlyName": "Indoor Multi-Sensor Window/door is open in tilt position",
-          "cSharpName": "SlimMultiSensorPirDoorTemperatureIlluminationWindowDoorIsOpenInTiltPosition"
-        },
-        {
-          "id": "binary_sensor.slzb_06m_ethernet",
-          "friendlyName": "Ethernet",
-          "cSharpName": "Slzb06mEthernet"
-        },
-        {
-          "id": "binary_sensor.slzb_06m_internet",
-          "friendlyName": "Internet",
-          "cSharpName": "Slzb06mInternet"
-        },
-        {
           "id": "binary_sensor.stuarts_iphone_focus",
           "friendlyName": "Stuart\u2019s iPhone Focus",
           "cSharpName": "StuartsIphoneFocus"
         },
         {
           "id": "binary_sensor.tapo_smart_dimmer_cloud_connection",
-          "friendlyName": "Tapo Smart_Dimmer Cloud connection",
+          "friendlyName": "Tentacle Lamp Cloud connection",
           "cSharpName": "TapoSmartDimmerCloudConnection"
-        },
-        {
-          "id": "binary_sensor.tapo_smart_dimmer_overheated",
-          "friendlyName": "Tapo Smart_Dimmer Overheated",
-          "cSharpName": "TapoSmartDimmerOverheated"
         },
         {
           "id": "binary_sensor.tentacle_lamp_cloud_connection",
           "friendlyName": "Tentacle Lamp Cloud connection",
           "cSharpName": "TentacleLampCloudConnection"
+        },
+        {
+          "id": "binary_sensor.tentacle_lamp_overheated",
+          "friendlyName": "Tentacle Lamp Overheated",
+          "cSharpName": "TentacleLampOverheated"
         },
         {
           "id": "binary_sensor.zigbee2mqtt_bridge_connection_state",
@@ -839,27 +1112,42 @@
         {
           "jsonName": "icon",
           "cSharpName": "Icon",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "friendly_name",
           "cSharpName": "FriendlyName",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "device_class",
           "cSharpName": "DeviceClass",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "restored",
           "cSharpName": "Restored",
-          "clrType": "System.Boolean"
+          "clrType": "bool",
+          "values": null,
+          "name": "bool",
+          "toGenerate": false
         },
         {
           "jsonName": "supported_features",
           "cSharpName": "SupportedFeatures",
-          "clrType": "System.Double"
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
         }
       ]
     },
@@ -867,9 +1155,14 @@
       "domain": "button",
       "entities": [
         {
-          "id": "button.alive_remote_remote_control_switch_identify",
+          "id": "button.alive_remote_identify",
           "friendlyName": "Alive Remote Identify",
-          "cSharpName": "AliveRemoteRemoteControlSwitchIdentify"
+          "cSharpName": "AliveRemoteIdentify"
+        },
+        {
+          "id": "button.alive_remote_ping",
+          "friendlyName": "Alive Remote Ping",
+          "cSharpName": "AliveRemotePing"
         },
         {
           "id": "button.google_assistant_synchronize_devices",
@@ -877,39 +1170,9 @@
           "cSharpName": "GoogleAssistantSynchronizeDevices"
         },
         {
-          "id": "button.liminal_dimmer_reboot",
-          "friendlyName": "Liminal Dimmer Reboot",
-          "cSharpName": "LiminalDimmerReboot"
-        },
-        {
-          "id": "button.node_3_ping",
-          "friendlyName": "Indoor Multi-Sensor Ping",
-          "cSharpName": "Node3Ping"
-        },
-        {
-          "id": "button.node_alive_remote_ping",
-          "friendlyName": "Alive Remote Ping",
-          "cSharpName": "NodeAliveRemotePing"
-        },
-        {
-          "id": "button.slim_multi_sensor_pir_door_temperature_illumination_idle_home_security_cover_status",
-          "friendlyName": "Indoor Multi-Sensor Idle Home Security Cover status",
-          "cSharpName": "SlimMultiSensorPirDoorTemperatureIlluminationIdleHomeSecurityCoverStatus"
-        },
-        {
-          "id": "button.slim_multi_sensor_pir_door_temperature_illumination_idle_home_security_motion_sensor_status",
-          "friendlyName": "Indoor Multi-Sensor Idle Home Security Motion sensor status",
-          "cSharpName": "SlimMultiSensorPirDoorTemperatureIlluminationIdleHomeSecurityMotionSensorStatus"
-        },
-        {
-          "id": "button.slzb_06m_core_restart",
-          "friendlyName": "Core restart",
-          "cSharpName": "Slzb06mCoreRestart"
-        },
-        {
-          "id": "button.slzb_06m_zigbee_restart",
-          "friendlyName": "Zigbee restart",
-          "cSharpName": "Slzb06mZigbeeRestart"
+          "id": "button.liminal_dimmer_restart",
+          "friendlyName": "Liminal Dimmer Restart",
+          "cSharpName": "LiminalDimmerRestart"
         },
         {
           "id": "button.smart_rgbtw_bulb_identify",
@@ -920,6 +1183,11 @@
           "id": "button.smart_rgbtw_bulb_identify_2",
           "friendlyName": "Identify",
           "cSharpName": "SmartRgbtwBulbIdentify2"
+        },
+        {
+          "id": "button.smart_rgbtw_bulb_identify_3",
+          "friendlyName": "Smart RGBTW Bulb Identify",
+          "cSharpName": "SmartRgbtwBulbIdentify3"
         },
         {
           "id": "button.smart_wi_fi_lamp_dimmer_identify",
@@ -946,22 +1214,34 @@
         {
           "jsonName": "device_class",
           "cSharpName": "DeviceClass",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "friendly_name",
           "cSharpName": "FriendlyName",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "restored",
           "cSharpName": "Restored",
-          "clrType": "System.Boolean"
+          "clrType": "bool",
+          "values": null,
+          "name": "bool",
+          "toGenerate": false
         },
         {
           "jsonName": "supported_features",
           "cSharpName": "SupportedFeatures",
-          "clrType": "System.Double"
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
         }
       ]
     },
@@ -978,22 +1258,34 @@
         {
           "jsonName": "data",
           "cSharpName": "Data",
-          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.Object]"
+          "clrType": "IReadOnlyList\u003Cobject\u003E",
+          "values": null,
+          "name": "IReadOnlyList\u003Cobject\u003E",
+          "toGenerate": false
         },
         {
           "jsonName": "color",
           "cSharpName": "Color",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "friendly_name",
           "cSharpName": "FriendlyName",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "supported_features",
           "cSharpName": "SupportedFeatures",
-          "clrType": "System.Double"
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
         }
       ]
     },
@@ -1010,12 +1302,18 @@
         {
           "jsonName": "friendly_name",
           "cSharpName": "FriendlyName",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "supported_features",
           "cSharpName": "SupportedFeatures",
-          "clrType": "System.Double"
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
         }
       ]
     },
@@ -1052,42 +1350,66 @@
         {
           "jsonName": "source_type",
           "cSharpName": "SourceType",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "battery_level",
           "cSharpName": "BatteryLevel",
-          "clrType": "System.Double"
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
         },
         {
           "jsonName": "latitude",
           "cSharpName": "Latitude",
-          "clrType": "System.Double"
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
         },
         {
           "jsonName": "longitude",
           "cSharpName": "Longitude",
-          "clrType": "System.Double"
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
         },
         {
           "jsonName": "gps_accuracy",
           "cSharpName": "GpsAccuracy",
-          "clrType": "System.Double"
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
         },
         {
           "jsonName": "altitude",
           "cSharpName": "Altitude",
-          "clrType": "System.Double"
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
         },
         {
           "jsonName": "vertical_accuracy",
           "cSharpName": "VerticalAccuracy",
-          "clrType": "System.Double"
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
         },
         {
           "jsonName": "friendly_name",
           "cSharpName": "FriendlyName",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         }
       ]
     },
@@ -1095,24 +1417,24 @@
       "domain": "event",
       "entities": [
         {
-          "id": "event.alive_remote_remote_control_switch_scene_001",
+          "id": "event.alive_remote_scene_001",
           "friendlyName": "Alive Remote Scene 001",
-          "cSharpName": "AliveRemoteRemoteControlSwitchScene001"
+          "cSharpName": "AliveRemoteScene001"
         },
         {
-          "id": "event.alive_remote_remote_control_switch_scene_002",
+          "id": "event.alive_remote_scene_002",
           "friendlyName": "Alive Remote Scene 002",
-          "cSharpName": "AliveRemoteRemoteControlSwitchScene002"
+          "cSharpName": "AliveRemoteScene002"
         },
         {
-          "id": "event.alive_remote_remote_control_switch_scene_003",
+          "id": "event.alive_remote_scene_003",
           "friendlyName": "Alive Remote Scene 003",
-          "cSharpName": "AliveRemoteRemoteControlSwitchScene003"
+          "cSharpName": "AliveRemoteScene003"
         },
         {
-          "id": "event.alive_remote_remote_control_switch_scene_004",
+          "id": "event.alive_remote_scene_004",
           "friendlyName": "Alive Remote Scene 004",
-          "cSharpName": "AliveRemoteRemoteControlSwitchScene004"
+          "cSharpName": "AliveRemoteScene004"
         },
         {
           "id": "event.bedroom_dimmer",
@@ -1123,6 +1445,21 @@
           "id": "event.hammlights_dimmer",
           "friendlyName": "Hammlights Dimmer",
           "cSharpName": "HammlightsDimmer"
+        },
+        {
+          "id": "event.hey_nabu_button_press",
+          "friendlyName": "Hey Nabu Button press",
+          "cSharpName": "HeyNabuButtonPress"
+        },
+        {
+          "id": "event.liminal_dimmer_button_0",
+          "friendlyName": "Liminal Dimmer Button 0",
+          "cSharpName": "LiminalDimmerButton0"
+        },
+        {
+          "id": "event.liminal_dimmer_button_1",
+          "friendlyName": "Liminal Dimmer Button 1",
+          "cSharpName": "LiminalDimmerButton1"
         },
         {
           "id": "event.wireless_switch_3241_button",
@@ -1139,37 +1476,87 @@
         {
           "jsonName": "event_types",
           "cSharpName": "EventTypes",
-          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.String]"
-        },
-        {
-          "jsonName": "event_type",
-          "cSharpName": "EventType",
-          "clrType": "System.String"
+          "clrType": "EventEventTypes",
+          "values": [
+            "DoublePress",
+            "EasterEggPress",
+            "KeyHeldDown",
+            "KeyPressed",
+            "KeyPressed2x",
+            "KeyPressed3x",
+            "KeyReleased",
+            "L",
+            "LongPress",
+            "LS",
+            "Press",
+            "RotateLeft",
+            "RotateLeftPressed",
+            "RotateRight",
+            "RotateRightPressed",
+            "S",
+            "SL",
+            "SS",
+            "SSS",
+            "TriplePress"
+          ],
+          "name": "EventEventTypes",
+          "toGenerate": true
         },
         {
           "jsonName": "device_class",
           "cSharpName": "DeviceClass",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "icon",
+          "cSharpName": "Icon",
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "friendly_name",
           "cSharpName": "FriendlyName",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
-          "jsonName": "steps",
-          "cSharpName": "Steps",
-          "clrType": "System.Double"
-        },
-        {
-          "jsonName": "number_of_presses",
-          "cSharpName": "NumberOfPresses",
-          "clrType": "System.Double"
+          "jsonName": "event_type",
+          "cSharpName": "EventType",
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "value",
           "cSharpName": "Value",
-          "clrType": "System.Double"
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "steps",
+          "cSharpName": "Steps",
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "number_of_presses",
+          "cSharpName": "NumberOfPresses",
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
         }
       ]
     },
@@ -1178,7 +1565,7 @@
       "entities": [
         {
           "id": "fan.living_fan",
-          "friendlyName": "Living Fan",
+          "friendlyName": "Alive Fan",
           "cSharpName": "LivingFan"
         }
       ],
@@ -1186,32 +1573,50 @@
         {
           "jsonName": "preset_modes",
           "cSharpName": "PresetModes",
-          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.Object]"
+          "clrType": "IReadOnlyList\u003Cobject\u003E",
+          "values": null,
+          "name": "IReadOnlyList\u003Cobject\u003E",
+          "toGenerate": false
         },
         {
           "jsonName": "percentage",
           "cSharpName": "Percentage",
-          "clrType": "System.Double"
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
         },
         {
           "jsonName": "percentage_step",
           "cSharpName": "PercentageStep",
-          "clrType": "System.Double"
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
         },
         {
           "jsonName": "preset_mode",
           "cSharpName": "PresetMode",
-          "clrType": null
+          "clrType": null,
+          "values": null,
+          "name": null,
+          "toGenerate": false
         },
         {
           "jsonName": "friendly_name",
           "cSharpName": "FriendlyName",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "supported_features",
           "cSharpName": "SupportedFeatures",
-          "clrType": "System.Double"
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
         }
       ]
     },
@@ -1229,9 +1634,14 @@
           "cSharpName": "NetdaemonHammletAppsLightsLiminalDimmer"
         },
         {
-          "id": "input_boolean.netdaemon_hammlet_apps_lights_watch_for_reference_lights",
-          "friendlyName": "netdaemon_hammlet_apps_lights_watch_for_reference_lights",
-          "cSharpName": "NetdaemonHammletAppsLightsWatchForReferenceLights"
+          "id": "input_boolean.netdaemon_hammlet_apps_lights_watch_reference_light",
+          "friendlyName": "netdaemon_hammlet_apps_lights_watch_reference_light",
+          "cSharpName": "NetdaemonHammletAppsLightsWatchReferenceLight"
+        },
+        {
+          "id": "input_boolean.netdaemon_hammlet_apps_scene_on_button_scene_on_button",
+          "friendlyName": "netdaemon_hammlet_apps_scene_on_button_scene_on_button",
+          "cSharpName": "NetdaemonHammletAppsSceneOnButtonSceneOnButton"
         },
         {
           "id": "input_boolean.netdaemon_hammlet_net_daemon_apps_media_management_turn_on_tv_for_video",
@@ -1242,11 +1652,6 @@
           "id": "input_boolean.netdaemon_hammlet_net_daemon_apps_media_on_youtube_music_playlist_changed",
           "friendlyName": "netdaemon_hammlet_net_daemon_apps_media_on_youtube_music_playlist_changed",
           "cSharpName": "NetdaemonHammletNetDaemonAppsMediaOnYoutubeMusicPlaylistChanged"
-        },
-        {
-          "id": "input_boolean.netdaemon_hass_model_scene_on_button",
-          "friendlyName": "netdaemon_hass_model_scene_on_button",
-          "cSharpName": "NetdaemonHassModelSceneOnButton"
         },
         {
           "id": "input_boolean.pants_emergency",
@@ -1263,17 +1668,26 @@
         {
           "jsonName": "editable",
           "cSharpName": "Editable",
-          "clrType": "System.Boolean"
+          "clrType": "bool",
+          "values": null,
+          "name": "bool",
+          "toGenerate": false
         },
         {
           "jsonName": "icon",
           "cSharpName": "Icon",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "friendly_name",
           "cSharpName": "FriendlyName",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         }
       ]
     },
@@ -1296,47 +1710,74 @@
         {
           "jsonName": "initial",
           "cSharpName": "Initial",
-          "clrType": null
+          "clrType": null,
+          "values": null,
+          "name": null,
+          "toGenerate": false
         },
         {
           "jsonName": "editable",
           "cSharpName": "Editable",
-          "clrType": "System.Boolean"
+          "clrType": "bool",
+          "values": null,
+          "name": "bool",
+          "toGenerate": false
         },
         {
           "jsonName": "min",
           "cSharpName": "Min",
-          "clrType": "System.Double"
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
         },
         {
           "jsonName": "max",
           "cSharpName": "Max",
-          "clrType": "System.Double"
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
         },
         {
           "jsonName": "step",
           "cSharpName": "Step",
-          "clrType": "System.Double"
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
         },
         {
           "jsonName": "mode",
           "cSharpName": "Mode",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "friendly_name",
           "cSharpName": "FriendlyName",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "unit_of_measurement",
           "cSharpName": "UnitOfMeasurement",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "icon",
           "cSharpName": "Icon",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         }
       ]
     },
@@ -1358,22 +1799,45 @@
         {
           "jsonName": "options",
           "cSharpName": "Options",
-          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.String]"
+          "clrType": "InputSelectOptions",
+          "values": [
+            "Bright",
+            "Clear",
+            "Dark",
+            "Evenink",
+            "Night",
+            "Off",
+            "Optimal",
+            "Podcast",
+            "Sunset",
+            "Wub"
+          ],
+          "name": "InputSelectOptions",
+          "toGenerate": true
         },
         {
           "jsonName": "editable",
           "cSharpName": "Editable",
-          "clrType": "System.Boolean"
+          "clrType": "bool",
+          "values": null,
+          "name": "bool",
+          "toGenerate": false
         },
         {
           "jsonName": "friendly_name",
           "cSharpName": "FriendlyName",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "icon",
           "cSharpName": "Icon",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         }
       ]
     },
@@ -1382,9 +1846,9 @@
       "isNumeric": true,
       "entities": [
         {
-          "id": "number.alive_remote_remote_control_switch_indicator_value",
+          "id": "number.alive_remote_indicator_value",
           "friendlyName": "Alive Remote Indicator value",
-          "cSharpName": "AliveRemoteRemoteControlSwitchIndicatorValue"
+          "cSharpName": "AliveRemoteIndicatorValue"
         },
         {
           "id": "number.all_off_debounce_time",
@@ -1475,6 +1939,71 @@
           "id": "number.hangout_transition_time",
           "friendlyName": "Hangout Transition Time",
           "cSharpName": "HangoutTransitionTime"
+        },
+        {
+          "id": "number.laser_monstera_max_air_humidity",
+          "friendlyName": "Laser Monstera max air humidity",
+          "cSharpName": "LaserMonsteraMaxAirHumidity"
+        },
+        {
+          "id": "number.laser_monstera_max_conductivity",
+          "friendlyName": "Laser Monstera max conductivity",
+          "cSharpName": "LaserMonsteraMaxConductivity"
+        },
+        {
+          "id": "number.laser_monstera_max_dli",
+          "friendlyName": "Laser Monstera max dli",
+          "cSharpName": "LaserMonsteraMaxDli"
+        },
+        {
+          "id": "number.laser_monstera_max_illuminance",
+          "friendlyName": "Laser Monstera max illuminance",
+          "cSharpName": "LaserMonsteraMaxIlluminance"
+        },
+        {
+          "id": "number.laser_monstera_max_soil_moisture",
+          "friendlyName": "Laser Monstera max soil moisture",
+          "cSharpName": "LaserMonsteraMaxSoilMoisture"
+        },
+        {
+          "id": "number.laser_monstera_max_temperature",
+          "friendlyName": "Laser Monstera max temperature",
+          "cSharpName": "LaserMonsteraMaxTemperature"
+        },
+        {
+          "id": "number.laser_monstera_min_air_humidity",
+          "friendlyName": "Laser Monstera min air humidity",
+          "cSharpName": "LaserMonsteraMinAirHumidity"
+        },
+        {
+          "id": "number.laser_monstera_min_conductivity",
+          "friendlyName": "Laser Monstera min conductivity",
+          "cSharpName": "LaserMonsteraMinConductivity"
+        },
+        {
+          "id": "number.laser_monstera_min_dli",
+          "friendlyName": "Laser Monstera min dli",
+          "cSharpName": "LaserMonsteraMinDli"
+        },
+        {
+          "id": "number.laser_monstera_min_illuminance",
+          "friendlyName": "Laser Monstera min illuminance",
+          "cSharpName": "LaserMonsteraMinIlluminance"
+        },
+        {
+          "id": "number.laser_monstera_min_soil_moisture",
+          "friendlyName": "Laser Monstera min soil moisture",
+          "cSharpName": "LaserMonsteraMinSoilMoisture"
+        },
+        {
+          "id": "number.laser_monstera_min_temperature",
+          "friendlyName": "Laser Monstera min temperature",
+          "cSharpName": "LaserMonsteraMinTemperature"
+        },
+        {
+          "id": "number.liminal_dimmer_brightness",
+          "friendlyName": "Liminal Dimmer Brightness 0",
+          "cSharpName": "LiminalDimmerBrightness"
         },
         {
           "id": "number.night_debounce_time",
@@ -1577,6 +2106,11 @@
           "cSharpName": "SmartRgbtwBulbOffTransitionTime2"
         },
         {
+          "id": "number.smart_rgbtw_bulb_off_transition_time_3",
+          "friendlyName": "Smart RGBTW Bulb Off transition time",
+          "cSharpName": "SmartRgbtwBulbOffTransitionTime3"
+        },
+        {
           "id": "number.smart_rgbtw_bulb_on_level",
           "friendlyName": "On level",
           "cSharpName": "SmartRgbtwBulbOnLevel"
@@ -1585,6 +2119,11 @@
           "id": "number.smart_rgbtw_bulb_on_level_2",
           "friendlyName": "On level",
           "cSharpName": "SmartRgbtwBulbOnLevel2"
+        },
+        {
+          "id": "number.smart_rgbtw_bulb_on_level_3",
+          "friendlyName": "Smart RGBTW Bulb On level",
+          "cSharpName": "SmartRgbtwBulbOnLevel3"
         },
         {
           "id": "number.smart_rgbtw_bulb_on_off_transition_time",
@@ -1597,6 +2136,11 @@
           "cSharpName": "SmartRgbtwBulbOnOffTransitionTime2"
         },
         {
+          "id": "number.smart_rgbtw_bulb_on_off_transition_time_3",
+          "friendlyName": "Smart RGBTW Bulb On/Off transition time",
+          "cSharpName": "SmartRgbtwBulbOnOffTransitionTime3"
+        },
+        {
           "id": "number.smart_rgbtw_bulb_on_transition_time",
           "friendlyName": "On transition time",
           "cSharpName": "SmartRgbtwBulbOnTransitionTime"
@@ -1605,6 +2149,11 @@
           "id": "number.smart_rgbtw_bulb_on_transition_time_2",
           "friendlyName": "On transition time",
           "cSharpName": "SmartRgbtwBulbOnTransitionTime2"
+        },
+        {
+          "id": "number.smart_rgbtw_bulb_on_transition_time_3",
+          "friendlyName": "Smart RGBTW Bulb On transition time",
+          "cSharpName": "SmartRgbtwBulbOnTransitionTime3"
         },
         {
           "id": "number.smart_wi_fi_lamp_dimmer_off_transition_time",
@@ -1652,14 +2201,74 @@
           "cSharpName": "SmartWiFiLampDimmerOnTransitionTime3"
         },
         {
-          "id": "number.tapo_smart_dimmer_smooth_off",
-          "friendlyName": "Tapo Smart_Dimmer Smooth off",
-          "cSharpName": "TapoSmartDimmerSmoothOff"
+          "id": "number.succulent_arrangement_max_air_humidity",
+          "friendlyName": "Succulent Arrangement max air humidity",
+          "cSharpName": "SucculentArrangementMaxAirHumidity"
         },
         {
-          "id": "number.tapo_smart_dimmer_smooth_on",
-          "friendlyName": "Tapo Smart_Dimmer Smooth on",
-          "cSharpName": "TapoSmartDimmerSmoothOn"
+          "id": "number.succulent_arrangement_max_conductivity",
+          "friendlyName": "Succulent Arrangement max conductivity",
+          "cSharpName": "SucculentArrangementMaxConductivity"
+        },
+        {
+          "id": "number.succulent_arrangement_max_dli",
+          "friendlyName": "Succulent Arrangement max dli",
+          "cSharpName": "SucculentArrangementMaxDli"
+        },
+        {
+          "id": "number.succulent_arrangement_max_illuminance",
+          "friendlyName": "Succulent Arrangement max illuminance",
+          "cSharpName": "SucculentArrangementMaxIlluminance"
+        },
+        {
+          "id": "number.succulent_arrangement_max_soil_moisture",
+          "friendlyName": "Succulent Arrangement max soil moisture",
+          "cSharpName": "SucculentArrangementMaxSoilMoisture"
+        },
+        {
+          "id": "number.succulent_arrangement_max_temperature",
+          "friendlyName": "Succulent Arrangement max temperature",
+          "cSharpName": "SucculentArrangementMaxTemperature"
+        },
+        {
+          "id": "number.succulent_arrangement_min_air_humidity",
+          "friendlyName": "Succulent Arrangement min air humidity",
+          "cSharpName": "SucculentArrangementMinAirHumidity"
+        },
+        {
+          "id": "number.succulent_arrangement_min_conductivity",
+          "friendlyName": "Succulent Arrangement min conductivity",
+          "cSharpName": "SucculentArrangementMinConductivity"
+        },
+        {
+          "id": "number.succulent_arrangement_min_dli",
+          "friendlyName": "Succulent Arrangement min dli",
+          "cSharpName": "SucculentArrangementMinDli"
+        },
+        {
+          "id": "number.succulent_arrangement_min_illuminance",
+          "friendlyName": "Succulent Arrangement min illuminance",
+          "cSharpName": "SucculentArrangementMinIlluminance"
+        },
+        {
+          "id": "number.succulent_arrangement_min_soil_moisture",
+          "friendlyName": "Succulent Arrangement min soil moisture",
+          "cSharpName": "SucculentArrangementMinSoilMoisture"
+        },
+        {
+          "id": "number.succulent_arrangement_min_temperature",
+          "friendlyName": "Succulent Arrangement min temperature",
+          "cSharpName": "SucculentArrangementMinTemperature"
+        },
+        {
+          "id": "number.tentacle_lamp_smooth_off",
+          "friendlyName": "Tentacle Lamp Smooth off",
+          "cSharpName": "TentacleLampSmoothOff"
+        },
+        {
+          "id": "number.tentacle_lamp_smooth_on",
+          "friendlyName": "Tentacle Lamp Smooth on",
+          "cSharpName": "TentacleLampSmoothOn"
         },
         {
           "id": "number.turn_off_all_lights_debounce_time",
@@ -1696,42 +2305,259 @@
         {
           "jsonName": "min",
           "cSharpName": "Min",
-          "clrType": "System.Double"
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
         },
         {
           "jsonName": "max",
           "cSharpName": "Max",
-          "clrType": "System.Double"
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
         },
         {
           "jsonName": "step",
           "cSharpName": "Step",
-          "clrType": "System.Double"
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
         },
         {
           "jsonName": "mode",
           "cSharpName": "Mode",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "friendly_name",
           "cSharpName": "FriendlyName",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "unit_of_measurement",
           "cSharpName": "UnitOfMeasurement",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "device_class",
+          "cSharpName": "DeviceClass",
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "icon",
+          "cSharpName": "Icon",
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "restored",
           "cSharpName": "Restored",
-          "clrType": "System.Boolean"
+          "clrType": "bool",
+          "values": null,
+          "name": "bool",
+          "toGenerate": false
         },
         {
           "jsonName": "supported_features",
           "cSharpName": "SupportedFeatures",
-          "clrType": "System.Double"
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
+        }
+      ]
+    },
+    {
+      "domain": "openplantbook",
+      "entities": [
+        {
+          "id": "openplantbook.search_result",
+          "friendlyName": null,
+          "cSharpName": "SearchResult"
+        },
+        {
+          "id": "openplantbook.succulent_arrangement",
+          "friendlyName": null,
+          "cSharpName": "SucculentArrangement"
+        }
+      ],
+      "attributes": [
+        {
+          "jsonName": "succulent arrangement",
+          "cSharpName": "Succulentarrangement",
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "pid",
+          "cSharpName": "Pid",
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "display_pid",
+          "cSharpName": "DisplayPid",
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "alias",
+          "cSharpName": "Alias",
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "category",
+          "cSharpName": "Category",
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "max_light_mmol",
+          "cSharpName": "MaxLightMmol",
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "min_light_mmol",
+          "cSharpName": "MinLightMmol",
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "max_light_lux",
+          "cSharpName": "MaxLightLux",
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "min_light_lux",
+          "cSharpName": "MinLightLux",
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "max_temp",
+          "cSharpName": "MaxTemp",
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "min_temp",
+          "cSharpName": "MinTemp",
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "max_env_humid",
+          "cSharpName": "MaxEnvHumid",
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "min_env_humid",
+          "cSharpName": "MinEnvHumid",
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "max_soil_moist",
+          "cSharpName": "MaxSoilMoist",
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "min_soil_moist",
+          "cSharpName": "MinSoilMoist",
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "max_soil_ec",
+          "cSharpName": "MaxSoilEc",
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "min_soil_ec",
+          "cSharpName": "MinSoilEc",
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "image_url",
+          "cSharpName": "ImageUrl",
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "user_plant",
+          "cSharpName": "UserPlant",
+          "clrType": "bool",
+          "values": null,
+          "name": "bool",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "timestamp",
+          "cSharpName": "Timestamp",
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         }
       ]
     },
@@ -1768,47 +2594,185 @@
         {
           "jsonName": "editable",
           "cSharpName": "Editable",
-          "clrType": "System.Boolean"
+          "clrType": "bool",
+          "values": null,
+          "name": "bool",
+          "toGenerate": false
         },
         {
           "jsonName": "id",
           "cSharpName": "Id",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "device_trackers",
           "cSharpName": "DeviceTrackers",
-          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.String]"
+          "clrType": "PersonDeviceTrackers",
+          "values": [
+            "DeviceTracker_brianaSIphone",
+            "DeviceTracker_pixel6",
+            "DeviceTracker_pixel8",
+            "DeviceTracker_stuartsIphone",
+            "DeviceTracker_wallfire"
+          ],
+          "name": "PersonDeviceTrackers",
+          "toGenerate": true
         },
         {
           "jsonName": "user_id",
           "cSharpName": "UserId",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "friendly_name",
           "cSharpName": "FriendlyName",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "latitude",
           "cSharpName": "Latitude",
-          "clrType": "System.Double"
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
         },
         {
           "jsonName": "longitude",
           "cSharpName": "Longitude",
-          "clrType": "System.Double"
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
         },
         {
           "jsonName": "gps_accuracy",
           "cSharpName": "GpsAccuracy",
-          "clrType": "System.Double"
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
         },
         {
           "jsonName": "source",
           "cSharpName": "Source",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
+        }
+      ]
+    },
+    {
+      "domain": "plant",
+      "entities": [
+        {
+          "id": "plant.laser_monstera",
+          "friendlyName": "Laser Monstera",
+          "cSharpName": "LaserMonstera"
+        },
+        {
+          "id": "plant.succulent_arrangement",
+          "friendlyName": "Succulent Arrangement",
+          "cSharpName": "SucculentArrangement"
+        }
+      ],
+      "attributes": [
+        {
+          "jsonName": "species",
+          "cSharpName": "Species",
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "moisture_status",
+          "cSharpName": "MoistureStatus",
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "temperature_status",
+          "cSharpName": "TemperatureStatus",
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "conductivity_status",
+          "cSharpName": "ConductivityStatus",
+          "clrType": null,
+          "values": null,
+          "name": null,
+          "toGenerate": false
+        },
+        {
+          "jsonName": "illuminance_status",
+          "cSharpName": "IlluminanceStatus",
+          "clrType": null,
+          "values": null,
+          "name": null,
+          "toGenerate": false
+        },
+        {
+          "jsonName": "humidity_status",
+          "cSharpName": "HumidityStatus",
+          "clrType": null,
+          "values": null,
+          "name": null,
+          "toGenerate": false
+        },
+        {
+          "jsonName": "dli_status",
+          "cSharpName": "DliStatus",
+          "clrType": null,
+          "values": null,
+          "name": null,
+          "toGenerate": false
+        },
+        {
+          "jsonName": "species_original",
+          "cSharpName": "SpeciesOriginal",
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "device_class",
+          "cSharpName": "DeviceClass",
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "entity_picture",
+          "cSharpName": "EntityPicture",
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "friendly_name",
+          "cSharpName": "FriendlyName",
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         }
       ]
     },
@@ -1830,27 +2794,42 @@
         {
           "jsonName": "activity_list",
           "cSharpName": "ActivityList",
-          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.Object]"
+          "clrType": "IReadOnlyList\u003Cobject\u003E",
+          "values": null,
+          "name": "IReadOnlyList\u003Cobject\u003E",
+          "toGenerate": false
         },
         {
           "jsonName": "current_activity",
           "cSharpName": "CurrentActivity",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "friendly_name",
           "cSharpName": "FriendlyName",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "supported_features",
           "cSharpName": "SupportedFeatures",
-          "clrType": "System.Double"
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
         },
         {
           "jsonName": "restored",
           "cSharpName": "Restored",
-          "clrType": "System.Boolean"
+          "clrType": "bool",
+          "values": null,
+          "name": "bool",
+          "toGenerate": false
         }
       ]
     },
@@ -1888,26 +2867,6 @@
           "cSharpName": "Night"
         },
         {
-          "id": "scene.normal_butts",
-          "friendlyName": "Normal Butts",
-          "cSharpName": "NormalButts"
-        },
-        {
-          "id": "scene.pants_emergency_start",
-          "friendlyName": "Pants Emergency Start On",
-          "cSharpName": "PantsEmergencyStart"
-        },
-        {
-          "id": "scene.pants_off_emergency_go",
-          "friendlyName": "Pants Off Emergency",
-          "cSharpName": "PantsOffEmergencyGo"
-        },
-        {
-          "id": "scene.pants_off_emergency_off",
-          "friendlyName": "Pants Emergency Start Off",
-          "cSharpName": "PantsOffEmergencyOff"
-        },
-        {
           "id": "scene.pink_and_sexy",
           "friendlyName": "Pink and sexy",
           "cSharpName": "PinkAndSexy"
@@ -1927,22 +2886,60 @@
         {
           "jsonName": "entity_id",
           "cSharpName": "EntityId",
-          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.String]"
+          "clrType": "SceneEntityId",
+          "values": [
+            "Fan_livingFan",
+            "Light_aliveLights",
+            "Light_bedroomFanLight",
+            "Light_ceilingFanLight2",
+            "Light_colorBulbs",
+            "Light_hammletBathroom",
+            "Light_hammletExtra",
+            "Light_hammletLivingFanLight",
+            "Light_hammletPantry",
+            "Light_kitchenCeiling",
+            "Light_kitchenGroup",
+            "Light_kitchenLight",
+            "Light_liminalCeiling",
+            "Light_pantryCeiling",
+            "Light_plantLamp",
+            "Light_smartWiFiLampDimmer",
+            "Light_smartWiFiLampDimmerLight",
+            "Light_spamheart",
+            "Light_stripperLight",
+            "Light_succulentLamp",
+            "Light_tentacleLamp",
+            "MediaPlayer_hammletOledTv",
+            "Switch_outdoorSwitch",
+            "Switch_speakers",
+            "Switch_tentacleLamp"
+          ],
+          "name": "SceneEntityId",
+          "toGenerate": true
         },
         {
           "jsonName": "id",
           "cSharpName": "Id",
-          "clrType": "System.String"
-        },
-        {
-          "jsonName": "friendly_name",
-          "cSharpName": "FriendlyName",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "icon",
           "cSharpName": "Icon",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "friendly_name",
+          "cSharpName": "FriendlyName",
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         }
       ]
     },
@@ -1958,49 +2955,54 @@
           "id": "script.toggle_mute",
           "friendlyName": "Toggle Mute",
           "cSharpName": "ToggleMute"
-        },
-        {
-          "id": "script.toggle_projector",
-          "friendlyName": "Toggle Projector",
-          "cSharpName": "ToggleProjector"
         }
       ],
       "attributes": [
         {
           "jsonName": "last_triggered",
           "cSharpName": "LastTriggered",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "mode",
           "cSharpName": "Mode",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "current",
           "cSharpName": "Current",
-          "clrType": "System.Double"
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
         },
         {
           "jsonName": "friendly_name",
           "cSharpName": "FriendlyName",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "max",
           "cSharpName": "Max",
-          "clrType": "System.Double"
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
         }
       ]
     },
     {
       "domain": "select",
       "entities": [
-        {
-          "id": "select.0xa4c1380cf616e594_temperature_unit",
-          "friendlyName": "Plant Sensor 1 Temperature unit",
-          "cSharpName": "_0xa4c1380cf616e594TemperatureUnit"
-        },
         {
           "id": "select.all_off_off_scene",
           "friendlyName": "All Off Off Scene",
@@ -2030,6 +3032,21 @@
           "id": "select.hangout_off_scene",
           "friendlyName": "Hangout Off Scene",
           "cSharpName": "HangoutOffScene"
+        },
+        {
+          "id": "select.hey_nabu_assistant",
+          "friendlyName": "Hey Nabu Assistant",
+          "cSharpName": "HeyNabuAssistant"
+        },
+        {
+          "id": "select.hey_nabu_finished_speaking_detection",
+          "friendlyName": "Hey Nabu Finished speaking detection",
+          "cSharpName": "HeyNabuFinishedSpeakingDetection"
+        },
+        {
+          "id": "select.hey_nabu_wake_word",
+          "friendlyName": "Hey Nabu Wake word",
+          "cSharpName": "HeyNabuWakeWord"
         },
         {
           "id": "select.kitchen_switch_power_on_behavior",
@@ -2082,8 +3099,13 @@
           "cSharpName": "PinkAndSexyOffScene"
         },
         {
+          "id": "select.plant_sensor_1_temperature_unit",
+          "friendlyName": "Plant Sensor 1 Temperature unit",
+          "cSharpName": "PlantSensor1TemperatureUnit"
+        },
+        {
           "id": "select.reference_light_color_power_on_behavior",
-          "friendlyName": "reference_light Color power on behavior",
+          "friendlyName": "Reference Light Color power on behavior",
           "cSharpName": "ReferenceLightColorPowerOnBehavior"
         },
         {
@@ -2095,6 +3117,11 @@
           "id": "select.smart_rgbtw_bulb_power_on_behavior_on_startup_2",
           "friendlyName": "Power-on behavior on startup",
           "cSharpName": "SmartRgbtwBulbPowerOnBehaviorOnStartup2"
+        },
+        {
+          "id": "select.smart_rgbtw_bulb_power_on_behavior_on_startup_3",
+          "friendlyName": "Smart RGBTW Bulb Power-on behavior on startup",
+          "cSharpName": "SmartRgbtwBulbPowerOnBehaviorOnStartup3"
         },
         {
           "id": "select.smart_wi_fi_lamp_dimmer_power_on_behavior_on_startup",
@@ -2112,9 +3139,9 @@
           "cSharpName": "SmartWiFiLampDimmerPowerOnBehaviorOnStartup3"
         },
         {
-          "id": "select.tapo_smart_dimmer_light_preset",
-          "friendlyName": "Tapo Smart_Dimmer Light preset",
-          "cSharpName": "TapoSmartDimmerLightPreset"
+          "id": "select.tentacle_lamp_light_preset",
+          "friendlyName": "Tentacle Lamp Light preset",
+          "cSharpName": "TentacleLampLightPreset"
         },
         {
           "id": "select.turn_off_all_lights_off_scene",
@@ -2161,27 +3188,94 @@
         {
           "jsonName": "options",
           "cSharpName": "Options",
-          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.String]"
+          "clrType": "SelectOptions",
+          "values": [
+            "Aggressive",
+            "All",
+            "AllOff",
+            "Bright",
+            "Brightnesspreset1",
+            "Brightnesspreset2",
+            "Brightnesspreset3",
+            "Brightnesspreset4",
+            "Brightnesspreset5",
+            "Celsius",
+            "Click",
+            "Customized",
+            "Debug",
+            "Default",
+            "DinnerTime",
+            "Direct",
+            "Error",
+            "Evenink",
+            "Fahrenheit",
+            "HammletCast",
+            "Hangout",
+            "HomeAssistant",
+            "Info",
+            "Initial",
+            "Jumpboxnabu",
+            "Loading",
+            "Night",
+            "None",
+            "NormalButts",
+            "Notset",
+            "Off",
+            "Oknabu",
+            "On",
+            "One",
+            "PantsEmergencyStartOff",
+            "PantsEmergencyStartOn",
+            "PantsOffEmergency",
+            "Pinkandsexy",
+            "Playlist",
+            "PlaylistRadio",
+            "Preferred",
+            "Previous",
+            "Random",
+            "Relaxed",
+            "Shuffle",
+            "ShuffleRandom",
+            "Switch",
+            "Toggle",
+            "TV",
+            "Warning",
+            "Working"
+          ],
+          "name": "SelectOptions",
+          "toGenerate": true
         },
         {
           "jsonName": "friendly_name",
           "cSharpName": "FriendlyName",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "icon",
           "cSharpName": "Icon",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "restored",
           "cSharpName": "Restored",
-          "clrType": "System.Boolean"
+          "clrType": "bool",
+          "values": null,
+          "name": "bool",
+          "toGenerate": false
         },
         {
           "jsonName": "supported_features",
           "cSharpName": "SupportedFeatures",
-          "clrType": "System.Double"
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
         }
       ]
     },
@@ -2189,14 +3283,19 @@
       "domain": "sensor",
       "entities": [
         {
-          "id": "sensor.0xa4c1380cf616e594_battery_state",
-          "friendlyName": "Plant Sensor 1 Battery state",
-          "cSharpName": "_0xa4c1380cf616e594BatteryState"
+          "id": "sensor.800_series_long_range_usb_controller_status",
+          "friendlyName": "800 Series Long Range USB Controller Status",
+          "cSharpName": "_800SeriesLongRangeUsbControllerStatus"
         },
         {
-          "id": "sensor.800_series_long_range_gpio_module_status",
-          "friendlyName": "800 Series Long Range GPIO Module Status",
-          "cSharpName": "_800SeriesLongRangeGpioModuleStatus"
+          "id": "sensor.alive_remote_last_seen",
+          "friendlyName": "Alive Remote Last seen",
+          "cSharpName": "AliveRemoteLastSeen"
+        },
+        {
+          "id": "sensor.alive_remote_node_status",
+          "friendlyName": "Alive Remote Node status",
+          "cSharpName": "AliveRemoteNodeStatus"
         },
         {
           "id": "sensor.briana_s_iphone_app_version",
@@ -2254,34 +3353,14 @@
           "cSharpName": "BrianaSIphoneSsid"
         },
         {
-          "id": "sensor.canon_selphy_cp1500_http",
-          "friendlyName": null,
-          "cSharpName": "CanonSelphyCp1500Http"
+          "id": "sensor.hp_deskjet_3700_series",
+          "friendlyName": "HP DeskJet 3700 series",
+          "cSharpName": "HpDeskjet3700Series"
         },
         {
-          "id": "sensor.io_series_8_9_d57d_mode",
-          "friendlyName": "IO Series 8/9 D57D Mode",
-          "cSharpName": "IoSeries89D57dMode"
-        },
-        {
-          "id": "sensor.io_series_8_9_d57d_number_of_sectors",
-          "friendlyName": "IO Series 8/9 D57D Number of sectors",
-          "cSharpName": "IoSeries89D57dNumberOfSectors"
-        },
-        {
-          "id": "sensor.io_series_8_9_d57d_pressure",
-          "friendlyName": "IO Series 8/9 D57D Pressure",
-          "cSharpName": "IoSeries89D57dPressure"
-        },
-        {
-          "id": "sensor.io_series_8_9_d57d_sector",
-          "friendlyName": "IO Series 8/9 D57D Sector",
-          "cSharpName": "IoSeries89D57dSector"
-        },
-        {
-          "id": "sensor.io_series_8_9_d57d_toothbrush_state",
-          "friendlyName": "IO Series 8/9 D57D Toothbrush State",
-          "cSharpName": "IoSeries89D57dToothbrushState"
+          "id": "sensor.laser_monstera_dli",
+          "friendlyName": "Laser Monstera dli",
+          "cSharpName": "LaserMonsteraDli"
         },
         {
           "id": "sensor.mikaela_battery_state",
@@ -2292,26 +3371,6 @@
           "id": "sensor.mikaela_charger_type",
           "friendlyName": "Mikaela Charger type",
           "cSharpName": "MikaelaChargerType"
-        },
-        {
-          "id": "sensor.node_3_last_seen",
-          "friendlyName": "Indoor Multi-Sensor Last seen",
-          "cSharpName": "Node3LastSeen"
-        },
-        {
-          "id": "sensor.node_3_node_status",
-          "friendlyName": "Indoor Multi-Sensor Node status",
-          "cSharpName": "Node3NodeStatus"
-        },
-        {
-          "id": "sensor.node_alive_remote_last_seen",
-          "friendlyName": "Alive Remote Last seen",
-          "cSharpName": "NodeAliveRemoteLastSeen"
-        },
-        {
-          "id": "sensor.node_alive_remote_node_status",
-          "friendlyName": "Alive Remote Node status",
-          "cSharpName": "NodeAliveRemoteNodeStatus"
         },
         {
           "id": "sensor.outdoor_succulent_sensor_battery_state",
@@ -2329,19 +3388,9 @@
           "cSharpName": "Pixel8ChargerType"
         },
         {
-          "id": "sensor.slzb_06m_connection_mode",
-          "friendlyName": "Connection mode",
-          "cSharpName": "Slzb06mConnectionMode"
-        },
-        {
-          "id": "sensor.slzb_06m_firmware_channel",
-          "friendlyName": "Firmware channel",
-          "cSharpName": "Slzb06mFirmwareChannel"
-        },
-        {
-          "id": "sensor.slzb_06m_zigbee_type",
-          "friendlyName": "Zigbee type",
-          "cSharpName": "Slzb06mZigbeeType"
+          "id": "sensor.plant_sensor_1_battery_state",
+          "friendlyName": "Plant Sensor 1 Battery state",
+          "cSharpName": "PlantSensor1BatteryState"
         },
         {
           "id": "sensor.stuarts_iphone_activity",
@@ -2389,6 +3438,11 @@
           "cSharpName": "StuartsIphoneSsid"
         },
         {
+          "id": "sensor.succulent_arrangement_dli",
+          "friendlyName": "Succulent Arrangement dli",
+          "cSharpName": "SucculentArrangementDli"
+        },
+        {
           "id": "sensor.sun_next_dawn",
           "friendlyName": "Sun Next dawn",
           "cSharpName": "SunNextDawn"
@@ -2419,9 +3473,9 @@
           "cSharpName": "SunNextSetting"
         },
         {
-          "id": "sensor.tapo_smart_dimmer_signal_level",
-          "friendlyName": "Tapo Smart_Dimmer Signal level",
-          "cSharpName": "TapoSmartDimmerSignalLevel"
+          "id": "sensor.tentacle_lamp_signal_level",
+          "friendlyName": "Tentacle Lamp Signal level",
+          "cSharpName": "TentacleLampSignalLevel"
         },
         {
           "id": "sensor.wallfire_battery_state",
@@ -2448,232 +3502,391 @@
         {
           "jsonName": "device_class",
           "cSharpName": "DeviceClass",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "friendly_name",
           "cSharpName": "FriendlyName",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "Allows VoIP",
           "cSharpName": "AllowsVoIP",
-          "clrType": "System.Boolean"
+          "clrType": "bool",
+          "values": null,
+          "name": "bool",
+          "toGenerate": false
         },
         {
           "jsonName": "Carrier ID",
           "cSharpName": "CarrierID",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "Carrier Name",
           "cSharpName": "CarrierName",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "ISO Country Code",
           "cSharpName": "ISOCountryCode",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "Mobile Country Code",
           "cSharpName": "MobileCountryCode",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "Mobile Network Code",
           "cSharpName": "MobileNetworkCode",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "icon",
           "cSharpName": "Icon",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "Current Radio Technology",
           "cSharpName": "CurrentRadioTechnology",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "Administrative Area",
           "cSharpName": "AdministrativeArea",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "Areas Of Interest",
           "cSharpName": "AreasOfInterest",
-          "clrType": "System.Object"
+          "clrType": "object",
+          "values": null,
+          "name": "object",
+          "toGenerate": false
         },
         {
           "jsonName": "Country",
           "cSharpName": "Country",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "Inland Water",
           "cSharpName": "InlandWater",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "Locality",
           "cSharpName": "Locality",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "Location",
-          "cSharpName": "Location_0",
-          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.Double]"
-        },
-        {
-          "jsonName": "location",
-          "cSharpName": "Location_1",
-          "clrType": "System.String"
+          "cSharpName": "Location",
+          "clrType": "IReadOnlyList\u003Cdouble\u003E",
+          "values": null,
+          "name": "IReadOnlyList\u003Cdouble\u003E",
+          "toGenerate": false
         },
         {
           "jsonName": "Name",
           "cSharpName": "Name",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "Ocean",
           "cSharpName": "Ocean",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "Postal Code",
           "cSharpName": "PostalCode",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "Sub Administrative Area",
           "cSharpName": "SubAdministrativeArea",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "Sub Locality",
           "cSharpName": "SubLocality",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "Sub Thoroughfare",
           "cSharpName": "SubThoroughfare",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "Thoroughfare",
           "cSharpName": "Thoroughfare",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "Time Zone",
           "cSharpName": "TimeZone",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "Zones",
           "cSharpName": "Zones",
-          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.Object]"
+          "clrType": "IReadOnlyList\u003Cobject\u003E",
+          "values": null,
+          "name": "IReadOnlyList\u003Cobject\u003E",
+          "toGenerate": false
         },
         {
           "jsonName": "Low Power Mode",
           "cSharpName": "LowPowerMode",
-          "clrType": "System.Boolean"
+          "clrType": "bool",
+          "values": null,
+          "name": "bool",
+          "toGenerate": false
         },
         {
           "jsonName": "Cellular Technology",
           "cSharpName": "CellularTechnology",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "Confidence",
           "cSharpName": "Confidence",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "Types",
           "cSharpName": "Types",
-          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.String]"
+          "clrType": "IReadOnlyList\u003Cstring\u003E",
+          "values": null,
+          "name": "IReadOnlyList\u003Cstring\u003E",
+          "toGenerate": false
         },
         {
           "jsonName": "options",
           "cSharpName": "Options",
-          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.String]"
-        },
-        {
-          "jsonName": "state_class",
-          "cSharpName": "StateClass",
-          "clrType": "System.String"
-        },
-        {
-          "jsonName": "assumed_state",
-          "cSharpName": "AssumedState",
-          "clrType": "System.Boolean"
-        },
-        {
-          "jsonName": "restored",
-          "cSharpName": "Restored",
-          "clrType": "System.Boolean"
-        },
-        {
-          "jsonName": "supported_features",
-          "cSharpName": "SupportedFeatures",
-          "clrType": "System.Double"
-        },
-        {
-          "jsonName": "playlists",
-          "cSharpName": "Playlists",
-          "clrType": "System.Object"
+          "clrType": "SensorOptions",
+          "values": [
+            "Ac",
+            "Charging",
+            "Discharging",
+            "Dock",
+            "Full",
+            "Idle",
+            "None",
+            "NotCharging",
+            "Printing",
+            "Stopped",
+            "Usb",
+            "Wireless"
+          ],
+          "name": "SensorOptions",
+          "toGenerate": true
         },
         {
           "jsonName": "tracks",
           "cSharpName": "Tracks",
-          "clrType": "System.Object"
-        },
-        {
-          "jsonName": "search",
-          "cSharpName": "Search",
-          "clrType": "System.Object"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "lyrics",
           "cSharpName": "Lyrics",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "playlists",
+          "cSharpName": "Playlists",
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "search",
+          "cSharpName": "Search",
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "total_tracks",
           "cSharpName": "TotalTracks",
-          "clrType": "System.Object"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "info",
           "cSharpName": "Info",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "serial",
           "cSharpName": "Serial",
-          "clrType": null
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "state_message",
           "cSharpName": "StateMessage",
-          "clrType": null
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "state_reason",
           "cSharpName": "StateReason",
-          "clrType": null
+          "clrType": null,
+          "values": null,
+          "name": null,
+          "toGenerate": false
         },
         {
           "jsonName": "command_set",
           "cSharpName": "CommandSet",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "uri_supported",
           "cSharpName": "UriSupported",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "state_class",
+          "cSharpName": "StateClass",
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "status",
+          "cSharpName": "Status",
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "last_period",
+          "cSharpName": "LastPeriod",
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "last_valid_state",
+          "cSharpName": "LastValidState",
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "last_reset",
+          "cSharpName": "LastReset",
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "next_reset",
+          "cSharpName": "NextReset",
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         }
       ]
     },
@@ -2682,24 +3895,9 @@
       "isNumeric": true,
       "entities": [
         {
-          "id": "sensor.0xa4c1380cf616e594_battery",
-          "friendlyName": "Plant Sensor 1 Battery",
-          "cSharpName": "_0xa4c1380cf616e594Battery"
-        },
-        {
-          "id": "sensor.0xa4c1380cf616e594_soil_moisture",
-          "friendlyName": "Plant Sensor 1 Moisture",
-          "cSharpName": "_0xa4c1380cf616e594SoilMoisture"
-        },
-        {
-          "id": "sensor.0xa4c1380cf616e594_temperature",
-          "friendlyName": "Plant Sensor 1 Temperature",
-          "cSharpName": "_0xa4c1380cf616e594Temperature"
-        },
-        {
-          "id": "sensor.alive_remote_remote_control_switch_battery_level",
+          "id": "sensor.alive_remote_battery_level",
           "friendlyName": "Alive Remote Battery level",
-          "cSharpName": "AliveRemoteRemoteControlSwitchBatteryLevel"
+          "cSharpName": "AliveRemoteBatteryLevel"
         },
         {
           "id": "sensor.briana_s_iphone_battery_level",
@@ -2712,9 +3910,14 @@
           "cSharpName": "BrianaSIphoneStorage"
         },
         {
-          "id": "sensor.canon_selphy_cp1500_http_color",
-          "friendlyName": "Color",
-          "cSharpName": "CanonSelphyCp1500HttpColor"
+          "id": "sensor.dimmer_switch_96fa_signal_strength",
+          "friendlyName": "Dimmer Switch 96FA Signal Strength",
+          "cSharpName": "DimmerSwitch96faSignalStrength"
+        },
+        {
+          "id": "sensor.dimmer_switch_9e2d_signal_strength",
+          "friendlyName": "Dimmer Switch 9E2D Signal Strength",
+          "cSharpName": "DimmerSwitch9e2dSignalStrength"
         },
         {
           "id": "sensor.finger_robot_2_battery",
@@ -2722,14 +3925,64 @@
           "cSharpName": "FingerRobot2Battery"
         },
         {
-          "id": "sensor.io_series_8_9_d57d_battery",
-          "friendlyName": "IO Series 8/9 D57D Battery",
-          "cSharpName": "IoSeries89D57dBattery"
+          "id": "sensor.hp_deskjet_3700_series_black_ink",
+          "friendlyName": "HP DeskJet 3700 series black ink",
+          "cSharpName": "HpDeskjet3700SeriesBlackInk"
         },
         {
-          "id": "sensor.io_series_8_9_d57d_time",
-          "friendlyName": "IO Series 8/9 D57D Time",
-          "cSharpName": "IoSeries89D57dTime"
+          "id": "sensor.hp_deskjet_3700_series_tri_color_ink",
+          "friendlyName": "HP DeskJet 3700 series tri-color ink",
+          "cSharpName": "HpDeskjet3700SeriesTriColorInk"
+        },
+        {
+          "id": "sensor.laser_monstera_air_humidity",
+          "friendlyName": "Laser Monstera air humidity",
+          "cSharpName": "LaserMonsteraAirHumidity"
+        },
+        {
+          "id": "sensor.laser_monstera_conductivity",
+          "friendlyName": "Laser Monstera conductivity",
+          "cSharpName": "LaserMonsteraConductivity"
+        },
+        {
+          "id": "sensor.laser_monstera_illuminance",
+          "friendlyName": "Laser Monstera illuminance",
+          "cSharpName": "LaserMonsteraIlluminance"
+        },
+        {
+          "id": "sensor.laser_monstera_ppfd_mol",
+          "friendlyName": "Laser Monstera ppfd (mol)",
+          "cSharpName": "LaserMonsteraPpfdMol"
+        },
+        {
+          "id": "sensor.laser_monstera_soil_moisture",
+          "friendlyName": "Laser Monstera soil moisture",
+          "cSharpName": "LaserMonsteraSoilMoisture"
+        },
+        {
+          "id": "sensor.laser_monstera_temperature",
+          "friendlyName": "Laser Monstera temperature",
+          "cSharpName": "LaserMonsteraTemperature"
+        },
+        {
+          "id": "sensor.laser_monstera_total_ppfd_mol_integral",
+          "friendlyName": "Laser Monstera Total ppfd (mol) Integral",
+          "cSharpName": "LaserMonsteraTotalPpfdMolIntegral"
+        },
+        {
+          "id": "sensor.liminal_dimmer_energy_0",
+          "friendlyName": "Liminal Dimmer Energy 0",
+          "cSharpName": "LiminalDimmerEnergy0"
+        },
+        {
+          "id": "sensor.liminal_dimmer_power_0",
+          "friendlyName": "Liminal Dimmer Power 0",
+          "cSharpName": "LiminalDimmerPower0"
+        },
+        {
+          "id": "sensor.liminal_dimmer_temperature",
+          "friendlyName": "Liminal Dimmer Temperature",
+          "cSharpName": "LiminalDimmerTemperature"
         },
         {
           "id": "sensor.mikaela_battery_level",
@@ -2757,29 +4010,44 @@
           "cSharpName": "Pixel8BatteryLevel"
         },
         {
-          "id": "sensor.slim_multi_sensor_pir_door_temperature_illumination_air_temperature",
-          "friendlyName": "Indoor Multi-Sensor Air temperature",
-          "cSharpName": "SlimMultiSensorPirDoorTemperatureIlluminationAirTemperature"
+          "id": "sensor.plant_sensor_1_battery",
+          "friendlyName": "Plant Sensor 1 Battery",
+          "cSharpName": "PlantSensor1Battery"
         },
         {
-          "id": "sensor.slim_multi_sensor_pir_door_temperature_illumination_battery_level",
-          "friendlyName": "Indoor Multi-Sensor Battery level",
-          "cSharpName": "SlimMultiSensorPirDoorTemperatureIlluminationBatteryLevel"
+          "id": "sensor.plant_sensor_1_soil_moisture",
+          "friendlyName": "Plant Sensor 1 Moisture",
+          "cSharpName": "PlantSensor1SoilMoisture"
         },
         {
-          "id": "sensor.slim_multi_sensor_pir_door_temperature_illumination_illuminance",
-          "friendlyName": "Indoor Multi-Sensor Illuminance",
-          "cSharpName": "SlimMultiSensorPirDoorTemperatureIlluminationIlluminance"
+          "id": "sensor.plant_sensor_1_temperature",
+          "friendlyName": "Plant Sensor 1 Temperature",
+          "cSharpName": "PlantSensor1Temperature"
         },
         {
-          "id": "sensor.slzb_06m_core_chip_temp",
-          "friendlyName": "Core chip temp",
-          "cSharpName": "Slzb06mCoreChipTemp"
+          "id": "sensor.plant_sensor_2_battery",
+          "friendlyName": "Plant Sensor 2 Battery",
+          "cSharpName": "PlantSensor2Battery"
         },
         {
-          "id": "sensor.slzb_06m_zigbee_chip_temp",
-          "friendlyName": "Zigbee chip temp",
-          "cSharpName": "Slzb06mZigbeeChipTemp"
+          "id": "sensor.plant_sensor_2_conductivity",
+          "friendlyName": "Plant Sensor 2 Conductivity",
+          "cSharpName": "PlantSensor2Conductivity"
+        },
+        {
+          "id": "sensor.plant_sensor_2_illuminance",
+          "friendlyName": "Plant Sensor 2 Illuminance",
+          "cSharpName": "PlantSensor2Illuminance"
+        },
+        {
+          "id": "sensor.plant_sensor_2_moisture",
+          "friendlyName": "Plant Sensor 2 Moisture",
+          "cSharpName": "PlantSensor2Moisture"
+        },
+        {
+          "id": "sensor.plant_sensor_2_temperature",
+          "friendlyName": "Plant Sensor 2 Temperature",
+          "cSharpName": "PlantSensor2Temperature"
         },
         {
           "id": "sensor.spotify_scarlet_checkers_song_tempo",
@@ -2822,6 +4090,41 @@
           "cSharpName": "StuartsIphoneStorage"
         },
         {
+          "id": "sensor.succulent_arrangement_air_humidity",
+          "friendlyName": "Succulent Arrangement air humidity",
+          "cSharpName": "SucculentArrangementAirHumidity"
+        },
+        {
+          "id": "sensor.succulent_arrangement_conductivity",
+          "friendlyName": "Succulent Arrangement conductivity",
+          "cSharpName": "SucculentArrangementConductivity"
+        },
+        {
+          "id": "sensor.succulent_arrangement_illuminance",
+          "friendlyName": "Succulent Arrangement illuminance",
+          "cSharpName": "SucculentArrangementIlluminance"
+        },
+        {
+          "id": "sensor.succulent_arrangement_ppfd_mol",
+          "friendlyName": "Succulent Arrangement ppfd (mol)",
+          "cSharpName": "SucculentArrangementPpfdMol"
+        },
+        {
+          "id": "sensor.succulent_arrangement_soil_moisture",
+          "friendlyName": "Succulent Arrangement soil moisture",
+          "cSharpName": "SucculentArrangementSoilMoisture"
+        },
+        {
+          "id": "sensor.succulent_arrangement_temperature",
+          "friendlyName": "Succulent Arrangement temperature",
+          "cSharpName": "SucculentArrangementTemperature"
+        },
+        {
+          "id": "sensor.succulent_arrangement_total_ppfd_mol_integral",
+          "friendlyName": "Succulent Arrangement Total ppfd (mol) Integral",
+          "cSharpName": "SucculentArrangementTotalPpfdMolIntegral"
+        },
+        {
           "id": "sensor.wallfire_battery_level",
           "friendlyName": "wallfire Battery level",
           "cSharpName": "WallfireBatteryLevel"
@@ -2851,87 +4154,176 @@
         {
           "jsonName": "unit_of_measurement",
           "cSharpName": "UnitOfMeasurement",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "device_class",
           "cSharpName": "DeviceClass",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "icon",
           "cSharpName": "Icon",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "friendly_name",
           "cSharpName": "FriendlyName",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "Available",
           "cSharpName": "Available",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "Available (Important)",
           "cSharpName": "AvailableImportant",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "Available (Opportunistic)",
           "cSharpName": "AvailableOpportunistic",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "Total",
           "cSharpName": "Total",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "state_class",
           "cSharpName": "StateClass",
-          "clrType": "System.String"
-        },
-        {
-          "jsonName": "assumed_state",
-          "cSharpName": "AssumedState",
-          "clrType": "System.Boolean"
-        },
-        {
-          "jsonName": "restored",
-          "cSharpName": "Restored",
-          "clrType": "System.Boolean"
-        },
-        {
-          "jsonName": "supported_features",
-          "cSharpName": "SupportedFeatures",
-          "clrType": "System.Double"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "marker_high_level",
           "cSharpName": "MarkerHighLevel",
-          "clrType": "System.Double"
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
         },
         {
           "jsonName": "marker_low_level",
           "cSharpName": "MarkerLowLevel",
-          "clrType": "System.Double"
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
         },
         {
           "jsonName": "marker_type",
           "cSharpName": "MarkerType",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
-          "jsonName": "battery_size",
-          "cSharpName": "BatterySize",
-          "clrType": "System.String"
+          "jsonName": "external_sensor",
+          "cSharpName": "ExternalSensor",
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
-          "jsonName": "battery_quantity",
-          "cSharpName": "BatteryQuantity",
-          "clrType": "System.Double"
+          "jsonName": "source",
+          "cSharpName": "Source",
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "restored",
+          "cSharpName": "Restored",
+          "clrType": "bool",
+          "values": null,
+          "name": "bool",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "supported_features",
+          "cSharpName": "SupportedFeatures",
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
+        }
+      ]
+    },
+    {
+      "domain": "stt",
+      "entities": [
+        {
+          "id": "stt.faster_whisper_jumpbox",
+          "friendlyName": "Jumpbox Whisper",
+          "cSharpName": "FasterWhisperJumpbox"
+        },
+        {
+          "id": "stt.faster_whisper_local",
+          "friendlyName": "Local Whisper",
+          "cSharpName": "FasterWhisperLocal"
+        },
+        {
+          "id": "stt.faster_whisper_proxmox",
+          "friendlyName": "faster-whisper",
+          "cSharpName": "FasterWhisperProxmox"
+        }
+      ],
+      "attributes": [
+        {
+          "jsonName": "friendly_name",
+          "cSharpName": "FriendlyName",
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "restored",
+          "cSharpName": "Restored",
+          "clrType": "bool",
+          "values": null,
+          "name": "bool",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "supported_features",
+          "cSharpName": "SupportedFeatures",
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
         }
       ]
     },
@@ -2948,52 +4340,82 @@
         {
           "jsonName": "next_dawn",
           "cSharpName": "NextDawn",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "next_dusk",
           "cSharpName": "NextDusk",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "next_midnight",
           "cSharpName": "NextMidnight",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "next_noon",
           "cSharpName": "NextNoon",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "next_rising",
           "cSharpName": "NextRising",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "next_setting",
           "cSharpName": "NextSetting",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "elevation",
           "cSharpName": "Elevation",
-          "clrType": "System.Double"
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
         },
         {
           "jsonName": "azimuth",
           "cSharpName": "Azimuth",
-          "clrType": "System.Double"
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
         },
         {
           "jsonName": "rising",
           "cSharpName": "Rising",
-          "clrType": "System.Boolean"
+          "clrType": "bool",
+          "values": null,
+          "name": "bool",
+          "toGenerate": false
         },
         {
           "jsonName": "friendly_name",
           "cSharpName": "FriendlyName",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         }
       ]
     },
@@ -3111,6 +4533,16 @@
           "cSharpName": "HangoutStatefulScene"
         },
         {
+          "id": "switch.hey_nabu_mute",
+          "friendlyName": "Hey Nabu Mute",
+          "cSharpName": "HeyNabuMute"
+        },
+        {
+          "id": "switch.hey_nabu_wake_sound",
+          "friendlyName": "Hey Nabu Wake sound",
+          "cSharpName": "HeyNabuWakeSound"
+        },
+        {
           "id": "switch.kitchen_switch",
           "friendlyName": "Kitchen Switch",
           "cSharpName": "KitchenSwitch"
@@ -3147,7 +4579,7 @@
         },
         {
           "id": "switch.normal_butts_stateful_scene",
-          "friendlyName": "Normal Butts Stateful Scene",
+          "friendlyName": "Stateful Scene",
           "cSharpName": "NormalButtsStatefulScene"
         },
         {
@@ -3167,7 +4599,7 @@
         },
         {
           "id": "switch.pants_emergency_start_off_stateful_scene",
-          "friendlyName": "Pants Emergency Start Off Stateful Scene",
+          "friendlyName": "Stateful Scene",
           "cSharpName": "PantsEmergencyStartOffStatefulScene"
         },
         {
@@ -3182,7 +4614,7 @@
         },
         {
           "id": "switch.pants_emergency_start_on_stateful_scene",
-          "friendlyName": "Pants Emergency Start On Stateful Scene",
+          "friendlyName": "Stateful Scene",
           "cSharpName": "PantsEmergencyStartOnStatefulScene"
         },
         {
@@ -3197,7 +4629,7 @@
         },
         {
           "id": "switch.pants_off_emergency_stateful_scene",
-          "friendlyName": "Pants Off Emergency Stateful Scene",
+          "friendlyName": "Stateful Scene",
           "cSharpName": "PantsOffEmergencyStatefulScene"
         },
         {
@@ -3217,18 +4649,8 @@
         },
         {
           "id": "switch.reference_light_do_not_disturb",
-          "friendlyName": "reference_light Do not disturb",
+          "friendlyName": "Reference Light Do not disturb",
           "cSharpName": "ReferenceLightDoNotDisturb"
-        },
-        {
-          "id": "switch.slzb_06m_disable_leds",
-          "friendlyName": "Disable LEDs",
-          "cSharpName": "Slzb06mDisableLeds"
-        },
-        {
-          "id": "switch.slzb_06m_led_night_mode",
-          "friendlyName": "LED night mode",
-          "cSharpName": "Slzb06mLedNightMode"
         },
         {
           "id": "switch.speakers",
@@ -3236,19 +4658,19 @@
           "cSharpName": "Speakers"
         },
         {
-          "id": "switch.tapo_smart_dimmer_auto_update_enabled",
-          "friendlyName": "Tapo Smart_Dimmer Auto update enabled",
-          "cSharpName": "TapoSmartDimmerAutoUpdateEnabled"
-        },
-        {
-          "id": "switch.tapo_smart_dimmer_led",
-          "friendlyName": "Tapo Smart_Dimmer LED",
-          "cSharpName": "TapoSmartDimmerLed"
-        },
-        {
           "id": "switch.tentacle_lamp",
           "friendlyName": "Tentacle Lamp",
           "cSharpName": "TentacleLamp"
+        },
+        {
+          "id": "switch.tentacle_lamp_auto_update_enabled",
+          "friendlyName": "Tentacle Lamp Auto update enabled",
+          "cSharpName": "TentacleLampAutoUpdateEnabled"
+        },
+        {
+          "id": "switch.tentacle_lamp_led",
+          "friendlyName": "Tentacle Lamp LED",
+          "cSharpName": "TentacleLampLed"
         },
         {
           "id": "switch.tentacle_led",
@@ -3295,32 +4717,42 @@
         {
           "jsonName": "icon",
           "cSharpName": "Icon",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "friendly_name",
           "cSharpName": "FriendlyName",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "configuration",
           "cSharpName": "Configuration",
-          "clrType": "System.Object"
+          "clrType": "object",
+          "values": null,
+          "name": "object",
+          "toGenerate": false
         },
         {
           "jsonName": "restored",
           "cSharpName": "Restored",
-          "clrType": "System.Boolean"
+          "clrType": "bool",
+          "values": null,
+          "name": "bool",
+          "toGenerate": false
         },
         {
           "jsonName": "supported_features",
           "cSharpName": "SupportedFeatures",
-          "clrType": "System.Double"
-        },
-        {
-          "jsonName": "device_class",
-          "cSharpName": "DeviceClass",
-          "clrType": "System.String"
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
         }
       ]
     },
@@ -3337,22 +4769,34 @@
         {
           "jsonName": "duration",
           "cSharpName": "Duration",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "editable",
           "cSharpName": "Editable",
-          "clrType": "System.Boolean"
+          "clrType": "bool",
+          "values": null,
+          "name": "bool",
+          "toGenerate": false
         },
         {
           "jsonName": "icon",
           "cSharpName": "Icon",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "friendly_name",
           "cSharpName": "FriendlyName",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         }
       ]
     },
@@ -3428,6 +4872,11 @@
           "id": "todo.cyberlist_jeff_hamm",
           "friendlyName": "CyberList jeff_hamm",
           "cSharpName": "CyberlistJeffHamm"
+        },
+        {
+          "id": "todo.dream_dreams_jeff_hamm",
+          "friendlyName": "Dream Dreams jeff_hamm",
+          "cSharpName": "DreamDreamsJeffHamm"
         },
         {
           "id": "todo.fabrishion_district_jeff_hamm",
@@ -3543,6 +4992,11 @@
           "id": "todo.on_light_jeff_hamm",
           "friendlyName": "On light jeff_hamm",
           "cSharpName": "OnLightJeffHamm"
+        },
+        {
+          "id": "todo.our_home_jeff_hamm",
+          "friendlyName": "Our Home jeff_hamm",
+          "cSharpName": "OurHomeJeffHamm"
         },
         {
           "id": "todo.restaurants_jeff_hamm",
@@ -3669,27 +5123,42 @@
         {
           "jsonName": "all_todos",
           "cSharpName": "AllTodos",
-          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.Object]"
+          "clrType": "IReadOnlyList\u003Cobject\u003E",
+          "values": null,
+          "name": "IReadOnlyList\u003Cobject\u003E",
+          "toGenerate": false
         },
         {
           "jsonName": "friendly_name",
           "cSharpName": "FriendlyName",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "supported_features",
           "cSharpName": "SupportedFeatures",
-          "clrType": "System.Double"
-        },
-        {
-          "jsonName": "restored",
-          "cSharpName": "Restored",
-          "clrType": "System.Boolean"
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
         },
         {
           "jsonName": "overdue_todos",
           "cSharpName": "OverdueTodos",
-          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.Object]"
+          "clrType": "IReadOnlyList\u003Cobject\u003E",
+          "values": null,
+          "name": "IReadOnlyList\u003Cobject\u003E",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "restored",
+          "cSharpName": "Restored",
+          "clrType": "bool",
+          "values": null,
+          "name": "bool",
+          "toGenerate": false
         }
       ]
     },
@@ -3700,13 +5169,21 @@
           "id": "tts.google_en_com",
           "friendlyName": "Google Translate en com",
           "cSharpName": "GoogleEnCom"
+        },
+        {
+          "id": "tts.piper",
+          "friendlyName": "piper",
+          "cSharpName": "Piper"
         }
       ],
       "attributes": [
         {
           "jsonName": "friendly_name",
           "cSharpName": "FriendlyName",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         }
       ]
     },
@@ -3724,9 +5201,9 @@
           "cSharpName": "AdvancedSshWebTerminalUpdate"
         },
         {
-          "id": "update.alive_remote_remote_control_switch_firmware",
+          "id": "update.alive_remote_firmware",
           "friendlyName": "Alive Remote Firmware",
-          "cSharpName": "AliveRemoteRemoteControlSwitchFirmware"
+          "cSharpName": "AliveRemoteFirmware"
         },
         {
           "id": "update.bubble_card_update",
@@ -3799,6 +5276,11 @@
           "cSharpName": "FiremoteCardUpdate"
         },
         {
+          "id": "update.flower_card_update",
+          "friendlyName": "Flower Card update",
+          "cSharpName": "FlowerCardUpdate"
+        },
+        {
           "id": "update.fontawesome_update",
           "friendlyName": "fontawesome update",
           "cSharpName": "FontawesomeUpdate"
@@ -3819,6 +5301,11 @@
           "cSharpName": "HammletMusicWledFirmware"
         },
         {
+          "id": "update.hey_nabu_home_assistant_voice_0974a6",
+          "friendlyName": "Hey Nabu ",
+          "cSharpName": "HeyNabuHomeAssistantVoice0974a6"
+        },
+        {
           "id": "update.hifiberry_update",
           "friendlyName": "HiFiBerry update",
           "cSharpName": "HifiberryUpdate"
@@ -3832,6 +5319,11 @@
           "id": "update.home_assistant_operating_system_update",
           "friendlyName": "Home Assistant Operating System Update",
           "cSharpName": "HomeAssistantOperatingSystemUpdate"
+        },
+        {
+          "id": "update.home_assistant_plant_update",
+          "friendlyName": "Home Assistant Plant update",
+          "cSharpName": "HomeAssistantPlantUpdate"
         },
         {
           "id": "update.home_assistant_supervisor_update",
@@ -3877,6 +5369,11 @@
           "id": "update.lightener_update",
           "friendlyName": "Lightener update",
           "cSharpName": "LightenerUpdate"
+        },
+        {
+          "id": "update.liminal_dimmer_firmware_2",
+          "friendlyName": "Liminal Dimmer Firmware",
+          "cSharpName": "LiminalDimmerFirmware2"
         },
         {
           "id": "update.liminal_switch",
@@ -3934,11 +5431,6 @@
           "cSharpName": "NetdaemonV5Net9Update"
         },
         {
-          "id": "update.node_red_update",
-          "friendlyName": "Node-RED Update",
-          "cSharpName": "NodeRedUpdate"
-        },
-        {
           "id": "update.o365_card_update",
           "friendlyName": "O365 Card update",
           "cSharpName": "O365CardUpdate"
@@ -3949,9 +5441,24 @@
           "cSharpName": "Office365Update"
         },
         {
+          "id": "update.openplantbook_update",
+          "friendlyName": "OpenPlantbook update",
+          "cSharpName": "OpenplantbookUpdate"
+        },
+        {
+          "id": "update.openwakeword_update",
+          "friendlyName": "openWakeWord Update",
+          "cSharpName": "OpenwakewordUpdate"
+        },
+        {
           "id": "update.outdoor_switch",
           "friendlyName": "Outdoor Switch",
           "cSharpName": "OutdoorSwitch"
+        },
+        {
+          "id": "update.piper_update",
+          "friendlyName": "Piper Update",
+          "cSharpName": "PiperUpdate"
         },
         {
           "id": "update.pirate_weather_update",
@@ -3984,11 +5491,6 @@
           "cSharpName": "SambaShareUpdate"
         },
         {
-          "id": "update.seafile_update",
-          "friendlyName": "Seafile Update",
-          "cSharpName": "SeafileUpdate"
-        },
-        {
           "id": "update.select_list_card_update",
           "friendlyName": "Select list Card update",
           "cSharpName": "SelectListCardUpdate"
@@ -3999,21 +5501,6 @@
           "cSharpName": "SliderEntityRowUpdate"
         },
         {
-          "id": "update.slim_multi_sensor_pir_door_temperature_illumination_firmware",
-          "friendlyName": "Indoor Multi-Sensor Firmware",
-          "cSharpName": "SlimMultiSensorPirDoorTemperatureIlluminationFirmware"
-        },
-        {
-          "id": "update.slzb_06m_core_firmware",
-          "friendlyName": "Core firmware",
-          "cSharpName": "Slzb06mCoreFirmware"
-        },
-        {
-          "id": "update.slzb_06m_zigbee_firmware",
-          "friendlyName": "Zigbee firmware",
-          "cSharpName": "Slzb06mZigbeeFirmware"
-        },
-        {
           "id": "update.smart_rgbtw_bulb",
           "friendlyName": null,
           "cSharpName": "SmartRgbtwBulb"
@@ -4022,6 +5509,11 @@
           "id": "update.smart_rgbtw_bulb_2",
           "friendlyName": null,
           "cSharpName": "SmartRgbtwBulb2"
+        },
+        {
+          "id": "update.smart_rgbtw_bulb_3",
+          "friendlyName": "Smart RGBTW Bulb",
+          "cSharpName": "SmartRgbtwBulb3"
         },
         {
           "id": "update.smart_wi_fi_lamp_dimmer",
@@ -4059,6 +5551,16 @@
           "cSharpName": "StudioCodeServerUpdate"
         },
         {
+          "id": "update.swipe_card_update",
+          "friendlyName": "Swipe Card update",
+          "cSharpName": "SwipeCardUpdate"
+        },
+        {
+          "id": "update.whisper_update",
+          "friendlyName": "Whisper Update",
+          "cSharpName": "WhisperUpdate"
+        },
+        {
           "id": "update.youtube_update",
           "friendlyName": "youtube update",
           "cSharpName": "YoutubeUpdate"
@@ -4072,6 +5574,11 @@
           "id": "update.z_wave_js_ui_update",
           "friendlyName": "Z-Wave JS UI Update",
           "cSharpName": "ZWaveJsUiUpdate"
+        },
+        {
+          "id": "update.z_wave_js_update",
+          "friendlyName": "Z-Wave JS Update",
+          "cSharpName": "ZWaveJsUpdate"
         },
         {
           "id": "update.zha_toolkit_service_for_advanced_zigbee_usage_update",
@@ -4088,77 +5595,142 @@
         {
           "jsonName": "auto_update",
           "cSharpName": "AutoUpdate",
-          "clrType": "System.Boolean"
+          "clrType": "bool",
+          "values": null,
+          "name": "bool",
+          "toGenerate": false
         },
         {
           "jsonName": "display_precision",
           "cSharpName": "DisplayPrecision",
-          "clrType": "System.Double"
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
         },
         {
           "jsonName": "installed_version",
           "cSharpName": "InstalledVersion",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "in_progress",
           "cSharpName": "InProgress",
-          "clrType": "System.Boolean"
+          "clrType": "bool",
+          "values": null,
+          "name": "bool",
+          "toGenerate": false
         },
         {
           "jsonName": "latest_version",
           "cSharpName": "LatestVersion",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "release_summary",
           "cSharpName": "ReleaseSummary",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "release_url",
           "cSharpName": "ReleaseUrl",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "skipped_version",
           "cSharpName": "SkippedVersion",
-          "clrType": null
+          "clrType": null,
+          "values": null,
+          "name": null,
+          "toGenerate": false
         },
         {
           "jsonName": "title",
           "cSharpName": "Title",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "update_percentage",
           "cSharpName": "UpdatePercentage",
-          "clrType": null
+          "clrType": null,
+          "values": null,
+          "name": null,
+          "toGenerate": false
         },
         {
           "jsonName": "entity_picture",
           "cSharpName": "EntityPicture",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "friendly_name",
           "cSharpName": "FriendlyName",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "supported_features",
           "cSharpName": "SupportedFeatures",
-          "clrType": "System.Double"
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
         },
         {
           "jsonName": "device_class",
           "cSharpName": "DeviceClass",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "restored",
           "cSharpName": "Restored",
-          "clrType": "System.Boolean"
+          "clrType": "bool",
+          "values": null,
+          "name": "bool",
+          "toGenerate": false
+        }
+      ]
+    },
+    {
+      "domain": "wake_word",
+      "entities": [
+        {
+          "id": "wake_word.openwakeword",
+          "friendlyName": "openwakeword",
+          "cSharpName": "Openwakeword"
+        }
+      ],
+      "attributes": [
+        {
+          "jsonName": "friendly_name",
+          "cSharpName": "FriendlyName",
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         }
       ]
     },
@@ -4175,82 +5747,130 @@
         {
           "jsonName": "temperature",
           "cSharpName": "Temperature",
-          "clrType": "System.Double"
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
         },
         {
           "jsonName": "dew_point",
           "cSharpName": "DewPoint",
-          "clrType": "System.Double"
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
         },
         {
           "jsonName": "temperature_unit",
           "cSharpName": "TemperatureUnit",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "humidity",
           "cSharpName": "Humidity",
-          "clrType": "System.Double"
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
         },
         {
           "jsonName": "cloud_coverage",
           "cSharpName": "CloudCoverage",
-          "clrType": "System.Double"
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
         },
         {
           "jsonName": "uv_index",
           "cSharpName": "UvIndex",
-          "clrType": "System.Double"
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
         },
         {
           "jsonName": "pressure",
           "cSharpName": "Pressure",
-          "clrType": "System.Double"
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
         },
         {
           "jsonName": "pressure_unit",
           "cSharpName": "PressureUnit",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "wind_bearing",
           "cSharpName": "WindBearing",
-          "clrType": "System.Double"
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
         },
         {
           "jsonName": "wind_speed",
           "cSharpName": "WindSpeed",
-          "clrType": "System.Double"
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
         },
         {
           "jsonName": "wind_speed_unit",
           "cSharpName": "WindSpeedUnit",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "visibility_unit",
           "cSharpName": "VisibilityUnit",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "precipitation_unit",
           "cSharpName": "PrecipitationUnit",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "attribution",
           "cSharpName": "Attribution",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "friendly_name",
           "cSharpName": "FriendlyName",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "supported_features",
           "cSharpName": "SupportedFeatures",
-          "clrType": "System.Double"
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
         }
       ]
     },
@@ -4267,42 +5887,66 @@
         {
           "jsonName": "latitude",
           "cSharpName": "Latitude",
-          "clrType": "System.Double"
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
         },
         {
           "jsonName": "longitude",
           "cSharpName": "Longitude",
-          "clrType": "System.Double"
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
         },
         {
           "jsonName": "radius",
           "cSharpName": "Radius",
-          "clrType": "System.Double"
+          "clrType": "double",
+          "values": null,
+          "name": "double",
+          "toGenerate": false
         },
         {
           "jsonName": "passive",
           "cSharpName": "Passive",
-          "clrType": "System.Boolean"
+          "clrType": "bool",
+          "values": null,
+          "name": "bool",
+          "toGenerate": false
         },
         {
           "jsonName": "persons",
           "cSharpName": "Persons",
-          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.Object]"
+          "clrType": "IReadOnlyList\u003Cobject\u003E",
+          "values": null,
+          "name": "IReadOnlyList\u003Cobject\u003E",
+          "toGenerate": false
         },
         {
           "jsonName": "editable",
           "cSharpName": "Editable",
-          "clrType": "System.Boolean"
+          "clrType": "bool",
+          "values": null,
+          "name": "bool",
+          "toGenerate": false
         },
         {
           "jsonName": "icon",
           "cSharpName": "Icon",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         },
         {
           "jsonName": "friendly_name",
           "cSharpName": "FriendlyName",
-          "clrType": "System.String"
+          "clrType": "string",
+          "values": null,
+          "name": "string",
+          "toGenerate": false
         }
       ]
     }

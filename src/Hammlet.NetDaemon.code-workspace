@@ -14,6 +14,9 @@
 		},
 		{
 			"path": "../../../Documents/PowerShell"
+		},
+		{
+			"path": "../../netdaemon"
 		}
 	],
 	"settings": {

@@ -1,8 +1,11 @@
 class HammeletDaemon {
     $Name="hammassistant";
     $ServerName=$this.Name + ".local";
+    $Ip="192.168.1.179"
     $Port=8123;
-    $ConfigPath="\\$($this.ServerName)\config";
+#    $ConfigPath="\\$($this.ServerName)\config";
+#    $ConfigPath="\\$($this.Ip)\config";
+    $ConfigPath="Z:\\";
     $NetDaemonVersion="5"
     $NetDaemonPath=$this.ConfigPath + "\netdaemon" + $this.NetDaemonVersion
     $DriveRoot=$this.ConfigPath
@@ -24,9 +27,12 @@ class HammeletDaemon {
         if(!$this.IsConnected) {
             Import-Module Home-Assistant
             $Token = Get-SecretString -Name "HaToken" -AsPlainText
-            $ip=(Resolve-DNSName 'hammassistant' | where Ip4Address -ne $null |  select -ExpandProperty IP4Address)
-            Write-Information "Connecting to $($this.ServerName) [$ip]"
-            New-HomeAssistantSession -ip $ip -port $this.Port -token $Token
+            $IpAddr=$this.Ip
+            if(!$IpAddr) {
+                $this.Ip=$IpAddr=(Resolve-DNSName $this.ServerName | where Ip4Address -ne $null |  select -ExpandProperty IP4Address)
+            }
+            Write-Information "Connecting to $($this.ServerName) [$IpAddr]"
+            New-HomeAssistantSession -ip $IpAddr -port $this.Port -token $Token
             $this.IsConnected=$true
         }
     }
@@ -38,15 +44,19 @@ class HammeletDaemon {
     UpdateTool() {
         dotnet tool update -g NetDaemon.HassModel.CodeGen
     }
+    $Tool="D:\OneDrive\Projects\Home\netdaemon\src\HassModel\NetDaemon.HassModel.CodeGenerator\bin\Debug\net9.0\NetDaemon.HassModel.CodeGenerator.exe"
+#    $Tool="nd-codegen"
     EntityUpdate() {
         $GenArgs=@('-fpe')
         # if($Folder) { $GenArgs += "-f $Folder" }
         # if($HaHost) { $GenArgs += "-host $HaHost" }
         # if($Port) { $GenArgs += "-port $Port" }
         # if($Ssl) { $GenArgs += "-ssl" }
+        
         # if($Token) { $GenArgs += "-token $Token" }
         # if($BypassCert) { $GenArgs += "-bypass-cert" }
-        nd-codegen -fpe @GenArgs 2>&1 | Write-Information
+        $token=(Get-SecretString -Name "HaToken" -AsPlainText)
+        Invoke-Expression "$($This.Tool) -fpe -host $($this.Ip) -port $($This.Port) -token $token 2>&1 | Write-Information"
     }    
     RestartService() {
         # Point to the HA PowerSHell Module
@@ -79,4 +89,5 @@ if($global:Ha) {
 }
 $global:Ha=New-Object HammeletDaemon
 $global:Ha.MapDrive()
+$global:InformationPreference="Continue"
 return $Ha

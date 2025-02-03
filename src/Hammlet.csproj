@@ -11,10 +11,14 @@
 
     <ItemGroup>
       <None Remove="Apps\Lights\WatchForReferenceLights.yaml" />
+      <None Remove="Config\SceneSelectorConfig.yaml" />
     </ItemGroup>
 
     <ItemGroup>
       <Content Include="Config\ReferenceLight.yaml">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Include="Config\SceneSelectorConfig.yaml">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </Content>
     </ItemGroup>
@@ -47,7 +51,7 @@
     </ItemGroup>
         
     <ItemGroup>
-      <ProjectReference Include="..\CompileTimeProxyGenerator\CompileTimeProxyGenerator\CompileTimeProxyGenerator.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+      <ProjectReference Include="..\..\CompileTimeProxyGenerator\CompileTimeProxyGenerator\CompileTimeProxyGenerator.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
     </ItemGroup>
         
     <ItemGroup>

@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
-using System.Drawing;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Text.Json;
-using System.Threading.Tasks;
+using Hammlet.Models.Enums;
 using Hammlet.NetDaemon.Models;
-using Hammlet.NetDaemon.Models.Framework;
 using NetDaemon.HassModel.Entities;
 
 namespace Hammlet.NetDaemon.Extensions;

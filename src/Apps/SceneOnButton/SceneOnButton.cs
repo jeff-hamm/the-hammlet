@@ -1,18 +1,12 @@
-// Use unique namespaces for your apps if you going to share with others to avoid
-// conflicting names
-
 using System.Linq;
 using System.Text.Json;
+using Hammlet.Config;
 using Hammlet.NetDaemon.Models;
-using Hammlet.NetDaemon.Models.Framework;
 using HassModel;
 using NetDaemon.HassModel.Entities;
 
 namespace Hammlet.Apps.SceneOnButton;
 
-/// <summary>
-///     Showcase using the new HassModel API and turn on light on movement
-/// </summary>
 [NetDaemonApp]
 public class SceneOnButton
 {
@@ -20,19 +14,66 @@ public class SceneOnButton
     {
         WriteIndented = true,
     };
-    public SceneOnButton(IHaContext ha, EventEntities events, LightEntities lights)
+
+    public SceneOnButton(IHaContext ha, IEntityFactory entityFactory, EventEntities events, LightEntities lights, ILogger<SceneOnButton> logger,
+        IAppConfig<Config.SceneSelectorConfig> config)
     {
-        events.AliveRemoteRemoteControl.StateChanges().Subscribe(e =>
-        {
-            if (e.Entity == events.AliveRemoteRemoteControlSwitchScene001 &&
-                e.Entity.EventType<ZWaveSceneSelectorEventTypes>() == ZWaveSceneSelectorEventTypes.KeyPressed)
-                lights.Living.Toggle();
-            if (e.Entity == events.AliveRemoteRemoteControlSwitchScene003 &&
-                e.Entity.EventType<ZWaveSceneSelectorEventTypes>() == ZWaveSceneSelectorEventTypes.KeyPressed)
-                lights.Living.Brighten();
-            if (e.Entity == events.AliveRemoteRemoteControlSwitchScene004 &&
-                e.Entity.EventType<ZWaveSceneSelectorEventTypes>() == ZWaveSceneSelectorEventTypes.KeyPressed)
-                lights.Living.Darken();
-        });
+        var buttonEvents = ha.Events(config.Value.ButtonEventIds)
+            .StateChanges()
+            .Subscribe(e =>
+            {
+
+                var light = lights.Entity(config.Value.TargetEntityId);
+                foreach (var button in config.Value.Buttons.Where(b =>
+                             e.Entity.EventType<SceneSelectorEventTypes>() == b.Type &&
+                             e.Entity.EntityId.EndsWith(b.EventIndex)))
+                {
+
+                    logger.LogInformation("Remote control event: {event}, performing action {action}", e.Entity,
+                        button.Action);
+                    switch (button.Action)
+                    {
+                        case ButtonAction.Brighten:
+                        case ButtonAction.Darken:
+                            if (button.On is not { } param)
+                            {
+                                param = new LightTurnOnParameters()
+                                {
+                                    BrightnessStepPct = config.Value.BrightnessPct *
+                                                        (button.Action == ButtonAction.Brighten ? 1.0 : -1.0)
+                                };
+                            }
+                            else
+                            {
+                                param = param with
+                                {
+                                    BrightnessStepPct = config.Value.BrightnessPct *
+                                                        (button.Action == ButtonAction.Brighten ? 1.0 : -1.0)
+                                };
+                            }
+                            if (button.Action == ButtonAction.Brighten && (light.Attributes?.Brightness == null || light.Attributes.Brightness == 0))
+                                param = param with
+                                {
+                                    BrightnessPct = 25,
+                                    BrightnessStepPct = null
+                                };
+
+                            light.TurnOn(param);
+                            break;
+                        case ButtonAction.ToggleWarm:
+                            light.ToggleWarm();
+                            break;
+                        case ButtonAction.TurnOff:
+                            light.TurnOff();
+                            break;
+                        case ButtonAction.TurnOn:
+                            light.TurnOn();
+                            break;
+                        case ButtonAction.Toggle:
+                            light.Toggle();
+                            break;
+                    }
+                }
+            });
     }
 }

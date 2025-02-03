@@ -1,11 +1,9 @@
 // Use unique namespaces for your apps if you going to share with others to avoid
 // conflicting names
 
-using System.Linq;
 using System.Text.Json;
-using Hammlet.NetDaemon.Extensions;
+using Hammlet.Extensions;
 using Hammlet.NetDaemon.Models;
-using Hammlet.NetDaemon.Models.Framework;
 using NetDaemon.HassModel.Entities;
 
 namespace Hammlet.NetDaemon.apps.MediaManagement;

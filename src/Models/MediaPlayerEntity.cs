@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using CompileTimeProxyGenerator;
+﻿using CompileTimeProxyGenerator;
+using Hammlet.Extensions;
+using Hammlet.Models.Enums;
 using Hammlet.NetDaemon.Extensions;
-using Hammlet.NetDaemon.Models.Framework;
 using NetDaemon.HassModel.Entities;
 
 namespace Hammlet.NetDaemon.Models;
@@ -14,7 +10,7 @@ namespace Hammlet.NetDaemon.Models;
 [Proxy(typeof(LightAttributes),ConvertTo = ConversionType.Implicit)]
 public partial record ParsedLightAttributes
 {
-    public ColorMode ColorMode => _inner.ColorMode == "color_temp" ? Framework.ColorMode.ColorTemp  : (_inner.ColorMode?.ParseState<ColorMode>() ?? ColorMode.Unknown);
+    public ColorMode ColorMode => _inner.ColorMode == "color_temp" ? ColorMode.ColorTemp  : (_inner.ColorMode?.ParseState<ColorMode>() ?? ColorMode.Unknown);
 
     public System.Collections.Generic.IEnumerable<ColorMode> SupportedColorModes =>
         _inner.SupportedColorModes?.ParseModes() ?? [];
