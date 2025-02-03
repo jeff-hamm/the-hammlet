@@ -11,6 +11,7 @@ public interface IStateEntity<out TState> where TState : IParsable<TState>
 public partial record LightAttributes
 {
     [JsonIgnore] public ExtendedLightAttributes? Extended { get; init; } = new ExtendedLightAttributes();
+    public object? RgbwColor { get; set; }
 }
 
 public partial class ExtendedLightAttributes

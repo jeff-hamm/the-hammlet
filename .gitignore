@@ -6,7 +6,7 @@ appsettings.Development.json
 .idea
 #appsettings.json
 #HomeAssistantGenerated.cs
-.history
+.history/*
 
 
 ## Ignore Visual Studio temporary files, build results, and

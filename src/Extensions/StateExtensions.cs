@@ -13,16 +13,17 @@ public static class LightExtensions
         target.EntityState?.Attributes != null ? @this.CopyParameters(new ParsedLightAttributes(target.EntityState.Attributes)) : null;
 
 
-    public static LightTurnOnParameters CopyParameters(this LightEntity @this, ParsedLightAttributes attributes)
+    public static LightTurnOnParameters CopyParameters(this LightEntity @this, LightAttributes attributes)
     {
         if (attributes == null)
             return new();
-        var supportedColorModes = @this.Attributes?.SupportedColorModes?.ParseModes()?.ToArray() ?? [];
+        var supportedColorModes = @this.Attributes?.SupportedColorModes?.ToArray() ?? [];
         ColorMode mode = 
-                supportedColorModes.Contains(attributes.ColorMode) ? attributes.ColorMode : ColorMode.Unknown;
+            attributes.ColorMode.HasValue && supportedColorModes.Contains(attributes.ColorMode.Value) ? attributes.ColorMode.Value : ColorMode.Unknown;
         if (mode == ColorMode.Unknown && attributes.ColorMode != ColorMode.Unknown)
         {
-            if (attributes.ColorMode.HasFlag(ColorMode.IsColor))
+            if (
+                attributes.ColorMode?.HasFlag(ColorMode.IsColor) == true)
             {
                 mode = supportedColorModes.FirstOrDefault(s => s.HasFlag(ColorMode.IsColor) &&
                     HasAttributes(s, attributes)
@@ -33,7 +34,7 @@ public static class LightExtensions
         {
             Brightness = mode.HasFlag(ColorMode.Brightness) ? attributes.Brightness : null,
 //            Transition = @this.Transition,
-            Effect = attributes.Effect,
+            Effect = attributes.Effect?.ToString(),
             White = mode == ColorMode.White ? attributes.Brightness : null,
             ColorTemp = mode == ColorMode.ColorTemp ? attributes.ColorTemp : null,
             RgbColor = mode == ColorMode.Rgb ? attributes.RgbColor as IReadOnlyCollection<int> : null,
@@ -44,7 +45,7 @@ public static class LightExtensions
         };
     }
 
-    private static bool HasAttributes(ColorMode mode, ParsedLightAttributes attributes) =>
+    private static bool HasAttributes(ColorMode mode, LightAttributes attributes) =>
         mode switch
         {
             ColorMode.White => attributes.Brightness != null,

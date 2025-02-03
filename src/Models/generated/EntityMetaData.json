@@ -160,15 +160,26 @@
           "cSharpName": "SupportedColorModes",
           "clrType": "System.Collections.Generic.IReadOnlyList\u003CHammlet.Models.Enums.ColorMode\u003E",
           "values": [
-            "Brightness",
-            "ColorTemp",
-            "Hs",
-            "Onoff",
-            "Rgb",
-            "Rgbw",
-            "Xy"
+            "brightness",
+            "color_temp",
+            "hs",
+            "onoff",
+            "rgb",
+            "rgbw",
+            "xy"
           ],
-          "name": "System.Collections.Generic.IReadOnlyList\u003CHammlet.Models.Enums.ColorMode\u003E",
+          "isList": true,
+          "propertyType": "System.Collections.Generic.IReadOnlyList\u003CHammlet.Models.Enums.ColorMode\u003E",
+          "cSharpValues": [
+            "brightness",
+            "colorTemp",
+            "hs",
+            "onoff",
+            "rgb",
+            "rgbw",
+            "xy"
+          ],
+          "typeName": "System.Collections.Generic.IReadOnlyList\u003CHammlet.Models.Enums.ColorMode\u003E",
           "toGenerate": false
         },
         {
@@ -176,7 +187,10 @@
           "cSharpName": "ColorMode",
           "clrType": "Hammlet.Models.Enums.ColorMode",
           "values": null,
-          "name": "Hammlet.Models.Enums.ColorMode",
+          "isList": false,
+          "propertyType": "Hammlet.Models.Enums.ColorMode",
+          "cSharpValues": null,
+          "typeName": "Hammlet.Models.Enums.ColorMode",
           "toGenerate": false
         },
         {
@@ -184,7 +198,10 @@
           "cSharpName": "SupportedFeatures",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -192,7 +209,10 @@
           "cSharpName": "MinColorTempKelvin",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -200,7 +220,10 @@
           "cSharpName": "MaxColorTempKelvin",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -208,7 +231,10 @@
           "cSharpName": "MinMireds",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -216,7 +242,10 @@
           "cSharpName": "MaxMireds",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -224,7 +253,10 @@
           "cSharpName": "Brightness",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -232,7 +264,10 @@
           "cSharpName": "ColorTempKelvin",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -240,7 +275,10 @@
           "cSharpName": "ColorTemp",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -248,7 +286,10 @@
           "cSharpName": "HsColor",
           "clrType": "IReadOnlyList\u003Cdouble\u003E",
           "values": null,
-          "name": "IReadOnlyList\u003Cdouble\u003E",
+          "isList": true,
+          "propertyType": "IReadOnlyList\u003CIReadOnlyList\u003Cdouble\u003E\u003E",
+          "cSharpValues": null,
+          "typeName": "IReadOnlyList\u003Cdouble\u003E",
           "toGenerate": false
         },
         {
@@ -256,7 +297,10 @@
           "cSharpName": "RgbColor",
           "clrType": "IReadOnlyList\u003Cdouble\u003E",
           "values": null,
-          "name": "IReadOnlyList\u003Cdouble\u003E",
+          "isList": true,
+          "propertyType": "IReadOnlyList\u003CIReadOnlyList\u003Cdouble\u003E\u003E",
+          "cSharpValues": null,
+          "typeName": "IReadOnlyList\u003Cdouble\u003E",
           "toGenerate": false
         },
         {
@@ -264,7 +308,10 @@
           "cSharpName": "XyColor",
           "clrType": "IReadOnlyList\u003Cdouble\u003E",
           "values": null,
-          "name": "IReadOnlyList\u003Cdouble\u003E",
+          "isList": true,
+          "propertyType": "IReadOnlyList\u003CIReadOnlyList\u003Cdouble\u003E\u003E",
+          "cSharpValues": null,
+          "typeName": "IReadOnlyList\u003Cdouble\u003E",
           "toGenerate": false
         },
         {
@@ -272,22 +319,40 @@
           "cSharpName": "EntityId",
           "clrType": "LightEntityId",
           "values": [
-            "Light_bedroomFanLight",
-            "Light_hammletBathroom",
-            "Light_hammletPantry",
-            "Light_hammletWledMusicSpamheartVein2",
-            "Light_kitchen",
-            "Light_kitchenSwitch",
-            "Light_laserLamp",
-            "Light_liminalCeiling",
-            "Light_livingFan",
-            "Light_plantLamp",
-            "Light_spamheart4SpamheartVein",
-            "Light_stripperLight",
-            "Light_succulentLamp",
-            "Light_tentacleLamp"
+            "light.bedroom_fan_light",
+            "light.hammlet_bathroom",
+            "light.hammlet_pantry",
+            "light.hammlet_wled_music_spamheart_vein_2",
+            "light.kitchen",
+            "light.kitchen_switch",
+            "light.laser_lamp",
+            "light.liminal_ceiling",
+            "light.living_fan",
+            "light.plant_lamp",
+            "light.spamheart_4_spamheart_vein",
+            "light.stripper_light",
+            "light.succulent_lamp",
+            "light.tentacle_lamp"
           ],
-          "name": "LightEntityId",
+          "isList": true,
+          "propertyType": "IReadOnlyList\u003CLightEntityId\u003E",
+          "cSharpValues": [
+            "light_bedroomFanLight",
+            "light_hammletBathroom",
+            "light_hammletPantry",
+            "light_hammletWledMusicSpamheartVein2",
+            "light_kitchen",
+            "light_kitchenSwitch",
+            "light_laserLamp",
+            "light_liminalCeiling",
+            "light_livingFan",
+            "light_plantLamp",
+            "light_spamheart4SpamheartVein",
+            "light_stripperLight",
+            "light_succulentLamp",
+            "light_tentacleLamp"
+          ],
+          "typeName": "LightEntityId",
           "toGenerate": true
         },
         {
@@ -295,50 +360,96 @@
           "cSharpName": "EffectList",
           "clrType": "LightEffectList",
           "values": [
-            "AddressableFlicker",
-            "Alarm",
-            "Blink",
-            "Breathe",
-            "CandleFlicker",
-            "ChannelChange",
-            "Christmas",
-            "Colorloop",
-            "ColorWipe",
-            "DateNight",
-            "Disco",
-            "Facebook",
-            "FastRandomLoop",
-            "FinishEffect",
-            "Fireworks",
-            "HappyBirthday",
-            "Home",
-            "LSD",
-            "Movie",
-            "NightMode",
-            "None",
-            "Okay",
-            "Police",
-            "Police2",
-            "Pulse",
-            "RandomLoop",
-            "RandomTwinkle",
-            "RGB",
-            "Romance",
-            "Slowdown",
-            "SlowTemp",
-            "Stop",
-            "StopColorloop",
-            "StopEffect",
-            "Strobecolor",
-            "Strobeepilepsy",
-            "Sunrise",
-            "Sunset",
-            "TeaTime",
-            "Twinkle",
-            "Twitter",
-            "WhatsApp"
+            "addressable flicker",
+            "alarm",
+            "blink",
+            "breathe",
+            "candle flicker",
+            "channel_change",
+            "christmas",
+            "color wipe",
+            "colorloop",
+            "date night",
+            "disco",
+            "facebook",
+            "fast random loop",
+            "finish_effect",
+            "fireworks",
+            "happy birthday",
+            "home",
+            "lsd",
+            "movie",
+            "night mode",
+            "none",
+            "okay",
+            "police",
+            "police2",
+            "pulse",
+            "random loop",
+            "random twinkle",
+            "rgb",
+            "romance",
+            "slow temp",
+            "slowdown",
+            "stop",
+            "stop_colorloop",
+            "stop_effect",
+            "strobe color",
+            "strobe epilepsy!",
+            "sunrise",
+            "sunset",
+            "tea time",
+            "twinkle",
+            "twitter",
+            "whatsapp"
           ],
-          "name": "LightEffectList",
+          "isList": true,
+          "propertyType": "IReadOnlyList\u003CLightEffectList\u003E",
+          "cSharpValues": [
+            "addressableflicker",
+            "alarm",
+            "blink",
+            "breathe",
+            "candleflicker",
+            "channelChange",
+            "christmas",
+            "colorwipe",
+            "colorloop",
+            "datenight",
+            "disco",
+            "facebook",
+            "fastrandomloop",
+            "finishEffect",
+            "fireworks",
+            "happybirthday",
+            "home",
+            "lsd",
+            "movie",
+            "nightmode",
+            "none",
+            "okay",
+            "police",
+            "police2",
+            "pulse",
+            "randomloop",
+            "randomtwinkle",
+            "rgb",
+            "romance",
+            "slowtemp",
+            "slowdown",
+            "stop",
+            "stopColorloop",
+            "stopEffect",
+            "strobecolor",
+            "strobeepilepsy",
+            "sunrise",
+            "sunset",
+            "teatime",
+            "twinkle",
+            "twitter",
+            "whatsapp"
+          ],
+          "typeName": "LightEffectList",
           "toGenerate": true
         },
         {
@@ -346,7 +457,10 @@
           "cSharpName": "Color",
           "clrType": "System.Object",
           "values": null,
-          "name": "System.Object",
+          "isList": false,
+          "propertyType": "System.Object",
+          "cSharpValues": null,
+          "typeName": "System.Object",
           "toGenerate": false
         },
         {
@@ -354,7 +468,10 @@
           "cSharpName": "Icon",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -362,7 +479,10 @@
           "cSharpName": "FriendlyName",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -370,7 +490,10 @@
           "cSharpName": "Effect",
           "clrType": null,
           "values": null,
-          "name": null,
+          "isList": false,
+          "propertyType": null,
+          "cSharpValues": null,
+          "typeName": null,
           "toGenerate": false
         },
         {
@@ -378,7 +501,10 @@
           "cSharpName": "RawState",
           "clrType": "bool",
           "values": null,
-          "name": "bool",
+          "isList": false,
+          "propertyType": "bool",
+          "cSharpValues": null,
+          "typeName": "bool",
           "toGenerate": false
         },
         {
@@ -386,7 +512,10 @@
           "cSharpName": "Restored",
           "clrType": "bool",
           "values": null,
-          "name": "bool",
+          "isList": false,
+          "propertyType": "bool",
+          "cSharpValues": null,
+          "typeName": "bool",
           "toGenerate": false
         }
       ]
@@ -441,7 +570,10 @@
           "cSharpName": "AppId",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -449,7 +581,10 @@
           "cSharpName": "AppName",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -457,15 +592,21 @@
           "cSharpName": "DeviceClass",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
           "jsonName": "entity_picture_local",
           "cSharpName": "EntityPictureLocal",
-          "clrType": "System.String",
+          "clrType": "string",
           "values": null,
-          "name": "System.String",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -473,7 +614,10 @@
           "cSharpName": "EntityPicture",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -481,7 +625,10 @@
           "cSharpName": "Icon",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -489,7 +636,10 @@
           "cSharpName": "FriendlyName",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -497,7 +647,10 @@
           "cSharpName": "SupportedFeatures",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -505,7 +658,10 @@
           "cSharpName": "VolumeLevel",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -513,7 +669,10 @@
           "cSharpName": "IsVolumeMuted",
           "clrType": "bool",
           "values": null,
-          "name": "bool",
+          "isList": false,
+          "propertyType": "bool",
+          "cSharpValues": null,
+          "typeName": "bool",
           "toGenerate": false
         },
         {
@@ -521,7 +680,10 @@
           "cSharpName": "MediaContentId",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -529,7 +691,10 @@
           "cSharpName": "MediaContentType",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -537,7 +702,10 @@
           "cSharpName": "MediaDuration",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -545,15 +713,21 @@
           "cSharpName": "MediaPosition",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
           "jsonName": "media_position_updated_at",
           "cSharpName": "MediaPositionUpdatedAt",
-          "clrType": "string",
+          "clrType": "object",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "object",
+          "cSharpValues": null,
+          "typeName": "object",
           "toGenerate": false
         },
         {
@@ -561,15 +735,21 @@
           "cSharpName": "MediaTitle",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
           "jsonName": "media_album_name",
           "cSharpName": "MediaAlbumName",
-          "clrType": "string",
+          "clrType": "System.String",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "System.String",
+          "cSharpValues": null,
+          "typeName": "System.String",
           "toGenerate": false
         },
         {
@@ -577,15 +757,21 @@
           "cSharpName": "MediaImageUrl",
           "clrType": "System.String",
           "values": null,
-          "name": "System.String",
+          "isList": false,
+          "propertyType": "System.String",
+          "cSharpValues": null,
+          "typeName": "System.String",
           "toGenerate": false
         },
         {
           "jsonName": "media_artist",
           "cSharpName": "MediaArtist",
-          "clrType": "string",
+          "clrType": "System.String",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "System.String",
+          "cSharpValues": null,
+          "typeName": "System.String",
           "toGenerate": false
         },
         {
@@ -593,31 +779,43 @@
           "cSharpName": "SoundModeList",
           "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.String]",
           "values": null,
-          "name": "System.Collections.Generic.IReadOnlyList\u003CSystem.String\u003E",
+          "isList": false,
+          "propertyType": "System.Collections.Generic.IReadOnlyList\u003CSystem.String\u003E",
+          "cSharpValues": null,
+          "typeName": "System.Collections.Generic.IReadOnlyList\u003CSystem.String\u003E",
           "toGenerate": false
         },
         {
           "jsonName": "media_track",
           "cSharpName": "MediaTrack",
-          "clrType": "double",
+          "clrType": "System.Object",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "System.Object",
+          "cSharpValues": null,
+          "typeName": "System.Object",
           "toGenerate": false
         },
         {
           "jsonName": "shuffle",
           "cSharpName": "Shuffle",
-          "clrType": "bool",
+          "clrType": "System.Boolean",
           "values": null,
-          "name": "bool",
+          "isList": false,
+          "propertyType": "System.Boolean",
+          "cSharpValues": null,
+          "typeName": "System.Boolean",
           "toGenerate": false
         },
         {
           "jsonName": "repeat",
           "cSharpName": "Repeat",
-          "clrType": "string",
+          "clrType": "System.String",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "System.String",
+          "cSharpValues": null,
+          "typeName": "System.String",
           "toGenerate": false
         },
         {
@@ -625,14 +823,40 @@
           "cSharpName": "SourceList",
           "clrType": "MediaPlayerSourceList",
           "values": [
-            "BathroomEchoDot",
-            "EchoPop",
-            "Everywhere",
-            "FireTVCube",
-            "HomeTheater",
-            "IPhone"
+            "bathroom echo dot",
+            "echo pop",
+            "everywhere",
+            "fire tv cube",
+            "hbo max",
+            "hdmi 1",
+            "hdmi 4",
+            "home theater",
+            "max",
+            "netflix",
+            "prime video",
+            "sharp sound bar",
+            "youtube",
+            "youtube tv"
           ],
-          "name": "MediaPlayerSourceList",
+          "isList": true,
+          "propertyType": "IReadOnlyList\u003CMediaPlayerSourceList\u003E",
+          "cSharpValues": [
+            "bathroomechodot",
+            "echopop",
+            "everywhere",
+            "firetvcube",
+            "hbomax",
+            "hdmi1",
+            "hdmi4",
+            "hometheater",
+            "max",
+            "netflix",
+            "primevideo",
+            "sharpsoundbar",
+            "youtube",
+            "youtubetv"
+          ],
+          "typeName": "MediaPlayerSourceList",
           "toGenerate": true
         },
         {
@@ -640,7 +864,10 @@
           "cSharpName": "Source",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -648,7 +875,10 @@
           "cSharpName": "AdbResponse",
           "clrType": "System.Object",
           "values": null,
-          "name": "System.Object",
+          "isList": false,
+          "propertyType": "System.Object",
+          "cSharpValues": null,
+          "typeName": "System.Object",
           "toGenerate": false
         },
         {
@@ -656,7 +886,10 @@
           "cSharpName": "HdmiInput",
           "clrType": "System.Object",
           "values": null,
-          "name": "System.Object",
+          "isList": false,
+          "propertyType": "System.Object",
+          "cSharpValues": null,
+          "typeName": "System.Object",
           "toGenerate": false
         },
         {
@@ -664,7 +897,10 @@
           "cSharpName": "SoundMode",
           "clrType": "System.String",
           "values": null,
-          "name": "System.String",
+          "isList": false,
+          "propertyType": "System.String",
+          "cSharpValues": null,
+          "typeName": "System.String",
           "toGenerate": false
         },
         {
@@ -672,7 +908,10 @@
           "cSharpName": "SoundModeRaw",
           "clrType": "System.String",
           "values": null,
-          "name": "System.String",
+          "isList": false,
+          "propertyType": "System.String",
+          "cSharpValues": null,
+          "typeName": "System.String",
           "toGenerate": false
         },
         {
@@ -680,71 +919,10 @@
           "cSharpName": "ActiveChild",
           "clrType": "string",
           "values": null,
-          "name": "string",
-          "toGenerate": false
-        },
-        {
-          "jsonName": "remote_player_state",
-          "cSharpName": "RemotePlayerState",
-          "clrType": "string",
-          "values": null,
-          "name": "string",
-          "toGenerate": false
-        },
-        {
-          "jsonName": "likeStatus",
-          "cSharpName": "LikeStatus",
-          "clrType": "string",
-          "values": null,
-          "name": "string",
-          "toGenerate": false
-        },
-        {
-          "jsonName": "current_playlist_title",
-          "cSharpName": "CurrentPlaylistTitle",
-          "clrType": "string",
-          "values": null,
-          "name": "string",
-          "toGenerate": false
-        },
-        {
-          "jsonName": "videoId",
-          "cSharpName": "VideoId",
-          "clrType": "string",
-          "values": null,
-          "name": "string",
-          "toGenerate": false
-        },
-        {
-          "jsonName": "_media_type",
-          "cSharpName": "MediaType",
-          "clrType": null,
-          "values": null,
-          "name": null,
-          "toGenerate": false
-        },
-        {
-          "jsonName": "_media_id",
-          "cSharpName": "MediaId",
-          "clrType": null,
-          "values": null,
-          "name": null,
-          "toGenerate": false
-        },
-        {
-          "jsonName": "current_track",
-          "cSharpName": "CurrentTrack",
-          "clrType": "double",
-          "values": null,
-          "name": "double",
-          "toGenerate": false
-        },
-        {
-          "jsonName": "remote_player_id",
-          "cSharpName": "RemotePlayerId",
-          "clrType": "string",
-          "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -752,7 +930,109 @@
           "cSharpName": "AssumedState",
           "clrType": "bool",
           "values": null,
-          "name": "bool",
+          "isList": false,
+          "propertyType": "bool",
+          "cSharpValues": null,
+          "typeName": "bool",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "remote_player_state",
+          "cSharpName": "RemotePlayerState",
+          "clrType": "string",
+          "values": null,
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "likeStatus",
+          "cSharpName": "LikeStatus",
+          "clrType": "string",
+          "values": null,
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "current_playlist_title",
+          "cSharpName": "CurrentPlaylistTitle",
+          "clrType": "string",
+          "values": null,
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "videoId",
+          "cSharpName": "VideoId",
+          "clrType": "string",
+          "values": null,
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "_media_type",
+          "cSharpName": "MediaType",
+          "clrType": null,
+          "values": null,
+          "isList": false,
+          "propertyType": null,
+          "cSharpValues": null,
+          "typeName": null,
+          "toGenerate": false
+        },
+        {
+          "jsonName": "_media_id",
+          "cSharpName": "MediaId",
+          "clrType": null,
+          "values": null,
+          "isList": false,
+          "propertyType": null,
+          "cSharpValues": null,
+          "typeName": null,
+          "toGenerate": false
+        },
+        {
+          "jsonName": "current_track",
+          "cSharpName": "CurrentTrack",
+          "clrType": "double",
+          "values": null,
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "remote_player_id",
+          "cSharpName": "RemotePlayerId",
+          "clrType": "string",
+          "values": null,
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
+          "toGenerate": false
+        },
+        {
+          "jsonName": "sound_output",
+          "cSharpName": "SoundOutput",
+          "clrType": "string",
+          "values": null,
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         }
       ]
@@ -772,7 +1052,10 @@
           "cSharpName": "Restored",
           "clrType": "bool",
           "values": null,
-          "name": "bool",
+          "isList": false,
+          "propertyType": "bool",
+          "cSharpValues": null,
+          "typeName": "bool",
           "toGenerate": false
         },
         {
@@ -780,7 +1063,10 @@
           "cSharpName": "FriendlyName",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -788,7 +1074,10 @@
           "cSharpName": "SupportedFeatures",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         }
       ]
@@ -983,7 +1272,10 @@
           "cSharpName": "Id",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -991,7 +1283,10 @@
           "cSharpName": "LastTriggered",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -999,7 +1294,10 @@
           "cSharpName": "Mode",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -1007,7 +1305,10 @@
           "cSharpName": "Current",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -1015,7 +1316,10 @@
           "cSharpName": "FriendlyName",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -1023,7 +1327,10 @@
           "cSharpName": "Max",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -1031,7 +1338,10 @@
           "cSharpName": "Restored",
           "clrType": "bool",
           "values": null,
-          "name": "bool",
+          "isList": false,
+          "propertyType": "bool",
+          "cSharpValues": null,
+          "typeName": "bool",
           "toGenerate": false
         },
         {
@@ -1039,7 +1349,10 @@
           "cSharpName": "SupportedFeatures",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         }
       ]
@@ -1114,7 +1427,10 @@
           "cSharpName": "Icon",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -1122,7 +1438,10 @@
           "cSharpName": "FriendlyName",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -1130,7 +1449,10 @@
           "cSharpName": "DeviceClass",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -1138,7 +1460,10 @@
           "cSharpName": "Restored",
           "clrType": "bool",
           "values": null,
-          "name": "bool",
+          "isList": false,
+          "propertyType": "bool",
+          "cSharpValues": null,
+          "typeName": "bool",
           "toGenerate": false
         },
         {
@@ -1146,7 +1471,10 @@
           "cSharpName": "SupportedFeatures",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         }
       ]
@@ -1216,7 +1544,10 @@
           "cSharpName": "DeviceClass",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -1224,7 +1555,10 @@
           "cSharpName": "FriendlyName",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -1232,7 +1566,10 @@
           "cSharpName": "Restored",
           "clrType": "bool",
           "values": null,
-          "name": "bool",
+          "isList": false,
+          "propertyType": "bool",
+          "cSharpValues": null,
+          "typeName": "bool",
           "toGenerate": false
         },
         {
@@ -1240,7 +1577,10 @@
           "cSharpName": "SupportedFeatures",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         }
       ]
@@ -1260,7 +1600,10 @@
           "cSharpName": "Data",
           "clrType": "IReadOnlyList\u003Cobject\u003E",
           "values": null,
-          "name": "IReadOnlyList\u003Cobject\u003E",
+          "isList": true,
+          "propertyType": "IReadOnlyList\u003CIReadOnlyList\u003Cobject\u003E\u003E",
+          "cSharpValues": null,
+          "typeName": "IReadOnlyList\u003Cobject\u003E",
           "toGenerate": false
         },
         {
@@ -1268,7 +1611,10 @@
           "cSharpName": "Color",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -1276,7 +1622,10 @@
           "cSharpName": "FriendlyName",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -1284,7 +1633,10 @@
           "cSharpName": "SupportedFeatures",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         }
       ]
@@ -1304,7 +1656,10 @@
           "cSharpName": "FriendlyName",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -1312,7 +1667,10 @@
           "cSharpName": "SupportedFeatures",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         }
       ]
@@ -1352,7 +1710,10 @@
           "cSharpName": "SourceType",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -1360,7 +1721,10 @@
           "cSharpName": "BatteryLevel",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -1368,7 +1732,10 @@
           "cSharpName": "Latitude",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -1376,7 +1743,10 @@
           "cSharpName": "Longitude",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -1384,7 +1754,10 @@
           "cSharpName": "GpsAccuracy",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -1392,7 +1765,10 @@
           "cSharpName": "Altitude",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -1400,7 +1776,10 @@
           "cSharpName": "VerticalAccuracy",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -1408,7 +1787,10 @@
           "cSharpName": "FriendlyName",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         }
       ]
@@ -1478,28 +1860,52 @@
           "cSharpName": "EventTypes",
           "clrType": "EventEventTypes",
           "values": [
-            "DoublePress",
-            "EasterEggPress",
-            "KeyHeldDown",
-            "KeyPressed",
-            "KeyPressed2x",
-            "KeyPressed3x",
-            "KeyReleased",
-            "L",
-            "LongPress",
-            "LS",
-            "Press",
-            "RotateLeft",
-            "RotateLeftPressed",
-            "RotateRight",
-            "RotateRightPressed",
-            "S",
-            "SL",
-            "SS",
-            "SSS",
-            "TriplePress"
+            "double_press",
+            "easter_egg_press",
+            "keyhelddown",
+            "keypressed",
+            "keypressed2x",
+            "keypressed3x",
+            "keyreleased",
+            "l",
+            "long_press",
+            "ls",
+            "press",
+            "rotate_left",
+            "rotate_left_pressed",
+            "rotate_right",
+            "rotate_right_pressed",
+            "s",
+            "sl",
+            "ss",
+            "sss",
+            "triple_press"
           ],
-          "name": "EventEventTypes",
+          "isList": true,
+          "propertyType": "IReadOnlyList\u003CEventEventTypes\u003E",
+          "cSharpValues": [
+            "doublePress",
+            "easterEggPress",
+            "keyhelddown",
+            "keypressed",
+            "keypressed2x",
+            "keypressed3x",
+            "keyreleased",
+            "l",
+            "longPress",
+            "ls",
+            "press",
+            "rotateLeft",
+            "rotateLeftPressed",
+            "rotateRight",
+            "rotateRightPressed",
+            "s",
+            "sl",
+            "ss",
+            "sss",
+            "triplePress"
+          ],
+          "typeName": "EventEventTypes",
           "toGenerate": true
         },
         {
@@ -1507,7 +1913,10 @@
           "cSharpName": "DeviceClass",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -1515,7 +1924,10 @@
           "cSharpName": "Icon",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -1523,7 +1935,10 @@
           "cSharpName": "FriendlyName",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -1531,7 +1946,10 @@
           "cSharpName": "EventType",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -1539,7 +1957,10 @@
           "cSharpName": "Value",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -1547,7 +1968,10 @@
           "cSharpName": "Steps",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -1555,7 +1979,10 @@
           "cSharpName": "NumberOfPresses",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         }
       ]
@@ -1575,7 +2002,10 @@
           "cSharpName": "PresetModes",
           "clrType": "IReadOnlyList\u003Cobject\u003E",
           "values": null,
-          "name": "IReadOnlyList\u003Cobject\u003E",
+          "isList": true,
+          "propertyType": "IReadOnlyList\u003CIReadOnlyList\u003Cobject\u003E\u003E",
+          "cSharpValues": null,
+          "typeName": "IReadOnlyList\u003Cobject\u003E",
           "toGenerate": false
         },
         {
@@ -1583,7 +2013,10 @@
           "cSharpName": "Percentage",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -1591,7 +2024,10 @@
           "cSharpName": "PercentageStep",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -1599,7 +2035,10 @@
           "cSharpName": "PresetMode",
           "clrType": null,
           "values": null,
-          "name": null,
+          "isList": false,
+          "propertyType": null,
+          "cSharpValues": null,
+          "typeName": null,
           "toGenerate": false
         },
         {
@@ -1607,7 +2046,10 @@
           "cSharpName": "FriendlyName",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -1615,7 +2057,10 @@
           "cSharpName": "SupportedFeatures",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         }
       ]
@@ -1670,7 +2115,10 @@
           "cSharpName": "Editable",
           "clrType": "bool",
           "values": null,
-          "name": "bool",
+          "isList": false,
+          "propertyType": "bool",
+          "cSharpValues": null,
+          "typeName": "bool",
           "toGenerate": false
         },
         {
@@ -1678,7 +2126,10 @@
           "cSharpName": "Icon",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -1686,7 +2137,10 @@
           "cSharpName": "FriendlyName",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         }
       ]
@@ -1712,7 +2166,10 @@
           "cSharpName": "Initial",
           "clrType": null,
           "values": null,
-          "name": null,
+          "isList": false,
+          "propertyType": null,
+          "cSharpValues": null,
+          "typeName": null,
           "toGenerate": false
         },
         {
@@ -1720,7 +2177,10 @@
           "cSharpName": "Editable",
           "clrType": "bool",
           "values": null,
-          "name": "bool",
+          "isList": false,
+          "propertyType": "bool",
+          "cSharpValues": null,
+          "typeName": "bool",
           "toGenerate": false
         },
         {
@@ -1728,7 +2188,10 @@
           "cSharpName": "Min",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -1736,7 +2199,10 @@
           "cSharpName": "Max",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -1744,7 +2210,10 @@
           "cSharpName": "Step",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -1752,7 +2221,10 @@
           "cSharpName": "Mode",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -1760,7 +2232,10 @@
           "cSharpName": "FriendlyName",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -1768,7 +2243,10 @@
           "cSharpName": "UnitOfMeasurement",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -1776,7 +2254,10 @@
           "cSharpName": "Icon",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         }
       ]
@@ -1801,18 +2282,32 @@
           "cSharpName": "Options",
           "clrType": "InputSelectOptions",
           "values": [
-            "Bright",
-            "Clear",
-            "Dark",
-            "Evenink",
-            "Night",
-            "Off",
-            "Optimal",
-            "Podcast",
-            "Sunset",
-            "Wub"
+            "bright",
+            "clear",
+            "dark",
+            "evenink",
+            "night",
+            "off",
+            "optimal",
+            "podcast",
+            "sunset",
+            "wub"
           ],
-          "name": "InputSelectOptions",
+          "isList": true,
+          "propertyType": "IReadOnlyList\u003CInputSelectOptions\u003E",
+          "cSharpValues": [
+            "bright",
+            "clear",
+            "dark",
+            "evenink",
+            "night",
+            "off",
+            "optimal",
+            "podcast",
+            "sunset",
+            "wub"
+          ],
+          "typeName": "InputSelectOptions",
           "toGenerate": true
         },
         {
@@ -1820,7 +2315,10 @@
           "cSharpName": "Editable",
           "clrType": "bool",
           "values": null,
-          "name": "bool",
+          "isList": false,
+          "propertyType": "bool",
+          "cSharpValues": null,
+          "typeName": "bool",
           "toGenerate": false
         },
         {
@@ -1828,7 +2326,10 @@
           "cSharpName": "FriendlyName",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -1836,7 +2337,10 @@
           "cSharpName": "Icon",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         }
       ]
@@ -2307,7 +2811,10 @@
           "cSharpName": "Min",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -2315,7 +2822,10 @@
           "cSharpName": "Max",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -2323,7 +2833,10 @@
           "cSharpName": "Step",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -2331,7 +2844,10 @@
           "cSharpName": "Mode",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -2339,7 +2855,10 @@
           "cSharpName": "FriendlyName",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -2347,7 +2866,10 @@
           "cSharpName": "UnitOfMeasurement",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -2355,7 +2877,10 @@
           "cSharpName": "DeviceClass",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -2363,7 +2888,10 @@
           "cSharpName": "Icon",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -2371,7 +2899,10 @@
           "cSharpName": "Restored",
           "clrType": "bool",
           "values": null,
-          "name": "bool",
+          "isList": false,
+          "propertyType": "bool",
+          "cSharpValues": null,
+          "typeName": "bool",
           "toGenerate": false
         },
         {
@@ -2379,7 +2910,10 @@
           "cSharpName": "SupportedFeatures",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         }
       ]
@@ -2404,7 +2938,10 @@
           "cSharpName": "Succulentarrangement",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -2412,7 +2949,10 @@
           "cSharpName": "Pid",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -2420,7 +2960,10 @@
           "cSharpName": "DisplayPid",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -2428,7 +2971,10 @@
           "cSharpName": "Alias",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -2436,7 +2982,10 @@
           "cSharpName": "Category",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -2444,7 +2993,10 @@
           "cSharpName": "MaxLightMmol",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -2452,7 +3004,10 @@
           "cSharpName": "MinLightMmol",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -2460,7 +3015,10 @@
           "cSharpName": "MaxLightLux",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -2468,7 +3026,10 @@
           "cSharpName": "MinLightLux",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -2476,7 +3037,10 @@
           "cSharpName": "MaxTemp",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -2484,7 +3048,10 @@
           "cSharpName": "MinTemp",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -2492,7 +3059,10 @@
           "cSharpName": "MaxEnvHumid",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -2500,7 +3070,10 @@
           "cSharpName": "MinEnvHumid",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -2508,7 +3081,10 @@
           "cSharpName": "MaxSoilMoist",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -2516,7 +3092,10 @@
           "cSharpName": "MinSoilMoist",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -2524,7 +3103,10 @@
           "cSharpName": "MaxSoilEc",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -2532,7 +3114,10 @@
           "cSharpName": "MinSoilEc",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -2540,7 +3125,10 @@
           "cSharpName": "ImageUrl",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -2548,7 +3136,10 @@
           "cSharpName": "UserPlant",
           "clrType": "bool",
           "values": null,
-          "name": "bool",
+          "isList": false,
+          "propertyType": "bool",
+          "cSharpValues": null,
+          "typeName": "bool",
           "toGenerate": false
         },
         {
@@ -2556,7 +3147,10 @@
           "cSharpName": "Timestamp",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         }
       ]
@@ -2596,7 +3190,10 @@
           "cSharpName": "Editable",
           "clrType": "bool",
           "values": null,
-          "name": "bool",
+          "isList": false,
+          "propertyType": "bool",
+          "cSharpValues": null,
+          "typeName": "bool",
           "toGenerate": false
         },
         {
@@ -2604,7 +3201,10 @@
           "cSharpName": "Id",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -2612,13 +3212,22 @@
           "cSharpName": "DeviceTrackers",
           "clrType": "PersonDeviceTrackers",
           "values": [
-            "DeviceTracker_brianaSIphone",
-            "DeviceTracker_pixel6",
-            "DeviceTracker_pixel8",
-            "DeviceTracker_stuartsIphone",
-            "DeviceTracker_wallfire"
+            "device_tracker.briana_s_iphone",
+            "device_tracker.pixel_6",
+            "device_tracker.pixel_8",
+            "device_tracker.stuarts_iphone",
+            "device_tracker.wallfire"
           ],
-          "name": "PersonDeviceTrackers",
+          "isList": true,
+          "propertyType": "IReadOnlyList\u003CPersonDeviceTrackers\u003E",
+          "cSharpValues": [
+            "deviceTracker_brianaSIphone",
+            "deviceTracker_pixel6",
+            "deviceTracker_pixel8",
+            "deviceTracker_stuartsIphone",
+            "deviceTracker_wallfire"
+          ],
+          "typeName": "PersonDeviceTrackers",
           "toGenerate": true
         },
         {
@@ -2626,7 +3235,10 @@
           "cSharpName": "UserId",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -2634,7 +3246,10 @@
           "cSharpName": "FriendlyName",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -2642,7 +3257,10 @@
           "cSharpName": "Latitude",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -2650,7 +3268,10 @@
           "cSharpName": "Longitude",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -2658,7 +3279,10 @@
           "cSharpName": "GpsAccuracy",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -2666,7 +3290,10 @@
           "cSharpName": "Source",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         }
       ]
@@ -2691,7 +3318,10 @@
           "cSharpName": "Species",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -2699,7 +3329,10 @@
           "cSharpName": "MoistureStatus",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -2707,7 +3340,10 @@
           "cSharpName": "TemperatureStatus",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -2715,7 +3351,10 @@
           "cSharpName": "ConductivityStatus",
           "clrType": null,
           "values": null,
-          "name": null,
+          "isList": false,
+          "propertyType": null,
+          "cSharpValues": null,
+          "typeName": null,
           "toGenerate": false
         },
         {
@@ -2723,7 +3362,10 @@
           "cSharpName": "IlluminanceStatus",
           "clrType": null,
           "values": null,
-          "name": null,
+          "isList": false,
+          "propertyType": null,
+          "cSharpValues": null,
+          "typeName": null,
           "toGenerate": false
         },
         {
@@ -2731,7 +3373,10 @@
           "cSharpName": "HumidityStatus",
           "clrType": null,
           "values": null,
-          "name": null,
+          "isList": false,
+          "propertyType": null,
+          "cSharpValues": null,
+          "typeName": null,
           "toGenerate": false
         },
         {
@@ -2739,7 +3384,10 @@
           "cSharpName": "DliStatus",
           "clrType": null,
           "values": null,
-          "name": null,
+          "isList": false,
+          "propertyType": null,
+          "cSharpValues": null,
+          "typeName": null,
           "toGenerate": false
         },
         {
@@ -2747,7 +3395,10 @@
           "cSharpName": "SpeciesOriginal",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -2755,7 +3406,10 @@
           "cSharpName": "DeviceClass",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -2763,7 +3417,10 @@
           "cSharpName": "EntityPicture",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -2771,7 +3428,10 @@
           "cSharpName": "FriendlyName",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         }
       ]
@@ -2796,7 +3456,10 @@
           "cSharpName": "ActivityList",
           "clrType": "IReadOnlyList\u003Cobject\u003E",
           "values": null,
-          "name": "IReadOnlyList\u003Cobject\u003E",
+          "isList": true,
+          "propertyType": "IReadOnlyList\u003CIReadOnlyList\u003Cobject\u003E\u003E",
+          "cSharpValues": null,
+          "typeName": "IReadOnlyList\u003Cobject\u003E",
           "toGenerate": false
         },
         {
@@ -2804,7 +3467,10 @@
           "cSharpName": "CurrentActivity",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -2812,7 +3478,10 @@
           "cSharpName": "FriendlyName",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -2820,7 +3489,10 @@
           "cSharpName": "SupportedFeatures",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -2828,7 +3500,10 @@
           "cSharpName": "Restored",
           "clrType": "bool",
           "values": null,
-          "name": "bool",
+          "isList": false,
+          "propertyType": "bool",
+          "cSharpValues": null,
+          "typeName": "bool",
           "toGenerate": false
         }
       ]
@@ -2888,33 +3563,62 @@
           "cSharpName": "EntityId",
           "clrType": "SceneEntityId",
           "values": [
-            "Fan_livingFan",
-            "Light_aliveLights",
-            "Light_bedroomFanLight",
-            "Light_ceilingFanLight2",
-            "Light_colorBulbs",
-            "Light_hammletBathroom",
-            "Light_hammletExtra",
-            "Light_hammletLivingFanLight",
-            "Light_hammletPantry",
-            "Light_kitchenCeiling",
-            "Light_kitchenGroup",
-            "Light_kitchenLight",
-            "Light_liminalCeiling",
-            "Light_pantryCeiling",
-            "Light_plantLamp",
-            "Light_smartWiFiLampDimmer",
-            "Light_smartWiFiLampDimmerLight",
-            "Light_spamheart",
-            "Light_stripperLight",
-            "Light_succulentLamp",
-            "Light_tentacleLamp",
-            "MediaPlayer_hammletOledTv",
-            "Switch_outdoorSwitch",
-            "Switch_speakers",
-            "Switch_tentacleLamp"
+            "fan.living_fan",
+            "light.alive_lights",
+            "light.bedroom_fan_light",
+            "light.ceiling_fan_light_2",
+            "light.color_bulbs",
+            "light.hammlet_bathroom",
+            "light.hammlet_extra",
+            "light.hammlet_living_fan_light",
+            "light.hammlet_pantry",
+            "light.kitchen_ceiling",
+            "light.kitchen_group",
+            "light.kitchen_light",
+            "light.liminal_ceiling",
+            "light.pantry_ceiling",
+            "light.plant_lamp",
+            "light.smart_wi_fi_lamp_dimmer",
+            "light.smart_wi_fi_lamp_dimmer_light",
+            "light.spamheart",
+            "light.stripper_light",
+            "light.succulent_lamp",
+            "light.tentacle_lamp",
+            "media_player.hammlet_oled_tv",
+            "switch.outdoor_switch",
+            "switch.speakers",
+            "switch.tentacle_lamp"
           ],
-          "name": "SceneEntityId",
+          "isList": true,
+          "propertyType": "IReadOnlyList\u003CSceneEntityId\u003E",
+          "cSharpValues": [
+            "fan_livingFan",
+            "light_aliveLights",
+            "light_bedroomFanLight",
+            "light_ceilingFanLight2",
+            "light_colorBulbs",
+            "light_hammletBathroom",
+            "light_hammletExtra",
+            "light_hammletLivingFanLight",
+            "light_hammletPantry",
+            "light_kitchenCeiling",
+            "light_kitchenGroup",
+            "light_kitchenLight",
+            "light_liminalCeiling",
+            "light_pantryCeiling",
+            "light_plantLamp",
+            "light_smartWiFiLampDimmer",
+            "light_smartWiFiLampDimmerLight",
+            "light_spamheart",
+            "light_stripperLight",
+            "light_succulentLamp",
+            "light_tentacleLamp",
+            "mediaPlayer_hammletOledTv",
+            "switch_outdoorSwitch",
+            "switch_speakers",
+            "switch_tentacleLamp"
+          ],
+          "typeName": "SceneEntityId",
           "toGenerate": true
         },
         {
@@ -2922,7 +3626,10 @@
           "cSharpName": "Id",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -2930,7 +3637,10 @@
           "cSharpName": "Icon",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -2938,7 +3648,10 @@
           "cSharpName": "FriendlyName",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         }
       ]
@@ -2963,7 +3676,10 @@
           "cSharpName": "LastTriggered",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -2971,7 +3687,10 @@
           "cSharpName": "Mode",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -2979,7 +3698,10 @@
           "cSharpName": "Current",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -2987,7 +3709,10 @@
           "cSharpName": "FriendlyName",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -2995,7 +3720,10 @@
           "cSharpName": "Max",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         }
       ]
@@ -3190,59 +3918,114 @@
           "cSharpName": "Options",
           "clrType": "SelectOptions",
           "values": [
-            "Aggressive",
-            "All",
-            "AllOff",
-            "Bright",
-            "Brightnesspreset1",
-            "Brightnesspreset2",
-            "Brightnesspreset3",
-            "Brightnesspreset4",
-            "Brightnesspreset5",
-            "Celsius",
-            "Click",
-            "Customized",
-            "Debug",
-            "Default",
-            "DinnerTime",
-            "Direct",
-            "Error",
-            "Evenink",
-            "Fahrenheit",
-            "HammletCast",
-            "Hangout",
-            "HomeAssistant",
-            "Info",
-            "Initial",
-            "Jumpboxnabu",
-            "Loading",
-            "Night",
-            "None",
-            "NormalButts",
-            "Notset",
-            "Off",
-            "Oknabu",
-            "On",
-            "One",
-            "PantsEmergencyStartOff",
-            "PantsEmergencyStartOn",
-            "PantsOffEmergency",
-            "Pinkandsexy",
-            "Playlist",
-            "PlaylistRadio",
-            "Preferred",
-            "Previous",
-            "Random",
-            "Relaxed",
-            "Shuffle",
-            "ShuffleRandom",
-            "Switch",
-            "Toggle",
-            "TV",
-            "Warning",
-            "Working"
+            "aggressive",
+            "all",
+            "all off",
+            "bright",
+            "brightness preset 1",
+            "brightness preset 2",
+            "brightness preset 3",
+            "brightness preset 4",
+            "brightness preset 5",
+            "celsius",
+            "click",
+            "customized",
+            "debug",
+            "default",
+            "dinner time",
+            "direct",
+            "error",
+            "evenink",
+            "fahrenheit",
+            "hammlet cast",
+            "hangout",
+            "home assistant",
+            "info",
+            "initial",
+            "jumpbox-nabu",
+            "loading",
+            "night",
+            "none",
+            "normal butts",
+            "not set",
+            "off",
+            "ok-nabu",
+            "on",
+            "one",
+            "pants emergency start off",
+            "pants emergency start on",
+            "pants off emergency",
+            "pink and sexy",
+            "playlist",
+            "playlist radio",
+            "preferred",
+            "previous",
+            "random",
+            "relaxed",
+            "shuffle",
+            "shuffle random",
+            "switch",
+            "toggle",
+            "tv",
+            "warning",
+            "working"
           ],
-          "name": "SelectOptions",
+          "isList": true,
+          "propertyType": "IReadOnlyList\u003CSelectOptions\u003E",
+          "cSharpValues": [
+            "aggressive",
+            "all",
+            "alloff",
+            "bright",
+            "brightnesspreset1",
+            "brightnesspreset2",
+            "brightnesspreset3",
+            "brightnesspreset4",
+            "brightnesspreset5",
+            "celsius",
+            "click",
+            "customized",
+            "debug",
+            "default",
+            "dinnertime",
+            "direct",
+            "error",
+            "evenink",
+            "fahrenheit",
+            "hammletcast",
+            "hangout",
+            "homeassistant",
+            "info",
+            "initial",
+            "jumpboxnabu",
+            "loading",
+            "night",
+            "none",
+            "normalbutts",
+            "notset",
+            "off",
+            "oknabu",
+            "on",
+            "one",
+            "pantsemergencystartoff",
+            "pantsemergencystarton",
+            "pantsoffemergency",
+            "pinkandsexy",
+            "playlist",
+            "playlistradio",
+            "preferred",
+            "previous",
+            "random",
+            "relaxed",
+            "shuffle",
+            "shufflerandom",
+            "switch",
+            "toggle",
+            "tv",
+            "warning",
+            "working"
+          ],
+          "typeName": "SelectOptions",
           "toGenerate": true
         },
         {
@@ -3250,7 +4033,10 @@
           "cSharpName": "FriendlyName",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -3258,7 +4044,10 @@
           "cSharpName": "Icon",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -3266,7 +4055,10 @@
           "cSharpName": "Restored",
           "clrType": "bool",
           "values": null,
-          "name": "bool",
+          "isList": false,
+          "propertyType": "bool",
+          "cSharpValues": null,
+          "typeName": "bool",
           "toGenerate": false
         },
         {
@@ -3274,7 +4066,10 @@
           "cSharpName": "SupportedFeatures",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         }
       ]
@@ -3504,7 +4299,10 @@
           "cSharpName": "DeviceClass",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -3512,7 +4310,10 @@
           "cSharpName": "FriendlyName",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -3520,7 +4321,10 @@
           "cSharpName": "AllowsVoIP",
           "clrType": "bool",
           "values": null,
-          "name": "bool",
+          "isList": false,
+          "propertyType": "bool",
+          "cSharpValues": null,
+          "typeName": "bool",
           "toGenerate": false
         },
         {
@@ -3528,7 +4332,10 @@
           "cSharpName": "CarrierID",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -3536,7 +4343,10 @@
           "cSharpName": "CarrierName",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -3544,7 +4354,10 @@
           "cSharpName": "ISOCountryCode",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -3552,7 +4365,10 @@
           "cSharpName": "MobileCountryCode",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -3560,7 +4376,10 @@
           "cSharpName": "MobileNetworkCode",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -3568,7 +4387,10 @@
           "cSharpName": "Icon",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -3576,7 +4398,10 @@
           "cSharpName": "CurrentRadioTechnology",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -3584,7 +4409,10 @@
           "cSharpName": "AdministrativeArea",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -3592,7 +4420,10 @@
           "cSharpName": "AreasOfInterest",
           "clrType": "object",
           "values": null,
-          "name": "object",
+          "isList": true,
+          "propertyType": "IReadOnlyList\u003Cobject\u003E",
+          "cSharpValues": null,
+          "typeName": "object",
           "toGenerate": false
         },
         {
@@ -3600,7 +4431,10 @@
           "cSharpName": "Country",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -3608,7 +4442,10 @@
           "cSharpName": "InlandWater",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -3616,7 +4453,10 @@
           "cSharpName": "Locality",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -3624,7 +4464,10 @@
           "cSharpName": "Location",
           "clrType": "IReadOnlyList\u003Cdouble\u003E",
           "values": null,
-          "name": "IReadOnlyList\u003Cdouble\u003E",
+          "isList": true,
+          "propertyType": "IReadOnlyList\u003CIReadOnlyList\u003Cdouble\u003E\u003E",
+          "cSharpValues": null,
+          "typeName": "IReadOnlyList\u003Cdouble\u003E",
           "toGenerate": false
         },
         {
@@ -3632,7 +4475,10 @@
           "cSharpName": "Name",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -3640,7 +4486,10 @@
           "cSharpName": "Ocean",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -3648,7 +4497,10 @@
           "cSharpName": "PostalCode",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -3656,7 +4508,10 @@
           "cSharpName": "SubAdministrativeArea",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -3664,7 +4519,10 @@
           "cSharpName": "SubLocality",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -3672,7 +4530,10 @@
           "cSharpName": "SubThoroughfare",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -3680,7 +4541,10 @@
           "cSharpName": "Thoroughfare",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -3688,7 +4552,10 @@
           "cSharpName": "TimeZone",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -3696,7 +4563,10 @@
           "cSharpName": "Zones",
           "clrType": "IReadOnlyList\u003Cobject\u003E",
           "values": null,
-          "name": "IReadOnlyList\u003Cobject\u003E",
+          "isList": true,
+          "propertyType": "IReadOnlyList\u003CIReadOnlyList\u003Cobject\u003E\u003E",
+          "cSharpValues": null,
+          "typeName": "IReadOnlyList\u003Cobject\u003E",
           "toGenerate": false
         },
         {
@@ -3704,7 +4574,10 @@
           "cSharpName": "LowPowerMode",
           "clrType": "bool",
           "values": null,
-          "name": "bool",
+          "isList": false,
+          "propertyType": "bool",
+          "cSharpValues": null,
+          "typeName": "bool",
           "toGenerate": false
         },
         {
@@ -3712,7 +4585,10 @@
           "cSharpName": "CellularTechnology",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -3720,7 +4596,10 @@
           "cSharpName": "Confidence",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -3728,7 +4607,10 @@
           "cSharpName": "Types",
           "clrType": "IReadOnlyList\u003Cstring\u003E",
           "values": null,
-          "name": "IReadOnlyList\u003Cstring\u003E",
+          "isList": true,
+          "propertyType": "IReadOnlyList\u003CIReadOnlyList\u003Cstring\u003E\u003E",
+          "cSharpValues": null,
+          "typeName": "IReadOnlyList\u003Cstring\u003E",
           "toGenerate": false
         },
         {
@@ -3736,20 +4618,36 @@
           "cSharpName": "Options",
           "clrType": "SensorOptions",
           "values": [
-            "Ac",
-            "Charging",
-            "Discharging",
-            "Dock",
-            "Full",
-            "Idle",
-            "None",
-            "NotCharging",
-            "Printing",
-            "Stopped",
-            "Usb",
-            "Wireless"
+            "ac",
+            "charging",
+            "discharging",
+            "dock",
+            "full",
+            "idle",
+            "none",
+            "not_charging",
+            "printing",
+            "stopped",
+            "usb",
+            "wireless"
           ],
-          "name": "SensorOptions",
+          "isList": true,
+          "propertyType": "IReadOnlyList\u003CSensorOptions\u003E",
+          "cSharpValues": [
+            "ac",
+            "charging",
+            "discharging",
+            "dock",
+            "full",
+            "idle",
+            "none",
+            "notCharging",
+            "printing",
+            "stopped",
+            "usb",
+            "wireless"
+          ],
+          "typeName": "SensorOptions",
           "toGenerate": true
         },
         {
@@ -3757,7 +4655,10 @@
           "cSharpName": "Tracks",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -3765,7 +4666,10 @@
           "cSharpName": "Lyrics",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -3773,7 +4677,10 @@
           "cSharpName": "Playlists",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -3781,7 +4688,10 @@
           "cSharpName": "Search",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -3789,7 +4699,10 @@
           "cSharpName": "TotalTracks",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -3797,7 +4710,10 @@
           "cSharpName": "Info",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -3805,7 +4721,10 @@
           "cSharpName": "Serial",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -3813,7 +4732,10 @@
           "cSharpName": "StateMessage",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -3821,7 +4743,10 @@
           "cSharpName": "StateReason",
           "clrType": null,
           "values": null,
-          "name": null,
+          "isList": false,
+          "propertyType": null,
+          "cSharpValues": null,
+          "typeName": null,
           "toGenerate": false
         },
         {
@@ -3829,7 +4754,10 @@
           "cSharpName": "CommandSet",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -3837,7 +4765,10 @@
           "cSharpName": "UriSupported",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -3845,7 +4776,10 @@
           "cSharpName": "StateClass",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -3853,7 +4787,10 @@
           "cSharpName": "Status",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -3861,7 +4798,10 @@
           "cSharpName": "LastPeriod",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -3869,7 +4809,10 @@
           "cSharpName": "LastValidState",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -3877,7 +4820,10 @@
           "cSharpName": "LastReset",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -3885,7 +4831,10 @@
           "cSharpName": "NextReset",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         }
       ]
@@ -4156,7 +5105,10 @@
           "cSharpName": "UnitOfMeasurement",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -4164,7 +5116,10 @@
           "cSharpName": "DeviceClass",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -4172,7 +5127,10 @@
           "cSharpName": "Icon",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -4180,7 +5138,10 @@
           "cSharpName": "FriendlyName",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -4188,7 +5149,10 @@
           "cSharpName": "Available",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -4196,7 +5160,10 @@
           "cSharpName": "AvailableImportant",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -4204,7 +5171,10 @@
           "cSharpName": "AvailableOpportunistic",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -4212,7 +5182,10 @@
           "cSharpName": "Total",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -4220,7 +5193,10 @@
           "cSharpName": "StateClass",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -4228,7 +5204,10 @@
           "cSharpName": "MarkerHighLevel",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -4236,7 +5215,10 @@
           "cSharpName": "MarkerLowLevel",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -4244,7 +5226,10 @@
           "cSharpName": "MarkerType",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -4252,7 +5237,10 @@
           "cSharpName": "ExternalSensor",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -4260,7 +5248,10 @@
           "cSharpName": "Source",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -4268,7 +5259,10 @@
           "cSharpName": "Restored",
           "clrType": "bool",
           "values": null,
-          "name": "bool",
+          "isList": false,
+          "propertyType": "bool",
+          "cSharpValues": null,
+          "typeName": "bool",
           "toGenerate": false
         },
         {
@@ -4276,7 +5270,10 @@
           "cSharpName": "SupportedFeatures",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         }
       ]
@@ -4306,7 +5303,10 @@
           "cSharpName": "FriendlyName",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -4314,7 +5314,10 @@
           "cSharpName": "Restored",
           "clrType": "bool",
           "values": null,
-          "name": "bool",
+          "isList": false,
+          "propertyType": "bool",
+          "cSharpValues": null,
+          "typeName": "bool",
           "toGenerate": false
         },
         {
@@ -4322,7 +5325,10 @@
           "cSharpName": "SupportedFeatures",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         }
       ]
@@ -4342,7 +5348,10 @@
           "cSharpName": "NextDawn",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -4350,7 +5359,10 @@
           "cSharpName": "NextDusk",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -4358,7 +5370,10 @@
           "cSharpName": "NextMidnight",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -4366,7 +5381,10 @@
           "cSharpName": "NextNoon",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -4374,7 +5392,10 @@
           "cSharpName": "NextRising",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -4382,7 +5403,10 @@
           "cSharpName": "NextSetting",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -4390,7 +5414,10 @@
           "cSharpName": "Elevation",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -4398,7 +5425,10 @@
           "cSharpName": "Azimuth",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -4406,7 +5436,10 @@
           "cSharpName": "Rising",
           "clrType": "bool",
           "values": null,
-          "name": "bool",
+          "isList": false,
+          "propertyType": "bool",
+          "cSharpValues": null,
+          "typeName": "bool",
           "toGenerate": false
         },
         {
@@ -4414,7 +5447,10 @@
           "cSharpName": "FriendlyName",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         }
       ]
@@ -4719,7 +5755,10 @@
           "cSharpName": "Icon",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -4727,7 +5766,10 @@
           "cSharpName": "FriendlyName",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -4735,7 +5777,10 @@
           "cSharpName": "Configuration",
           "clrType": "object",
           "values": null,
-          "name": "object",
+          "isList": false,
+          "propertyType": "object",
+          "cSharpValues": null,
+          "typeName": "object",
           "toGenerate": false
         },
         {
@@ -4743,7 +5788,10 @@
           "cSharpName": "Restored",
           "clrType": "bool",
           "values": null,
-          "name": "bool",
+          "isList": false,
+          "propertyType": "bool",
+          "cSharpValues": null,
+          "typeName": "bool",
           "toGenerate": false
         },
         {
@@ -4751,7 +5799,10 @@
           "cSharpName": "SupportedFeatures",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         }
       ]
@@ -4771,7 +5822,10 @@
           "cSharpName": "Duration",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -4779,7 +5833,10 @@
           "cSharpName": "Editable",
           "clrType": "bool",
           "values": null,
-          "name": "bool",
+          "isList": false,
+          "propertyType": "bool",
+          "cSharpValues": null,
+          "typeName": "bool",
           "toGenerate": false
         },
         {
@@ -4787,7 +5844,10 @@
           "cSharpName": "Icon",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -4795,7 +5855,10 @@
           "cSharpName": "FriendlyName",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         }
       ]
@@ -5125,7 +6188,10 @@
           "cSharpName": "AllTodos",
           "clrType": "IReadOnlyList\u003Cobject\u003E",
           "values": null,
-          "name": "IReadOnlyList\u003Cobject\u003E",
+          "isList": true,
+          "propertyType": "IReadOnlyList\u003CIReadOnlyList\u003Cobject\u003E\u003E",
+          "cSharpValues": null,
+          "typeName": "IReadOnlyList\u003Cobject\u003E",
           "toGenerate": false
         },
         {
@@ -5133,7 +6199,10 @@
           "cSharpName": "FriendlyName",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -5141,7 +6210,10 @@
           "cSharpName": "SupportedFeatures",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -5149,7 +6221,10 @@
           "cSharpName": "OverdueTodos",
           "clrType": "IReadOnlyList\u003Cobject\u003E",
           "values": null,
-          "name": "IReadOnlyList\u003Cobject\u003E",
+          "isList": true,
+          "propertyType": "IReadOnlyList\u003CIReadOnlyList\u003Cobject\u003E\u003E",
+          "cSharpValues": null,
+          "typeName": "IReadOnlyList\u003Cobject\u003E",
           "toGenerate": false
         },
         {
@@ -5157,7 +6232,10 @@
           "cSharpName": "Restored",
           "clrType": "bool",
           "values": null,
-          "name": "bool",
+          "isList": false,
+          "propertyType": "bool",
+          "cSharpValues": null,
+          "typeName": "bool",
           "toGenerate": false
         }
       ]
@@ -5182,7 +6260,10 @@
           "cSharpName": "FriendlyName",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         }
       ]
@@ -5597,7 +6678,10 @@
           "cSharpName": "AutoUpdate",
           "clrType": "bool",
           "values": null,
-          "name": "bool",
+          "isList": false,
+          "propertyType": "bool",
+          "cSharpValues": null,
+          "typeName": "bool",
           "toGenerate": false
         },
         {
@@ -5605,7 +6689,10 @@
           "cSharpName": "DisplayPrecision",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -5613,7 +6700,10 @@
           "cSharpName": "InstalledVersion",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -5621,7 +6711,10 @@
           "cSharpName": "InProgress",
           "clrType": "bool",
           "values": null,
-          "name": "bool",
+          "isList": false,
+          "propertyType": "bool",
+          "cSharpValues": null,
+          "typeName": "bool",
           "toGenerate": false
         },
         {
@@ -5629,7 +6722,10 @@
           "cSharpName": "LatestVersion",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -5637,7 +6733,10 @@
           "cSharpName": "ReleaseSummary",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -5645,7 +6744,10 @@
           "cSharpName": "ReleaseUrl",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -5653,7 +6755,10 @@
           "cSharpName": "SkippedVersion",
           "clrType": null,
           "values": null,
-          "name": null,
+          "isList": false,
+          "propertyType": null,
+          "cSharpValues": null,
+          "typeName": null,
           "toGenerate": false
         },
         {
@@ -5661,7 +6766,10 @@
           "cSharpName": "Title",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -5669,7 +6777,10 @@
           "cSharpName": "UpdatePercentage",
           "clrType": null,
           "values": null,
-          "name": null,
+          "isList": false,
+          "propertyType": null,
+          "cSharpValues": null,
+          "typeName": null,
           "toGenerate": false
         },
         {
@@ -5677,7 +6788,10 @@
           "cSharpName": "EntityPicture",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -5685,7 +6799,10 @@
           "cSharpName": "FriendlyName",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -5693,7 +6810,10 @@
           "cSharpName": "SupportedFeatures",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -5701,7 +6821,10 @@
           "cSharpName": "DeviceClass",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -5709,7 +6832,10 @@
           "cSharpName": "Restored",
           "clrType": "bool",
           "values": null,
-          "name": "bool",
+          "isList": false,
+          "propertyType": "bool",
+          "cSharpValues": null,
+          "typeName": "bool",
           "toGenerate": false
         }
       ]
@@ -5729,7 +6855,10 @@
           "cSharpName": "FriendlyName",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         }
       ]
@@ -5749,7 +6878,10 @@
           "cSharpName": "Temperature",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -5757,7 +6889,10 @@
           "cSharpName": "DewPoint",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -5765,7 +6900,10 @@
           "cSharpName": "TemperatureUnit",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -5773,7 +6911,10 @@
           "cSharpName": "Humidity",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -5781,7 +6922,10 @@
           "cSharpName": "CloudCoverage",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -5789,7 +6933,10 @@
           "cSharpName": "UvIndex",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -5797,7 +6944,10 @@
           "cSharpName": "Pressure",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -5805,7 +6955,10 @@
           "cSharpName": "PressureUnit",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -5813,7 +6966,10 @@
           "cSharpName": "WindBearing",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -5821,7 +6977,10 @@
           "cSharpName": "WindSpeed",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -5829,7 +6988,10 @@
           "cSharpName": "WindSpeedUnit",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -5837,7 +6999,10 @@
           "cSharpName": "VisibilityUnit",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -5845,7 +7010,10 @@
           "cSharpName": "PrecipitationUnit",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -5853,7 +7021,10 @@
           "cSharpName": "Attribution",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -5861,7 +7032,10 @@
           "cSharpName": "FriendlyName",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -5869,7 +7043,10 @@
           "cSharpName": "SupportedFeatures",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         }
       ]
@@ -5889,7 +7066,10 @@
           "cSharpName": "Latitude",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -5897,7 +7077,10 @@
           "cSharpName": "Longitude",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -5905,7 +7088,10 @@
           "cSharpName": "Radius",
           "clrType": "double",
           "values": null,
-          "name": "double",
+          "isList": false,
+          "propertyType": "double",
+          "cSharpValues": null,
+          "typeName": "double",
           "toGenerate": false
         },
         {
@@ -5913,7 +7099,10 @@
           "cSharpName": "Passive",
           "clrType": "bool",
           "values": null,
-          "name": "bool",
+          "isList": false,
+          "propertyType": "bool",
+          "cSharpValues": null,
+          "typeName": "bool",
           "toGenerate": false
         },
         {
@@ -5921,7 +7110,10 @@
           "cSharpName": "Persons",
           "clrType": "IReadOnlyList\u003Cobject\u003E",
           "values": null,
-          "name": "IReadOnlyList\u003Cobject\u003E",
+          "isList": true,
+          "propertyType": "IReadOnlyList\u003CIReadOnlyList\u003Cobject\u003E\u003E",
+          "cSharpValues": null,
+          "typeName": "IReadOnlyList\u003Cobject\u003E",
           "toGenerate": false
         },
         {
@@ -5929,7 +7121,10 @@
           "cSharpName": "Editable",
           "clrType": "bool",
           "values": null,
-          "name": "bool",
+          "isList": false,
+          "propertyType": "bool",
+          "cSharpValues": null,
+          "typeName": "bool",
           "toGenerate": false
         },
         {
@@ -5937,7 +7132,10 @@
           "cSharpName": "Icon",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         },
         {
@@ -5945,7 +7143,10 @@
           "cSharpName": "FriendlyName",
           "clrType": "string",
           "values": null,
-          "name": "string",
+          "isList": false,
+          "propertyType": "string",
+          "cSharpValues": null,
+          "typeName": "string",
           "toGenerate": false
         }
       ]

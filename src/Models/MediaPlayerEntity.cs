@@ -10,10 +10,10 @@ namespace Hammlet.NetDaemon.Models;
 [Proxy(typeof(LightAttributes),ConvertTo = ConversionType.Implicit)]
 public partial record ParsedLightAttributes
 {
-    public ColorMode ColorMode => _inner.ColorMode == "color_temp" ? ColorMode.ColorTemp  : (_inner.ColorMode?.ParseState<ColorMode>() ?? ColorMode.Unknown);
+//    public ColorMode ColorMode => _inner.ColorMode == ColorMode.ColorTemp ? ColorMode.ColorTemp  : (_inner.ColorMode?.ParseState<ColorMode>() ?? ColorMode.Unknown);
 
-    public System.Collections.Generic.IEnumerable<ColorMode> SupportedColorModes =>
-        _inner.SupportedColorModes?.ParseModes() ?? [];
+    //public System.Collections.Generic.IEnumerable<ColorMode> SupportedColorModes =>
+    //    _inner.SupportedColorModes?.ParseModes() ?? [];
 }
 
 public partial record MediaPlayerEntity

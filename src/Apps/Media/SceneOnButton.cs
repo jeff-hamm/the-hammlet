@@ -33,7 +33,7 @@ public class OnYoutubeMusicPlaylistChanged
                 logger.LogDebug("Changed playlist to empty, stopping playlist");
                 return;
             }
-            var pl = sensors.YtubeMusicPlayerExtra.Attributes?.Playlists;
+            var pl = (object)sensors.YtubeMusicPlayerExtra.Attributes?.Playlists;
             if (pl is not JsonElement { ValueKind: JsonValueKind.Object } obj)
             {
                 logger.LogError("Unexpected playlist attributes type {playlistType}",pl?.GetType()?.ToString() ?? "Null");
@@ -43,7 +43,7 @@ public class OnYoutubeMusicPlaylistChanged
             {
                 logger.LogError("Could not find playlist {playList} in YtubeMusicPlayerExtra", playListName);
                 return;
-            }
+            } 
 
             if (propertyValue.ValueKind != JsonValueKind.String || propertyValue.GetString() is not {} val) 
             {
