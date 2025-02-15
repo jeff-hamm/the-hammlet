@@ -3,11 +3,13 @@
 
 namespace Hammlet.Apps.SceneOnButton;
 
-public enum SceneSelectorEventTypes
+public enum ButtonEventType
 {
-    KeyHeldDown,
-    KeyPressed,
+    HeldDown,
+    ButtonReleased,
+    ButtonDown,
+    ButtonPressed,
     KeyPressed2x,
     KeyPressed3x,
-    KeyReleased
+    HeldButtonReleased
 }

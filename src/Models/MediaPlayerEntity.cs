@@ -6,7 +6,6 @@ using NetDaemon.HassModel.Entities;
 
 namespace Hammlet.NetDaemon.Models;
 
-
 [Proxy(typeof(LightAttributes),ConvertTo = ConversionType.Implicit)]
 public partial record ParsedLightAttributes
 {

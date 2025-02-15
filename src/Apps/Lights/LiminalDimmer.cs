@@ -1,11 +1,15 @@
-﻿using Hammlet.NetDaemon.Models;
+﻿using System.Reactive.Concurrency;
+using Hammlet.Apps.SceneOnButton;
+using Hammlet.Extensions;
+using Hammlet.NetDaemon.Models;
+using HassModel;
 using NetDaemon.HassModel.Entities;
 
 namespace Hammlet.Apps.Lights;
 [NetDaemonApp]
 internal class LiminalDimmer
 {
-    public LiminalDimmer(IHaContext ha, LightEntities entities,BinarySensorEntities buttons, EventEntities events, ILogger<LiminalDimmer> logger)
+    public LiminalDimmer(IHaContext ha, LightEntities entities,BinarySensorEntities buttons, EventEntities events, ILogger<LiminalDimmer> logger, IScheduler scheduler)
     {
         //buttons.LiminalDimmerInput0.StateChanges().Subscribe(s =>
         //{
@@ -15,9 +19,42 @@ internal class LiminalDimmer
         //{
         //    logger.LogInformation("2 Input: {0}", s.New?.State);
         //});
-        new EventEntity(ha, "shelly.click").StateAllChanges().Subscribe(s =>
+        buttons.LiminalDimmerInput0.ToButtonEvents(scheduler).Subscribe(e =>
         {
-            logger.LogInformation("Shelly Click: {State}, {Attributes}", s.New?.State,s.Entity.Attributes);
+            if (e.Data.EventType == ButtonEventType.ButtonPressed)
+            {
+                if (entities.LiminalCeiling.IsOff())
+                {
+                    entities.LiminalCeiling.TurnOn();
+                }
+                else
+                {
+                    entities.LiminalCeiling.Brighten();
+                }
+            }
+            if (e.Data.EventType == ButtonEventType.KeyPressed2x)
+            {
+                entities.LiminalCeiling.ToggleWarm();
+            }
+        });
+        buttons.LiminalDimmerInput1.ToButtonEvents(scheduler).Subscribe(e =>
+        {
+            logger.LogInformation("1 Input: {0}", e.Data);
+            if (e.Data.EventType == ButtonEventType.ButtonPressed)
+            {
+                if (entities.LiminalCeiling.IsOn())
+                {
+                    entities.LiminalDimmer.TurnOff();
+                }
+                else
+                {
+                    entities.LiminalCeiling.Darken();
+                }
+            }
+            if (e.Data.EventType == ButtonEventType.KeyPressed2x)
+            {
+                entities.LiminalCeiling.ToggleWarm();
+            }
         });
         entities.LiminalDimmer.StateAllChanges().Subscribe(s =>
         {

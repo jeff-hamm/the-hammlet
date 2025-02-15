@@ -1,3 +1,4 @@
+using System.Linq;
 using Hammlet.Models.Enums;
 using Hammlet.NetDaemon.Models;
 using NetDaemon.HassModel.Entities;
@@ -32,77 +33,4 @@ public static class EventExtensions
         Console.WriteLine(entity.Registration?.Device);
     }
 
-    public static int MaxBrightnes(this LightEntity @this) => 255;
-    public static int MinBrightnes(this LightEntity @this) => 0;
-    public static double? Brightness(this LightEntity @this) => 
-        Double.TryParse(@this.Attributes?.Brightness?.ToString(), out var r) ? r : null;
-    
-    //public static double Brightness(this LightEntity @this, double newValue)
-    //{
-    //    if (@this.Brightness() != null)
-    //    {
-    //        @this.Attributes.Brightness = Math.Clamp(newValue, @this.MinBrightnes(), @this.MaxBrightnes());
-    //    }
-    //}
-
-    public static void Brighten(this LightEntity @this, double pct=20)
-    {
-        @this.TurnOn(brightnessStepPct: pct);
-        //if (!@this.IsOn())
-        //{
-        //    @this.TurnOn();
-        //}
-        //var currentBrightness =@this.Brightness() ?? 50;
-        //@this.Brightness(currentBrightness + 5);
-    }
-    public static void Darken(this LightEntity @this, double pct=-20)
-    {
-        @this.TurnOn(brightnessStepPct: pct);
-
-    }
-
-    public static void ToggleWarm(this LightEntity @this)
-    {
-        if (@this.EntityState?.Attributes is not { } att) return;
-        ParsedLightAttributes a = new ParsedLightAttributes(att);
-        double dstColorTempPct = .1;
-        if (att is { MinMireds: { } min, MaxMireds: { } max })
-        {
-            if (a.ColorMode is ColorMode.ColorTemp && att.ColorTemp is { } colorTemp)
-            {
-                var colorTempPct = (colorTemp - min) / (max - min);
-                if (colorTempPct < .5)
-                {
-                    dstColorTempPct = .9;
-                }
-                else
-                {
-                    dstColorTempPct = .1;
-                }
-            }
-
-            var dst = ((max - min) * dstColorTempPct) + min;
-            @this.TurnOn(colorTemp: dst);
-        }
-        else if (att is { MinColorTempKelvin: { } minK, MaxColorTempKelvin: { } maxK })
-        {
-            if (a.ColorMode is ColorMode.ColorTemp && att.ColorTemp is { } colorTemp)
-            {
-                var colorTempPct = (colorTemp - minK) / (maxK - minK);
-                if (colorTempPct < .5)
-                {
-                    dstColorTempPct = .9;
-                }
-                else
-                {
-                    dstColorTempPct = .1;
-                }
-            }
-
-            var dst = ((maxK - minK) * dstColorTempPct) + minK;
-            @this.TurnOn(kelvin:dst);
-        }
-
-
-    }
 }

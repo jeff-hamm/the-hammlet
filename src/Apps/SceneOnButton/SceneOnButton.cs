@@ -25,12 +25,11 @@ public class SceneOnButton
 
                 var light = lights.Entity(config.Value.TargetEntityId);
                 foreach (var button in config.Value.Buttons.Where(b =>
-                             e.Entity.EventType<SceneSelectorEventTypes>() == b.Type &&
+                             e.Entity.EventType<ButtonEventType>() == b.Arg &&
                              e.Entity.EntityId.EndsWith(b.EventIndex)))
                 {
 
-                    logger.LogInformation("Remote control event: {event}, performing action {action}", e.Entity,
-                        button.Action);
+                    logger.LogInformation("Remote control event: {event}, performing action {action}", e.Entity.EntityId, button.Action);
                     switch (button.Action)
                     {
                         case ButtonAction.Brighten:

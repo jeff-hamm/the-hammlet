@@ -29,7 +29,7 @@ public class SceneSelectorConfig
     public LightButtonConfig Button1 { get; set; } = new()
     {
         Action = ButtonAction.Brighten,
-        Type = SceneSelectorEventTypes.KeyPressed,
+        Arg = ButtonEventType.ButtonPressed,
         EventIndex = "001",
         On = new LightTurnOnParameters()
         {
@@ -71,5 +71,5 @@ public partial record LightButtonConfig
     public LightTurnOnParameters? On { get; set; }
     public LightTurnOffParameters? Off { get; set; }
     public string EventIndex { get; set; } = "000";
-    public SceneSelectorEventTypes Type { get; set; } = SceneSelectorEventTypes.KeyPressed;
+    public ButtonEventType Arg { get; set; } = ButtonEventType.ButtonPressed;
 }

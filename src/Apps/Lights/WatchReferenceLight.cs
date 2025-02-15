@@ -57,7 +57,7 @@ public class WatchReferenceLight
     {
         if (new LightEntity(ha, s).EntityState?.Attributes?.EntityId is { } entities)
         {
-            foreach(var entity in entities.Select(e => e.GetJsonName()))
+            foreach(var entity in entities.Select(s => s.ToJsonName()))
             {
                 foreach(var e in GetEntities(ha,entity))
                     yield return entity;

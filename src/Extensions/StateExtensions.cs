@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text.Json;
 using Hammlet.Models.Enums;
@@ -69,6 +70,8 @@ public static class LightExtensions
 }
 public static class StateExtensions
 {
+    public static string ToSnakeCase(this string str) =>
+        JsonNamingPolicy.SnakeCaseLower.ConvertName(str);
     public static bool StateChangedTo<TEntity, TEntityState,TAttributes>(this StateChange<TEntity, TEntityState> @this, TEntityState state) 
         where TEntity : Entity<TEntity, EntityState<TAttributes>, TAttributes> 
         where TEntityState : EntityState<TAttributes>

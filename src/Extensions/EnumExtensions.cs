@@ -7,14 +7,16 @@ using System.Text.Json.Serialization;
 
 public static class EnumExtensions
 {
-    private static readonly ConcurrentDictionary<Enum, string> nameDictionary = new();
-    public static string GetJsonName(this Enum enumValue)
+    private static readonly ConcurrentDictionary<Enum, string> _cache = new();
+
+    public static string ToJsonName(this Enum enumValue)
     {
-        return nameDictionary.GetOrAdd(enumValue, _ =>
-        enumValue.GetType()
-            .GetMember(enumValue.ToString())
-            .First()
-            .GetCustomAttribute<JsonStringEnumMemberNameAttribute>()
-            ?.Name?? enumValue.ToString());
+        return _cache.GetOrAdd(enumValue, e =>
+        {
+            var type = e.GetType();
+            var memberInfo = type.GetMember(e.ToString());
+            var attribute = memberInfo[0].GetCustomAttribute<JsonStringEnumMemberNameAttribute>();
+            return attribute?.Name ?? e.ToString();
+        });
     }
 }

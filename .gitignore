@@ -1,4 +1,6 @@
 obj
+**/.history/*
+
 bin
 appsettings.Development.json
 .vs
