@@ -1,0 +1,7 @@
+Hammlet.Config.DimmerSync:
+  dimmer_id: "light.liminal_dimmer"
+  press_brightness: 20
+  tick_brightness: 2
+  target_light_id: "light.liminal_ceiling"
+  up_button_id: null
+  down_button_id: null

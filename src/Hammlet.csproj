@@ -65,11 +65,11 @@
     <ItemGroup>
       <ProjectReference Include="..\submodules\CompileTimeProxyGenerator\CompileTimeProxyGenerator\CompileTimeProxyGenerator.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
       <ProjectReference Include="..\submodules\NetDaemon.Extensions.Observables\src\NetDaemon.Extensions.Observables\NetDaemon.Extensions.Observables.csproj" />
-      <ProjectReference Include="..\submodules\netdaemon\src\Client\NetDaemon.HassClient\NetDaemon.Client.csproj" />
     </ItemGroup>
         
     <ItemGroup>
       <Folder Include="Models\Framework\" />
+      <Folder Include="Models\Reference\" />
     </ItemGroup>
   <PropertyGroup>
     <DomainPrimitiveGenerator_GenerateSwaggerConverters>false</DomainPrimitiveGenerator_GenerateSwaggerConverters>

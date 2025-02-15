@@ -1,0 +1,514 @@
+diff --git a/src/Apps/Lights/DimmerButtonHandler.cs b/src/Apps/Lights/DimmerButtonHandler.cs
+new file mode 100644
+index 0000000..1e8bcb9
+--- /dev/null
++++ b/src/Apps/Lights/DimmerButtonHandler.cs
+@@ -0,0 +1,74 @@
++﻿using System.Data;
++using System.Reactive.Concurrency;
++using Hammlet.Apps.SceneOnButton;
++using Hammlet.Extensions;
++using Hammlet.NetDaemon.Extensions;
++using Hammlet.NetDaemon.Models;
++using HassModel;
++using NetDaemon.HassModel.Entities;
++
++namespace Hammlet.Apps.Lights;
++
++[NetDaemonApp]
++internal class ShellyDimmerButtonHandler
++{
++    public ShellyDimmerButtonHandler(IHaContext ha, LightEntities entities,BinarySensorEntities buttons, 
++        LightEntities lights,
++        EventEntities events, ILogger<ShellyDimmerButtonHandler> logger, IScheduler scheduler)
++    {
++        var cfg = new DimmerButtonConfig();
++        buttons.MikaelaDimmerInput0.ToButtonEvents(scheduler).Subscribe(e =>
++        {
++            logger.LogInformation("Button 0 Input: {0}", e.Data);
++            DimmerButtonHandler(entities.MikaelaSRoom, true, e,cfg);
++        });
++        buttons.MikaelaDimmerInput1.ToButtonEvents(scheduler).Subscribe(e =>
++        {
++            logger.LogInformation("Button 1 Input: {0}", e.Data);
++            DimmerButtonHandler(entities.MikaelaSRoom, false, e,cfg);
++        });
++        entities.MikaelaSRoom.StateAllChanges().Subscribe(s =>
++        {
++            if (entities.MikaelaSRoom.IsOn() && s.Entity?.EntityState?.Attributes?.Brightness is { } b)
++            {
++                entities.MikaelaDimmer.TurnOn(new()
++                {
++                    Brightness = b
++                });
++            }
++            else
++            {
++                entities.MikaelaDimmer.TurnOff();
++            }
++        });
++    }
++
++    private static void DimmerButtonHandler(LightEntity targetEntity, bool toggleState, StateChangeEvent<ButtonEvent> e, DimmerButtonConfig config)
++    {
++        var multiplier = toggleState ? 1 : -1;
++        if(!targetEntity.IsToggleState(toggleState))
++        {
++            targetEntity.ToggleState(!toggleState);
++            return;
++        }
++        if (e.Data.EventType == ButtonEventType.Pressed)
++        {
++            targetEntity.Brighten(config.PressBrightness * multiplier);
++        }
++        if(e.Data.EventType == ButtonEventType.HeldDownTick)
++        {
++            targetEntity.Brighten(config.TickBrightness* multiplier);
++        }
++        if (e.Data.IsPressAndAHalf)
++        {
++            targetEntity.ToggleWarm();
++        }
++    }
++}
++
++public class DimmerButtonConfig
++{
++
++    public int PressBrightness { get; set; } = 20;
++    public int TickBrightness { get; set; } = 2;
++}
+\ No newline at end of file
+diff --git a/src/Apps/Lights/LiminalDimmer.cs b/src/Apps/Lights/LiminalDimmer.cs
+deleted file mode 100644
+index b5f6c36..0000000
+--- a/src/Apps/Lights/LiminalDimmer.cs
++++ /dev/null
+@@ -1,74 +0,0 @@
+-﻿using System.Reactive.Concurrency;
+-using Hammlet.Apps.SceneOnButton;
+-using Hammlet.Extensions;
+-using Hammlet.NetDaemon.Models;
+-using HassModel;
+-using NetDaemon.HassModel.Entities;
+-
+-namespace Hammlet.Apps.Lights;
+-[NetDaemonApp]
+-internal class LiminalDimmer
+-{
+-    public LiminalDimmer(IHaContext ha, LightEntities entities,BinarySensorEntities buttons, EventEntities events, ILogger<LiminalDimmer> logger, IScheduler scheduler)
+-    {
+-        //buttons.LiminalDimmerInput0.StateChanges().Subscribe(s =>
+-        //{
+-        //    logger.LogInformation("1 Input: {0}", s.New?.State);
+-        //});
+-        //buttons.LiminalDimmerInput1.StateChanges().Subscribe(s =>
+-        //{
+-        //    logger.LogInformation("2 Input: {0}", s.New?.State);
+-        //});
+-        buttons.LiminalDimmerInput0.ToButtonEvents(scheduler).Subscribe(e =>
+-        {
+-            if (e.Data.EventType == ButtonEventType.ButtonPressed)
+-            {
+-                if (entities.LiminalCeiling.IsOff())
+-                {
+-                    entities.LiminalCeiling.TurnOn();
+-                }
+-                else
+-                {
+-                    entities.LiminalCeiling.Brighten();
+-                }
+-            }
+-            if (e.Data.EventType == ButtonEventType.KeyPressed2x)
+-            {
+-                entities.LiminalCeiling.ToggleWarm();
+-            }
+-        });
+-        buttons.LiminalDimmerInput1.ToButtonEvents(scheduler).Subscribe(e =>
+-        {
+-            logger.LogInformation("1 Input: {0}", e.Data);
+-            if (e.Data.EventType == ButtonEventType.ButtonPressed)
+-            {
+-                if (entities.LiminalCeiling.IsOn())
+-                {
+-                    entities.LiminalDimmer.TurnOff();
+-                }
+-                else
+-                {
+-                    entities.LiminalCeiling.Darken();
+-                }
+-            }
+-            if (e.Data.EventType == ButtonEventType.KeyPressed2x)
+-            {
+-                entities.LiminalCeiling.ToggleWarm();
+-            }
+-        });
+-        entities.LiminalDimmer.StateAllChanges().Subscribe(s =>
+-        {
+-            if (entities.LiminalDimmer.IsOn() && s.Entity?.EntityState?.Attributes?.Brightness is { } b)
+-            {
+-                entities.LiminalCeiling.TurnOn(new()
+-                {
+-                    Brightness = b
+-                });
+-            }
+-            else
+-            {
+-                entities.LiminalCeiling.TurnOff();
+-            }
+-        });
+-    }
+-}
+\ No newline at end of file
+diff --git a/src/Apps/SceneOnButton/ButtonEventType.cs b/src/Apps/SceneOnButton/ButtonEventType.cs
+index bbe20a3..6a7f5a5 100644
+--- a/src/Apps/SceneOnButton/ButtonEventType.cs
++++ b/src/Apps/SceneOnButton/ButtonEventType.cs
+@@ -6,10 +6,12 @@ namespace Hammlet.Apps.SceneOnButton;
+ public enum ButtonEventType
+ {
+     HeldDown,
+-    ButtonReleased,
+-    ButtonDown,
+-    ButtonPressed,
+-    KeyPressed2x,
+-    KeyPressed3x,
+-    HeldButtonReleased
++    Up,
++    Down,
++    HoldReleased,
++    LongPress,
++    HeldDownTick,
++    Pressed,
++    Pressed2x,
++    Pressed3x,
+ }
+diff --git a/src/Apps/Sentences/LiminalDimmer.cs b/src/Apps/Sentences/LiminalDimmer.cs
+deleted file mode 100644
+index 952ef74..0000000
+--- a/src/Apps/Sentences/LiminalDimmer.cs
++++ /dev/null
+@@ -1,33 +0,0 @@
+-﻿using Hammlet.NetDaemon.Models;
+-using NetDaemon.HassModel.Entities;
+-
+-namespace Hammlet.Apps.Lights;
+-[NetDaemonApp]
+-internal class SetToWarmWhite
+-{
+-    public SetToWarmWhite(IHaContext ha, ConversationEntities entities,BinarySensorEntities buttons, EventEntities events, ILogger<LiminalDimmer> logger)
+-    {
+-        //buttons.LiminalDimmerInput0.StateChanges().Subscribe(s =>
+-        //{
+-        //    logger.LogInformation("1 Input: {0}", s.New?.State);
+-        //});
+-        //buttons.LiminalDimmerInput1.StateChanges().Subscribe(s =>
+-        //{
+-        //    logger.LogInformation("2 Input: {0}", s.New?.State);
+-        //});
+-        //entities.LiminalDimmer.StateAllCLhanges().Subscribe(s =>
+-        //{
+-        //    if (entities.LiminalDimmer.IsOn() && s.Entity?.EntityState?.Attributes?.Brightness is { } b)
+-        //    {
+-        //        entities.LiminalCeiling.TurnOn(new()
+-        //        {
+-        //            Brightness = b
+-        //        });
+-        //    }
+-        //    else
+-        //    {
+-        //        entities.LiminalCeiling.TurnOff();
+-        //    }
+-        //});
+-    }
+-}
+\ No newline at end of file
+diff --git a/src/Config.ps1 b/src/Config.ps1
+index dd7aa24..0878c3e 100644
+--- a/src/Config.ps1
++++ b/src/Config.ps1
+@@ -1,8 +1,10 @@
+ class HammeletDaemon {
+-    $Name="hammassistant";
+-    $ServerName=$this.Name + ".local";
+-    $Ip="192.168.1.179"
+-    $Port=8123;
++    $Name="dreamassistant";
++    $ServerName=$this.Name + ".infinitebutts.com";
++    $Url="https://$($this.ServerName)";
++    $IsSsl=$this.Url.StartsWith("https")
++    $Port=443;
++    $Ip="";
+ #    $ConfigPath="\\$($this.ServerName)\config";
+ #    $ConfigPath="\\$($this.Ip)\config";
+     $ConfigPath="Z:\\";
+@@ -44,10 +46,10 @@ class HammeletDaemon {
+     UpdateTool() {
+         dotnet tool update -g NetDaemon.HassModel.CodeGen
+     }
+-    $Tool="D:\OneDrive\Projects\Home\netdaemon\src\HassModel\NetDaemon.HassModel.CodeGenerator\bin\Debug\net9.0\NetDaemon.HassModel.CodeGenerator.exe"
++    $Tool="..\submodules\netdaemon\src\HassModel\NetDaemon.HassModel.CodeGenerator\bin\Debug\net9.0\NetDaemon.HassModel.CodeGenerator.exe"
+ #    $Tool="nd-codegen"
+     EntityUpdate() {
+-        $GenArgs=@('-fpe')
++        $GenArgs="-fpe"
+         # if($Folder) { $GenArgs += "-f $Folder" }
+         # if($HaHost) { $GenArgs += "-host $HaHost" }
+         # if($Port) { $GenArgs += "-port $Port" }
+@@ -55,8 +57,15 @@ class HammeletDaemon {
+         
+         # if($Token) { $GenArgs += "-token $Token" }
+         # if($BypassCert) { $GenArgs += "-bypass-cert" }
+-        $token=(Get-SecretString -Name "HaToken" -AsPlainText)
+-        Invoke-Expression "$($This.Tool) -fpe -host $($this.Ip) -port $($This.Port) -token $token 2>&1 | Write-Information"
++        $token=(Get-SecretString -Name "Ha$($this.Name)Token" -AsPlainText)
++        if($this.IsSsl) { 
++            $GenArgs += " -ssl true" 
++        }
++        $HaHost=$this.Ip
++        if(!$HaHost) {
++            $HaHost=$this.ServerName
++        }
++        Invoke-Expression "$($This.Tool) $GenArgs -host $($HaHost) -port $($This.Port) -token $token 2>&1 | Write-Information"
+     }    
+     RestartService() {
+         # Point to the HA PowerSHell Module
+diff --git a/src/Config/SceneSelectorConfig.cs b/src/Config/SceneSelectorConfig.cs
+index 6a8fa3b..fd7ff6d 100644
+--- a/src/Config/SceneSelectorConfig.cs
++++ b/src/Config/SceneSelectorConfig.cs
+@@ -29,7 +29,7 @@ public class SceneSelectorConfig
+     public LightButtonConfig Button1 { get; set; } = new()
+     {
+         Action = ButtonAction.Brighten,
+-        Arg = ButtonEventType.ButtonPressed,
++        Arg = ButtonEventType.Pressed,
+         EventIndex = "001",
+         On = new LightTurnOnParameters()
+         {
+@@ -71,5 +71,5 @@ public partial record LightButtonConfig
+     public LightTurnOnParameters? On { get; set; }
+     public LightTurnOffParameters? Off { get; set; }
+     public string EventIndex { get; set; } = "000";
+-    public ButtonEventType Arg { get; set; } = ButtonEventType.ButtonPressed;
++    public ButtonEventType Arg { get; set; } = ButtonEventType.Pressed;
+ }
+\ No newline at end of file
+diff --git a/src/Extensions/ObservableExtensions.cs b/src/Extensions/ObservableExtensions.cs
+index bbe61dd..b8c1472 100644
+--- a/src/Extensions/ObservableExtensions.cs
++++ b/src/Extensions/ObservableExtensions.cs
+@@ -30,7 +30,27 @@ public record ButtonEvent(
+     ButtonEventType EventType,
+     ButtonHoldingState? HoldingState = null,
+     TimeSpan? ButtonHeldTime = null,
+-    DateTimeOffset? LastKeyDown = null);
++    DateTimeOffset? LastKeyDown = null,
++    ButtonEventType? PendingPressState=null)
++{
++    public bool IsPressAndAHalf => PendingPressState != null && EventType == ButtonEventType.Down;
++}
++
++public class ButtonEventOptions
++{
++    //public const long DefaultDoublePressMilliseconds = DefaultPressDelay-DefaultDebounceTimeMilliseconds;
++    public const long DefaultPressDelay = 500;
++    public const long DefaultHoldingMilliseconds = 1000;
++    public const long DefaultLongPressMilliseconds = 1000;
++    public const long DefaultDebounceTimeMilliseconds = 50;
++
++    public TimeSpan LongPressTime { get; set; } = TimeSpan.FromMilliseconds(DefaultLongPressMilliseconds);
++    public TimeSpan PressDelay { get; set;} = TimeSpan.FromMilliseconds(DefaultPressDelay);
++    public TimeSpan HoldDelay { get; set;} = TimeSpan.FromMilliseconds(DefaultHoldingMilliseconds);
++    public TimeSpan DebounceTime { get; set; } = TimeSpan.FromMilliseconds(DefaultDebounceTimeMilliseconds);
++    public TimeSpan HoldTickRate { get; set; } = TimeSpan.FromMilliseconds(200);
++    public bool FireTickEvents { get; set; } = true;
++}
+ 
+ internal sealed class ButtonEventProducer(IObservable<StateChange> source, IScheduler scheduler)
+     : Producer<StateChangeEvent<ButtonEvent>, ButtonEventProducer.ButtonEventSink>
+@@ -40,28 +60,22 @@ internal sealed class ButtonEventProducer(IObservable<StateChange> source, ISche
+ 
+     protected override void Run(ButtonEventSink sink) => sink.Run(source);
+ 
++
+     public class ButtonEventSink(IObserver<StateChangeEvent<ButtonEvent>> observer, IScheduler scheduler)
+         : Sink<StateChange, StateChangeEvent<ButtonEvent>>(observer)
+     {
+-        internal const long DefaultDoublePressMilliseconds = DefaultPressDelay-DefaultDebounceTimeMilliseconds;
+-        internal const long DefaultPressDelay = 250;
+-        internal const long DefaultHoldingMilliseconds = 2000;
+-        public const long DefaultDebounceTimeMilliseconds = 50;
+-
+-        private readonly TimeSpan _doublePressTicks = TimeSpan.FromMilliseconds(DefaultDoublePressMilliseconds);
+-        private readonly TimeSpan _pressDelay = TimeSpan.FromMilliseconds(DefaultPressDelay);
+-        private readonly TimeSpan _holdDelay = TimeSpan.FromMilliseconds(DefaultHoldingMilliseconds);
+-        private readonly TimeSpan _debounceTime = TimeSpan.FromMilliseconds(DefaultDebounceTimeMilliseconds);
+-
++        private ButtonEventOptions _options = new();
+         private long _debounceStartTicks;
+         private ButtonHoldingState? _holdingState;
+         private DateTimeOffset? _lastKeyDown = DateTimeOffset.UtcNow;
+         private DateTimeOffset? _buttonHeldStart = DateTimeOffset.UtcNow;
+-        private TimeSpan? _buttonHeldTime;
+-        private DateTimeOffset? _lastPress;
++        private TimeSpan? _lastButtonHeldTime;
+         private IDisposable? _holdingSchedule;
+-        private IDisposable? _pressDelaySchedule;
+-        private bool ShouldDebounce => DateTime.UtcNow.Ticks - _debounceStartTicks < _debounceTime.Ticks;
++        private IDisposable? _howManyClicksTimer;
++        private IDisposable? _holdingTicks;
++        private DateTimeOffset _lastPress;
++        private IDisposable? _longPressTimer;
++        private bool ShouldDebounce => DateTime.UtcNow.Ticks - _debounceStartTicks < _options.DebounceTime.Ticks;
+ 
+         public override void Run(IObservable<StateChange> source)
+         {
+@@ -111,20 +125,38 @@ internal sealed class ButtonEventProducer(IObservable<StateChange> source, ISche
+                 if (_holdingState != ButtonHoldingState.Pending)
+                 {
+                     _holdingState = ButtonHoldingState.Pending;
+-                    _holdingSchedule ??= scheduler.Schedule(change, _holdDelay,
++                    _holdingSchedule ??= scheduler.Schedule(change, _options.HoldDelay,
+                         (_, state) =>
+                         {
+-                            _buttonHeldStart = DateTimeOffset.UtcNow;
+-                            _holdingState = ButtonHoldingState.Started;
+-                            _holdingSchedule?.Dispose();
+-                            _holdingSchedule = null;
+-                            OnNext(change, ButtonEventType.HeldDown);
++                            StartHolding(change);
+                         });
+                 }
+             }
++            OnNext(change, ButtonEventType.Down);
++        }
+ 
+-            OnNext(change, ButtonEventType.ButtonDown);
+ 
++        public void StartHolding(StateChange change)
++        {
++            _buttonHeldStart = DateTimeOffset.UtcNow;
++            _holdingState = ButtonHoldingState.Started;
++            _holdingSchedule?.Dispose();
++            OnNext(change, ButtonEventType.HeldDown);
++            _holdingTicks?.Dispose();
++            if (_options.FireTickEvents)
++            {
++                _holdingTicks = scheduler.SchedulePeriodic(change, _options.HoldTickRate, s =>
++                {
++                    if (_holdingState == ButtonHoldingState.Started)
++                        OnNext(s, ButtonEventType.HeldDownTick);
++                });
++            }
++            _longPressTimer?.Dispose();
++            _longPressTimer = scheduler.Schedule(change, _options.LongPressTime, (_, state) =>
++            {
++                if (_holdingState == ButtonHoldingState.Started)
++                    OnNext(change, ButtonEventType.LongPress);
++            });
+         }
+ 
+         private void OnNext(StateChange change, ButtonEventType type)
+@@ -134,16 +166,19 @@ internal sealed class ButtonEventProducer(IObservable<StateChange> source, ISche
+                 {
+                     LastKeyDown = _lastKeyDown,
+                     HoldingState = _holdingState,
++                    PendingPressState = _nextPressType,
+                     ButtonHeldTime = 
+                         _holdingState switch
+                         {
+-                            ButtonHoldingState.Started =>_buttonHeldStart.HasValue ? DateTimeOffset.UtcNow.Subtract(_buttonHeldStart.Value) : null,
+-                            ButtonHoldingState.Completed => _buttonHeldTime,
++                            ButtonHoldingState.Started => ButtonHeldTime,
++                            ButtonHoldingState.Completed => _lastButtonHeldTime,
+                             _ => null
+                         }
+                 }));
+         }
+ 
++        private TimeSpan? ButtonHeldTime => _buttonHeldStart.HasValue ? DateTimeOffset.UtcNow.Subtract(_buttonHeldStart.Value) : null;
++
+         /// <summary>
+         /// Handler for releasing the button.
+         /// </summary>
+@@ -156,16 +191,32 @@ internal sealed class ButtonEventProducer(IObservable<StateChange> source, ISche
+             IsPressed = false;
+             UpdateDebounce();
+             _lastPress = DateTimeOffset.UtcNow;
+-            OnNext(change, ButtonEventType.ButtonReleased);
+-            _pressDelaySchedule = scheduler.Schedule(change, _pressDelay, (_, state) =>
+-            {
+-                OnNext(change, ButtonEventType.ButtonPressed);
+-            });
++            OnNext(change, ButtonEventType.Up);
++            StartPressTimer(change);
+             if (_holdingState == ButtonHoldingState.Started)
+             {
+                 _holdingState = ButtonHoldingState.Completed;
+-                _buttonHeldTime = _buttonHeldStart.HasValue ? DateTimeOffset.UtcNow.Subtract(_buttonHeldStart.Value) : null;
+-                OnNext(change, ButtonEventType.HeldButtonReleased);
++                _lastButtonHeldTime = _buttonHeldStart.HasValue ? DateTimeOffset.UtcNow.Subtract(_buttonHeldStart.Value) : null;
++                OnNext(change, ButtonEventType.HoldReleased);
++            }
++        }
++
++        ButtonEventType GetNextPress(ButtonEventType pressType) => (ButtonEventType)pressType + 1;
++        private ButtonEventType? _nextPressType;
++
++        private void StartPressTimer(StateChange change)
++        {
++            _nextPressType = _nextPressType == null ? ButtonEventType.Pressed : GetNextPress(_nextPressType.Value);
++            if (_nextPressType <= ButtonEventType.Pressed3x)
++            {
++                _howManyClicksTimer?.Dispose();
++                _howManyClicksTimer = scheduler.Schedule(_nextPressType.Value, _options.PressDelay, (type, state) =>
++                {
++                    OnNext(change, type);
++                    _nextPressType = null;
++                    _howManyClicksTimer?.Dispose();
++                    _howManyClicksTimer = null;
++                });
+             }
+         }
+ 
+@@ -174,6 +225,11 @@ internal sealed class ButtonEventProducer(IObservable<StateChange> source, ISche
+         private void ClearHoldingTimer()
+         {
+             _holdingSchedule?.Dispose();
++            _holdingTicks?.Dispose();
++            _longPressTimer?.Dispose();
++            _longPressTimer = null;
++            _holdingTicks = null;
++            _holdingSchedule = null;
+             _buttonHeldStart = null;
+             if (_holdingState == ButtonHoldingState.Pending)
+             {
+@@ -190,6 +246,7 @@ internal sealed class ButtonEventProducer(IObservable<StateChange> source, ISche
+         protected override void Dispose(bool disposing)
+         {
+             ClearHoldingTimer();
++            _howManyClicksTimer?.Dispose();
+             base.Dispose(disposing);
+         }
+ 
+diff --git a/src/Extensions/StateExtensions.cs b/src/Extensions/StateExtensions.cs
+index c10651c..ac485e1 100644
+--- a/src/Extensions/StateExtensions.cs
++++ b/src/Extensions/StateExtensions.cs
+@@ -10,6 +10,15 @@ namespace Hammlet.NetDaemon.Extensions;
+ 
+ public static class LightExtensions
+ {
++    public static bool IsToggleState(this Entity @this, bool toggleState) => toggleState ? @this.IsOn() : @this.IsOff();
++    public static void ToggleState(this LightEntity @this, bool toggleState)
++    {
++        if (toggleState)
++            @this.TurnOn();
++        else
++            @this.TurnOff();
++    }
++
+     public static LightTurnOnParameters? CopyParameters(this LightEntity @this, LightEntity target) => 
+         target.EntityState?.Attributes != null ? @this.CopyParameters(new ParsedLightAttributes(target.EntityState.Attributes)) : null;
+ 

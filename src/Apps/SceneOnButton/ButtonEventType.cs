@@ -6,10 +6,12 @@ namespace Hammlet.Apps.SceneOnButton;
 public enum ButtonEventType
 {
     HeldDown,
-    ButtonReleased,
-    ButtonDown,
-    ButtonPressed,
-    KeyPressed2x,
-    KeyPressed3x,
-    HeldButtonReleased
+    Up,
+    Down,
+    HoldReleased,
+    LongPress,
+    HeldDownTick,
+    Pressed,
+    Pressed2x,
+    Pressed3x,
 }

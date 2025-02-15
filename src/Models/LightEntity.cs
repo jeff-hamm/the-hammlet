@@ -14,6 +14,29 @@ public static class LightEntityExtensions
     public static int MinBrightnes(this LightEntity @this) => 0;
     public static double? Brightness(this LightEntity @this) => 
         Double.TryParse(@this.Attributes?.Brightness?.ToString(), out var r) ? r : null;
+    public static void Brightness(this LightEntity @this, int amount)
+    {
+        @this.TurnOn(brightness:int.Clamp(amount,0,255));
+    }
+    public static double? TransitionTime(this LightEntity @this) =>
+        500;
+    public static int? BrightenBy(this LightEntity @this, double amount, ILogger? logger=null)
+    {
+        var newBrightness = 255 * (amount/100.0);
+        if (@this.Brightness() is { } b)
+        {
+            var n = int.Clamp((int)b + (int)newBrightness, 0, 255);
+            logger?.LogDebug("Changing brightness {@b} by {newBrightness} to {value}", b, newBrightness,n);
+            @this.TurnOn(brightness: n, transition:@this.TransitionTime());
+            return n;
+        }
+        else
+        {
+            logger?.LogWarning("Brightness not available for {@entity}", @this.EntityId);
+        }
+
+        return null;
+    }
     
     public static void Brighten(this LightEntity @this, double pct=20)
     {

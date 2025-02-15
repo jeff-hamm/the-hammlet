@@ -1,24 +1,29 @@
 {
 	"folders": [
 		{
-			"name": "NetDaemon",
+			"name": "Root",
 			"path": "."
 		},
 		{
+			"name": "Hammlet",
+			"path": "./src"
+		},
+		{
+			"name": "PowerShell",
 			"path": "../../../Documents/PowerShell"
 		},
 		{
-			"path": "../../netdaemon"
+			"name": "NetDaemon",
+			"path": "./submodules/netdaemon"
 		},
 		{
+			"name": "Hammassistant",
 			"path": "Z:/"
 		},
 		{
-			"path": "../netdaemon"
+			"name": "Submodules",
+			"path": "./submodules"
 		},
-		{
-			"path": "../submodules/NetDaemon.Extensions.SourceGen/src"
-		}
 	],
 	"settings": {
 		"task.allowAutomaticTasks": "on",
@@ -30,7 +35,7 @@
 				"args": [
 					"-noexit",
 					"-file",
-					"${workspaceFolder:NetDaemon}/Config.ps1"
+					"${workspaceFolder:Hammlet}/Config.ps1"
 				]
 			}
 		},
