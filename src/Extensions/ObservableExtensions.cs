@@ -30,7 +30,27 @@ public record ButtonEvent(
     ButtonEventType EventType,
     ButtonHoldingState? HoldingState = null,
     TimeSpan? ButtonHeldTime = null,
-    DateTimeOffset? LastKeyDown = null);
+    DateTimeOffset? LastKeyDown = null,
+    ButtonEventType? PendingPressState=null)
+{
+    public bool IsPressAndAHalf => PendingPressState != null && EventType == ButtonEventType.Down;
+}
+
+public class ButtonEventOptions
+{
+    //public const long DefaultDoublePressMilliseconds = DefaultPressDelay-DefaultDebounceTimeMilliseconds;
+    public const long DefaultPressDelay = 500;
+    public const long DefaultHoldingMilliseconds = 1000;
+    public const long DefaultLongPressMilliseconds = 1000;
+    public const long DefaultDebounceTimeMilliseconds = 50;
+
+    public TimeSpan LongPressTime { get; set; } = TimeSpan.FromMilliseconds(DefaultLongPressMilliseconds);
+    public TimeSpan PressDelay { get; set;} = TimeSpan.FromMilliseconds(DefaultPressDelay);
+    public TimeSpan HoldDelay { get; set;} = TimeSpan.FromMilliseconds(DefaultHoldingMilliseconds);
+    public TimeSpan DebounceTime { get; set; } = TimeSpan.FromMilliseconds(DefaultDebounceTimeMilliseconds);
+    public TimeSpan HoldTickRate { get; set; } = TimeSpan.FromMilliseconds(200);
+    public bool FireTickEvents { get; set; } = true;
+}
 
 internal sealed class ButtonEventProducer(IObservable<StateChange> source, IScheduler scheduler)
     : Producer<StateChangeEvent<ButtonEvent>, ButtonEventProducer.ButtonEventSink>
@@ -40,28 +60,22 @@ internal sealed class ButtonEventProducer(IObservable<StateChange> source, ISche
 
     protected override void Run(ButtonEventSink sink) => sink.Run(source);
 
+
     public class ButtonEventSink(IObserver<StateChangeEvent<ButtonEvent>> observer, IScheduler scheduler)
         : Sink<StateChange, StateChangeEvent<ButtonEvent>>(observer)
     {
-        internal const long DefaultDoublePressMilliseconds = DefaultPressDelay-DefaultDebounceTimeMilliseconds;
-        internal const long DefaultPressDelay = 250;
-        internal const long DefaultHoldingMilliseconds = 2000;
-        public const long DefaultDebounceTimeMilliseconds = 50;
-
-        private readonly TimeSpan _doublePressTicks = TimeSpan.FromMilliseconds(DefaultDoublePressMilliseconds);
-        private readonly TimeSpan _pressDelay = TimeSpan.FromMilliseconds(DefaultPressDelay);
-        private readonly TimeSpan _holdDelay = TimeSpan.FromMilliseconds(DefaultHoldingMilliseconds);
-        private readonly TimeSpan _debounceTime = TimeSpan.FromMilliseconds(DefaultDebounceTimeMilliseconds);
-
+        private ButtonEventOptions _options = new();
         private long _debounceStartTicks;
         private ButtonHoldingState? _holdingState;
         private DateTimeOffset? _lastKeyDown = DateTimeOffset.UtcNow;
         private DateTimeOffset? _buttonHeldStart = DateTimeOffset.UtcNow;
-        private TimeSpan? _buttonHeldTime;
-        private DateTimeOffset? _lastPress;
+        private TimeSpan? _lastButtonHeldTime;
         private IDisposable? _holdingSchedule;
-        private IDisposable? _pressDelaySchedule;
-        private bool ShouldDebounce => DateTime.UtcNow.Ticks - _debounceStartTicks < _debounceTime.Ticks;
+        private IDisposable? _howManyClicksTimer;
+        private IDisposable? _holdingTicks;
+        private DateTimeOffset _lastPress;
+        private IDisposable? _longPressTimer;
+        private bool ShouldDebounce => DateTime.UtcNow.Ticks - _debounceStartTicks < _options.DebounceTime.Ticks;
 
         public override void Run(IObservable<StateChange> source)
         {
@@ -111,20 +125,38 @@ internal sealed class ButtonEventProducer(IObservable<StateChange> source, ISche
                 if (_holdingState != ButtonHoldingState.Pending)
                 {
                     _holdingState = ButtonHoldingState.Pending;
-                    _holdingSchedule ??= scheduler.Schedule(change, _holdDelay,
+                    _holdingSchedule ??= scheduler.Schedule(change, _options.HoldDelay,
                         (_, state) =>
                         {
-                            _buttonHeldStart = DateTimeOffset.UtcNow;
-                            _holdingState = ButtonHoldingState.Started;
-                            _holdingSchedule?.Dispose();
-                            _holdingSchedule = null;
-                            OnNext(change, ButtonEventType.HeldDown);
+                            StartHolding(change);
                         });
                 }
             }
+            OnNext(change, ButtonEventType.Down);
+        }
 
-            OnNext(change, ButtonEventType.ButtonDown);
 
+        public void StartHolding(StateChange change)
+        {
+            _buttonHeldStart = DateTimeOffset.UtcNow;
+            _holdingState = ButtonHoldingState.Started;
+            _holdingSchedule?.Dispose();
+            OnNext(change, ButtonEventType.HeldDown);
+            _holdingTicks?.Dispose();
+            if (_options.FireTickEvents)
+            {
+                _holdingTicks = scheduler.SchedulePeriodic(change, _options.HoldTickRate, s =>
+                {
+                    if (_holdingState == ButtonHoldingState.Started)
+                        OnNext(s, ButtonEventType.HeldDownTick);
+                });
+            }
+            _longPressTimer?.Dispose();
+            _longPressTimer = scheduler.Schedule(change, _options.LongPressTime, (_, state) =>
+            {
+                if (_holdingState == ButtonHoldingState.Started)
+                    OnNext(change, ButtonEventType.LongPress);
+            });
         }
 
         private void OnNext(StateChange change, ButtonEventType type)
@@ -134,15 +166,18 @@ internal sealed class ButtonEventProducer(IObservable<StateChange> source, ISche
                 {
                     LastKeyDown = _lastKeyDown,
                     HoldingState = _holdingState,
+                    PendingPressState = _nextPressType,
                     ButtonHeldTime = 
                         _holdingState switch
                         {
-                            ButtonHoldingState.Started =>_buttonHeldStart.HasValue ? DateTimeOffset.UtcNow.Subtract(_buttonHeldStart.Value) : null,
-                            ButtonHoldingState.Completed => _buttonHeldTime,
+                            ButtonHoldingState.Started => ButtonHeldTime,
+                            ButtonHoldingState.Completed => _lastButtonHeldTime,
                             _ => null
                         }
                 }));
         }
+
+        private TimeSpan? ButtonHeldTime => _buttonHeldStart.HasValue ? DateTimeOffset.UtcNow.Subtract(_buttonHeldStart.Value) : null;
 
         /// <summary>
         /// Handler for releasing the button.
@@ -156,16 +191,32 @@ internal sealed class ButtonEventProducer(IObservable<StateChange> source, ISche
             IsPressed = false;
             UpdateDebounce();
             _lastPress = DateTimeOffset.UtcNow;
-            OnNext(change, ButtonEventType.ButtonReleased);
-            _pressDelaySchedule = scheduler.Schedule(change, _pressDelay, (_, state) =>
-            {
-                OnNext(change, ButtonEventType.ButtonPressed);
-            });
+            OnNext(change, ButtonEventType.Up);
+            StartPressTimer(change);
             if (_holdingState == ButtonHoldingState.Started)
             {
                 _holdingState = ButtonHoldingState.Completed;
-                _buttonHeldTime = _buttonHeldStart.HasValue ? DateTimeOffset.UtcNow.Subtract(_buttonHeldStart.Value) : null;
-                OnNext(change, ButtonEventType.HeldButtonReleased);
+                _lastButtonHeldTime = _buttonHeldStart.HasValue ? DateTimeOffset.UtcNow.Subtract(_buttonHeldStart.Value) : null;
+                OnNext(change, ButtonEventType.HoldReleased);
+            }
+        }
+
+        ButtonEventType GetNextPress(ButtonEventType pressType) => (ButtonEventType)pressType + 1;
+        private ButtonEventType? _nextPressType;
+
+        private void StartPressTimer(StateChange change)
+        {
+            _nextPressType = _nextPressType == null ? ButtonEventType.Pressed : GetNextPress(_nextPressType.Value);
+            if (_nextPressType <= ButtonEventType.Pressed3x)
+            {
+                _howManyClicksTimer?.Dispose();
+                _howManyClicksTimer = scheduler.Schedule(_nextPressType.Value, _options.PressDelay, (type, state) =>
+                {
+                    OnNext(change, type);
+                    _nextPressType = null;
+                    _howManyClicksTimer?.Dispose();
+                    _howManyClicksTimer = null;
+                });
             }
         }
 
@@ -174,6 +225,11 @@ internal sealed class ButtonEventProducer(IObservable<StateChange> source, ISche
         private void ClearHoldingTimer()
         {
             _holdingSchedule?.Dispose();
+            _holdingTicks?.Dispose();
+            _longPressTimer?.Dispose();
+            _longPressTimer = null;
+            _holdingTicks = null;
+            _holdingSchedule = null;
             _buttonHeldStart = null;
             if (_holdingState == ButtonHoldingState.Pending)
             {
@@ -190,6 +246,7 @@ internal sealed class ButtonEventProducer(IObservable<StateChange> source, ISche
         protected override void Dispose(bool disposing)
         {
             ClearHoldingTimer();
+            _howManyClicksTimer?.Dispose();
             base.Dispose(disposing);
         }
 

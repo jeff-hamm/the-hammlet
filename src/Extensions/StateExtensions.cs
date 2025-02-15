@@ -10,6 +10,15 @@ namespace Hammlet.NetDaemon.Extensions;
 
 public static class LightExtensions
 {
+    public static bool IsToggleState(this Entity @this, bool toggleState) => toggleState ? @this.IsOn() : @this.IsOff();
+    public static void ToggleState(this LightEntity @this, bool toggleState)
+    {
+        if (toggleState)
+            @this.TurnOn();
+        else
+            @this.TurnOff();
+    }
+
     public static LightTurnOnParameters? CopyParameters(this LightEntity @this, LightEntity target) => 
         target.EntityState?.Attributes != null ? @this.CopyParameters(new ParsedLightAttributes(target.EntityState.Attributes)) : null;
 

@@ -1,8 +1,10 @@
 class HammeletDaemon {
-    $Name="hammassistant";
-    $ServerName=$this.Name + ".local";
-    $Ip="192.168.1.179"
-    $Port=8123;
+    $Name="dreamassistant";
+    $ServerName=$this.Name + ".infinitebutts.com";
+    $Url="https://$($this.ServerName)";
+    $IsSsl=$this.Url.StartsWith("https")
+    $Port=443;
+    $Ip="";
 #    $ConfigPath="\\$($this.ServerName)\config";
 #    $ConfigPath="\\$($this.Ip)\config";
     $ConfigPath="Z:\\";
@@ -44,10 +46,10 @@ class HammeletDaemon {
     UpdateTool() {
         dotnet tool update -g NetDaemon.HassModel.CodeGen
     }
-    $Tool="D:\OneDrive\Projects\Home\netdaemon\src\HassModel\NetDaemon.HassModel.CodeGenerator\bin\Debug\net9.0\NetDaemon.HassModel.CodeGenerator.exe"
+    $Tool="..\submodules\netdaemon\src\HassModel\NetDaemon.HassModel.CodeGenerator\bin\Debug\net9.0\NetDaemon.HassModel.CodeGenerator.exe"
 #    $Tool="nd-codegen"
     EntityUpdate() {
-        $GenArgs=@('-fpe')
+        $GenArgs="-fpe"
         # if($Folder) { $GenArgs += "-f $Folder" }
         # if($HaHost) { $GenArgs += "-host $HaHost" }
         # if($Port) { $GenArgs += "-port $Port" }
@@ -55,8 +57,15 @@ class HammeletDaemon {
         
         # if($Token) { $GenArgs += "-token $Token" }
         # if($BypassCert) { $GenArgs += "-bypass-cert" }
-        $token=(Get-SecretString -Name "HaToken" -AsPlainText)
-        Invoke-Expression "$($This.Tool) -fpe -host $($this.Ip) -port $($This.Port) -token $token 2>&1 | Write-Information"
+        $token=(Get-SecretString -Name "Ha$($this.Name)Token" -AsPlainText)
+        if($this.IsSsl) { 
+            $GenArgs += " -ssl true" 
+        }
+        $HaHost=$this.Ip
+        if(!$HaHost) {
+            $HaHost=$this.ServerName
+        }
+        Invoke-Expression "$($This.Tool) $GenArgs -host $($HaHost) -port $($This.Port) -token $token 2>&1 | Write-Information"
     }    
     RestartService() {
         # Point to the HA PowerSHell Module
