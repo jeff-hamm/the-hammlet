@@ -4,144 +4,64 @@
       "domain": "light",
       "entities": [
         {
-          "id": "light.alive_lights",
-          "friendlyName": "Alive Lights",
-          "cSharpName": "AliveLights"
+          "id": "light.bulb_rgbcw_6ddfa9",
+          "friendlyName": "Egg",
+          "cSharpName": "BulbRgbcw6ddfa9"
         },
         {
-          "id": "light.bedroom_fan_light",
-          "friendlyName": "Bedroom Fan Light",
-          "cSharpName": "BedroomFanLight"
+          "id": "light.bulb_rgbcw_a350f3",
+          "friendlyName": "Bulb RGBCW A350F3",
+          "cSharpName": "BulbRgbcwA350f3"
         },
         {
-          "id": "light.bright_lamp_1",
-          "friendlyName": "Bright Lamp 1",
-          "cSharpName": "BrightLamp1"
+          "id": "light.bulb_rgbcw_fe8ceb",
+          "friendlyName": "Bulb RGBCW FE8CEB",
+          "cSharpName": "BulbRgbcwFe8ceb"
         },
         {
-          "id": "light.color_bulbs",
-          "friendlyName": "Color",
-          "cSharpName": "ColorBulbs"
+          "id": "light.desk_lamp",
+          "friendlyName": "Desk Lamp",
+          "cSharpName": "DeskLamp"
         },
         {
-          "id": "light.demoled1_esp8266_demo_led_1",
-          "friendlyName": "ESP8266 Demo LED 1 ESP8266 Demo LED 1",
-          "cSharpName": "Demoled1Esp8266DemoLed1"
+          "id": "light.garage_ceiling_1",
+          "friendlyName": "Garage Ceiling 1",
+          "cSharpName": "GarageCeiling1"
         },
         {
-          "id": "light.hammlet_bathroom",
-          "friendlyName": "Bathroom",
-          "cSharpName": "HammletBathroom"
+          "id": "light.garage_ceiling_2",
+          "friendlyName": "Garage Ceiling 2",
+          "cSharpName": "GarageCeiling2"
         },
         {
-          "id": "light.hammlet_extra",
-          "friendlyName": "Laser Lamp",
-          "cSharpName": "HammletExtra"
+          "id": "light.mikaela_ceiling_1",
+          "friendlyName": "Mikaela Ceiling 1",
+          "cSharpName": "MikaelaCeiling1"
         },
         {
-          "id": "light.hammlet_pantry",
-          "friendlyName": "Hammlet Pantry",
-          "cSharpName": "HammletPantry"
+          "id": "light.mikaela_ceiling_2",
+          "friendlyName": "Mikaela Ceiling 2",
+          "cSharpName": "MikaelaCeiling2"
         },
         {
-          "id": "light.hammlet_wled_music_spamheart_vein_2",
-          "friendlyName": "Spamheart Vein 2 Spamheart Vein 2",
-          "cSharpName": "HammletWledMusicSpamheartVein2"
+          "id": "light.mikaela_dimmer",
+          "friendlyName": "Mikaela Dimmer",
+          "cSharpName": "MikaelaDimmer"
         },
         {
-          "id": "light.hey_nabu_led_ring",
-          "friendlyName": "Hey Nabu LED Ring",
-          "cSharpName": "HeyNabuLedRing"
+          "id": "light.mikaela_s_ceiling",
+          "friendlyName": "Mikaela\u0027s Ceiling",
+          "cSharpName": "MikaelaSCeiling"
         },
         {
-          "id": "light.kitchen",
-          "friendlyName": "Kitchen",
-          "cSharpName": "Kitchen"
+          "id": "light.mikaela_s_room",
+          "friendlyName": "Mikaela\u0027s Room",
+          "cSharpName": "MikaelaSRoom"
         },
         {
-          "id": "light.kitchen_group",
-          "friendlyName": "Kitchen",
-          "cSharpName": "KitchenGroup"
-        },
-        {
-          "id": "light.kitchen_switch",
-          "friendlyName": "Kitchen Switch",
-          "cSharpName": "KitchenSwitch"
-        },
-        {
-          "id": "light.laser_lamp",
-          "friendlyName": "Laser Lamp",
-          "cSharpName": "LaserLamp"
-        },
-        {
-          "id": "light.liminal_ceiling",
-          "friendlyName": "Liminal Ceiling",
-          "cSharpName": "LiminalCeiling"
-        },
-        {
-          "id": "light.liminal_dimmer",
-          "friendlyName": "Liminal Dimmer",
-          "cSharpName": "LiminalDimmer"
-        },
-        {
-          "id": "light.living",
-          "friendlyName": "Alive",
-          "cSharpName": "Living"
-        },
-        {
-          "id": "light.living_fan",
-          "friendlyName": "Alive Fan Light",
-          "cSharpName": "LivingFan"
-        },
-        {
-          "id": "light.living_fan_light_switch",
-          "friendlyName": "Alive Fan Light Switch",
-          "cSharpName": "LivingFanLightSwitch"
-        },
-        {
-          "id": "light.pantry",
-          "friendlyName": "Pantry",
-          "cSharpName": "Pantry"
-        },
-        {
-          "id": "light.plant_lamp",
-          "friendlyName": "Plant Lamp",
-          "cSharpName": "PlantLamp"
-        },
-        {
-          "id": "light.spamheart",
-          "friendlyName": "Spamheart",
-          "cSharpName": "Spamheart"
-        },
-        {
-          "id": "light.spamheart_2_spamheart_2",
-          "friendlyName": "Spamheart 2 Spamheart 2",
-          "cSharpName": "Spamheart2Spamheart2"
-        },
-        {
-          "id": "light.spamheart_4_spamheart_vein",
-          "friendlyName": "Spamheart",
-          "cSharpName": "Spamheart4SpamheartVein"
-        },
-        {
-          "id": "light.succulent_lamp",
-          "friendlyName": "Succulent Lamp",
-          "cSharpName": "SucculentLamp"
-        },
-        {
-          "id": "light.tentacle_lamp",
-          "friendlyName": "Tentacle Lamp",
-          "cSharpName": "TentacleLamp"
-        },
-        {
-          "id": "light.tentacle_lightener",
-          "friendlyName": "tentacle_lightener",
-          "cSharpName": "TentacleLightener"
-        },
-        {
-          "id": "light.yeelight_colorb_0x1b32258a",
-          "friendlyName": null,
-          "cSharpName": "YeelightColorb0x1b32258a"
+          "id": "light.wicker_lamp_switch_socket_1",
+          "friendlyName": "Wicker Lamp Switch Socket 1",
+          "cSharpName": "WickerLampSwitchSocket1"
         }
       ],
       "attributes": [
@@ -154,9 +74,7 @@
             "color_temp",
             "hs",
             "onoff",
-            "rgb",
-            "rgbw",
-            "xy"
+            "rgb"
           ],
           "isList": true,
           "toGenerate": false,
@@ -275,20 +193,11 @@
           "cSharpName": "EntityId",
           "clrType": "LightEntityId",
           "values": [
-            "light.bedroom_fan_light",
-            "light.hammlet_bathroom",
-            "light.hammlet_pantry",
-            "light.hammlet_wled_music_spamheart_vein_2",
-            "light.kitchen",
-            "light.kitchen_switch",
-            "light.laser_lamp",
-            "light.liminal_ceiling",
-            "light.living_fan",
-            "light.plant_lamp",
-            "light.spamheart_4_spamheart_vein",
-            "light.stripper_light",
-            "light.succulent_lamp",
-            "light.tentacle_lamp"
+            "light.desk_lamp",
+            "light.mikaela_ceiling_1",
+            "light.mikaela_ceiling_2",
+            "light.mikaela_s_ceiling",
+            "light.wicker_lamp_switch_socket_1"
           ],
           "isList": true,
           "toGenerate": true,
@@ -299,40 +208,30 @@
           "cSharpName": "EffectList",
           "clrType": "LightEffectList",
           "values": [
-            "addressable flicker",
-            "alarm",
-            "candle flicker",
-            "christmas",
-            "color wipe",
-            "date night",
-            "disco",
-            "facebook",
-            "fast random loop",
-            "fireworks",
-            "happy birthday",
-            "home",
-            "lsd",
-            "movie",
-            "night mode",
-            "none",
-            "police",
-            "police2",
-            "pulse",
-            "random loop",
-            "random twinkle",
-            "rgb",
-            "romance",
-            "slow temp",
-            "slowdown",
-            "stop",
-            "strobe color",
-            "strobe epilepsy!",
-            "sunrise",
-            "sunset",
-            "tea time",
-            "twinkle",
-            "twitter",
-            "whatsapp"
+            "blue_fade",
+            "blue_strobe",
+            "colorjump",
+            "colorloop",
+            "colorstrobe",
+            "cyan_fade",
+            "cyan_strobe",
+            "cycle_rgb",
+            "cycle_seven_colors",
+            "gb_cross_fade",
+            "green_fade",
+            "green_strobe",
+            "purple_fade",
+            "purple_strobe",
+            "random",
+            "rb_cross_fade",
+            "red_fade",
+            "red_strobe",
+            "rg_cross_fade",
+            "rgb_cross_fade",
+            "white_fade",
+            "white_strobe",
+            "yellow_fade",
+            "yellow_strobe"
           ],
           "isList": true,
           "toGenerate": true,
@@ -375,18 +274,9 @@
           "toParse": false
         },
         {
-          "jsonName": "raw_state",
-          "cSharpName": "RawState",
-          "clrType": "bool",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "restored",
-          "cSharpName": "Restored",
-          "clrType": "bool",
+          "jsonName": "ip_address",
+          "cSharpName": "IpAddress",
+          "clrType": "string",
           "values": null,
           "isList": false,
           "toGenerate": false,
@@ -398,54 +288,24 @@
       "domain": "media_player",
       "entities": [
         {
-          "id": "media_player.alive_tv",
-          "friendlyName": "Alive TV",
-          "cSharpName": "AliveTv"
+          "id": "media_player.bedroom_speaker",
+          "friendlyName": "Bedroom Speaker",
+          "cSharpName": "BedroomSpeaker"
         },
         {
-          "id": "media_player.hammlet_cast",
-          "friendlyName": "Hammlet Cast",
-          "cSharpName": "HammletCast"
+          "id": "media_player.frida_s_family_room_tv",
+          "friendlyName": "Frida\u0027s Family Room",
+          "cSharpName": "FridaSFamilyRoomTv"
         },
         {
-          "id": "media_player.hammlet_cast_remote",
-          "friendlyName": "Hammlet Cast Remote",
-          "cSharpName": "HammletCastRemote"
+          "id": "media_player.kitchen_mini",
+          "friendlyName": "Kitchen Mini",
+          "cSharpName": "KitchenMini"
         },
         {
-          "id": "media_player.hammlet_oled_tv",
-          "friendlyName": "TV",
-          "cSharpName": "HammletOledTv"
-        },
-        {
-          "id": "media_player.hammlet_tv",
-          "friendlyName": "Hammlet TV",
-          "cSharpName": "HammletTv"
-        },
-        {
-          "id": "media_player.hey_nabu",
-          "friendlyName": "Hey Nabu Media Player",
-          "cSharpName": "HeyNabu"
-        },
-        {
-          "id": "media_player.hey_nabu_media_player",
-          "friendlyName": "Hey Nabu Media Player",
-          "cSharpName": "HeyNabuMediaPlayer"
-        },
-        {
-          "id": "media_player.hifijumper",
-          "friendlyName": "hifijumper",
-          "cSharpName": "Hifijumper"
-        },
-        {
-          "id": "media_player.spotify_scarlet_checkers",
-          "friendlyName": "Spotify Scarlet Checkers",
-          "cSharpName": "SpotifyScarletCheckers"
-        },
-        {
-          "id": "media_player.ytube_music_player",
-          "friendlyName": "ytube_music_player",
-          "cSharpName": "YtubeMusicPlayer"
+          "id": "media_player.living_room_mini",
+          "friendlyName": "Living Room Mini",
+          "cSharpName": "LivingRoomMini"
         }
       ],
       "attributes": [
@@ -497,7 +357,7 @@
         {
           "jsonName": "icon",
           "cSharpName": "Icon",
-          "clrType": "string",
+          "clrType": "System.String",
           "values": null,
           "isList": false,
           "toGenerate": false,
@@ -596,7 +456,7 @@
         {
           "jsonName": "media_album_name",
           "cSharpName": "MediaAlbumName",
-          "clrType": "System.String",
+          "clrType": "string",
           "values": null,
           "isList": false,
           "toGenerate": false,
@@ -641,7 +501,7 @@
         {
           "jsonName": "shuffle",
           "cSharpName": "Shuffle",
-          "clrType": "bool",
+          "clrType": "System.Boolean",
           "values": null,
           "isList": false,
           "toGenerate": false,
@@ -650,7 +510,7 @@
         {
           "jsonName": "repeat",
           "cSharpName": "Repeat",
-          "clrType": "string",
+          "clrType": "System.String",
           "values": null,
           "isList": false,
           "toGenerate": false,
@@ -659,33 +519,16 @@
         {
           "jsonName": "source_list",
           "cSharpName": "SourceList",
-          "clrType": "MediaPlayerSourceList",
-          "values": [
-            "bathroom echo dot",
-            "desktop-00nto8f",
-            "echo pop",
-            "everywhere",
-            "fire tv cube",
-            "hbo max",
-            "hdmi 1",
-            "hdmi 4",
-            "home theater",
-            "la\u2019s macbook air",
-            "max",
-            "netflix",
-            "prime video",
-            "sharp sound bar",
-            "youtube",
-            "youtube tv"
-          ],
-          "isList": true,
-          "toGenerate": true,
-          "toParse": true
+          "clrType": "System.Collections.Generic.IReadOnlyList\u00601[System.String]",
+          "values": null,
+          "isList": false,
+          "toGenerate": false,
+          "toParse": false
         },
         {
           "jsonName": "source",
           "cSharpName": "Source",
-          "clrType": "string",
+          "clrType": "System.String",
           "values": null,
           "isList": false,
           "toGenerate": false,
@@ -726,153 +569,6 @@
           "isList": false,
           "toGenerate": false,
           "toParse": false
-        },
-        {
-          "jsonName": "active_child",
-          "cSharpName": "ActiveChild",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "assumed_state",
-          "cSharpName": "AssumedState",
-          "clrType": "bool",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "mass_player_type",
-          "cSharpName": "MassPlayerType",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "active_queue",
-          "cSharpName": "ActiveQueue",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "group_members",
-          "cSharpName": "GroupMembers",
-          "clrType": "IReadOnlyList\u003Cobject\u003E",
-          "values": null,
-          "isList": true,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "remote_player_state",
-          "cSharpName": "RemotePlayerState",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "likeStatus",
-          "cSharpName": "LikeStatus",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "current_playlist_title",
-          "cSharpName": "CurrentPlaylistTitle",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "videoId",
-          "cSharpName": "VideoId",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "_media_type",
-          "cSharpName": "MediaType",
-          "clrType": null,
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "_media_id",
-          "cSharpName": "MediaId",
-          "clrType": null,
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "current_track",
-          "cSharpName": "CurrentTrack",
-          "clrType": "double",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "remote_player_id",
-          "cSharpName": "RemotePlayerId",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        }
-      ]
-    },
-    {
-      "domain": "assist_satellite",
-      "entities": [
-        {
-          "id": "assist_satellite.hey_nabu",
-          "friendlyName": "Hey Nabu Assist satellite",
-          "cSharpName": "HeyNabu"
-        }
-      ],
-      "attributes": [
-        {
-          "jsonName": "friendly_name",
-          "cSharpName": "FriendlyName",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "supported_features",
-          "cSharpName": "SupportedFeatures",
-          "clrType": "double",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
         }
       ]
     },
@@ -880,59 +576,19 @@
       "domain": "automation",
       "entities": [
         {
-          "id": "automation.bedroom_dimmer",
-          "friendlyName": "Bedroom: Dimmer",
-          "cSharpName": "BedroomDimmer"
-        },
-        {
-          "id": "automation.change_reference_to_warm_white",
-          "friendlyName": "Change Reference to Warm white",
-          "cSharpName": "ChangeReferenceToWarmWhite"
-        },
-        {
-          "id": "automation.changesoundmode",
-          "friendlyName": "ChangeSoundMode",
-          "cSharpName": "Changesoundmode"
-        },
-        {
           "id": "automation.double_tap_dimmer",
           "friendlyName": "Double Tap Dimmer",
           "cSharpName": "DoubleTapDimmer"
         },
         {
-          "id": "automation.lighting_mode_bright",
-          "friendlyName": "lighting mode: Bright",
-          "cSharpName": "LightingModeBright"
+          "id": "automation.mikaela_dimmer_sync",
+          "friendlyName": "Mikaela Dimmer Sync",
+          "cSharpName": "MikaelaDimmerSync"
         },
         {
-          "id": "automation.lighting_mode_evenink",
-          "friendlyName": "lighting mode: Evenink",
-          "cSharpName": "LightingModeEvenink"
-        },
-        {
-          "id": "automation.lighting_mode_night",
-          "friendlyName": "lighting mode: Night",
-          "cSharpName": "LightingModeNight"
-        },
-        {
-          "id": "automation.lighting_mode_off",
-          "friendlyName": "lighting mode: Off",
-          "cSharpName": "LightingModeOff"
-        },
-        {
-          "id": "automation.lighting_turn_off_at_2am",
-          "friendlyName": "lighting: Turn off at 2am",
-          "cSharpName": "LightingTurnOffAt2am"
-        },
-        {
-          "id": "automation.music_assistant_local_only_voice_support_blueprint",
-          "friendlyName": "Music Assistant - Local(only) Voice Support Blueprint",
-          "cSharpName": "MusicAssistantLocalOnlyVoiceSupportBlueprint"
-        },
-        {
-          "id": "automation.party_lights",
-          "friendlyName": "Party Lights",
-          "cSharpName": "PartyLights"
+          "id": "automation.mikaela_dimming",
+          "friendlyName": "Mikaela Dimming",
+          "cSharpName": "MikaelaDimming"
         },
         {
           "id": "automation.set_default_theme_on_start",
@@ -948,31 +604,6 @@
           "id": "automation.shellies_discovery",
           "friendlyName": "Shellies Discovery",
           "cSharpName": "ShelliesDiscovery"
-        },
-        {
-          "id": "automation.shelly_dimming",
-          "friendlyName": "Shelly Dimming",
-          "cSharpName": "ShellyDimming"
-        },
-        {
-          "id": "automation.turn_on_evenink_near_sunset",
-          "friendlyName": "Turn on evenink near sunset",
-          "cSharpName": "TurnOnEveninkNearSunset"
-        },
-        {
-          "id": "automation.turn_on_living_room_tv_with_wakeonlan",
-          "friendlyName": "Turn On Living Room TV with WakeOnLan",
-          "cSharpName": "TurnOnLivingRoomTvWithWakeonlan"
-        },
-        {
-          "id": "automation.turn_on_living_room_tv_with_wakeonlan_2",
-          "friendlyName": "Turn On Living Room TV with WakeOnLan",
-          "cSharpName": "TurnOnLivingRoomTvWithWakeonlan2"
-        },
-        {
-          "id": "automation.turn_on_speakers_when_things_come_online",
-          "friendlyName": "Turn On speakers when things come online",
-          "cSharpName": "TurnOnSpeakersWhenThingsComeOnline"
         }
       ],
       "attributes": [
@@ -1013,15 +644,6 @@
           "toParse": false
         },
         {
-          "jsonName": "friendly_name",
-          "cSharpName": "FriendlyName",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
           "jsonName": "max",
           "cSharpName": "Max",
           "clrType": "double",
@@ -1031,18 +653,9 @@
           "toParse": false
         },
         {
-          "jsonName": "restored",
-          "cSharpName": "Restored",
-          "clrType": "bool",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "supported_features",
-          "cSharpName": "SupportedFeatures",
-          "clrType": "double",
+          "jsonName": "friendly_name",
+          "cSharpName": "FriendlyName",
+          "clrType": "string",
           "values": null,
           "isList": false,
           "toGenerate": false,
@@ -1054,67 +667,36 @@
       "domain": "binary_sensor",
       "entities": [
         {
-          "id": "binary_sensor.alive_remote_low_battery_level",
-          "friendlyName": "Alive Remote Low battery level",
-          "cSharpName": "AliveRemoteLowBatteryLevel"
+          "id": "binary_sensor.mikaela_dimmer_input_0",
+          "friendlyName": "Mikaela Dimmer Input 0",
+          "cSharpName": "MikaelaDimmerInput0"
         },
         {
-          "id": "binary_sensor.hammlet_soundsystem_cloud_connection",
-          "friendlyName": "Hammlet Soundsystem Cloud connection",
-          "cSharpName": "HammletSoundsystemCloudConnection"
+          "id": "binary_sensor.mikaela_dimmer_input_1",
+          "friendlyName": "Mikaela Dimmer Input 1",
+          "cSharpName": "MikaelaDimmerInput1"
         },
         {
-          "id": "binary_sensor.liminal_dimmer_input_0",
-          "friendlyName": "Liminal Dimmer Input 0",
-          "cSharpName": "LiminalDimmerInput0"
-        },
-        {
-          "id": "binary_sensor.liminal_dimmer_input_1",
-          "friendlyName": "Liminal Dimmer Input 1",
-          "cSharpName": "LiminalDimmerInput1"
-        },
-        {
-          "id": "binary_sensor.liminal_dimmer_overtemperature",
-          "friendlyName": "Liminal Dimmer Overtemperature",
-          "cSharpName": "LiminalDimmerOvertemperature"
-        },
-        {
-          "id": "binary_sensor.projector_ping",
-          "friendlyName": "Projector Ping",
-          "cSharpName": "ProjectorPing"
+          "id": "binary_sensor.mikaela_dimmer_overtemperature",
+          "friendlyName": "Mikaela Dimmer Overtemperature",
+          "cSharpName": "MikaelaDimmerOvertemperature"
         },
         {
           "id": "binary_sensor.rpi_power_status",
           "friendlyName": "RPi Power status",
           "cSharpName": "RpiPowerStatus"
-        },
-        {
-          "id": "binary_sensor.stuarts_iphone_focus",
-          "friendlyName": "Stuart\u2019s iPhone Focus",
-          "cSharpName": "StuartsIphoneFocus"
-        },
-        {
-          "id": "binary_sensor.tapo_smart_dimmer_cloud_connection",
-          "friendlyName": "Tentacle Lamp Cloud connection",
-          "cSharpName": "TapoSmartDimmerCloudConnection"
-        },
-        {
-          "id": "binary_sensor.tentacle_lamp_cloud_connection",
-          "friendlyName": "Tentacle Lamp Cloud connection",
-          "cSharpName": "TentacleLampCloudConnection"
-        },
-        {
-          "id": "binary_sensor.tentacle_lamp_overheated",
-          "friendlyName": "Tentacle Lamp Overheated",
-          "cSharpName": "TentacleLampOverheated"
-        },
-        {
-          "id": "binary_sensor.zigbee2mqtt_bridge_connection_state",
-          "friendlyName": "Zigbee2MQTT Bridge Connection state",
-          "cSharpName": "Zigbee2mqttBridgeConnectionState"
         }
       ],
       "attributes": [
+        {
+          "jsonName": "device_class",
+          "cSharpName": "DeviceClass",
+          "clrType": "string",
+          "values": null,
+          "isList": false,
+          "toGenerate": false,
+          "toParse": false
+        },
         {
           "jsonName": "icon",
           "cSharpName": "Icon",
@@ -1132,33 +714,6 @@
           "isList": false,
           "toGenerate": false,
           "toParse": false
-        },
-        {
-          "jsonName": "device_class",
-          "cSharpName": "DeviceClass",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "restored",
-          "cSharpName": "Restored",
-          "clrType": "bool",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "supported_features",
-          "cSharpName": "SupportedFeatures",
-          "clrType": "double",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
         }
       ]
     },
@@ -1166,64 +721,39 @@
       "domain": "button",
       "entities": [
         {
-          "id": "button.alive_remote_identify",
-          "friendlyName": "Alive Remote Identify",
-          "cSharpName": "AliveRemoteIdentify"
+          "id": "button.bulb_rgbcw_6ddfa9_restart",
+          "friendlyName": "Egg Restart",
+          "cSharpName": "BulbRgbcw6ddfa9Restart"
         },
         {
-          "id": "button.alive_remote_ping",
-          "friendlyName": "Alive Remote Ping",
-          "cSharpName": "AliveRemotePing"
+          "id": "button.bulb_rgbcw_6ddfa9_unpair_remotes",
+          "friendlyName": "Egg Unpair remotes",
+          "cSharpName": "BulbRgbcw6ddfa9UnpairRemotes"
         },
         {
-          "id": "button.google_assistant_synchronize_devices",
-          "friendlyName": "Google Assistant Synchronize devices",
-          "cSharpName": "GoogleAssistantSynchronizeDevices"
+          "id": "button.bulb_rgbcw_a350f3_restart",
+          "friendlyName": "Bulb RGBCW A350F3 Restart",
+          "cSharpName": "BulbRgbcwA350f3Restart"
         },
         {
-          "id": "button.liminal_dimmer_restart",
-          "friendlyName": "Liminal Dimmer Restart",
-          "cSharpName": "LiminalDimmerRestart"
+          "id": "button.bulb_rgbcw_a350f3_unpair_remotes",
+          "friendlyName": "Bulb RGBCW A350F3 Unpair remotes",
+          "cSharpName": "BulbRgbcwA350f3UnpairRemotes"
         },
         {
-          "id": "button.smart_rgbtw_bulb_identify",
-          "friendlyName": "Identify",
-          "cSharpName": "SmartRgbtwBulbIdentify"
+          "id": "button.bulb_rgbcw_fe8ceb_restart",
+          "friendlyName": "Bulb RGBCW FE8CEB Restart",
+          "cSharpName": "BulbRgbcwFe8cebRestart"
         },
         {
-          "id": "button.smart_rgbtw_bulb_identify_2",
-          "friendlyName": "Identify",
-          "cSharpName": "SmartRgbtwBulbIdentify2"
+          "id": "button.bulb_rgbcw_fe8ceb_unpair_remotes",
+          "friendlyName": "Bulb RGBCW FE8CEB Unpair remotes",
+          "cSharpName": "BulbRgbcwFe8cebUnpairRemotes"
         },
         {
-          "id": "button.smart_rgbtw_bulb_identify_3",
-          "friendlyName": "Identify",
-          "cSharpName": "SmartRgbtwBulbIdentify3"
-        },
-        {
-          "id": "button.smart_rgbtw_bulb_identify_4",
-          "friendlyName": "Smart RGBTW Bulb Identify",
-          "cSharpName": "SmartRgbtwBulbIdentify4"
-        },
-        {
-          "id": "button.smart_wi_fi_lamp_dimmer_identify",
-          "friendlyName": "Identify",
-          "cSharpName": "SmartWiFiLampDimmerIdentify"
-        },
-        {
-          "id": "button.smart_wi_fi_lamp_dimmer_identify_2",
-          "friendlyName": "Identify",
-          "cSharpName": "SmartWiFiLampDimmerIdentify2"
-        },
-        {
-          "id": "button.smart_wi_fi_lamp_dimmer_identify_3",
-          "friendlyName": "Identify",
-          "cSharpName": "SmartWiFiLampDimmerIdentify3"
-        },
-        {
-          "id": "button.zigbee2mqtt_bridge_restart",
-          "friendlyName": "Zigbee2MQTT Bridge Restart",
-          "cSharpName": "Zigbee2mqttBridgeRestart"
+          "id": "button.mikaela_dimmer_restart",
+          "friendlyName": "Mikaela Dimmer Restart",
+          "cSharpName": "MikaelaDimmerRestart"
         }
       ],
       "attributes": [
@@ -1240,72 +770,6 @@
           "jsonName": "friendly_name",
           "cSharpName": "FriendlyName",
           "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "restored",
-          "cSharpName": "Restored",
-          "clrType": "bool",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "supported_features",
-          "cSharpName": "SupportedFeatures",
-          "clrType": "double",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        }
-      ]
-    },
-    {
-      "domain": "calendar",
-      "entities": [
-        {
-          "id": "calendar.calendar_jeff_hamm",
-          "friendlyName": "Calendar",
-          "cSharpName": "CalendarJeffHamm"
-        }
-      ],
-      "attributes": [
-        {
-          "jsonName": "data",
-          "cSharpName": "Data",
-          "clrType": "IReadOnlyList\u003Cobject\u003E",
-          "values": null,
-          "isList": true,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "color",
-          "cSharpName": "Color",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "friendly_name",
-          "cSharpName": "FriendlyName",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "supported_features",
-          "cSharpName": "SupportedFeatures",
-          "clrType": "double",
           "values": null,
           "isList": false,
           "toGenerate": false,
@@ -1316,11 +780,6 @@
     {
       "domain": "conversation",
       "entities": [
-        {
-          "id": "conversation.google_generative_ai",
-          "friendlyName": "Google Generative AI",
-          "cSharpName": "GoogleGenerativeAi"
-        },
         {
           "id": "conversation.home_assistant",
           "friendlyName": "Home Assistant",
@@ -1349,166 +808,17 @@
       ]
     },
     {
-      "domain": "device_tracker",
-      "entities": [
-        {
-          "id": "device_tracker.briana_s_iphone",
-          "friendlyName": "Briana\u0027s iPhone",
-          "cSharpName": "BrianaSIphone"
-        },
-        {
-          "id": "device_tracker.pixel_6",
-          "friendlyName": "Mikaela",
-          "cSharpName": "Pixel6"
-        },
-        {
-          "id": "device_tracker.pixel_8",
-          "friendlyName": "Pixel 8",
-          "cSharpName": "Pixel8"
-        },
-        {
-          "id": "device_tracker.stuarts_iphone",
-          "friendlyName": "Stuart\u2019s iPhone",
-          "cSharpName": "StuartsIphone"
-        },
-        {
-          "id": "device_tracker.wallfire",
-          "friendlyName": "wallfire",
-          "cSharpName": "Wallfire"
-        }
-      ],
-      "attributes": [
-        {
-          "jsonName": "source_type",
-          "cSharpName": "SourceType",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "battery_level",
-          "cSharpName": "BatteryLevel",
-          "clrType": "double",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "latitude",
-          "cSharpName": "Latitude",
-          "clrType": "double",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "longitude",
-          "cSharpName": "Longitude",
-          "clrType": "double",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "gps_accuracy",
-          "cSharpName": "GpsAccuracy",
-          "clrType": "double",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "altitude",
-          "cSharpName": "Altitude",
-          "clrType": "double",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "vertical_accuracy",
-          "cSharpName": "VerticalAccuracy",
-          "clrType": "double",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "friendly_name",
-          "cSharpName": "FriendlyName",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        }
-      ]
-    },
-    {
       "domain": "event",
       "entities": [
         {
-          "id": "event.alive_remote_scene_001",
-          "friendlyName": "Alive Remote Scene 001",
-          "cSharpName": "AliveRemoteScene001"
+          "id": "event.mikaela_dimmer_button_0",
+          "friendlyName": "Mikaela Dimmer Button 0",
+          "cSharpName": "MikaelaDimmerButton0"
         },
         {
-          "id": "event.alive_remote_scene_002",
-          "friendlyName": "Alive Remote Scene 002",
-          "cSharpName": "AliveRemoteScene002"
-        },
-        {
-          "id": "event.alive_remote_scene_003",
-          "friendlyName": "Alive Remote Scene 003",
-          "cSharpName": "AliveRemoteScene003"
-        },
-        {
-          "id": "event.alive_remote_scene_004",
-          "friendlyName": "Alive Remote Scene 004",
-          "cSharpName": "AliveRemoteScene004"
-        },
-        {
-          "id": "event.bedroom_dimmer",
-          "friendlyName": "Bedroom Dimmer",
-          "cSharpName": "BedroomDimmer"
-        },
-        {
-          "id": "event.hammlights_dimmer",
-          "friendlyName": "Hammlights Dimmer",
-          "cSharpName": "HammlightsDimmer"
-        },
-        {
-          "id": "event.hey_nabu_button_press",
-          "friendlyName": "Hey Nabu Button press",
-          "cSharpName": "HeyNabuButtonPress"
-        },
-        {
-          "id": "event.liminal_dimmer_button_0",
-          "friendlyName": "Liminal Dimmer Button 0",
-          "cSharpName": "LiminalDimmerButton0"
-        },
-        {
-          "id": "event.liminal_dimmer_button_1",
-          "friendlyName": "Liminal Dimmer Button 1",
-          "cSharpName": "LiminalDimmerButton1"
-        },
-        {
-          "id": "event.wireless_switch_3241_button",
-          "friendlyName": "Wireless Switch 3241 Button",
-          "cSharpName": "WirelessSwitch3241Button"
-        },
-        {
-          "id": "event.wireless_switch_6105_button",
-          "friendlyName": "Wireless Switch 6105 Button",
-          "cSharpName": "WirelessSwitch6105Button"
+          "id": "event.mikaela_dimmer_button_1",
+          "friendlyName": "Mikaela Dimmer Button 1",
+          "cSharpName": "MikaelaDimmerButton1"
         }
       ],
       "attributes": [
@@ -1517,57 +827,16 @@
           "cSharpName": "EventTypes",
           "clrType": "EventEventTypes",
           "values": [
-            "double_press",
-            "easter_egg_press",
-            "keyhelddown",
-            "keypressed",
-            "keypressed2x",
-            "keypressed3x",
-            "keyreleased",
             "l",
-            "long_press",
             "ls",
-            "press",
-            "rotate_left",
-            "rotate_left_pressed",
-            "rotate_right",
-            "rotate_right_pressed",
             "s",
             "sl",
             "ss",
-            "sss",
-            "triple_press"
+            "sss"
           ],
           "isList": true,
           "toGenerate": true,
           "toParse": true
-        },
-        {
-          "jsonName": "device_class",
-          "cSharpName": "DeviceClass",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "icon",
-          "cSharpName": "Icon",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "friendly_name",
-          "cSharpName": "FriendlyName",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
         },
         {
           "jsonName": "event_type",
@@ -1579,75 +848,9 @@
           "toParse": false
         },
         {
-          "jsonName": "value",
-          "cSharpName": "Value",
-          "clrType": "double",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "steps",
-          "cSharpName": "Steps",
-          "clrType": "double",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "number_of_presses",
-          "cSharpName": "NumberOfPresses",
-          "clrType": "double",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        }
-      ]
-    },
-    {
-      "domain": "fan",
-      "entities": [
-        {
-          "id": "fan.living_fan",
-          "friendlyName": "Alive Fan",
-          "cSharpName": "LivingFan"
-        }
-      ],
-      "attributes": [
-        {
-          "jsonName": "preset_modes",
-          "cSharpName": "PresetModes",
-          "clrType": "IReadOnlyList\u003Cobject\u003E",
-          "values": null,
-          "isList": true,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "percentage",
-          "cSharpName": "Percentage",
-          "clrType": "double",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "percentage_step",
-          "cSharpName": "PercentageStep",
-          "clrType": "double",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "preset_mode",
-          "cSharpName": "PresetMode",
-          "clrType": null,
+          "jsonName": "device_class",
+          "cSharpName": "DeviceClass",
+          "clrType": "string",
           "values": null,
           "isList": false,
           "toGenerate": false,
@@ -1661,26 +864,12 @@
           "isList": false,
           "toGenerate": false,
           "toParse": false
-        },
-        {
-          "jsonName": "supported_features",
-          "cSharpName": "SupportedFeatures",
-          "clrType": "double",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
         }
       ]
     },
     {
       "domain": "input_boolean",
       "entities": [
-        {
-          "id": "input_boolean.controller_flash",
-          "friendlyName": "controller_flash",
-          "cSharpName": "ControllerFlash"
-        },
         {
           "id": "input_boolean.netdaemon_hammlet_apps_assistant_monitor_available_assistants",
           "friendlyName": "netdaemon_hammlet_apps_assistant_monitor_available_assistants",
@@ -1705,31 +894,6 @@
           "id": "input_boolean.netdaemon_hammlet_apps_scene_on_button_scene_on_button",
           "friendlyName": "netdaemon_hammlet_apps_scene_on_button_scene_on_button",
           "cSharpName": "NetdaemonHammletAppsSceneOnButtonSceneOnButton"
-        },
-        {
-          "id": "input_boolean.netdaemon_hammlet_apps_voice_set_warm_white",
-          "friendlyName": "netdaemon_hammlet_apps_voice_set_warm_white",
-          "cSharpName": "NetdaemonHammletAppsVoiceSetWarmWhite"
-        },
-        {
-          "id": "input_boolean.netdaemon_hammlet_net_daemon_apps_media_management_turn_on_tv_for_video",
-          "friendlyName": "netdaemon_hammlet_net_daemon_apps_media_management_turn_on_tv_for_video",
-          "cSharpName": "NetdaemonHammletNetDaemonAppsMediaManagementTurnOnTvForVideo"
-        },
-        {
-          "id": "input_boolean.netdaemon_hammlet_net_daemon_apps_media_on_youtube_music_playlist_changed",
-          "friendlyName": "netdaemon_hammlet_net_daemon_apps_media_on_youtube_music_playlist_changed",
-          "cSharpName": "NetdaemonHammletNetDaemonAppsMediaOnYoutubeMusicPlaylistChanged"
-        },
-        {
-          "id": "input_boolean.pants_emergency",
-          "friendlyName": "pants_emergency",
-          "cSharpName": "PantsEmergency"
-        },
-        {
-          "id": "input_boolean.party_mode",
-          "friendlyName": "party-mode",
-          "cSharpName": "PartyMode"
         }
       ],
       "attributes": [
@@ -1737,15 +901,6 @@
           "jsonName": "editable",
           "cSharpName": "Editable",
           "clrType": "bool",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "icon",
-          "cSharpName": "Icon",
-          "clrType": "string",
           "values": null,
           "isList": false,
           "toGenerate": false,
@@ -1767,19 +922,9 @@
       "isNumeric": true,
       "entities": [
         {
-          "id": "input_number.alive_lights_last_temperature",
-          "friendlyName": "alive lights last temperature",
-          "cSharpName": "AliveLightsLastTemperature"
-        },
-        {
-          "id": "input_number.stripper_light_brightness",
-          "friendlyName": "Stripper Light Brightness",
-          "cSharpName": "StripperLightBrightness"
-        },
-        {
-          "id": "input_number.warm_white_kelvin",
-          "friendlyName": "Warm White Kelvin",
-          "cSharpName": "WarmWhiteKelvin"
+          "id": "input_number.mikaela_s_room",
+          "friendlyName": "Mikaela\u0027s Room",
+          "cSharpName": "MikaelaSRoom"
         }
       ],
       "attributes": [
@@ -1845,88 +990,6 @@
           "isList": false,
           "toGenerate": false,
           "toParse": false
-        },
-        {
-          "jsonName": "unit_of_measurement",
-          "cSharpName": "UnitOfMeasurement",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "icon",
-          "cSharpName": "Icon",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        }
-      ]
-    },
-    {
-      "domain": "input_select",
-      "entities": [
-        {
-          "id": "input_select.lighting_mode",
-          "friendlyName": "lighting_mode",
-          "cSharpName": "LightingMode"
-        },
-        {
-          "id": "input_select.sound_mode",
-          "friendlyName": "Sound Mode",
-          "cSharpName": "SoundMode"
-        }
-      ],
-      "attributes": [
-        {
-          "jsonName": "options",
-          "cSharpName": "Options",
-          "clrType": "InputSelectOptions",
-          "values": [
-            "bright",
-            "clear",
-            "dark",
-            "evenink",
-            "night",
-            "off",
-            "optimal",
-            "podcast",
-            "sunset",
-            "wub"
-          ],
-          "isList": true,
-          "toGenerate": true,
-          "toParse": true
-        },
-        {
-          "jsonName": "editable",
-          "cSharpName": "Editable",
-          "clrType": "bool",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "friendly_name",
-          "cSharpName": "FriendlyName",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "icon",
-          "cSharpName": "Icon",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
         }
       ]
     },
@@ -1935,459 +998,24 @@
       "isNumeric": true,
       "entities": [
         {
-          "id": "number.alive_remote_indicator_value",
-          "friendlyName": "Alive Remote Indicator value",
-          "cSharpName": "AliveRemoteIndicatorValue"
+          "id": "number.bulb_rgbcw_6ddfa9_effect_speed",
+          "friendlyName": "Egg Effect speed",
+          "cSharpName": "BulbRgbcw6ddfa9EffectSpeed"
         },
         {
-          "id": "number.all_off_debounce_time",
-          "friendlyName": "All Off Debounce Time",
-          "cSharpName": "AllOffDebounceTime"
+          "id": "number.bulb_rgbcw_a350f3_effect_speed",
+          "friendlyName": "Bulb RGBCW A350F3 Effect speed",
+          "cSharpName": "BulbRgbcwA350f3EffectSpeed"
         },
         {
-          "id": "number.all_off_tolerance",
-          "friendlyName": "All Off Tolerance",
-          "cSharpName": "AllOffTolerance"
+          "id": "number.bulb_rgbcw_fe8ceb_effect_speed",
+          "friendlyName": "Bulb RGBCW FE8CEB Effect speed",
+          "cSharpName": "BulbRgbcwFe8cebEffectSpeed"
         },
         {
-          "id": "number.all_off_transition_time",
-          "friendlyName": "All Off Transition Time",
-          "cSharpName": "AllOffTransitionTime"
-        },
-        {
-          "id": "number.bright_debounce_time",
-          "friendlyName": "Bright Debounce Time",
-          "cSharpName": "BrightDebounceTime"
-        },
-        {
-          "id": "number.bright_tolerance",
-          "friendlyName": "Bright Tolerance",
-          "cSharpName": "BrightTolerance"
-        },
-        {
-          "id": "number.bright_transition_time",
-          "friendlyName": "Bright Transition Time",
-          "cSharpName": "BrightTransitionTime"
-        },
-        {
-          "id": "number.dinner_time_debounce_time",
-          "friendlyName": "Dinner Time Debounce Time",
-          "cSharpName": "DinnerTimeDebounceTime"
-        },
-        {
-          "id": "number.dinner_time_tolerance",
-          "friendlyName": "Dinner Time Tolerance",
-          "cSharpName": "DinnerTimeTolerance"
-        },
-        {
-          "id": "number.dinner_time_transition_time",
-          "friendlyName": "Dinner Time Transition Time",
-          "cSharpName": "DinnerTimeTransitionTime"
-        },
-        {
-          "id": "number.evenink_debounce_time",
-          "friendlyName": "Evenink Debounce Time",
-          "cSharpName": "EveninkDebounceTime"
-        },
-        {
-          "id": "number.evenink_tolerance",
-          "friendlyName": "Evenink Tolerance",
-          "cSharpName": "EveninkTolerance"
-        },
-        {
-          "id": "number.evenink_transition_time",
-          "friendlyName": "Evenink Transition Time",
-          "cSharpName": "EveninkTransitionTime"
-        },
-        {
-          "id": "number.finger_robot_2_down_delay",
-          "friendlyName": "Finger Robot 2 Down delay",
-          "cSharpName": "FingerRobot2DownDelay"
-        },
-        {
-          "id": "number.finger_robot_2_move_down",
-          "friendlyName": "Finger Robot 2 Move down",
-          "cSharpName": "FingerRobot2MoveDown"
-        },
-        {
-          "id": "number.finger_robot_2_move_up",
-          "friendlyName": "Finger Robot 2 Move up",
-          "cSharpName": "FingerRobot2MoveUp"
-        },
-        {
-          "id": "number.hangout_debounce_time",
-          "friendlyName": "Hangout Debounce Time",
-          "cSharpName": "HangoutDebounceTime"
-        },
-        {
-          "id": "number.hangout_tolerance",
-          "friendlyName": "Hangout Tolerance",
-          "cSharpName": "HangoutTolerance"
-        },
-        {
-          "id": "number.hangout_transition_time",
-          "friendlyName": "Hangout Transition Time",
-          "cSharpName": "HangoutTransitionTime"
-        },
-        {
-          "id": "number.laser_monstera_max_air_humidity",
-          "friendlyName": "Laser Monstera max air humidity",
-          "cSharpName": "LaserMonsteraMaxAirHumidity"
-        },
-        {
-          "id": "number.laser_monstera_max_conductivity",
-          "friendlyName": "Laser Monstera max conductivity",
-          "cSharpName": "LaserMonsteraMaxConductivity"
-        },
-        {
-          "id": "number.laser_monstera_max_dli",
-          "friendlyName": "Laser Monstera max dli",
-          "cSharpName": "LaserMonsteraMaxDli"
-        },
-        {
-          "id": "number.laser_monstera_max_illuminance",
-          "friendlyName": "Laser Monstera max illuminance",
-          "cSharpName": "LaserMonsteraMaxIlluminance"
-        },
-        {
-          "id": "number.laser_monstera_max_soil_moisture",
-          "friendlyName": "Laser Monstera max soil moisture",
-          "cSharpName": "LaserMonsteraMaxSoilMoisture"
-        },
-        {
-          "id": "number.laser_monstera_max_temperature",
-          "friendlyName": "Laser Monstera max temperature",
-          "cSharpName": "LaserMonsteraMaxTemperature"
-        },
-        {
-          "id": "number.laser_monstera_min_air_humidity",
-          "friendlyName": "Laser Monstera min air humidity",
-          "cSharpName": "LaserMonsteraMinAirHumidity"
-        },
-        {
-          "id": "number.laser_monstera_min_conductivity",
-          "friendlyName": "Laser Monstera min conductivity",
-          "cSharpName": "LaserMonsteraMinConductivity"
-        },
-        {
-          "id": "number.laser_monstera_min_dli",
-          "friendlyName": "Laser Monstera min dli",
-          "cSharpName": "LaserMonsteraMinDli"
-        },
-        {
-          "id": "number.laser_monstera_min_illuminance",
-          "friendlyName": "Laser Monstera min illuminance",
-          "cSharpName": "LaserMonsteraMinIlluminance"
-        },
-        {
-          "id": "number.laser_monstera_min_soil_moisture",
-          "friendlyName": "Laser Monstera min soil moisture",
-          "cSharpName": "LaserMonsteraMinSoilMoisture"
-        },
-        {
-          "id": "number.laser_monstera_min_temperature",
-          "friendlyName": "Laser Monstera min temperature",
-          "cSharpName": "LaserMonsteraMinTemperature"
-        },
-        {
-          "id": "number.liminal_dimmer_brightness",
-          "friendlyName": "Liminal Dimmer Brightness 0",
-          "cSharpName": "LiminalDimmerBrightness"
-        },
-        {
-          "id": "number.night_debounce_time",
-          "friendlyName": "Night Debounce Time",
-          "cSharpName": "NightDebounceTime"
-        },
-        {
-          "id": "number.night_tolerance",
-          "friendlyName": "Night Tolerance",
-          "cSharpName": "NightTolerance"
-        },
-        {
-          "id": "number.night_transition_time",
-          "friendlyName": "Night Transition Time",
-          "cSharpName": "NightTransitionTime"
-        },
-        {
-          "id": "number.normal_butts_debounce_time",
-          "friendlyName": "Normal Butts Debounce Time",
-          "cSharpName": "NormalButtsDebounceTime"
-        },
-        {
-          "id": "number.normal_butts_tolerance",
-          "friendlyName": "Normal Butts Tolerance",
-          "cSharpName": "NormalButtsTolerance"
-        },
-        {
-          "id": "number.normal_butts_transition_time",
-          "friendlyName": "Normal Butts Transition Time",
-          "cSharpName": "NormalButtsTransitionTime"
-        },
-        {
-          "id": "number.pants_emergency_start_off_debounce_time",
-          "friendlyName": "Pants Emergency Start Off Debounce Time",
-          "cSharpName": "PantsEmergencyStartOffDebounceTime"
-        },
-        {
-          "id": "number.pants_emergency_start_off_tolerance",
-          "friendlyName": "Pants Emergency Start Off Tolerance",
-          "cSharpName": "PantsEmergencyStartOffTolerance"
-        },
-        {
-          "id": "number.pants_emergency_start_off_transition_time",
-          "friendlyName": "Pants Emergency Start Off Transition Time",
-          "cSharpName": "PantsEmergencyStartOffTransitionTime"
-        },
-        {
-          "id": "number.pants_emergency_start_on_debounce_time",
-          "friendlyName": "Pants Emergency Start On Debounce Time",
-          "cSharpName": "PantsEmergencyStartOnDebounceTime"
-        },
-        {
-          "id": "number.pants_emergency_start_on_tolerance",
-          "friendlyName": "Pants Emergency Start On Tolerance",
-          "cSharpName": "PantsEmergencyStartOnTolerance"
-        },
-        {
-          "id": "number.pants_emergency_start_on_transition_time",
-          "friendlyName": "Pants Emergency Start On Transition Time",
-          "cSharpName": "PantsEmergencyStartOnTransitionTime"
-        },
-        {
-          "id": "number.pants_off_emergency_debounce_time",
-          "friendlyName": "Pants Off Emergency Debounce Time",
-          "cSharpName": "PantsOffEmergencyDebounceTime"
-        },
-        {
-          "id": "number.pants_off_emergency_tolerance",
-          "friendlyName": "Pants Off Emergency Tolerance",
-          "cSharpName": "PantsOffEmergencyTolerance"
-        },
-        {
-          "id": "number.pants_off_emergency_transition_time",
-          "friendlyName": "Pants Off Emergency Transition Time",
-          "cSharpName": "PantsOffEmergencyTransitionTime"
-        },
-        {
-          "id": "number.pink_and_sexy_debounce_time",
-          "friendlyName": "Pink and sexy Debounce Time",
-          "cSharpName": "PinkAndSexyDebounceTime"
-        },
-        {
-          "id": "number.pink_and_sexy_tolerance",
-          "friendlyName": "Pink and sexy Tolerance",
-          "cSharpName": "PinkAndSexyTolerance"
-        },
-        {
-          "id": "number.pink_and_sexy_transition_time",
-          "friendlyName": "Pink and sexy Transition Time",
-          "cSharpName": "PinkAndSexyTransitionTime"
-        },
-        {
-          "id": "number.smart_rgbtw_bulb_off_transition_time",
-          "friendlyName": "Off transition time",
-          "cSharpName": "SmartRgbtwBulbOffTransitionTime"
-        },
-        {
-          "id": "number.smart_rgbtw_bulb_off_transition_time_2",
-          "friendlyName": "Off transition time",
-          "cSharpName": "SmartRgbtwBulbOffTransitionTime2"
-        },
-        {
-          "id": "number.smart_rgbtw_bulb_off_transition_time_3",
-          "friendlyName": "Smart RGBTW Bulb Off transition time",
-          "cSharpName": "SmartRgbtwBulbOffTransitionTime3"
-        },
-        {
-          "id": "number.smart_rgbtw_bulb_on_level",
-          "friendlyName": "On level",
-          "cSharpName": "SmartRgbtwBulbOnLevel"
-        },
-        {
-          "id": "number.smart_rgbtw_bulb_on_level_2",
-          "friendlyName": "On level",
-          "cSharpName": "SmartRgbtwBulbOnLevel2"
-        },
-        {
-          "id": "number.smart_rgbtw_bulb_on_level_3",
-          "friendlyName": "Smart RGBTW Bulb On level",
-          "cSharpName": "SmartRgbtwBulbOnLevel3"
-        },
-        {
-          "id": "number.smart_rgbtw_bulb_on_off_transition_time",
-          "friendlyName": "On/Off transition time",
-          "cSharpName": "SmartRgbtwBulbOnOffTransitionTime"
-        },
-        {
-          "id": "number.smart_rgbtw_bulb_on_off_transition_time_2",
-          "friendlyName": "On/Off transition time",
-          "cSharpName": "SmartRgbtwBulbOnOffTransitionTime2"
-        },
-        {
-          "id": "number.smart_rgbtw_bulb_on_off_transition_time_3",
-          "friendlyName": "Smart RGBTW Bulb On/Off transition time",
-          "cSharpName": "SmartRgbtwBulbOnOffTransitionTime3"
-        },
-        {
-          "id": "number.smart_rgbtw_bulb_on_transition_time",
-          "friendlyName": "On transition time",
-          "cSharpName": "SmartRgbtwBulbOnTransitionTime"
-        },
-        {
-          "id": "number.smart_rgbtw_bulb_on_transition_time_2",
-          "friendlyName": "On transition time",
-          "cSharpName": "SmartRgbtwBulbOnTransitionTime2"
-        },
-        {
-          "id": "number.smart_rgbtw_bulb_on_transition_time_3",
-          "friendlyName": "Smart RGBTW Bulb On transition time",
-          "cSharpName": "SmartRgbtwBulbOnTransitionTime3"
-        },
-        {
-          "id": "number.smart_wi_fi_lamp_dimmer_off_transition_time",
-          "friendlyName": "Off transition time",
-          "cSharpName": "SmartWiFiLampDimmerOffTransitionTime"
-        },
-        {
-          "id": "number.smart_wi_fi_lamp_dimmer_off_transition_time_2",
-          "friendlyName": "Off transition time",
-          "cSharpName": "SmartWiFiLampDimmerOffTransitionTime2"
-        },
-        {
-          "id": "number.smart_wi_fi_lamp_dimmer_off_transition_time_3",
-          "friendlyName": "Smart Wi-Fi Lamp Dimmer Off transition time",
-          "cSharpName": "SmartWiFiLampDimmerOffTransitionTime3"
-        },
-        {
-          "id": "number.smart_wi_fi_lamp_dimmer_on_level",
-          "friendlyName": "On level",
-          "cSharpName": "SmartWiFiLampDimmerOnLevel"
-        },
-        {
-          "id": "number.smart_wi_fi_lamp_dimmer_on_level_2",
-          "friendlyName": "On level",
-          "cSharpName": "SmartWiFiLampDimmerOnLevel2"
-        },
-        {
-          "id": "number.smart_wi_fi_lamp_dimmer_on_level_3",
-          "friendlyName": "Smart Wi-Fi Lamp Dimmer On level",
-          "cSharpName": "SmartWiFiLampDimmerOnLevel3"
-        },
-        {
-          "id": "number.smart_wi_fi_lamp_dimmer_on_transition_time",
-          "friendlyName": "On transition time",
-          "cSharpName": "SmartWiFiLampDimmerOnTransitionTime"
-        },
-        {
-          "id": "number.smart_wi_fi_lamp_dimmer_on_transition_time_2",
-          "friendlyName": "On transition time",
-          "cSharpName": "SmartWiFiLampDimmerOnTransitionTime2"
-        },
-        {
-          "id": "number.smart_wi_fi_lamp_dimmer_on_transition_time_3",
-          "friendlyName": "Smart Wi-Fi Lamp Dimmer On transition time",
-          "cSharpName": "SmartWiFiLampDimmerOnTransitionTime3"
-        },
-        {
-          "id": "number.succulent_arrangement_max_air_humidity",
-          "friendlyName": "Succulent Arrangement max air humidity",
-          "cSharpName": "SucculentArrangementMaxAirHumidity"
-        },
-        {
-          "id": "number.succulent_arrangement_max_conductivity",
-          "friendlyName": "Succulent Arrangement max conductivity",
-          "cSharpName": "SucculentArrangementMaxConductivity"
-        },
-        {
-          "id": "number.succulent_arrangement_max_dli",
-          "friendlyName": "Succulent Arrangement max dli",
-          "cSharpName": "SucculentArrangementMaxDli"
-        },
-        {
-          "id": "number.succulent_arrangement_max_illuminance",
-          "friendlyName": "Succulent Arrangement max illuminance",
-          "cSharpName": "SucculentArrangementMaxIlluminance"
-        },
-        {
-          "id": "number.succulent_arrangement_max_soil_moisture",
-          "friendlyName": "Succulent Arrangement max soil moisture",
-          "cSharpName": "SucculentArrangementMaxSoilMoisture"
-        },
-        {
-          "id": "number.succulent_arrangement_max_temperature",
-          "friendlyName": "Succulent Arrangement max temperature",
-          "cSharpName": "SucculentArrangementMaxTemperature"
-        },
-        {
-          "id": "number.succulent_arrangement_min_air_humidity",
-          "friendlyName": "Succulent Arrangement min air humidity",
-          "cSharpName": "SucculentArrangementMinAirHumidity"
-        },
-        {
-          "id": "number.succulent_arrangement_min_conductivity",
-          "friendlyName": "Succulent Arrangement min conductivity",
-          "cSharpName": "SucculentArrangementMinConductivity"
-        },
-        {
-          "id": "number.succulent_arrangement_min_dli",
-          "friendlyName": "Succulent Arrangement min dli",
-          "cSharpName": "SucculentArrangementMinDli"
-        },
-        {
-          "id": "number.succulent_arrangement_min_illuminance",
-          "friendlyName": "Succulent Arrangement min illuminance",
-          "cSharpName": "SucculentArrangementMinIlluminance"
-        },
-        {
-          "id": "number.succulent_arrangement_min_soil_moisture",
-          "friendlyName": "Succulent Arrangement min soil moisture",
-          "cSharpName": "SucculentArrangementMinSoilMoisture"
-        },
-        {
-          "id": "number.succulent_arrangement_min_temperature",
-          "friendlyName": "Succulent Arrangement min temperature",
-          "cSharpName": "SucculentArrangementMinTemperature"
-        },
-        {
-          "id": "number.tentacle_lamp_smooth_off",
-          "friendlyName": "Tentacle Lamp Smooth off",
-          "cSharpName": "TentacleLampSmoothOff"
-        },
-        {
-          "id": "number.tentacle_lamp_smooth_on",
-          "friendlyName": "Tentacle Lamp Smooth on",
-          "cSharpName": "TentacleLampSmoothOn"
-        },
-        {
-          "id": "number.turn_off_all_lights_debounce_time",
-          "friendlyName": "Turn off all\u00A0lights Debounce Time",
-          "cSharpName": "TurnOffAllLightsDebounceTime"
-        },
-        {
-          "id": "number.turn_off_all_lights_tolerance",
-          "friendlyName": "Turn off all\u00A0lights Tolerance",
-          "cSharpName": "TurnOffAllLightsTolerance"
-        },
-        {
-          "id": "number.turn_off_all_lights_transition_time",
-          "friendlyName": "Turn off all\u00A0lights Transition Time",
-          "cSharpName": "TurnOffAllLightsTransitionTime"
-        },
-        {
-          "id": "number.working_debounce_time",
-          "friendlyName": "Working Debounce Time",
-          "cSharpName": "WorkingDebounceTime"
-        },
-        {
-          "id": "number.working_tolerance",
-          "friendlyName": "Working Tolerance",
-          "cSharpName": "WorkingTolerance"
-        },
-        {
-          "id": "number.working_transition_time",
-          "friendlyName": "Working Transition Time",
-          "cSharpName": "WorkingTransitionTime"
+          "id": "number.mikaela_dimmer_pct",
+          "friendlyName": "Mikaela\u0027s Dimmer",
+          "cSharpName": "MikaelaDimmerPct"
         }
       ],
       "attributes": [
@@ -2428,6 +1056,15 @@
           "toParse": false
         },
         {
+          "jsonName": "ip_address",
+          "cSharpName": "IpAddress",
+          "clrType": "string",
+          "values": null,
+          "isList": false,
+          "toGenerate": false,
+          "toParse": false
+        },
+        {
           "jsonName": "friendly_name",
           "cSharpName": "FriendlyName",
           "clrType": "string",
@@ -2446,15 +1083,6 @@
           "toParse": false
         },
         {
-          "jsonName": "device_class",
-          "cSharpName": "DeviceClass",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
           "jsonName": "icon",
           "cSharpName": "Icon",
           "clrType": "string",
@@ -2462,37 +1090,8 @@
           "isList": false,
           "toGenerate": false,
           "toParse": false
-        },
-        {
-          "jsonName": "restored",
-          "cSharpName": "Restored",
-          "clrType": "bool",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "supported_features",
-          "cSharpName": "SupportedFeatures",
-          "clrType": "double",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
         }
       ]
-    },
-    {
-      "domain": "openplantbook",
-      "entities": [
-        {
-          "id": "openplantbook.search_result",
-          "friendlyName": null,
-          "cSharpName": "SearchResult"
-        }
-      ],
-      "attributes": []
     },
     {
       "domain": "person",
@@ -2503,24 +1102,9 @@
           "cSharpName": "Jumper"
         },
         {
-          "id": "person.mikaela",
-          "friendlyName": "Mikaela",
-          "cSharpName": "Mikaela"
-        },
-        {
-          "id": "person.snick",
-          "friendlyName": "Snick",
-          "cSharpName": "Snick"
-        },
-        {
-          "id": "person.stuart",
-          "friendlyName": "Stuart",
-          "cSharpName": "Stuart"
-        },
-        {
-          "id": "person.wallfire",
-          "friendlyName": "Wallfire",
-          "cSharpName": "Wallfire"
+          "id": "person.services",
+          "friendlyName": "Services",
+          "cSharpName": "Services"
         }
       ],
       "attributes": [
@@ -2545,17 +1129,11 @@
         {
           "jsonName": "device_trackers",
           "cSharpName": "DeviceTrackers",
-          "clrType": "PersonDeviceTrackers",
-          "values": [
-            "device_tracker.briana_s_iphone",
-            "device_tracker.pixel_6",
-            "device_tracker.pixel_8",
-            "device_tracker.stuarts_iphone",
-            "device_tracker.wallfire"
-          ],
+          "clrType": "IReadOnlyList\u003Cobject\u003E",
+          "values": null,
           "isList": true,
-          "toGenerate": true,
-          "toParse": true
+          "toGenerate": false,
+          "toParse": false
         },
         {
           "jsonName": "user_id",
@@ -2574,396 +1152,6 @@
           "isList": false,
           "toGenerate": false,
           "toParse": false
-        },
-        {
-          "jsonName": "latitude",
-          "cSharpName": "Latitude",
-          "clrType": "double",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "longitude",
-          "cSharpName": "Longitude",
-          "clrType": "double",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "gps_accuracy",
-          "cSharpName": "GpsAccuracy",
-          "clrType": "double",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "source",
-          "cSharpName": "Source",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        }
-      ]
-    },
-    {
-      "domain": "plant",
-      "entities": [
-        {
-          "id": "plant.laser_monstera",
-          "friendlyName": "Laser Monstera",
-          "cSharpName": "LaserMonstera"
-        },
-        {
-          "id": "plant.succulent_arrangement",
-          "friendlyName": "Succulent Arrangement",
-          "cSharpName": "SucculentArrangement"
-        }
-      ],
-      "attributes": [
-        {
-          "jsonName": "species",
-          "cSharpName": "Species",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "moisture_status",
-          "cSharpName": "MoistureStatus",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "temperature_status",
-          "cSharpName": "TemperatureStatus",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "conductivity_status",
-          "cSharpName": "ConductivityStatus",
-          "clrType": null,
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "illuminance_status",
-          "cSharpName": "IlluminanceStatus",
-          "clrType": null,
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "humidity_status",
-          "cSharpName": "HumidityStatus",
-          "clrType": null,
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "dli_status",
-          "cSharpName": "DliStatus",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "species_original",
-          "cSharpName": "SpeciesOriginal",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "device_class",
-          "cSharpName": "DeviceClass",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "entity_picture",
-          "cSharpName": "EntityPicture",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "friendly_name",
-          "cSharpName": "FriendlyName",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        }
-      ]
-    },
-    {
-      "domain": "remote",
-      "entities": [
-        {
-          "id": "remote.hammlet_cast",
-          "friendlyName": "Hammlet Cast Remote",
-          "cSharpName": "HammletCast"
-        },
-        {
-          "id": "remote.ir_blaster",
-          "friendlyName": null,
-          "cSharpName": "IrBlaster"
-        }
-      ],
-      "attributes": [
-        {
-          "jsonName": "activity_list",
-          "cSharpName": "ActivityList",
-          "clrType": "IReadOnlyList\u003Cobject\u003E",
-          "values": null,
-          "isList": true,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "current_activity",
-          "cSharpName": "CurrentActivity",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "friendly_name",
-          "cSharpName": "FriendlyName",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "supported_features",
-          "cSharpName": "SupportedFeatures",
-          "clrType": "double",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "restored",
-          "cSharpName": "Restored",
-          "clrType": "bool",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        }
-      ]
-    },
-    {
-      "domain": "scene",
-      "entities": [
-        {
-          "id": "scene.all_off",
-          "friendlyName": "All Off",
-          "cSharpName": "AllOff"
-        },
-        {
-          "id": "scene.bright",
-          "friendlyName": "Bright",
-          "cSharpName": "Bright"
-        },
-        {
-          "id": "scene.dinner_time",
-          "friendlyName": "Dinner Time",
-          "cSharpName": "DinnerTime"
-        },
-        {
-          "id": "scene.evenink",
-          "friendlyName": "Evenink",
-          "cSharpName": "Evenink"
-        },
-        {
-          "id": "scene.hangout",
-          "friendlyName": "Hangout",
-          "cSharpName": "Hangout"
-        },
-        {
-          "id": "scene.night",
-          "friendlyName": "Night",
-          "cSharpName": "Night"
-        },
-        {
-          "id": "scene.pink_and_sexy",
-          "friendlyName": "Pink and sexy",
-          "cSharpName": "PinkAndSexy"
-        },
-        {
-          "id": "scene.turn_off_all_lights",
-          "friendlyName": "Turn off all\u00A0lights",
-          "cSharpName": "TurnOffAllLights"
-        },
-        {
-          "id": "scene.working",
-          "friendlyName": "Working",
-          "cSharpName": "Working"
-        }
-      ],
-      "attributes": [
-        {
-          "jsonName": "entity_id",
-          "cSharpName": "EntityId",
-          "clrType": "SceneEntityId",
-          "values": [
-            "fan.living_fan",
-            "light.alive_lights",
-            "light.bedroom_fan_light",
-            "light.ceiling_fan_light_2",
-            "light.color_bulbs",
-            "light.hammlet_bathroom",
-            "light.hammlet_extra",
-            "light.hammlet_living_fan_light",
-            "light.hammlet_pantry",
-            "light.kitchen_ceiling",
-            "light.kitchen_group",
-            "light.kitchen_light",
-            "light.liminal_ceiling",
-            "light.pantry_ceiling",
-            "light.plant_lamp",
-            "light.smart_wi_fi_lamp_dimmer",
-            "light.smart_wi_fi_lamp_dimmer_light",
-            "light.spamheart",
-            "light.stripper_light",
-            "light.succulent_lamp",
-            "light.tentacle_lamp",
-            "media_player.hammlet_oled_tv",
-            "switch.outdoor_switch",
-            "switch.speakers",
-            "switch.tentacle_lamp"
-          ],
-          "isList": true,
-          "toGenerate": true,
-          "toParse": true
-        },
-        {
-          "jsonName": "id",
-          "cSharpName": "Id",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "icon",
-          "cSharpName": "Icon",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "friendly_name",
-          "cSharpName": "FriendlyName",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        }
-      ]
-    },
-    {
-      "domain": "script",
-      "entities": [
-        {
-          "id": "script.toggle_input",
-          "friendlyName": "toggle_input",
-          "cSharpName": "ToggleInput"
-        },
-        {
-          "id": "script.toggle_mute",
-          "friendlyName": "Toggle Mute",
-          "cSharpName": "ToggleMute"
-        }
-      ],
-      "attributes": [
-        {
-          "jsonName": "last_triggered",
-          "cSharpName": "LastTriggered",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "mode",
-          "cSharpName": "Mode",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "current",
-          "cSharpName": "Current",
-          "clrType": "double",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "friendly_name",
-          "cSharpName": "FriendlyName",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "max",
-          "cSharpName": "Max",
-          "clrType": "double",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
         }
       ]
     },
@@ -2971,179 +1159,29 @@
       "domain": "select",
       "entities": [
         {
-          "id": "select.all_off_off_scene",
-          "friendlyName": "All Off Off Scene",
-          "cSharpName": "AllOffOffScene"
+          "id": "select.bulb_rgbcw_6ddfa9_remote_config",
+          "friendlyName": "Egg Remote config",
+          "cSharpName": "BulbRgbcw6ddfa9RemoteConfig"
         },
         {
-          "id": "select.bright_off_scene",
-          "friendlyName": "Bright Off Scene",
-          "cSharpName": "BrightOffScene"
+          "id": "select.bulb_rgbcw_a350f3_remote_config",
+          "friendlyName": "Bulb RGBCW A350F3 Remote config",
+          "cSharpName": "BulbRgbcwA350f3RemoteConfig"
         },
         {
-          "id": "select.dinner_time_off_scene",
-          "friendlyName": "Dinner Time Off Scene",
-          "cSharpName": "DinnerTimeOffScene"
+          "id": "select.bulb_rgbcw_fe8ceb_remote_config",
+          "friendlyName": "Bulb RGBCW FE8CEB Remote config",
+          "cSharpName": "BulbRgbcwFe8cebRemoteConfig"
         },
         {
-          "id": "select.evenink_off_scene",
-          "friendlyName": "Evenink Off Scene",
-          "cSharpName": "EveninkOffScene"
+          "id": "select.wicker_lamp_switch_indicator_light_mode",
+          "friendlyName": "Wicker Lamp Switch Indicator light mode",
+          "cSharpName": "WickerLampSwitchIndicatorLightMode"
         },
         {
-          "id": "select.finger_robot_2_mode",
-          "friendlyName": "Finger Robot 2 Mode",
-          "cSharpName": "FingerRobot2Mode"
-        },
-        {
-          "id": "select.hangout_off_scene",
-          "friendlyName": "Hangout Off Scene",
-          "cSharpName": "HangoutOffScene"
-        },
-        {
-          "id": "select.hey_nabu_assistant",
-          "friendlyName": "Hey Nabu Assistant",
-          "cSharpName": "HeyNabuAssistant"
-        },
-        {
-          "id": "select.hey_nabu_finished_speaking_detection",
-          "friendlyName": "Hey Nabu Finished speaking detection",
-          "cSharpName": "HeyNabuFinishedSpeakingDetection"
-        },
-        {
-          "id": "select.hey_nabu_wake_word",
-          "friendlyName": "Hey Nabu Wake word",
-          "cSharpName": "HeyNabuWakeWord"
-        },
-        {
-          "id": "select.kitchen_switch_power_on_behavior",
-          "friendlyName": "Kitchen Switch Power-on behavior",
-          "cSharpName": "KitchenSwitchPowerOnBehavior"
-        },
-        {
-          "id": "select.liminal_switch_power_on_behavior",
-          "friendlyName": "Liminal Switch Power-on behavior",
-          "cSharpName": "LiminalSwitchPowerOnBehavior"
-        },
-        {
-          "id": "select.night_off_scene",
-          "friendlyName": "Night Off Scene",
-          "cSharpName": "NightOffScene"
-        },
-        {
-          "id": "select.normal_butts_off_scene",
-          "friendlyName": "Normal Butts Off Scene",
-          "cSharpName": "NormalButtsOffScene"
-        },
-        {
-          "id": "select.outdoor_succulent_sensor_temperature_unit",
-          "friendlyName": "Outdoor Succulent Sensor Temperature unit",
-          "cSharpName": "OutdoorSucculentSensorTemperatureUnit"
-        },
-        {
-          "id": "select.outdoor_switch_power_on_behavior",
-          "friendlyName": "Outdoor Switch Power-on behavior",
-          "cSharpName": "OutdoorSwitchPowerOnBehavior"
-        },
-        {
-          "id": "select.pants_emergency_start_off_off_scene",
-          "friendlyName": "Pants Emergency Start Off Off Scene",
-          "cSharpName": "PantsEmergencyStartOffOffScene"
-        },
-        {
-          "id": "select.pants_emergency_start_on_off_scene",
-          "friendlyName": "Pants Emergency Start On Off Scene",
-          "cSharpName": "PantsEmergencyStartOnOffScene"
-        },
-        {
-          "id": "select.pants_off_emergency_off_scene",
-          "friendlyName": "Pants Off Emergency Off Scene",
-          "cSharpName": "PantsOffEmergencyOffScene"
-        },
-        {
-          "id": "select.pink_and_sexy_off_scene",
-          "friendlyName": "Pink and sexy Off Scene",
-          "cSharpName": "PinkAndSexyOffScene"
-        },
-        {
-          "id": "select.plant_sensor_1_temperature_unit",
-          "friendlyName": "Plant Sensor 1 Temperature unit",
-          "cSharpName": "PlantSensor1TemperatureUnit"
-        },
-        {
-          "id": "select.smart_rgbtw_bulb_power_on_behavior_on_startup",
-          "friendlyName": "Power-on behavior on startup",
-          "cSharpName": "SmartRgbtwBulbPowerOnBehaviorOnStartup"
-        },
-        {
-          "id": "select.smart_rgbtw_bulb_power_on_behavior_on_startup_2",
-          "friendlyName": "Power-on behavior on startup",
-          "cSharpName": "SmartRgbtwBulbPowerOnBehaviorOnStartup2"
-        },
-        {
-          "id": "select.smart_rgbtw_bulb_power_on_behavior_on_startup_3",
-          "friendlyName": "Smart RGBTW Bulb Power-on behavior on startup",
-          "cSharpName": "SmartRgbtwBulbPowerOnBehaviorOnStartup3"
-        },
-        {
-          "id": "select.smart_wi_fi_lamp_dimmer_power_on_behavior_on_startup",
-          "friendlyName": "Power-on behavior on startup",
-          "cSharpName": "SmartWiFiLampDimmerPowerOnBehaviorOnStartup"
-        },
-        {
-          "id": "select.smart_wi_fi_lamp_dimmer_power_on_behavior_on_startup_2",
-          "friendlyName": "Power-on behavior on startup",
-          "cSharpName": "SmartWiFiLampDimmerPowerOnBehaviorOnStartup2"
-        },
-        {
-          "id": "select.smart_wi_fi_lamp_dimmer_power_on_behavior_on_startup_3",
-          "friendlyName": "Smart Wi-Fi Lamp Dimmer Power-on behavior on startup",
-          "cSharpName": "SmartWiFiLampDimmerPowerOnBehaviorOnStartup3"
-        },
-        {
-          "id": "select.tentacle_lamp_light_preset",
-          "friendlyName": "Tentacle Lamp Light preset",
-          "cSharpName": "TentacleLampLightPreset"
-        },
-        {
-          "id": "select.turn_off_all_lights_off_scene",
-          "friendlyName": "Turn off all\u00A0lights Off Scene",
-          "cSharpName": "TurnOffAllLightsOffScene"
-        },
-        {
-          "id": "select.working_off_scene",
-          "friendlyName": "Working Off Scene",
-          "cSharpName": "WorkingOffScene"
-        },
-        {
-          "id": "select.ytube_music_player_play_mode",
-          "friendlyName": "ytube_music_player Play Mode",
-          "cSharpName": "YtubeMusicPlayerPlayMode"
-        },
-        {
-          "id": "select.ytube_music_player_playlist",
-          "friendlyName": "ytube_music_player Playlist",
-          "cSharpName": "YtubeMusicPlayerPlaylist"
-        },
-        {
-          "id": "select.ytube_music_player_radio_mode",
-          "friendlyName": "ytube_music_player Radio Mode",
-          "cSharpName": "YtubeMusicPlayerRadioMode"
-        },
-        {
-          "id": "select.ytube_music_player_repeat_mode",
-          "friendlyName": "ytube_music_player Repeat Mode",
-          "cSharpName": "YtubeMusicPlayerRepeatMode"
-        },
-        {
-          "id": "select.ytube_music_player_speaker",
-          "friendlyName": "ytube_music_player Speaker",
-          "cSharpName": "YtubeMusicPlayerSpeaker"
-        },
-        {
-          "id": "select.zigbee2mqtt_bridge_log_level",
-          "friendlyName": "Zigbee2MQTT Bridge Log level",
-          "cSharpName": "Zigbee2mqttBridgeLogLevel"
+          "id": "select.wicker_lamp_switch_power_on_behavior",
+          "friendlyName": "Wicker Lamp Switch Power on behavior",
+          "cSharpName": "WickerLampSwitchPowerOnBehavior"
         }
       ],
       "attributes": [
@@ -3152,58 +1190,15 @@
           "cSharpName": "Options",
           "clrType": "SelectOptions",
           "values": [
-            "aggressive",
-            "all",
-            "all off",
-            "bright",
-            "brightness preset 1",
-            "brightness preset 2",
-            "brightness preset 3",
-            "brightness preset 4",
-            "brightness preset 5",
-            "celsius",
-            "click",
-            "debug",
-            "default",
-            "dinner time",
-            "direct",
-            "error",
-            "evenink",
-            "fahrenheit",
-            "hammlet cast",
-            "hangout",
-            "hey jarvis",
-            "hey mycroft",
-            "home assistant",
-            "info",
-            "jumpbox-nabu",
-            "loading",
-            "night",
+            "disabled",
+            "last",
             "none",
-            "normal butts",
-            "not set",
-            "off",
-            "ok-nabu",
-            "okay nabu",
-            "on",
-            "one",
-            "pants emergency start off",
-            "pants emergency start on",
-            "pants off emergency",
-            "pink and sexy",
-            "playlist",
-            "playlist radio",
-            "preferred",
-            "previous",
-            "random",
-            "relaxed",
-            "shuffle",
-            "shuffle random",
-            "switch",
-            "toggle",
-            "tv",
-            "warning",
-            "working"
+            "open",
+            "paired only",
+            "pos",
+            "power_off",
+            "power_on",
+            "relay"
           ],
           "isList": true,
           "toGenerate": true,
@@ -3219,27 +1214,9 @@
           "toParse": false
         },
         {
-          "jsonName": "icon",
-          "cSharpName": "Icon",
+          "jsonName": "ip_address",
+          "cSharpName": "IpAddress",
           "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "restored",
-          "cSharpName": "Restored",
-          "clrType": "bool",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "supported_features",
-          "cSharpName": "SupportedFeatures",
-          "clrType": "double",
           "values": null,
           "isList": false,
           "toGenerate": false,
@@ -3251,164 +1228,19 @@
       "domain": "sensor",
       "entities": [
         {
-          "id": "sensor.800_series_long_range_usb_controller_status",
-          "friendlyName": "800 Series Long Range USB Controller Status",
-          "cSharpName": "_800SeriesLongRangeUsbControllerStatus"
+          "id": "sensor.bulb_rgbcw_6ddfa9_paired_remotes",
+          "friendlyName": "Egg Paired remotes",
+          "cSharpName": "BulbRgbcw6ddfa9PairedRemotes"
         },
         {
-          "id": "sensor.alive_remote_last_seen",
-          "friendlyName": "Alive Remote Last seen",
-          "cSharpName": "AliveRemoteLastSeen"
+          "id": "sensor.bulb_rgbcw_a350f3_paired_remotes",
+          "friendlyName": "Bulb RGBCW A350F3 Paired remotes",
+          "cSharpName": "BulbRgbcwA350f3PairedRemotes"
         },
         {
-          "id": "sensor.alive_remote_node_status",
-          "friendlyName": "Alive Remote Node status",
-          "cSharpName": "AliveRemoteNodeStatus"
-        },
-        {
-          "id": "sensor.briana_s_iphone_app_version",
-          "friendlyName": "Briana\u0027s iPhone App Version",
-          "cSharpName": "BrianaSIphoneAppVersion"
-        },
-        {
-          "id": "sensor.briana_s_iphone_audio_output",
-          "friendlyName": "Briana\u0027s iPhone Audio Output",
-          "cSharpName": "BrianaSIphoneAudioOutput"
-        },
-        {
-          "id": "sensor.briana_s_iphone_battery_state",
-          "friendlyName": "Briana\u0027s iPhone Battery State",
-          "cSharpName": "BrianaSIphoneBatteryState"
-        },
-        {
-          "id": "sensor.briana_s_iphone_bssid",
-          "friendlyName": "Briana\u0027s iPhone BSSID",
-          "cSharpName": "BrianaSIphoneBssid"
-        },
-        {
-          "id": "sensor.briana_s_iphone_connection_type",
-          "friendlyName": "Briana\u0027s iPhone Connection Type",
-          "cSharpName": "BrianaSIphoneConnectionType"
-        },
-        {
-          "id": "sensor.briana_s_iphone_geocoded_location",
-          "friendlyName": "Briana\u0027s iPhone Geocoded Location",
-          "cSharpName": "BrianaSIphoneGeocodedLocation"
-        },
-        {
-          "id": "sensor.briana_s_iphone_last_update_trigger",
-          "friendlyName": "Briana\u0027s iPhone Last Update Trigger",
-          "cSharpName": "BrianaSIphoneLastUpdateTrigger"
-        },
-        {
-          "id": "sensor.briana_s_iphone_location_permission",
-          "friendlyName": "Briana\u0027s iPhone Location permission",
-          "cSharpName": "BrianaSIphoneLocationPermission"
-        },
-        {
-          "id": "sensor.briana_s_iphone_sim_1",
-          "friendlyName": "Briana\u0027s iPhone SIM 1",
-          "cSharpName": "BrianaSIphoneSim1"
-        },
-        {
-          "id": "sensor.briana_s_iphone_sim_2",
-          "friendlyName": "Briana\u0027s iPhone SIM 2",
-          "cSharpName": "BrianaSIphoneSim2"
-        },
-        {
-          "id": "sensor.briana_s_iphone_ssid",
-          "friendlyName": "Briana\u0027s iPhone SSID",
-          "cSharpName": "BrianaSIphoneSsid"
-        },
-        {
-          "id": "sensor.hp_deskjet_3700_series",
-          "friendlyName": "HP DeskJet 3700 series",
-          "cSharpName": "HpDeskjet3700Series"
-        },
-        {
-          "id": "sensor.laser_monstera_dli",
-          "friendlyName": "Laser Monstera dli",
-          "cSharpName": "LaserMonsteraDli"
-        },
-        {
-          "id": "sensor.mikaela_battery_state",
-          "friendlyName": "Mikaela Battery state",
-          "cSharpName": "MikaelaBatteryState"
-        },
-        {
-          "id": "sensor.mikaela_charger_type",
-          "friendlyName": "Mikaela Charger type",
-          "cSharpName": "MikaelaChargerType"
-        },
-        {
-          "id": "sensor.outdoor_succulent_sensor_battery_state",
-          "friendlyName": "Outdoor Succulent Sensor Battery state",
-          "cSharpName": "OutdoorSucculentSensorBatteryState"
-        },
-        {
-          "id": "sensor.pixel_8_battery_state",
-          "friendlyName": "Pixel 8 Battery state",
-          "cSharpName": "Pixel8BatteryState"
-        },
-        {
-          "id": "sensor.pixel_8_charger_type",
-          "friendlyName": "Pixel 8 Charger type",
-          "cSharpName": "Pixel8ChargerType"
-        },
-        {
-          "id": "sensor.plant_sensor_1_battery_state",
-          "friendlyName": "Plant Sensor 1 Battery state",
-          "cSharpName": "PlantSensor1BatteryState"
-        },
-        {
-          "id": "sensor.stuarts_iphone_activity",
-          "friendlyName": "Stuart\u2019s iPhone Activity",
-          "cSharpName": "StuartsIphoneActivity"
-        },
-        {
-          "id": "sensor.stuarts_iphone_battery_state",
-          "friendlyName": "Stuart\u2019s iPhone Battery State",
-          "cSharpName": "StuartsIphoneBatteryState"
-        },
-        {
-          "id": "sensor.stuarts_iphone_bssid",
-          "friendlyName": "Stuart\u2019s iPhone BSSID",
-          "cSharpName": "StuartsIphoneBssid"
-        },
-        {
-          "id": "sensor.stuarts_iphone_connection_type",
-          "friendlyName": "Stuart\u2019s iPhone Connection Type",
-          "cSharpName": "StuartsIphoneConnectionType"
-        },
-        {
-          "id": "sensor.stuarts_iphone_geocoded_location",
-          "friendlyName": "Stuart\u2019s iPhone Geocoded Location",
-          "cSharpName": "StuartsIphoneGeocodedLocation"
-        },
-        {
-          "id": "sensor.stuarts_iphone_last_update_trigger",
-          "friendlyName": "Stuart\u2019s iPhone Last Update Trigger",
-          "cSharpName": "StuartsIphoneLastUpdateTrigger"
-        },
-        {
-          "id": "sensor.stuarts_iphone_sim_1",
-          "friendlyName": "Stuart\u2019s iPhone SIM 1",
-          "cSharpName": "StuartsIphoneSim1"
-        },
-        {
-          "id": "sensor.stuarts_iphone_sim_2",
-          "friendlyName": "Stuart\u2019s iPhone SIM 2",
-          "cSharpName": "StuartsIphoneSim2"
-        },
-        {
-          "id": "sensor.stuarts_iphone_ssid",
-          "friendlyName": "Stuart\u2019s iPhone SSID",
-          "cSharpName": "StuartsIphoneSsid"
-        },
-        {
-          "id": "sensor.succulent_arrangement_dli",
-          "friendlyName": "Succulent Arrangement dli",
-          "cSharpName": "SucculentArrangementDli"
+          "id": "sensor.bulb_rgbcw_fe8ceb_paired_remotes",
+          "friendlyName": "Bulb RGBCW FE8CEB Paired remotes",
+          "cSharpName": "BulbRgbcwFe8cebPairedRemotes"
         },
         {
           "id": "sensor.sun_next_dawn",
@@ -3439,31 +1271,6 @@
           "id": "sensor.sun_next_setting",
           "friendlyName": "Sun Next setting",
           "cSharpName": "SunNextSetting"
-        },
-        {
-          "id": "sensor.tentacle_lamp_signal_level",
-          "friendlyName": "Tentacle Lamp Signal level",
-          "cSharpName": "TentacleLampSignalLevel"
-        },
-        {
-          "id": "sensor.wallfire_battery_state",
-          "friendlyName": "wallfire Battery state",
-          "cSharpName": "WallfireBatteryState"
-        },
-        {
-          "id": "sensor.wallfire_charger_type",
-          "friendlyName": "wallfire Charger type",
-          "cSharpName": "WallfireChargerType"
-        },
-        {
-          "id": "sensor.ytube_music_player_extra",
-          "friendlyName": "ytube_music_player Extra",
-          "cSharpName": "YtubeMusicPlayerExtra"
-        },
-        {
-          "id": "sensor.zigbee2mqtt_bridge_version",
-          "friendlyName": "Zigbee2MQTT Bridge Version",
-          "cSharpName": "Zigbee2mqttBridgeVersion"
         }
       ],
       "attributes": [
@@ -3486,417 +1293,8 @@
           "toParse": false
         },
         {
-          "jsonName": "Allows VoIP",
-          "cSharpName": "AllowsVoIP",
-          "clrType": "bool",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "Carrier ID",
-          "cSharpName": "CarrierID",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "Carrier Name",
-          "cSharpName": "CarrierName",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "ISO Country Code",
-          "cSharpName": "ISOCountryCode",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "Mobile Country Code",
-          "cSharpName": "MobileCountryCode",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "Mobile Network Code",
-          "cSharpName": "MobileNetworkCode",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "icon",
-          "cSharpName": "Icon",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "Current Radio Technology",
-          "cSharpName": "CurrentRadioTechnology",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "Administrative Area",
-          "cSharpName": "AdministrativeArea",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "Areas Of Interest",
-          "cSharpName": "AreasOfInterest",
-          "clrType": "object",
-          "values": null,
-          "isList": true,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "Country",
-          "cSharpName": "Country",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "Inland Water",
-          "cSharpName": "InlandWater",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "Locality",
-          "cSharpName": "Locality",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "Location",
-          "cSharpName": "Location",
-          "clrType": "IReadOnlyList\u003Cdouble\u003E",
-          "values": null,
-          "isList": true,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "Name",
-          "cSharpName": "Name",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "Ocean",
-          "cSharpName": "Ocean",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "Postal Code",
-          "cSharpName": "PostalCode",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "Sub Administrative Area",
-          "cSharpName": "SubAdministrativeArea",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "Sub Locality",
-          "cSharpName": "SubLocality",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "Sub Thoroughfare",
-          "cSharpName": "SubThoroughfare",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "Thoroughfare",
-          "cSharpName": "Thoroughfare",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "Time Zone",
-          "cSharpName": "TimeZone",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "Zones",
-          "cSharpName": "Zones",
-          "clrType": "IReadOnlyList\u003Cobject\u003E",
-          "values": null,
-          "isList": true,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "Low Power Mode",
-          "cSharpName": "LowPowerMode",
-          "clrType": "bool",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "Cellular Technology",
-          "cSharpName": "CellularTechnology",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "Confidence",
-          "cSharpName": "Confidence",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "Types",
-          "cSharpName": "Types",
-          "clrType": "IReadOnlyList\u003Cstring\u003E",
-          "values": null,
-          "isList": true,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "options",
-          "cSharpName": "Options",
-          "clrType": "SensorOptions",
-          "values": [
-            "ac",
-            "charging",
-            "discharging",
-            "dock",
-            "full",
-            "idle",
-            "none",
-            "not_charging",
-            "printing",
-            "stopped",
-            "usb",
-            "wireless"
-          ],
-          "isList": true,
-          "toGenerate": true,
-          "toParse": true
-        },
-        {
-          "jsonName": "info",
-          "cSharpName": "Info",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "serial",
-          "cSharpName": "Serial",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "state_message",
-          "cSharpName": "StateMessage",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "state_reason",
-          "cSharpName": "StateReason",
-          "clrType": null,
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "command_set",
-          "cSharpName": "CommandSet",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "uri_supported",
-          "cSharpName": "UriSupported",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "state_class",
-          "cSharpName": "StateClass",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "playlists",
-          "cSharpName": "Playlists",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "lyrics",
-          "cSharpName": "Lyrics",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "tracks",
-          "cSharpName": "Tracks",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "total_tracks",
-          "cSharpName": "TotalTracks",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "search",
-          "cSharpName": "Search",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "status",
-          "cSharpName": "Status",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "last_period",
-          "cSharpName": "LastPeriod",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "last_valid_state",
-          "cSharpName": "LastValidState",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "last_reset",
-          "cSharpName": "LastReset",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "next_reset",
-          "cSharpName": "NextReset",
+          "jsonName": "ip_address",
+          "cSharpName": "IpAddress",
           "clrType": "string",
           "values": null,
           "isList": false,
@@ -3910,259 +1308,14 @@
       "isNumeric": true,
       "entities": [
         {
-          "id": "sensor.alive_remote_battery_level",
-          "friendlyName": "Alive Remote Battery level",
-          "cSharpName": "AliveRemoteBatteryLevel"
+          "id": "sensor.mikaela_dimmer_energy_0",
+          "friendlyName": "Mikaela Dimmer Energy 0",
+          "cSharpName": "MikaelaDimmerEnergy0"
         },
         {
-          "id": "sensor.briana_s_iphone_battery_level",
-          "friendlyName": "Briana\u0027s iPhone Battery Level",
-          "cSharpName": "BrianaSIphoneBatteryLevel"
-        },
-        {
-          "id": "sensor.briana_s_iphone_storage",
-          "friendlyName": "Briana\u0027s iPhone Storage",
-          "cSharpName": "BrianaSIphoneStorage"
-        },
-        {
-          "id": "sensor.dimmer_switch_96fa_signal_strength",
-          "friendlyName": "Dimmer Switch 96FA Signal Strength",
-          "cSharpName": "DimmerSwitch96faSignalStrength"
-        },
-        {
-          "id": "sensor.dimmer_switch_9e2d_signal_strength",
-          "friendlyName": "Dimmer Switch 9E2D Signal Strength",
-          "cSharpName": "DimmerSwitch9e2dSignalStrength"
-        },
-        {
-          "id": "sensor.finger_robot_2_battery",
-          "friendlyName": "Finger Robot 2 Battery",
-          "cSharpName": "FingerRobot2Battery"
-        },
-        {
-          "id": "sensor.hp_deskjet_3700_series_black_ink",
-          "friendlyName": "HP DeskJet 3700 series black ink",
-          "cSharpName": "HpDeskjet3700SeriesBlackInk"
-        },
-        {
-          "id": "sensor.hp_deskjet_3700_series_tri_color_ink",
-          "friendlyName": "HP DeskJet 3700 series tri-color ink",
-          "cSharpName": "HpDeskjet3700SeriesTriColorInk"
-        },
-        {
-          "id": "sensor.laser_monstera_air_humidity",
-          "friendlyName": "Laser Monstera air humidity",
-          "cSharpName": "LaserMonsteraAirHumidity"
-        },
-        {
-          "id": "sensor.laser_monstera_conductivity",
-          "friendlyName": "Laser Monstera conductivity",
-          "cSharpName": "LaserMonsteraConductivity"
-        },
-        {
-          "id": "sensor.laser_monstera_illuminance",
-          "friendlyName": "Laser Monstera illuminance",
-          "cSharpName": "LaserMonsteraIlluminance"
-        },
-        {
-          "id": "sensor.laser_monstera_ppfd_mol",
-          "friendlyName": "Laser Monstera ppfd (mol)",
-          "cSharpName": "LaserMonsteraPpfdMol"
-        },
-        {
-          "id": "sensor.laser_monstera_soil_moisture",
-          "friendlyName": "Laser Monstera soil moisture",
-          "cSharpName": "LaserMonsteraSoilMoisture"
-        },
-        {
-          "id": "sensor.laser_monstera_temperature",
-          "friendlyName": "Laser Monstera temperature",
-          "cSharpName": "LaserMonsteraTemperature"
-        },
-        {
-          "id": "sensor.laser_monstera_total_ppfd_mol_integral",
-          "friendlyName": "Laser Monstera Total ppfd (mol) Integral",
-          "cSharpName": "LaserMonsteraTotalPpfdMolIntegral"
-        },
-        {
-          "id": "sensor.liminal_dimmer_energy_0",
-          "friendlyName": "Liminal Dimmer Energy 0",
-          "cSharpName": "LiminalDimmerEnergy0"
-        },
-        {
-          "id": "sensor.liminal_dimmer_power_0",
-          "friendlyName": "Liminal Dimmer Power 0",
-          "cSharpName": "LiminalDimmerPower0"
-        },
-        {
-          "id": "sensor.liminal_dimmer_temperature",
-          "friendlyName": "Liminal Dimmer Temperature",
-          "cSharpName": "LiminalDimmerTemperature"
-        },
-        {
-          "id": "sensor.mikaela_battery_level",
-          "friendlyName": "Mikaela Battery level",
-          "cSharpName": "MikaelaBatteryLevel"
-        },
-        {
-          "id": "sensor.outdoor_succulent_sensor_battery",
-          "friendlyName": "Outdoor Succulent Sensor Battery",
-          "cSharpName": "OutdoorSucculentSensorBattery"
-        },
-        {
-          "id": "sensor.outdoor_succulent_sensor_soil_moisture",
-          "friendlyName": "Outdoor Succulent Sensor Moisture",
-          "cSharpName": "OutdoorSucculentSensorSoilMoisture"
-        },
-        {
-          "id": "sensor.outdoor_succulent_sensor_temperature",
-          "friendlyName": "Outdoor Succulent Sensor Temperature",
-          "cSharpName": "OutdoorSucculentSensorTemperature"
-        },
-        {
-          "id": "sensor.pixel_8_battery_level",
-          "friendlyName": "Pixel 8 Battery level",
-          "cSharpName": "Pixel8BatteryLevel"
-        },
-        {
-          "id": "sensor.plant_sensor_1_battery",
-          "friendlyName": "Plant Sensor 1 Battery",
-          "cSharpName": "PlantSensor1Battery"
-        },
-        {
-          "id": "sensor.plant_sensor_1_soil_moisture",
-          "friendlyName": "Plant Sensor 1 Moisture",
-          "cSharpName": "PlantSensor1SoilMoisture"
-        },
-        {
-          "id": "sensor.plant_sensor_1_temperature",
-          "friendlyName": "Plant Sensor 1 Temperature",
-          "cSharpName": "PlantSensor1Temperature"
-        },
-        {
-          "id": "sensor.plant_sensor_2_battery",
-          "friendlyName": "Plant Sensor 2 Battery",
-          "cSharpName": "PlantSensor2Battery"
-        },
-        {
-          "id": "sensor.plant_sensor_2_conductivity",
-          "friendlyName": "Plant Sensor 2 Conductivity",
-          "cSharpName": "PlantSensor2Conductivity"
-        },
-        {
-          "id": "sensor.plant_sensor_2_illuminance",
-          "friendlyName": "Plant Sensor 2 Illuminance",
-          "cSharpName": "PlantSensor2Illuminance"
-        },
-        {
-          "id": "sensor.plant_sensor_2_moisture",
-          "friendlyName": "Plant Sensor 2 Moisture",
-          "cSharpName": "PlantSensor2Moisture"
-        },
-        {
-          "id": "sensor.plant_sensor_2_temperature",
-          "friendlyName": "Plant Sensor 2 Temperature",
-          "cSharpName": "PlantSensor2Temperature"
-        },
-        {
-          "id": "sensor.spotify_scarlet_checkers_song_tempo",
-          "friendlyName": "Song tempo",
-          "cSharpName": "SpotifyScarletCheckersSongTempo"
-        },
-        {
-          "id": "sensor.stuarts_iphone_average_active_pace",
-          "friendlyName": "Stuart\u2019s iPhone Average Active Pace",
-          "cSharpName": "StuartsIphoneAverageActivePace"
-        },
-        {
-          "id": "sensor.stuarts_iphone_battery_level",
-          "friendlyName": "Stuart\u2019s iPhone Battery Level",
-          "cSharpName": "StuartsIphoneBatteryLevel"
-        },
-        {
-          "id": "sensor.stuarts_iphone_distance",
-          "friendlyName": "Stuart\u2019s iPhone Distance",
-          "cSharpName": "StuartsIphoneDistance"
-        },
-        {
-          "id": "sensor.stuarts_iphone_floors_ascended",
-          "friendlyName": "Stuart\u2019s iPhone Floors Ascended",
-          "cSharpName": "StuartsIphoneFloorsAscended"
-        },
-        {
-          "id": "sensor.stuarts_iphone_floors_descended",
-          "friendlyName": "Stuart\u2019s iPhone Floors Descended",
-          "cSharpName": "StuartsIphoneFloorsDescended"
-        },
-        {
-          "id": "sensor.stuarts_iphone_steps",
-          "friendlyName": "Stuart\u2019s iPhone Steps",
-          "cSharpName": "StuartsIphoneSteps"
-        },
-        {
-          "id": "sensor.stuarts_iphone_storage",
-          "friendlyName": "Stuart\u2019s iPhone Storage",
-          "cSharpName": "StuartsIphoneStorage"
-        },
-        {
-          "id": "sensor.succulent_arrangement_air_humidity",
-          "friendlyName": "Succulent Arrangement air humidity",
-          "cSharpName": "SucculentArrangementAirHumidity"
-        },
-        {
-          "id": "sensor.succulent_arrangement_conductivity",
-          "friendlyName": "Succulent Arrangement conductivity",
-          "cSharpName": "SucculentArrangementConductivity"
-        },
-        {
-          "id": "sensor.succulent_arrangement_illuminance",
-          "friendlyName": "Succulent Arrangement illuminance",
-          "cSharpName": "SucculentArrangementIlluminance"
-        },
-        {
-          "id": "sensor.succulent_arrangement_ppfd_mol",
-          "friendlyName": "Succulent Arrangement ppfd (mol)",
-          "cSharpName": "SucculentArrangementPpfdMol"
-        },
-        {
-          "id": "sensor.succulent_arrangement_soil_moisture",
-          "friendlyName": "Succulent Arrangement soil moisture",
-          "cSharpName": "SucculentArrangementSoilMoisture"
-        },
-        {
-          "id": "sensor.succulent_arrangement_temperature",
-          "friendlyName": "Succulent Arrangement temperature",
-          "cSharpName": "SucculentArrangementTemperature"
-        },
-        {
-          "id": "sensor.succulent_arrangement_total_ppfd_mol_integral",
-          "friendlyName": "Succulent Arrangement Total ppfd (mol) Integral",
-          "cSharpName": "SucculentArrangementTotalPpfdMolIntegral"
-        },
-        {
-          "id": "sensor.wallfire_battery_level",
-          "friendlyName": "wallfire Battery level",
-          "cSharpName": "WallfireBatteryLevel"
-        },
-        {
-          "id": "sensor.wireless_switch_3241_battery",
-          "friendlyName": "Wireless Switch 3241 Battery",
-          "cSharpName": "WirelessSwitch3241Battery"
-        },
-        {
-          "id": "sensor.wireless_switch_3241_voltage",
-          "friendlyName": "Wireless Switch 3241 Voltage",
-          "cSharpName": "WirelessSwitch3241Voltage"
-        },
-        {
-          "id": "sensor.wireless_switch_6105_battery",
-          "friendlyName": "Wireless Switch 6105 Battery",
-          "cSharpName": "WirelessSwitch6105Battery"
-        },
-        {
-          "id": "sensor.wireless_switch_6105_voltage",
-          "friendlyName": "Wireless Switch 6105 Voltage",
-          "cSharpName": "WirelessSwitch6105Voltage"
+          "id": "sensor.mikaela_dimmer_temperature",
+          "friendlyName": "Mikaela Dimmer Temperature",
+          "cSharpName": "MikaelaDimmerTemperature"
         }
       ],
       "attributes": [
@@ -4193,145 +1346,6 @@
           "toGenerate": false,
           "toParse": false
         },
-        {
-          "jsonName": "friendly_name",
-          "cSharpName": "FriendlyName",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "icon",
-          "cSharpName": "Icon",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "Available",
-          "cSharpName": "Available",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "Available (Important)",
-          "cSharpName": "AvailableImportant",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "Available (Opportunistic)",
-          "cSharpName": "AvailableOpportunistic",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "Total",
-          "cSharpName": "Total",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "marker_high_level",
-          "cSharpName": "MarkerHighLevel",
-          "clrType": "double",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "marker_low_level",
-          "cSharpName": "MarkerLowLevel",
-          "clrType": "double",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "marker_type",
-          "cSharpName": "MarkerType",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "external_sensor",
-          "cSharpName": "ExternalSensor",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "source",
-          "cSharpName": "Source",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "restored",
-          "cSharpName": "Restored",
-          "clrType": "bool",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "supported_features",
-          "cSharpName": "SupportedFeatures",
-          "clrType": "double",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        }
-      ]
-    },
-    {
-      "domain": "stt",
-      "entities": [
-        {
-          "id": "stt.faster_whisper_jumpbox",
-          "friendlyName": "Jumpbox Whisper",
-          "cSharpName": "FasterWhisperJumpbox"
-        },
-        {
-          "id": "stt.faster_whisper_local",
-          "friendlyName": "Local Whisper",
-          "cSharpName": "FasterWhisperLocal"
-        },
-        {
-          "id": "stt.faster_whisper_proxmox",
-          "friendlyName": "faster-whisper",
-          "cSharpName": "FasterWhisperProxmox"
-        }
-      ],
-      "attributes": [
         {
           "jsonName": "friendly_name",
           "cSharpName": "FriendlyName",
@@ -4449,301 +1463,17 @@
       "domain": "switch",
       "entities": [
         {
-          "id": "switch.adaptive_lighting_adapt_brightness_adaptinglighting",
-          "friendlyName": "Adaptive Lighting Adapt Brightness: AdaptingLighting",
-          "cSharpName": "AdaptiveLightingAdaptBrightnessAdaptinglighting"
+          "id": "switch.wicker_lamp_switch_child_lock",
+          "friendlyName": "Wicker Lamp Switch Child lock",
+          "cSharpName": "WickerLampSwitchChildLock"
         },
         {
-          "id": "switch.adaptive_lighting_adapt_color_adaptinglighting",
-          "friendlyName": "Adaptive Lighting Adapt Color: AdaptingLighting",
-          "cSharpName": "AdaptiveLightingAdaptColorAdaptinglighting"
-        },
-        {
-          "id": "switch.adaptive_lighting_adaptinglighting",
-          "friendlyName": "Adaptive Lighting: AdaptingLighting",
-          "cSharpName": "AdaptiveLightingAdaptinglighting"
-        },
-        {
-          "id": "switch.adaptive_lighting_sleep_mode_adaptinglighting",
-          "friendlyName": "Adaptive Lighting Sleep Mode: AdaptingLighting",
-          "cSharpName": "AdaptiveLightingSleepModeAdaptinglighting"
-        },
-        {
-          "id": "switch.all_off_ignore_unavailable",
-          "friendlyName": "All Off Ignore Unavailable",
-          "cSharpName": "AllOffIgnoreUnavailable"
-        },
-        {
-          "id": "switch.all_off_restore_on_deactivate",
-          "friendlyName": "All Off Restore On Deactivate",
-          "cSharpName": "AllOffRestoreOnDeactivate"
-        },
-        {
-          "id": "switch.all_off_stateful_scene",
-          "friendlyName": "All Off Stateful Scene",
-          "cSharpName": "AllOffStatefulScene"
-        },
-        {
-          "id": "switch.bright_ignore_unavailable",
-          "friendlyName": "Bright Ignore Unavailable",
-          "cSharpName": "BrightIgnoreUnavailable"
-        },
-        {
-          "id": "switch.bright_restore_on_deactivate",
-          "friendlyName": "Bright Restore On Deactivate",
-          "cSharpName": "BrightRestoreOnDeactivate"
-        },
-        {
-          "id": "switch.bright_stateful_scene",
-          "friendlyName": "Bright Stateful Scene",
-          "cSharpName": "BrightStatefulScene"
-        },
-        {
-          "id": "switch.dinner_time_ignore_unavailable",
-          "friendlyName": "Dinner Time Ignore Unavailable",
-          "cSharpName": "DinnerTimeIgnoreUnavailable"
-        },
-        {
-          "id": "switch.dinner_time_restore_on_deactivate",
-          "friendlyName": "Dinner Time Restore On Deactivate",
-          "cSharpName": "DinnerTimeRestoreOnDeactivate"
-        },
-        {
-          "id": "switch.dinner_time_stateful_scene",
-          "friendlyName": "Dinner Time Stateful Scene",
-          "cSharpName": "DinnerTimeStatefulScene"
-        },
-        {
-          "id": "switch.evenink_ignore_unavailable",
-          "friendlyName": "Evenink Ignore Unavailable",
-          "cSharpName": "EveninkIgnoreUnavailable"
-        },
-        {
-          "id": "switch.evenink_restore_on_deactivate",
-          "friendlyName": "Evenink Restore On Deactivate",
-          "cSharpName": "EveninkRestoreOnDeactivate"
-        },
-        {
-          "id": "switch.evenink_stateful_scene",
-          "friendlyName": "Evenink Stateful Scene",
-          "cSharpName": "EveninkStatefulScene"
-        },
-        {
-          "id": "switch.finger_robot_2_switch",
-          "friendlyName": "Finger Robot 2 Switch",
-          "cSharpName": "FingerRobot2Switch"
-        },
-        {
-          "id": "switch.hammet_bt_proxy_ble_gateway_discovery",
-          "friendlyName": "Hammet BT Proxy BLE Gateway Discovery",
-          "cSharpName": "HammetBtProxyBleGatewayDiscovery"
-        },
-        {
-          "id": "switch.hammlet_bedlamp_led",
-          "friendlyName": "Hammlet Soundsystem LED",
-          "cSharpName": "HammletBedlampLed"
-        },
-        {
-          "id": "switch.hangout_ignore_unavailable",
-          "friendlyName": "Hangout Ignore Unavailable",
-          "cSharpName": "HangoutIgnoreUnavailable"
-        },
-        {
-          "id": "switch.hangout_restore_on_deactivate",
-          "friendlyName": "Hangout Restore On Deactivate",
-          "cSharpName": "HangoutRestoreOnDeactivate"
-        },
-        {
-          "id": "switch.hangout_stateful_scene",
-          "friendlyName": "Hangout Stateful Scene",
-          "cSharpName": "HangoutStatefulScene"
-        },
-        {
-          "id": "switch.hey_nabu_mute",
-          "friendlyName": "Hey Nabu Mute",
-          "cSharpName": "HeyNabuMute"
-        },
-        {
-          "id": "switch.hey_nabu_wake_sound",
-          "friendlyName": "Hey Nabu Wake sound",
-          "cSharpName": "HeyNabuWakeSound"
-        },
-        {
-          "id": "switch.kitchen_switch",
-          "friendlyName": "Kitchen Switch",
-          "cSharpName": "KitchenSwitch"
-        },
-        {
-          "id": "switch.liminal_switch",
-          "friendlyName": "Liminal Switch",
-          "cSharpName": "LiminalSwitch"
-        },
-        {
-          "id": "switch.night_ignore_unavailable",
-          "friendlyName": "Night Ignore Unavailable",
-          "cSharpName": "NightIgnoreUnavailable"
-        },
-        {
-          "id": "switch.night_restore_on_deactivate",
-          "friendlyName": "Night Restore On Deactivate",
-          "cSharpName": "NightRestoreOnDeactivate"
-        },
-        {
-          "id": "switch.night_stateful_scene",
-          "friendlyName": "Night Stateful Scene",
-          "cSharpName": "NightStatefulScene"
-        },
-        {
-          "id": "switch.normal_butts_ignore_unavailable",
-          "friendlyName": "Normal Butts Ignore Unavailable",
-          "cSharpName": "NormalButtsIgnoreUnavailable"
-        },
-        {
-          "id": "switch.normal_butts_restore_on_deactivate",
-          "friendlyName": "Normal Butts Restore On Deactivate",
-          "cSharpName": "NormalButtsRestoreOnDeactivate"
-        },
-        {
-          "id": "switch.normal_butts_stateful_scene",
-          "friendlyName": "Stateful Scene",
-          "cSharpName": "NormalButtsStatefulScene"
-        },
-        {
-          "id": "switch.outdoor_switch",
-          "friendlyName": "Outdoor Switch",
-          "cSharpName": "OutdoorSwitch"
-        },
-        {
-          "id": "switch.pants_emergency_start_off_ignore_unavailable",
-          "friendlyName": "Pants Emergency Start Off Ignore Unavailable",
-          "cSharpName": "PantsEmergencyStartOffIgnoreUnavailable"
-        },
-        {
-          "id": "switch.pants_emergency_start_off_restore_on_deactivate",
-          "friendlyName": "Pants Emergency Start Off Restore On Deactivate",
-          "cSharpName": "PantsEmergencyStartOffRestoreOnDeactivate"
-        },
-        {
-          "id": "switch.pants_emergency_start_off_stateful_scene",
-          "friendlyName": "Stateful Scene",
-          "cSharpName": "PantsEmergencyStartOffStatefulScene"
-        },
-        {
-          "id": "switch.pants_emergency_start_on_ignore_unavailable",
-          "friendlyName": "Pants Emergency Start On Ignore Unavailable",
-          "cSharpName": "PantsEmergencyStartOnIgnoreUnavailable"
-        },
-        {
-          "id": "switch.pants_emergency_start_on_restore_on_deactivate",
-          "friendlyName": "Pants Emergency Start On Restore On Deactivate",
-          "cSharpName": "PantsEmergencyStartOnRestoreOnDeactivate"
-        },
-        {
-          "id": "switch.pants_emergency_start_on_stateful_scene",
-          "friendlyName": "Stateful Scene",
-          "cSharpName": "PantsEmergencyStartOnStatefulScene"
-        },
-        {
-          "id": "switch.pants_off_emergency_ignore_unavailable",
-          "friendlyName": "Pants Off Emergency Ignore Unavailable",
-          "cSharpName": "PantsOffEmergencyIgnoreUnavailable"
-        },
-        {
-          "id": "switch.pants_off_emergency_restore_on_deactivate",
-          "friendlyName": "Pants Off Emergency Restore On Deactivate",
-          "cSharpName": "PantsOffEmergencyRestoreOnDeactivate"
-        },
-        {
-          "id": "switch.pants_off_emergency_stateful_scene",
-          "friendlyName": "Stateful Scene",
-          "cSharpName": "PantsOffEmergencyStatefulScene"
-        },
-        {
-          "id": "switch.pink_and_sexy_ignore_unavailable",
-          "friendlyName": "Pink and sexy Ignore Unavailable",
-          "cSharpName": "PinkAndSexyIgnoreUnavailable"
-        },
-        {
-          "id": "switch.pink_and_sexy_restore_on_deactivate",
-          "friendlyName": "Pink and sexy Restore On Deactivate",
-          "cSharpName": "PinkAndSexyRestoreOnDeactivate"
-        },
-        {
-          "id": "switch.pink_and_sexy_stateful_scene",
-          "friendlyName": "Pink and sexy Stateful Scene",
-          "cSharpName": "PinkAndSexyStatefulScene"
-        },
-        {
-          "id": "switch.speakers",
-          "friendlyName": "Speakers",
-          "cSharpName": "Speakers"
-        },
-        {
-          "id": "switch.tentacle_lamp",
-          "friendlyName": "Tentacle Lamp",
-          "cSharpName": "TentacleLamp"
-        },
-        {
-          "id": "switch.tentacle_lamp_auto_update_enabled",
-          "friendlyName": "Tentacle Lamp Auto update enabled",
-          "cSharpName": "TentacleLampAutoUpdateEnabled"
-        },
-        {
-          "id": "switch.tentacle_lamp_led",
-          "friendlyName": "Tentacle Lamp LED",
-          "cSharpName": "TentacleLampLed"
-        },
-        {
-          "id": "switch.tentacle_led",
-          "friendlyName": "Tentacle Lamp LED",
-          "cSharpName": "TentacleLed"
-        },
-        {
-          "id": "switch.turn_off_all_lights_ignore_unavailable",
-          "friendlyName": "Turn off all\u00A0lights Ignore Unavailable",
-          "cSharpName": "TurnOffAllLightsIgnoreUnavailable"
-        },
-        {
-          "id": "switch.turn_off_all_lights_restore_on_deactivate",
-          "friendlyName": "Turn off all\u00A0lights Restore On Deactivate",
-          "cSharpName": "TurnOffAllLightsRestoreOnDeactivate"
-        },
-        {
-          "id": "switch.turn_off_all_lights_stateful_scene",
-          "friendlyName": "Turn off all\u00A0lights Stateful Scene",
-          "cSharpName": "TurnOffAllLightsStatefulScene"
-        },
-        {
-          "id": "switch.working_ignore_unavailable",
-          "friendlyName": "Working Ignore Unavailable",
-          "cSharpName": "WorkingIgnoreUnavailable"
-        },
-        {
-          "id": "switch.working_restore_on_deactivate",
-          "friendlyName": "Working Restore On Deactivate",
-          "cSharpName": "WorkingRestoreOnDeactivate"
-        },
-        {
-          "id": "switch.working_stateful_scene",
-          "friendlyName": "Working Stateful Scene",
-          "cSharpName": "WorkingStatefulScene"
-        },
-        {
-          "id": "switch.zigbee2mqtt_bridge_permit_join",
-          "friendlyName": "Zigbee2MQTT Bridge Permit join",
-          "cSharpName": "Zigbee2mqttBridgePermitJoin"
+          "id": "switch.wicker_lamp_switch_socket_1",
+          "friendlyName": "Wicker Lamp Switch Socket 1",
+          "cSharpName": "WickerLampSwitchSocket1"
         }
       ],
       "attributes": [
-        {
-          "jsonName": "icon",
-          "cSharpName": "Icon",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
         {
           "jsonName": "friendly_name",
           "cSharpName": "FriendlyName",
@@ -4754,164 +1484,8 @@
           "toParse": false
         },
         {
-          "jsonName": "configuration",
-          "cSharpName": "Configuration",
-          "clrType": "object",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "manual_control",
-          "cSharpName": "ManualControl",
-          "clrType": "IReadOnlyList\u003Cobject\u003E",
-          "values": null,
-          "isList": true,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "brightness_pct",
-          "cSharpName": "BrightnessPct",
-          "clrType": "double",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "color_temp_kelvin",
-          "cSharpName": "ColorTempKelvin",
-          "clrType": "double",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "color_temp_mired",
-          "cSharpName": "ColorTempMired",
-          "clrType": "double",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "rgb_color",
-          "cSharpName": "RgbColor",
-          "clrType": "IReadOnlyList\u003Cdouble\u003E",
-          "values": null,
-          "isList": true,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "xy_color",
-          "cSharpName": "XyColor",
-          "clrType": "IReadOnlyList\u003Cdouble\u003E",
-          "values": null,
-          "isList": true,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "hs_color",
-          "cSharpName": "HsColor",
-          "clrType": "IReadOnlyList\u003Cdouble\u003E",
-          "values": null,
-          "isList": true,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "sun_position",
-          "cSharpName": "SunPosition",
-          "clrType": "double",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "force_rgb_color",
-          "cSharpName": "ForceRgbColor",
-          "clrType": "bool",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "autoreset_time_remaining",
-          "cSharpName": "AutoresetTimeRemaining",
-          "clrType": "object",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "restored",
-          "cSharpName": "Restored",
-          "clrType": "bool",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "supported_features",
-          "cSharpName": "SupportedFeatures",
-          "clrType": "double",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        }
-      ]
-    },
-    {
-      "domain": "timer",
-      "entities": [
-        {
-          "id": "timer.pants_emergency_timer",
-          "friendlyName": "pants_emergency_timer",
-          "cSharpName": "PantsEmergencyTimer"
-        }
-      ],
-      "attributes": [
-        {
-          "jsonName": "duration",
-          "cSharpName": "Duration",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "editable",
-          "cSharpName": "Editable",
-          "clrType": "bool",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "icon",
-          "cSharpName": "Icon",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "friendly_name",
-          "cSharpName": "FriendlyName",
+          "jsonName": "device_class",
+          "cSharpName": "DeviceClass",
           "clrType": "string",
           "values": null,
           "isList": false,
@@ -4924,336 +1498,12 @@
       "domain": "todo",
       "entities": [
         {
-          "id": "todo.air_fryer_jeff_hamm",
-          "friendlyName": "Air Fryer jeff_hamm",
-          "cSharpName": "AirFryerJeffHamm"
-        },
-        {
-          "id": "todo.bad_eggs_jeff_hamm",
-          "friendlyName": "Bad Eggs jeff_hamm",
-          "cSharpName": "BadEggsJeffHamm"
-        },
-        {
-          "id": "todo.bap_inventory_jeff_hamm",
-          "friendlyName": "BAP Inventory jeff_hamm",
-          "cSharpName": "BapInventoryJeffHamm"
-        },
-        {
-          "id": "todo.bike_jeff_hamm",
-          "friendlyName": "Bike jeff_hamm",
-          "cSharpName": "BikeJeffHamm"
-        },
-        {
-          "id": "todo.birthday_beach_jeff_hamm",
-          "friendlyName": "Birthday Beach jeff_hamm",
-          "cSharpName": "BirthdayBeachJeffHamm"
-        },
-        {
-          "id": "todo.burning_man_jeff_hamm",
-          "friendlyName": "Burning Man jeff_hamm",
-          "cSharpName": "BurningManJeffHamm"
-        },
-        {
-          "id": "todo.butt_stuff_jeff_hamm",
-          "friendlyName": "Butt Stuff jeff_hamm",
-          "cSharpName": "ButtStuffJeffHamm"
-        },
-        {
-          "id": "todo.bye_bye_biome_jeff_hamm",
-          "friendlyName": "Bye Bye Biome jeff_hamm",
-          "cSharpName": "ByeByeBiomeJeffHamm"
-        },
-        {
-          "id": "todo.ca_s_trip_jeff_hamm",
-          "friendlyName": "Ca\u0027s trip jeff_hamm",
-          "cSharpName": "CaSTripJeffHamm"
-        },
-        {
-          "id": "todo.cali_road_trip_jeff_hamm",
-          "friendlyName": "Cali Road Trip jeff_hamm",
-          "cSharpName": "CaliRoadTripJeffHamm"
-        },
-        {
-          "id": "todo.christmas_jackson_jeff_hamm",
-          "friendlyName": "Christmas jackson jeff_hamm",
-          "cSharpName": "ChristmasJacksonJeffHamm"
-        },
-        {
-          "id": "todo.cocktail_jeff_hamm",
-          "friendlyName": "Cocktail jeff_hamm",
-          "cSharpName": "CocktailJeffHamm"
-        },
-        {
-          "id": "todo.codes_jeff_hamm",
-          "friendlyName": "Codes jeff_hamm",
-          "cSharpName": "CodesJeffHamm"
-        },
-        {
-          "id": "todo.cyberlist_jeff_hamm",
-          "friendlyName": "CyberList jeff_hamm",
-          "cSharpName": "CyberlistJeffHamm"
-        },
-        {
-          "id": "todo.dream_dreams_jeff_hamm",
-          "friendlyName": "Dream Dreams jeff_hamm",
-          "cSharpName": "DreamDreamsJeffHamm"
-        },
-        {
-          "id": "todo.fabrishion_district_jeff_hamm",
-          "friendlyName": "Fabrishion District jeff_hamm",
-          "cSharpName": "FabrishionDistrictJeffHamm"
-        },
-        {
-          "id": "todo.flagged_emails_jeff_hamm",
-          "friendlyName": "Flagged Emails jeff_hamm",
-          "cSharpName": "FlaggedEmailsJeffHamm"
-        },
-        {
-          "id": "todo.from_home_jeff_hamm",
-          "friendlyName": "From home jeff_hamm",
-          "cSharpName": "FromHomeJeffHamm"
-        },
-        {
-          "id": "todo.grocery_jeff_hamm",
-          "friendlyName": "Grocery jeff_hamm",
-          "cSharpName": "GroceryJeffHamm"
-        },
-        {
-          "id": "todo.grocery_jeff_hamm_2",
-          "friendlyName": "Grocery jeff_hamm",
-          "cSharpName": "GroceryJeffHamm2"
-        },
-        {
-          "id": "todo.hammlet_things_jeff_hamm",
-          "friendlyName": "Hammlet Things jeff_hamm",
-          "cSharpName": "HammletThingsJeffHamm"
-        },
-        {
-          "id": "todo.headpiece_jeff_hamm",
-          "friendlyName": "Headpiece jeff_hamm",
-          "cSharpName": "HeadpieceJeffHamm"
-        },
-        {
-          "id": "todo.home_despot_jeff_hamm",
-          "friendlyName": "Home Despot jeff_hamm",
-          "cSharpName": "HomeDespotJeffHamm"
-        },
-        {
-          "id": "todo.honk_eclipse_jeff_hamm",
-          "friendlyName": "Honk/Eclipse jeff_hamm",
-          "cSharpName": "HonkEclipseJeffHamm"
-        },
-        {
-          "id": "todo.hotsy_totsy_jeff_hamm",
-          "friendlyName": "Hotsy totsy jeff_hamm",
-          "cSharpName": "HotsyTotsyJeffHamm"
-        },
-        {
-          "id": "todo.items_jeff_hamm",
-          "friendlyName": "Items jeff_hamm",
-          "cSharpName": "ItemsJeffHamm"
-        },
-        {
-          "id": "todo.j_m_camping_optimize_jeff_hamm",
-          "friendlyName": "J\u0026M Camping Optimize jeff_hamm",
-          "cSharpName": "JMCampingOptimizeJeffHamm"
-        },
-        {
-          "id": "todo.j_m_shoppink_jeff_hamm",
-          "friendlyName": "J\u0026M Shoppink jeff_hamm",
-          "cSharpName": "JMShoppinkJeffHamm"
-        },
-        {
-          "id": "todo.jumpcredit_jeff_hamm",
-          "friendlyName": "JumpCredit jeff_hamm",
-          "cSharpName": "JumpcreditJeffHamm"
-        },
-        {
-          "id": "todo.jumper_mikaela_misclist_jeff_hamm",
-          "friendlyName": "Jumper \u0026 Mikaela Misclist jeff_hamm",
-          "cSharpName": "JumperMikaelaMisclistJeffHamm"
-        },
-        {
-          "id": "todo.jumpers_background_anxiety_jeff_hamm",
-          "friendlyName": "Jumpers Background Anxiety jeff_hamm",
-          "cSharpName": "JumpersBackgroundAnxietyJeffHamm"
-        },
-        {
-          "id": "todo.let_s_have_all_the_adventures_jeff_hamm",
-          "friendlyName": "Let\u0027s have all the adventures jeff_hamm",
-          "cSharpName": "LetSHaveAllTheAdventuresJeffHamm"
-        },
-        {
-          "id": "todo.many_waves_jeff_hamm",
-          "friendlyName": "Many waves jeff_hamm",
-          "cSharpName": "ManyWavesJeffHamm"
-        },
-        {
-          "id": "todo.med_questions_jeff_hamm",
-          "friendlyName": "Med questions jeff_hamm",
-          "cSharpName": "MedQuestionsJeffHamm"
-        },
-        {
-          "id": "todo.mikaela_favorites_jeff_hamm",
-          "friendlyName": "Mikaela favorites jeff_hamm",
-          "cSharpName": "MikaelaFavoritesJeffHamm"
-        },
-        {
-          "id": "todo.mikaela_jeff_hamm",
-          "friendlyName": "Mikaela jeff_hamm",
-          "cSharpName": "MikaelaJeffHamm"
-        },
-        {
-          "id": "todo.morongo_jeff_hamm",
-          "friendlyName": "Morongo jeff_hamm",
-          "cSharpName": "MorongoJeffHamm"
-        },
-        {
-          "id": "todo.new_year_new_rear_jeff_hamm",
-          "friendlyName": "New Year, New Rear jeff_hamm",
-          "cSharpName": "NewYearNewRearJeffHamm"
-        },
-        {
-          "id": "todo.on_light_jeff_hamm",
-          "friendlyName": "On light jeff_hamm",
-          "cSharpName": "OnLightJeffHamm"
-        },
-        {
-          "id": "todo.our_home_jeff_hamm",
-          "friendlyName": "Our Home jeff_hamm",
-          "cSharpName": "OurHomeJeffHamm"
-        },
-        {
-          "id": "todo.restaurants_jeff_hamm",
-          "friendlyName": "Restaurants jeff_hamm",
-          "cSharpName": "RestaurantsJeffHamm"
-        },
-        {
-          "id": "todo.returns_jeff_hamm",
-          "friendlyName": "Returns jeff_hamm",
-          "cSharpName": "ReturnsJeffHamm"
-        },
-        {
-          "id": "todo.rs2024_jeff_hamm",
-          "friendlyName": "RS2024 jeff_hamm",
-          "cSharpName": "Rs2024JeffHamm"
-        },
-        {
-          "id": "todo.sac_move_out_jeff_hamm",
-          "friendlyName": "Sac Move Out jeff_hamm",
-          "cSharpName": "SacMoveOutJeffHamm"
-        },
-        {
-          "id": "todo.scarlet_jeff_hamm",
-          "friendlyName": "Scarlet jeff_hamm",
-          "cSharpName": "ScarletJeffHamm"
-        },
-        {
-          "id": "todo.sd_live_ma_jeff_hamm",
-          "friendlyName": "Sd live ma jeff_hamm",
-          "cSharpName": "SdLiveMaJeffHamm"
-        },
-        {
-          "id": "todo.shop_thoughts_jeff_hamm",
-          "friendlyName": "Shop thoughts! jeff_hamm",
-          "cSharpName": "ShopThoughtsJeffHamm"
-        },
-        {
-          "id": "todo.smarthamm_jeff_hamm",
-          "friendlyName": "SmartHamm jeff_hamm",
-          "cSharpName": "SmarthammJeffHamm"
-        },
-        {
-          "id": "todo.snick_smudge_a_team_shows_jeff_hamm",
-          "friendlyName": "Snick \u0026 Smudge A Team Shows jeff_hamm",
-          "cSharpName": "SnickSmudgeATeamShowsJeffHamm"
-        },
-        {
-          "id": "todo.snick_smudge_b_team_shows_jeff_hamm",
-          "friendlyName": "Snick \u0026 Smudge B Team Shows jeff_hamm",
-          "cSharpName": "SnickSmudgeBTeamShowsJeffHamm"
-        },
-        {
-          "id": "todo.snick_smudge_movies_jeff_hamm",
-          "friendlyName": "Snick \u0026 Smudge movies jeff_hamm",
-          "cSharpName": "SnickSmudgeMoviesJeffHamm"
-        },
-        {
-          "id": "todo.snick_smudge_to_do_jeff_hamm",
-          "friendlyName": "Snick \u0026 Smudge To Do jeff_hamm",
-          "cSharpName": "SnickSmudgeToDoJeffHamm"
-        },
-        {
-          "id": "todo.stuff_jumper_packed_on_friday_but_didn_t_bring_to_austin_maybe_mikaela_could_get_jeff_hamm",
-          "friendlyName": "Stuff Jumper Packed on Friday but didn\u0027t bring to austin \u0026 maybe mikaela could get? jeff_hamm",
-          "cSharpName": "StuffJumperPackedOnFridayButDidnTBringToAustinMaybeMikaelaCouldGetJeffHamm"
-        },
-        {
-          "id": "todo.tasks_jeff_hamm",
-          "friendlyName": "Tasks jeff_hamm",
-          "cSharpName": "TasksJeffHamm"
-        },
-        {
-          "id": "todo.the_biome_jeff_hamm",
-          "friendlyName": "The Biome jeff_hamm",
-          "cSharpName": "TheBiomeJeffHamm"
-        },
-        {
-          "id": "todo.trip_stuff_jeff_hamm",
-          "friendlyName": "Trip Stuff jeff_hamm",
-          "cSharpName": "TripStuffJeffHamm"
-        },
-        {
-          "id": "todo.untitled_list_jeff_hamm",
-          "friendlyName": "Untitled list jeff_hamm",
-          "cSharpName": "UntitledListJeffHamm"
-        },
-        {
-          "id": "todo.walmart_jeff_hamm",
-          "friendlyName": "Walmart jeff_hamm",
-          "cSharpName": "WalmartJeffHamm"
-        },
-        {
-          "id": "todo.walmart_jeff_hamm_2",
-          "friendlyName": "Walmart jeff_hamm",
-          "cSharpName": "WalmartJeffHamm2"
-        },
-        {
-          "id": "todo.wedding_festival_things_jeff_hamm",
-          "friendlyName": "Wedding Festival Things jeff_hamm",
-          "cSharpName": "WeddingFestivalThingsJeffHamm"
-        },
-        {
-          "id": "todo.wedding_projector_setup_jeff_hamm",
-          "friendlyName": "Wedding Projector setup jeff_hamm",
-          "cSharpName": "WeddingProjectorSetupJeffHamm"
-        },
-        {
-          "id": "todo.youpia_1_jeff_hamm",
-          "friendlyName": "Youpia (1) jeff_hamm",
-          "cSharpName": "Youpia1JeffHamm"
-        },
-        {
-          "id": "todo.youpia_jeff_hamm",
-          "friendlyName": "Youpia jeff_hamm",
-          "cSharpName": "YoupiaJeffHamm"
-        },
-        {
-          "id": "todo.youtipia_jeff_hamm",
-          "friendlyName": "Youtipia jeff_hamm",
-          "cSharpName": "YoutipiaJeffHamm"
+          "id": "todo.shopping_list",
+          "friendlyName": "Shopping List",
+          "cSharpName": "ShoppingList"
         }
       ],
       "attributes": [
-        {
-          "jsonName": "all_todos",
-          "cSharpName": "AllTodos",
-          "clrType": "IReadOnlyList\u003Cobject\u003E",
-          "values": null,
-          "isList": true,
-          "toGenerate": false,
-          "toParse": false
-        },
         {
           "jsonName": "friendly_name",
           "cSharpName": "FriendlyName",
@@ -5271,24 +1521,6 @@
           "isList": false,
           "toGenerate": false,
           "toParse": false
-        },
-        {
-          "jsonName": "overdue_todos",
-          "cSharpName": "OverdueTodos",
-          "clrType": "IReadOnlyList\u003Cobject\u003E",
-          "values": null,
-          "isList": true,
-          "toGenerate": false,
-          "toParse": false
-        },
-        {
-          "jsonName": "restored",
-          "cSharpName": "Restored",
-          "clrType": "bool",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
         }
       ]
     },
@@ -5296,14 +1528,9 @@
       "domain": "tts",
       "entities": [
         {
-          "id": "tts.google_en_com",
+          "id": "tts.google_translate_en_com",
           "friendlyName": "Google Translate en com",
-          "cSharpName": "GoogleEnCom"
-        },
-        {
-          "id": "tts.piper",
-          "friendlyName": "piper",
-          "cSharpName": "Piper"
+          "cSharpName": "GoogleTranslateEnCom"
         }
       ],
       "attributes": [
@@ -5322,19 +1549,9 @@
       "domain": "update",
       "entities": [
         {
-          "id": "update.adaptive_lighting_update",
-          "friendlyName": "Adaptive Lighting update",
-          "cSharpName": "AdaptiveLightingUpdate"
-        },
-        {
           "id": "update.advanced_ssh_web_terminal_update",
           "friendlyName": "Advanced SSH \u0026 Web Terminal Update",
           "cSharpName": "AdvancedSshWebTerminalUpdate"
-        },
-        {
-          "id": "update.alive_remote_firmware",
-          "friendlyName": "Alive Remote Firmware",
-          "cSharpName": "AliveRemoteFirmware"
         },
         {
           "id": "update.bubble_card_update",
@@ -5342,59 +1559,9 @@
           "cSharpName": "BubbleCardUpdate"
         },
         {
-          "id": "update.bubble_update",
-          "friendlyName": "Bubble update",
-          "cSharpName": "BubbleUpdate"
-        },
-        {
-          "id": "update.button_card_update",
-          "friendlyName": "button-card update",
-          "cSharpName": "ButtonCardUpdate"
-        },
-        {
-          "id": "update.card_mod_update",
-          "friendlyName": "card-mod update",
-          "cSharpName": "CardModUpdate"
-        },
-        {
           "id": "update.clock_weather_card_update",
           "friendlyName": "Clock Weather Card update",
           "cSharpName": "ClockWeatherCardUpdate"
-        },
-        {
-          "id": "update.collapsable_cards_update",
-          "friendlyName": "Collapsable cards update",
-          "cSharpName": "CollapsableCardsUpdate"
-        },
-        {
-          "id": "update.config_template_card_update",
-          "friendlyName": "Config Template Card update",
-          "cSharpName": "ConfigTemplateCardUpdate"
-        },
-        {
-          "id": "update.decluttering_card_update",
-          "friendlyName": "Decluttering Card update",
-          "cSharpName": "DeclutteringCardUpdate"
-        },
-        {
-          "id": "update.digital_clock_update",
-          "friendlyName": "Digital Clock update",
-          "cSharpName": "DigitalClockUpdate"
-        },
-        {
-          "id": "update.esp8266_demo_led_1_firmware",
-          "friendlyName": "Firmware",
-          "cSharpName": "Esp8266DemoLed1Firmware"
-        },
-        {
-          "id": "update.esphome_update",
-          "friendlyName": "ESPHome Device Builder Update",
-          "cSharpName": "EsphomeUpdate"
-        },
-        {
-          "id": "update.fan_percent_button_row_update",
-          "friendlyName": "Fan Percent Button Row update",
-          "cSharpName": "FanPercentButtonRowUpdate"
         },
         {
           "id": "update.filebrowser_update",
@@ -5402,44 +1569,14 @@
           "cSharpName": "FilebrowserUpdate"
         },
         {
-          "id": "update.firemote_card_update",
-          "friendlyName": "Firemote Card update",
-          "cSharpName": "FiremoteCardUpdate"
-        },
-        {
-          "id": "update.flower_card_update",
-          "friendlyName": "Flower Card update",
-          "cSharpName": "FlowerCardUpdate"
-        },
-        {
-          "id": "update.fontawesome_update",
-          "friendlyName": "fontawesome update",
-          "cSharpName": "FontawesomeUpdate"
+          "id": "update.get_hacs_update",
+          "friendlyName": "Get HACS Update",
+          "cSharpName": "GetHacsUpdate"
         },
         {
           "id": "update.hacs_update",
           "friendlyName": "HACS update",
           "cSharpName": "HacsUpdate"
-        },
-        {
-          "id": "update.hammet_bt_proxy_firmware",
-          "friendlyName": "Firmware",
-          "cSharpName": "HammetBtProxyFirmware"
-        },
-        {
-          "id": "update.hammlet_music_wled_firmware",
-          "friendlyName": "Spamheart Vein 2 Firmware",
-          "cSharpName": "HammletMusicWledFirmware"
-        },
-        {
-          "id": "update.hey_nabu_home_assistant_voice_0974a6",
-          "friendlyName": "Hey Nabu ",
-          "cSharpName": "HeyNabuHomeAssistantVoice0974a6"
-        },
-        {
-          "id": "update.hifiberry_update",
-          "friendlyName": "HiFiBerry update",
-          "cSharpName": "HifiberryUpdate"
         },
         {
           "id": "update.home_assistant_core_update",
@@ -5452,24 +1589,9 @@
           "cSharpName": "HomeAssistantOperatingSystemUpdate"
         },
         {
-          "id": "update.home_assistant_plant_update",
-          "friendlyName": "Home Assistant Plant update",
-          "cSharpName": "HomeAssistantPlantUpdate"
-        },
-        {
           "id": "update.home_assistant_supervisor_update",
           "friendlyName": "Home Assistant Supervisor Update",
           "cSharpName": "HomeAssistantSupervisorUpdate"
-        },
-        {
-          "id": "update.hourly_weather_card_update",
-          "friendlyName": "Hourly Weather Card update",
-          "cSharpName": "HourlyWeatherCardUpdate"
-        },
-        {
-          "id": "update.ingress_update",
-          "friendlyName": "Ingress update",
-          "cSharpName": "IngressUpdate"
         },
         {
           "id": "update.ios_themes_dark_mode_and_light_mode_update",
@@ -5477,24 +1599,9 @@
           "cSharpName": "IosThemesDarkModeAndLightModeUpdate"
         },
         {
-          "id": "update.kiosk_mode_update",
-          "friendlyName": "Kiosk Mode update",
-          "cSharpName": "KioskModeUpdate"
-        },
-        {
-          "id": "update.kitchen_switch",
-          "friendlyName": "Kitchen Switch",
-          "cSharpName": "KitchenSwitch"
-        },
-        {
           "id": "update.layout_card_update",
           "friendlyName": "layout-card update",
           "cSharpName": "LayoutCardUpdate"
-        },
-        {
-          "id": "update.lg_webos_remote_control_update",
-          "friendlyName": "LG WebOS Remote Control update",
-          "cSharpName": "LgWebosRemoteControlUpdate"
         },
         {
           "id": "update.light_entity_card_update",
@@ -5507,29 +1614,9 @@
           "cSharpName": "LightenerUpdate"
         },
         {
-          "id": "update.liminal_dimmer_firmware_2",
-          "friendlyName": "Liminal Dimmer Firmware",
-          "cSharpName": "LiminalDimmerFirmware2"
-        },
-        {
-          "id": "update.liminal_switch",
-          "friendlyName": "Liminal Switch",
-          "cSharpName": "LiminalSwitch"
-        },
-        {
           "id": "update.local_tuya_update",
           "friendlyName": "Local Tuya update",
           "cSharpName": "LocalTuyaUpdate"
-        },
-        {
-          "id": "update.logspout_addon_update",
-          "friendlyName": "Logspout addon Update",
-          "cSharpName": "LogspoutAddonUpdate"
-        },
-        {
-          "id": "update.lovelace_weather_icons_update",
-          "friendlyName": "Lovelace Weather Icons update",
-          "cSharpName": "LovelaceWeatherIconsUpdate"
         },
         {
           "id": "update.matter_server_update",
@@ -5537,9 +1624,9 @@
           "cSharpName": "MatterServerUpdate"
         },
         {
-          "id": "update.miflora_card_update",
-          "friendlyName": "Miflora Card update",
-          "cSharpName": "MifloraCardUpdate"
+          "id": "update.mikaela_dimmer_firmware",
+          "friendlyName": "Mikaela Dimmer Firmware",
+          "cSharpName": "MikaelaDimmerFirmware"
         },
         {
           "id": "update.mini_media_player_update",
@@ -5552,24 +1639,9 @@
           "cSharpName": "MosquittoBrokerUpdate"
         },
         {
-          "id": "update.mushroom_themes_update",
-          "friendlyName": "Mushroom Themes update",
-          "cSharpName": "MushroomThemesUpdate"
-        },
-        {
           "id": "update.mushroom_update",
           "friendlyName": "Mushroom update",
           "cSharpName": "MushroomUpdate"
-        },
-        {
-          "id": "update.music_assistant_server_update",
-          "friendlyName": "Music Assistant Server Update",
-          "cSharpName": "MusicAssistantServerUpdate"
-        },
-        {
-          "id": "update.netdaemon_update",
-          "friendlyName": "NetDaemon update",
-          "cSharpName": "NetdaemonUpdate"
         },
         {
           "id": "update.netdaemon_v5_net_9_update",
@@ -5577,129 +1649,9 @@
           "cSharpName": "NetdaemonV5Net9Update"
         },
         {
-          "id": "update.o365_card_update",
-          "friendlyName": "O365 Card update",
-          "cSharpName": "O365CardUpdate"
-        },
-        {
-          "id": "update.office_365_update",
-          "friendlyName": "Office 365 update",
-          "cSharpName": "Office365Update"
-        },
-        {
-          "id": "update.openplantbook_update",
-          "friendlyName": "OpenPlantbook update",
-          "cSharpName": "OpenplantbookUpdate"
-        },
-        {
-          "id": "update.openwakeword_update",
-          "friendlyName": "openWakeWord Update",
-          "cSharpName": "OpenwakewordUpdate"
-        },
-        {
-          "id": "update.outdoor_switch",
-          "friendlyName": "Outdoor Switch",
-          "cSharpName": "OutdoorSwitch"
-        },
-        {
-          "id": "update.piper_update",
-          "friendlyName": "Piper Update",
-          "cSharpName": "PiperUpdate"
-        },
-        {
-          "id": "update.pirate_weather_update",
-          "friendlyName": "Pirate Weather update",
-          "cSharpName": "PirateWeatherUpdate"
-        },
-        {
-          "id": "update.plant_picture_card_update",
-          "friendlyName": "Plant Picture Card update",
-          "cSharpName": "PlantPictureCardUpdate"
-        },
-        {
-          "id": "update.polr_ytube_media_card_update",
-          "friendlyName": "PoLR YTube Media Card update",
-          "cSharpName": "PolrYtubeMediaCardUpdate"
-        },
-        {
-          "id": "update.portainer_update",
-          "friendlyName": "Portainer Update",
-          "cSharpName": "PortainerUpdate"
-        },
-        {
-          "id": "update.portainer_update_2",
-          "friendlyName": "Portainer update",
-          "cSharpName": "PortainerUpdate2"
-        },
-        {
-          "id": "update.samba_nas_update",
-          "friendlyName": "Samba NAS Update",
-          "cSharpName": "SambaNasUpdate"
-        },
-        {
           "id": "update.samba_share_update",
           "friendlyName": "Samba share Update",
           "cSharpName": "SambaShareUpdate"
-        },
-        {
-          "id": "update.select_list_card_update",
-          "friendlyName": "Select list Card update",
-          "cSharpName": "SelectListCardUpdate"
-        },
-        {
-          "id": "update.shellyforhass_shelly_integration_update",
-          "friendlyName": "ShellyForHass (Shelly integration) update",
-          "cSharpName": "ShellyforhassShellyIntegrationUpdate"
-        },
-        {
-          "id": "update.slider_entity_row_update",
-          "friendlyName": "slider-entity-row update",
-          "cSharpName": "SliderEntityRowUpdate"
-        },
-        {
-          "id": "update.smart_rgbtw_bulb",
-          "friendlyName": null,
-          "cSharpName": "SmartRgbtwBulb"
-        },
-        {
-          "id": "update.smart_rgbtw_bulb_2",
-          "friendlyName": null,
-          "cSharpName": "SmartRgbtwBulb2"
-        },
-        {
-          "id": "update.smart_rgbtw_bulb_3",
-          "friendlyName": "Smart RGBTW Bulb",
-          "cSharpName": "SmartRgbtwBulb3"
-        },
-        {
-          "id": "update.smart_wi_fi_lamp_dimmer",
-          "friendlyName": null,
-          "cSharpName": "SmartWiFiLampDimmer"
-        },
-        {
-          "id": "update.smart_wi_fi_lamp_dimmer_2",
-          "friendlyName": null,
-          "cSharpName": "SmartWiFiLampDimmer2"
-        },
-        {
-          "id": "update.smart_wi_fi_lamp_dimmer_3",
-          "friendlyName": "Smart Wi-Fi Lamp Dimmer",
-          "cSharpName": "SmartWiFiLampDimmer3"
-        },
-        {
-          "id": "update.sonoff_lan_update",
-          "friendlyName": "Sonoff LAN update",
-          "cSharpName": "SonoffLanUpdate"
-        },
-        {
-          "id": "update.stack_in_card_update",
-          "friendlyName": "Stack In Card update",
-          "cSharpName": "StackInCardUpdate"
-        },
-        {
-          "id": "update.stateful_scenes_update",
-          "friendlyName": "Stateful Scenes update",
-          "cSharpName": "StatefulScenesUpdate"
         },
         {
           "id": "update.studio_code_server_update",
@@ -5707,44 +1659,9 @@
           "cSharpName": "StudioCodeServerUpdate"
         },
         {
-          "id": "update.swipe_card_update",
-          "friendlyName": "Swipe Card update",
-          "cSharpName": "SwipeCardUpdate"
-        },
-        {
-          "id": "update.whisper_update",
-          "friendlyName": "Whisper Update",
-          "cSharpName": "WhisperUpdate"
-        },
-        {
-          "id": "update.youtube_update",
-          "friendlyName": "youtube update",
-          "cSharpName": "YoutubeUpdate"
-        },
-        {
-          "id": "update.ytube_music_player_update",
-          "friendlyName": "ytube_music_player update",
-          "cSharpName": "YtubeMusicPlayerUpdate"
-        },
-        {
           "id": "update.z_wave_js_ui_update",
           "friendlyName": "Z-Wave JS UI Update",
           "cSharpName": "ZWaveJsUiUpdate"
-        },
-        {
-          "id": "update.z_wave_js_update",
-          "friendlyName": "Z-Wave JS Update",
-          "cSharpName": "ZWaveJsUpdate"
-        },
-        {
-          "id": "update.zha_toolkit_service_for_advanced_zigbee_usage_update",
-          "friendlyName": "\uD83E\uDDF0 ZHA Toolkit - Service for advanced Zigbee Usage update",
-          "cSharpName": "ZhaToolkitServiceForAdvancedZigbeeUsageUpdate"
-        },
-        {
-          "id": "update.zigbee2mqtt_update",
-          "friendlyName": "Zigbee2MQTT Update",
-          "cSharpName": "Zigbee2mqttUpdate"
         }
       ],
       "attributes": [
@@ -5873,36 +1790,6 @@
           "isList": false,
           "toGenerate": false,
           "toParse": false
-        },
-        {
-          "jsonName": "restored",
-          "cSharpName": "Restored",
-          "clrType": "bool",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
-        }
-      ]
-    },
-    {
-      "domain": "wake_word",
-      "entities": [
-        {
-          "id": "wake_word.openwakeword",
-          "friendlyName": "openwakeword",
-          "cSharpName": "Openwakeword"
-        }
-      ],
-      "attributes": [
-        {
-          "jsonName": "friendly_name",
-          "cSharpName": "FriendlyName",
-          "clrType": "string",
-          "values": null,
-          "isList": false,
-          "toGenerate": false,
-          "toParse": false
         }
       ]
     },
@@ -5910,9 +1797,9 @@
       "domain": "weather",
       "entities": [
         {
-          "id": "weather.forecast_the_hammlet",
-          "friendlyName": "Forecast The Hammlet",
-          "cSharpName": "ForecastTheHammlet"
+          "id": "weather.forecast_home",
+          "friendlyName": "Forecast The Dreamhouse",
+          "cSharpName": "ForecastHome"
         }
       ],
       "attributes": [
@@ -6067,7 +1954,7 @@
       "entities": [
         {
           "id": "zone.home",
-          "friendlyName": "The Hammlet",
+          "friendlyName": "The Dreamhouse",
           "cSharpName": "Home"
         }
       ],

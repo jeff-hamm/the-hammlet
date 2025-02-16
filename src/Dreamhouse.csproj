@@ -1,0 +1,78 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net9.0</TargetFramework>
+        <LangVersion>13.0</LangVersion>
+        <Nullable>enable</Nullable>
+        <RootNamespace>Hammlet</RootNamespace>
+        <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Remove="Apps\Lights\WatchForReferenceLights.yaml" />
+      <None Remove="Config\SceneSelectorConfig.yaml" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="Config\ReferenceLight.yaml">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Include="Config\SceneSelectorConfig.yaml">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+    
+    <ItemGroup>
+        <None Update="$(MSBuildProjectDir)appsettings.Development.json">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+            <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+        </None>        
+        <None Update="$(MSBuildProjectDir)appsettings.json">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+        <None Update="$(MSBuildProjectDir)**\*.yaml">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+            <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+        </None>
+    </ItemGroup>
+        
+    <ItemGroup>
+        <PackageReference Include="BouncyCastle.Cryptography" Version="2.5.1" />
+        <PackageReference Include="Copycat" Version="1.0.0" />
+        <PackageReference Include="Destructurama.ByIgnoring" Version="4.0.1" />
+        <PackageReference Include="Microsoft.Data.Sqlite" Version="9.0.1" />
+        <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="9.0.1" />
+        <PackageReference Include="NetDaemon.AppModel" Version="24.52.0" />
+        <PackageReference Include="NetDaemon.Extensions.Mqtt" Version="24.52.0" />
+        <PackageReference Include="NetDaemon.Runtime" Version="24.52.0" />
+        <PackageReference Include="NetDaemon.HassModel" Version="24.52.0" />
+        <PackageReference Include="NetDaemon.Client" Version="24.52.0" />
+        <PackageReference Include="NetDaemon.Extensions.Scheduling" Version="24.52.0" />
+        <PackageReference Include="NetDaemon.Extensions.Logging" Version="24.52.0" />
+        <PackageReference Include="NetDaemon.Extensions.Tts" Version="24.52.0" />
+        <PackageReference Include="PuppeteerExtraSharp" Version="2.0.0" />
+        <PackageReference Include="PuppeteerSharp" Version="20.1.0" />
+        <PackageReference Include="Serilog.CustomDestructurePolicy" Version="1.0.1" />
+        <PackageReference Include="Serilog.FluentDestructuring" Version="1.0.1" />
+        <PackageReference Include="Serilog.Sinks.Seq" Version="9.0.0" />
+        <PackageReference Include="System.Security.Cryptography.ProtectedData" Version="9.0.1" />
+        <PackageReference Include="TakasakiStudio.PuppeteerExtraSharp" Version="1.5.0" />
+        <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.1" />
+        <PackageReference Include="Vogen" Version="6.0.0" />
+    </ItemGroup>
+        
+    <ItemGroup>
+      <ProjectReference Include="..\submodules\CompileTimeProxyGenerator\CompileTimeProxyGenerator\CompileTimeProxyGenerator.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+      <ProjectReference Include="..\submodules\NetDaemon.Extensions.Observables\src\NetDaemon.Extensions.Observables\NetDaemon.Extensions.Observables.csproj" />
+    </ItemGroup>
+        
+    <ItemGroup>
+      <Folder Include="Apps\Sentences\" />
+      <Folder Include="Models\Framework\" />
+    </ItemGroup>
+  <PropertyGroup>
+    <DomainPrimitiveGenerator_GenerateSwaggerConverters>false</DomainPrimitiveGenerator_GenerateSwaggerConverters>
+    <UserSecretsId>5bd384c3-a3b5-40b5-bd1e-dbb818949adc</UserSecretsId>
+  </PropertyGroup>
+</Project>
