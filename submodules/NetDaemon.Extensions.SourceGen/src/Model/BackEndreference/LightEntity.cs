@@ -27,24 +27,24 @@ namespace Hammlet.Models.BackEnd
         //         ATTR_XY_COLOR,
         //     }
         // )
-        private static readonly HashSet<string> _entityComponentUnrecordedAttributes = new HashSet<string>
+        private static readonly HashSet<LightAttributes> _entityComponentUnrecordedAttributes = new HashSet<LightAttributes>
         {
-            LightConstants.ATTR_SUPPORTED_COLOR_MODES,
-            LightConstants.ATTR_EFFECT_LIST,
-            "min_mireds",
-            "max_mireds",
-            LightConstants.ATTR_MIN_COLOR_TEMP_KELVIN,
-            LightConstants.ATTR_MAX_COLOR_TEMP_KELVIN,
-            LightConstants.ATTR_BRIGHTNESS,
-            LightConstants.ATTR_COLOR_MODE,
-            "color_temp",
-            LightConstants.ATTR_COLOR_TEMP_KELVIN,
-            LightConstants.ATTR_EFFECT,
-            LightConstants.ATTR_HS_COLOR,
-            LightConstants.ATTR_RGB_COLOR,
-            LightConstants.ATTR_RGBW_COLOR,
-            LightConstants.ATTR_RGBWW_COLOR,
-            LightConstants.ATTR_XY_COLOR,
+            LightAttributes.SupportedColorModes,
+            LightAttributes.EffectList,
+            LightAttributes.MinMireds,
+            LightAttributes.MaxMireds,
+            LightAttributes.MinColorTempKelvin,
+            LightAttributes.MaxColorTempKelvin,
+            LightAttributes.Brightness,
+            LightAttributes.ColorMode,
+            LightAttributes.ColorTemp,
+            LightAttributes.ColorTempKelvin,
+            LightAttributes.Effect,
+            LightAttributes.HsColor,
+            LightAttributes.RgbColor,
+            LightAttributes.RgbwColor,
+            LightAttributes.RgbwwColor,
+            LightAttributes.XyColor,
         };
 
         // #src: https://raw.githubusercontent.com/home-assistant/core/refs/heads/dev/homeassistant/components/light/__init__.py

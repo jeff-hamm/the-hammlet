@@ -1,3 +1,9 @@
 [submodule "submodules/NetDaemon.Extensions.Observables"]
 	path = submodules/NetDaemon.Extensions.Observables
 	url = https://github.com/DevJasperNL/NetDaemon.Extensions.Observables.git
+[submodule "submodules/netdaemon"]
+	path = submodules/netdaemon
+	url = https://github.com/jeff-hamm/netdaemon.git
+[submodule "submodules/CompileTimeProxyGenerator"]
+	path = submodules/CompileTimeProxyGenerator
+	url = https://github.com/bkohrs/CompileTimeProxyGenerator.git
