@@ -9,11 +9,51 @@ namespace Hammlet.NetDaemon.Models;
 
 public static class LightEntityExtensions
 {
-    
+
+    public static (string? Left, string Right) SplitAtDot(this string id)
+    {
+        var firstDot = id.IndexOf('.', System.StringComparison.InvariantCulture);
+        return firstDot == -1 ? ((string? Left, string Right))(null, id)
+            : ((string? Left, string Right))(id[..firstDot], id[(firstDot + 1)..]);
+
+    }
+
     public static int MaxBrightnes(this LightEntity @this) => 255;
     public static int MinBrightnes(this LightEntity @this) => 0;
     public static double? Brightness(this LightEntity @this) => 
         Double.TryParse(@this.Attributes?.Brightness?.ToString(), out var r) ? r : null;
+    public static void Brightness(this LightEntity @this, int amount)
+    {
+        @this.TurnOn(brightness:int.Clamp(amount,0,255));
+    }
+    public static double? TransitionTime(this LightEntity @this) =>
+        500;
+
+    public static int Brighten(this double @this, int amount) => @this.Brighten((double)amount);
+    public static int Brighten(this double @this, double amount)
+    {
+        var newBrightness = 255 * (amount / 100.0);
+        var n = int.Clamp((int)@this + (int)newBrightness, 0, 255);
+        return n;
+    }
+
+    public static int? BrightenBy(this LightEntity @this, double amount, ILogger? logger=null)
+    {
+        var newBrightness = 255 * (amount/100.0);
+        if (@this.Brightness() is { } b)
+        {
+            var n = int.Clamp((int)b + (int)newBrightness, 0, 255);
+            logger?.LogDebug("Changing brightness {@b} by {newBrightness} to {value}", b, newBrightness,n);
+            @this.TurnOn(brightness: n, transition:@this.TransitionTime());
+            return n;
+        }
+        else
+        {
+            logger?.LogWarning("Brightness not available for {@entity}", @this.EntityId);
+        }
+
+        return null;
+    }
     
     public static void Brighten(this LightEntity @this, double pct=20)
     {
@@ -23,52 +63,88 @@ public static class LightEntityExtensions
     {
         @this.TurnOn(brightnessStepPct: pct);
     }
+
     public static bool HasColorTemp(this LightEntity @this) =>
-        @this.IsOn() && @this.Attributes is { ColorMode: ColorMode.ColorTemp } att&&
+        @this.IsOn() && @this.HasColorTemp();
+    public static bool HasColorTemp(this LightAttributes @this) =>
+        @this is { ColorMode: ColorMode.ColorTemp } att &&
         (att.ColorTempKelvin != null || att.ColorTemp != null);
 
-    public static void SetColorTempPct(this LightEntity @this, double colorTemp)
+    public static (double? k, double? r) GetColorTempFromPct(this LightEntity @this, double colorTemp)
     {
-        if (@this.Attributes?.SupportedColorModes?.Contains(ColorMode.ColorTemp) == true)
+        if (@this.Attributes?.SupportedColorModes?.Contains(ColorMode.ColorTemp) != true) return (null,null);
+        switch (@this.Attributes)
         {
-            if (@this.Attributes is { MinColorTempKelvin: { } minK, MaxColorTempKelvin: { } maxK})
+            case { MinColorTempKelvin: { } minK, MaxColorTempKelvin: { } maxK }:
+            {
+                var dst = ((maxK - minK) * colorTemp) + minK;
+                return (dst, null);
+//                @this.TurnOn(kelvin: dst);
+  //              break;
+            }
+            case { MinMireds: { } min, MaxMireds: { } max }:
+            {
+                var dst = ((max - min) * colorTemp) + min;
+                return (null, dst);
+//                @this.TurnOn(colorTemp: dst);
+//                break;
+            }
+            default:
+                return (null,null);
+        }
+    }
+    public static (double k, double r)? SetColorTempPct(this LightEntity @this, double colorTemp)
+    {
+        if (@this.Attributes?.SupportedColorModes?.Contains(ColorMode.ColorTemp) != true) return;
+        switch (@this.Attributes)
+        {
+            case { MinColorTempKelvin: { } minK, MaxColorTempKelvin: { } maxK}:
             {
                 var dst = ((maxK - minK) * colorTemp) + minK;
                 @this.TurnOn(kelvin:dst);
+                break;
             }
-            else if (@this.Attributes is { MinMireds: { } min, MaxMireds: { } max })
+            case { MinMireds: { } min, MaxMireds: { } max }:
             {
                 var dst = ((max - min) * colorTemp) + min;
                 @this.TurnOn(colorTemp: dst);
+                break;
             }
         }
     }
     public static bool IsWarm(this LightEntity @this) =>
         @this.ColorTempPct() is < .5;
+
     public static double? ColorTempPct(this LightEntity @this)
     {
         try
         {
             if (!@this.HasColorTemp())
                 return null;
-            var att = @this.Attributes!;
-            if (att.ColorTempKelvin is { } k && att is { MinColorTempKelvin: { } minK, MaxColorTempKelvin: { } maxK })
-            {
-                return (k - minK) / (maxK - minK);
-            }
-
-            if (att.ColorTemp is { } colorTemp && att is { MinMireds: { } min, MaxMireds: { } max })
-            {
-                return (colorTemp - min) / (max - min);
-            }
-
-            return null;
+            return @this.Attributes?.ColorTempPct();
         }
         catch (Exception e)
         {
 
             throw;
         }
+    }
+
+    public static double? ColorTempPct(this LightAttributes att)
+    {
+        if (!att.HasColorTemp())
+            return null;
+        if (att.ColorTempKelvin is { } k && att is { MinColorTempKelvin: { } minK, MaxColorTempKelvin: { } maxK })
+        {
+            return (k - minK) / (maxK - minK);
+        }
+
+        if (att.ColorTemp is { } colorTemp && att is { MinMireds: { } min, MaxMireds: { } max })
+        {
+            return (colorTemp - min) / (max - min);
+        }
+
+        return null;
     }
 
     public static void MakeWarm(this LightEntity @this)

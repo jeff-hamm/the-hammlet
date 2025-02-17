@@ -69,7 +69,9 @@
         
     <ItemGroup>
       <Folder Include="Apps\Sentences\" />
+      <Folder Include="Extensions\Reference\" />
       <Folder Include="Models\Framework\" />
+      <Folder Include="Models\Reference\" />
     </ItemGroup>
   <PropertyGroup>
     <DomainPrimitiveGenerator_GenerateSwaggerConverters>false</DomainPrimitiveGenerator_GenerateSwaggerConverters>

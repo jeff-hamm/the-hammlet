@@ -1,10 +1,15 @@
 class HammeletDaemon {
     $Name="dreamassistant";
-    $ServerName=$this.Name + ".infinitebutts.com";
-    $Url="https://$($this.ServerName)";
+    $LocalSuffix=".local";
+    $RemoteSuffix=".infinitebutts.com";
+    $PreferLocal=$true;
+    $ServerName=$this.Name + ($this.PreferLocal ? $this.LocalSuffix : $this.RemoteSuffix);
+    $Scheme=$this.PreferLocal ? "http" : "https";
+    $Url="$Scheme`://$($this.ServerName)";
     $IsSsl=$this.Url.StartsWith("https")
-    $Port=443;
-    $Ip="";
+    $Port=$this.IsSsl ? 443 : 8123;
+    $PreferDns=$false;
+    $Ip="192.168.1.161";
 #    $ConfigPath="\\$($this.ServerName)\config";
 #    $ConfigPath="\\$($this.Ip)\config";
     $ConfigPath="Z:\\";
@@ -16,7 +21,9 @@ class HammeletDaemon {
     $NdJson='{"addon": "' + $this.NdSlug + '"}'
     $SrcPath=$PSScriptRoot
     $HaDrive
-    $IsConnected
+    IsConnected() {
+        $global:ha_api_configured
+    }
     MapDrive() {
         $Root=$this.DriveRoot
         if(!$this.HaDrive) {
@@ -26,22 +33,39 @@ class HammeletDaemon {
         }
     }
     Connect() {
-        if(!$this.IsConnected) {
+        
+        if(!$this.IsConnected()) {
             Import-Module Home-Assistant
-            $Token = Get-SecretString -Name "HaToken" -AsPlainText
-            $IpAddr=$this.Ip
-            if(!$IpAddr) {
-                $this.Ip=$IpAddr=(Resolve-DNSName $this.ServerName | where Ip4Address -ne $null |  select -ExpandProperty IP4Address)
+            $Token = Get-SecretString -Name "Ha$($this.Name)Token" -AsPlainText
+            $HaHost=$this.PreferDns ? $this.ServerName : $this.Ip
+            echo "Connecting to $HaHost"
+            if(!$HaHost) {
+                if($this.ServerName) {
+                    $this.Ip=$HaHost=(Resolve-DNSName $this.ServerName | where Ip4Address -ne $null |  select -ExpandProperty IP4Address)
+                }
             }
-            Write-Information "Connecting to $($this.ServerName) [$IpAddr]"
-            New-HomeAssistantSession -ip $IpAddr -port $this.Port -token $Token
-            $this.IsConnected=$true
+            echo "Connecting to $($this.Scheme)`://$HaHost`:$($this.Port)"
+            New-HomeAssistantSession -ip $HaHost -port $this.Port -token $Token -scheme $this.Scheme
+            $global:ha_api_configured=$true
+#            $this.IsConnected=$true
+        }
+    }
+    Disconnect() {
+        if($this.IsConnected()) {
+            $global:ha_api_configured=$false
+ #           $this.IsConnected=$false
         }
     }
     InvokeService($service) {
         $this.Connect()
-        Write-Information "Invoking $service"
-        Invoke-HomeAssistantService -service $service -json $this.NdJson
+        try {
+            Write-Information "Invoking $service"
+            Invoke-HomeAssistantService -service $service -json $this.NdJson
+        }
+        catch {
+            $this.Disconnect()
+            throw
+        }
     }
     UpdateTool() {
         dotnet tool update -g NetDaemon.HassModel.CodeGen

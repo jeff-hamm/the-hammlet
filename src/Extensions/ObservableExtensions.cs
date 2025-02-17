@@ -48,7 +48,7 @@ public class ButtonEventOptions
     public TimeSpan PressDelay { get; set;} = TimeSpan.FromMilliseconds(DefaultPressDelay);
     public TimeSpan HoldDelay { get; set;} = TimeSpan.FromMilliseconds(DefaultHoldingMilliseconds);
     public TimeSpan DebounceTime { get; set; } = TimeSpan.FromMilliseconds(DefaultDebounceTimeMilliseconds);
-    public TimeSpan HoldTickRate { get; set; } = TimeSpan.FromMilliseconds(200);
+    public TimeSpan HoldTickRate { get; set; } = TimeSpan.FromMilliseconds(500);
     public bool FireTickEvents { get; set; } = true;
 }
 

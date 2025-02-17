@@ -32,6 +32,7 @@ using NetDaemon.HassModel.Entities.Core;
 namespace Hammlet.NetDaemon.Models;
 public partial class LightEntities : IEntityDomain<LightEntity>
 {
+//    public static readonly LightIds Ids = new();
     private readonly IHaContext _haContext;
     public LightEntities(IHaContext haContext)
     {

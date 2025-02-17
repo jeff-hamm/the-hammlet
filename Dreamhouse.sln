@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dreamhouse", "src\Dreamhous
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetDaemon.HassModel.CodeGenerator", "submodules\netdaemon\src\HassModel\NetDaemon.HassModel.CodeGenerator\NetDaemon.HassModel.CodeGenerator.csproj", "{084505EF-79A9-49D0-B629-E0B75CC4F648}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetDaemon.HassModel", "submodules\netdaemon\src\HassModel\NetDeamon.HassModel\NetDaemon.HassModel.csproj", "{9913C013-E1E7-4512-8807-9E9004AD4ADA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetDaemon.HassModel", "submodules\netdaemon\src\HassModel\NetDaemon.HassModel\NetDaemon.HassModel.csproj", "{9913C013-E1E7-4512-8807-9E9004AD4ADA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetDaemon.Client", "submodules\netdaemon\src\Client\NetDaemon.HassClient\NetDaemon.Client.csproj", "{AA73F3CA-D95D-45EB-95DF-C8F5752EC515}"
 EndProject
